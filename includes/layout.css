@@ -1,0 +1,54 @@
+/* 
+* Amazium V1.2
+* Copyright 2012, Mike Ballan
+* www.amazium.co.uk
+*/
+
+/***** Screen 960px *****/
+	
+.example								{ margin:0; padding:0; }
+
+
+
+/***** Screen Bigger than 960px *****/
+@media only screen and (min-width:1200px) {
+
+.example								{ margin:0; padding:0; }
+
+}
+
+
+
+/***** Tablet (Smaller than 959px) *****/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+.example								{ margin:0; padding:0; }	
+
+}
+
+
+
+/***** Phone (portrait 300px) *****/
+@media only screen and (max-width: 767px) {
+
+.example								{ margin:0; padding:0; }
+
+}
+
+
+	
+/***** Phone (landscape 420px) *****/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+.example								{ margin:0; padding:0; }
+
+}
+
+
+
+/***** Retina *****/
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+
+.example								{ margin:0; padding:0; }
+
+}

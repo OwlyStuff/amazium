@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Demo: jQuery Retina Display Plugin | Troy Mcilvena</title>
+	<style type="text/css" media="screen">
+		body {
+			padding: 0;
+			margin: 0;
+			font: 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		div.content {
+			padding: 0 10px;
+			line-height: 18px;
+		}
+		h1 {
+			font-weight: normal;
+			font-family: "Arial";
+			font-size: 24px;
+			line-height: 26px;
+		}
+		p.intro {
+			margin-top: 0;
+			font-size: 16px;
+			background: rgba(100, 200, 250, 0.3);
+			padding: 20px 10px 20px 10px;
+			border-top: 1px solid rgba(100, 200, 250, 0.6);
+			border-bottom: 1px solid rgba(100, 200, 250, 0.6);
+		}
+		a {
+			font-weight: bold;
+			font-size: 16px;
+			text-decoration: none;
+			color: rgb(80, 180, 230);
+		}
+		a:active {
+			color: rgb(40, 140, 190);
+		}
+	</style>
+	<meta name = "viewport" content = "width = 320, user-scalable = no">
+	<script src="scripts/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="scripts/jquery.retina.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('img.retina').retina();
+		});
+	</script>
+</head>
+
+<body>
+
+<h1 style="background-color: black; margin: 0; padding: 10px; color: #FFF">jQuery Retina Display<br/>Plugin Demo</h1>
+<div>
+	<img class="retina" src="images/sample.jpg" width="320" height="240" alt="Sample" />
+</div>
+<div class="content"><p><a href="disabled.html">Disable jQuery Retina</a></p></div>
+<p class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<div class="content">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+</body>
+</html>
