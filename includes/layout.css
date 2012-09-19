@@ -1,19 +1,24 @@
 /* 
-* Amazium V1.2
+* Amazium V1.4
 * Copyright 2012, Mike Ballan
 * www.amazium.co.uk
+* Github: https://github.com/MikeBallan/Amazium
 */
 
 /***** Screen 960px *****/
-	
-.example								{ margin:0; padding:0; }
+
+
+.top			 								{ margin:0 auto; margin-top:30px; }	
+.base											{ margin:0 auto; margin-bottom:40px; }	
+span.example									{ margin-bottom:5px; padding:5px 0 5px 0; background-color:#eee; text-align:center; width:100%; display:block; }
+
 
 
 
 /***** Screen Bigger than 960px *****/
 @media only screen and (min-width:1200px) {
 
-.example								{ margin:0; padding:0; }
+.example										{ margin:0; padding:0; }
 
 }
 
@@ -21,8 +26,8 @@
 
 /***** Tablet (Smaller than 959px) *****/
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-	
-.example								{ margin:0; padding:0; }	
+
+.example										{ margin:0; padding:0; }
 
 }
 
@@ -31,7 +36,7 @@
 /***** Phone (portrait 300px) *****/
 @media only screen and (max-width: 767px) {
 
-.example								{ margin:0; padding:0; }
+.example										{ margin:0; padding:0; }
 
 }
 
@@ -40,15 +45,15 @@
 /***** Phone (landscape 420px) *****/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	
-.example								{ margin:0; padding:0; }
+.example										{ margin:0; padding:0; }
 
 }
 
 
 
 /***** Retina *****/
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (-webkit-min-device-pixel-ratio:1.5) {
 
-.example								{ margin:0; padding:0; }
+.example										{ margin:0; padding:0; }
 
 }

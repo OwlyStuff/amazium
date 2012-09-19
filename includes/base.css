@@ -1,9 +1,9 @@
 /* 
-* Amazium V1.2
+* Amazium V1.4
 * Copyright 2012, Mike Ballan
 * www.amazium.co.uk
+* Github: https://github.com/MikeBallan/Amazium
 */
-
 
 /***** Reset & Basics *****/
 
@@ -41,27 +41,49 @@ table 									{ border-collapse:collapse; border-spacing:0; }
 /***** Basic Styles *****/
 
 html 									{ overflow-y:scroll; overflow:-moz-scrollbars-vertical; }
-body									{ margin:20px 0 0 0; padding:0; background-color:#fff; font:12px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#333; -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:none; }
+body									{ margin:20px 0 0 0; padding:0; background-color:#fff; font:13px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#333; -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:none; }
 
 /***** Typography *****/
 
 h1, h2, h3, h4, h5, h6 					{ margin:0; padding:0; font-family:"Georgia", "Times New Roman", Helvetica, Arial, sans-serif; font-weight:normal; } 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a 		{ font-weight: inherit; }
-h1 										{ margin:0 0 10px 0; padding:0; font-size:28px; line-height:32px; color:#333; }
-h2										{ margin:0 0 10px 0; padding:0; font-size:22px; line-height:26px; color:#333; }
-h3 										{ margin:0 0 10px 0; padding:0; font-size:16px; line-height:20px; color:#333; }
-h4 										{ margin:0 0 10px 0; padding:0; font-size:16px; line-height:20px; color:#333; font-weight:bold; }
-h5 										{ margin:0 0 10px 0; padding:0; font-size:12px; line-height:16px; color:#333; font-weight:bold; }
-h6 										{ margin:0 0 10px 0; padding:0; font-size:10px; line-height:14px; color:#333; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a 		{ font-weight:inherit; }
+h1 										{ margin:0 0 10px 0; padding:0; font-size:36px; line-height:40px; color:#333; }
+h2										{ margin:0 0 10px 0; padding:0; font-size:30px; line-height:34px; color:#333; }
+h3 										{ margin:0 0 10px 0; padding:0; font-size:24px; line-height:28px; color:#333; }
+h4 										{ margin:0 0 10px 0; padding:0; font-size:18px; line-height:22px; color:#333; }
+h5 										{ margin:0 0 10px 0; padding:0; font-size:14px; line-height:16px; color:#333; }
+h6 										{ margin:0 0 10px 0; padding:0; font-size:12px; line-height:16px; color:#333; }
 
-p 										{ margin:0; padding:0 0 10px 0; line-height:16px; }
+p 										{ margin:0; padding:0 0 10px 0; line-height:20px; }
 
-sup, sub 								{ height:0;	line-height:1px; vertical-align:baseline; _vertical-align:bottom; position:relative; }
-sup 									{ bottom:1px; }
-sub 									{ top:1px; font-size:.6em; }
-em 										{ font-style:italic; color:#666; }
 strong 									{ font-weight:bold; color:#333; }
+em 										{ font-style:italic; color:#666; }
 small 									{ font-size:80%; }
+sup, sub								{ height:0;	line-height:5px; vertical-align:baseline; _vertical-align:bottom; position:relative; font-size:80%; }
+sup 									{ bottom:5px; }
+sub 									{ top:5px; }
+code, pre 								{ padding:0 3px 2px; color:#333; font-size:11px; }
+code									{ padding:0 4px 2px 4px; background-color:#000; border:1px solid #000; color:#f1f1f1; }
+
+/***** Lists *****/
+
+ul, ol 									{ margin-bottom:20px; }
+ul 										{ list-style:none outside; }
+ul li									{ margin:0 0 5px 0; padding:0 0 0 18px; line-height:18px; background:transparent url('../images/bullet.png') no-repeat 0 3px; }
+
+ul ul, ul ol							{ margin:5px 0 5px 0; }
+ol ol, ol ul 							{ margin:5px 0 5px 20px; }
+ul ul li, ul ol li,	ol ol li, ol ul li 	{ margin:0 0 6px 0; }
+
+ul.square, ul.square ul					{ list-style:square outside; }
+ul.circle, ul.circle ul 				{ list-style:circle outside; }
+ul.disc, ul.disc ul 					{ list-style:disc outside; }
+ul.square li,
+ul.circle li,
+ul.disc li								{ margin:0 0 5px 15px; padding:0; line-height:18px; background:none; }
+
+ol 										{ margin:0 0 20px 20px; list-style:decimal; }
+ol li									{ margin:0 0 5px 0; padding:0; line-height:18px; }
 
 /***** Blockquotes *****/
 
@@ -81,38 +103,24 @@ hr 										{ margin:20px 0 20px 0; border:0; border-top:1px solid #999; height
 a:link 									{ color:#333; text-decoration:none; outline:0; transition-property:color .1s linear 0s; -moz-transition:color .1s linear 0s; -webkit-transition:color .1s linear 0s; -o-transition:color .1s linear 0s; }
 a:visited 								{ color:#333; text-decoration:none; outline:0; }
 a:active 								{ color:#333; text-decoration:none; outline:0; }
-a:hover 								{ color:#999; text-decoration:underline; outline:0; }
+a:hover 			 					{ color:#999; text-decoration:underline; outline:0; }
 a:focus 								{ -moz-outline-style:none; }
 
-/***** Lists *****/
 
-ul, ol 									{ margin-bottom:20px; }
-ul 										{ list-style:none outside; }
-ol 										{ list-style:decimal; }
-ol, ul.square, ul.circle, ul.disc 		{ margin-left:15px; }
-ul.square 								{ list-style:square outside; }
-ul.circle 								{ list-style:circle outside; }
-ul.disc 								{ list-style:disc outside; }
-ul.fancy li								{ padding:0 0 0 15px; background:transparent url('../images/bullet.png') no-repeat 0 3px; }
-ul ul, ul ol, ol ol, ol ul 				{ margin:4px 0 5px 30px; font-size:90%;  }
-ul ul li, ul ol li,	ol ol li, ol ul li 	{ margin-bottom:6px; }
-li 										{ line-height:18px; margin-bottom:12px; }
-ul.large li 							{ line-height:21px; }
-li p 									{ line-height:21px; }
 
 /***** Images iFrames & Videos  *****/
 
 img 									{ border:0; -ms-interpolation-mode:bicubic; }
 .max-img 								{ width:100%; height:auto; }		
-.video-container 						{ position:relative; margin:0 0 15px 0;	padding-bottom:51%; padding-top:30px; height:0; overflow:hidden; border:1px solid #ccc; }
-.video-container iframe,
-.video-container object,  
-.video-container embed 					{ position:absolute; top:0; left:0; width:100%; height:100%; }
+.media 									{ position:relative; margin:0 0 15px 0;	padding-bottom:51%; padding-top:30px; height:0; overflow:hidden; border:1px solid #ccc; }
+.media iframe,
+.media object,  
+.media embed 							{ position:absolute; top:0; left:0; width:100%; height:100%; }
 
 /***** Buttons  *****/
 
-a.btn, .btn 							{ margin:5px 0 5px 0; padding:6px 28px 8px 12px; display:inline-block; font-size:11px; color:#fff; border:1px solid #000; background:#000 url(../images/btn-arrow.png) no-repeat right; cursor:pointer; }
-a:hover.btn 							{ text-decoration:none; border:1px solid #333; background:#333 url(../images/btn-arrow.png) no-repeat right; }
+a.btn, .btn 							{ margin:5px 0 5px 0; padding:4px 25px 4px 10px; display:inline-block; color:#fff; border:1px solid #000; background:#000 url(../images/btn-arrow.png) no-repeat right; cursor:pointer; }
+a:hover.btn 							{ text-decoration:none; border:1px solid #000; color:#666; background:#000 url(../images/btn-arrow.png) no-repeat right; }
 
 /***** Forms *****/
 
@@ -133,7 +141,6 @@ a:hover.btn 							{ text-decoration:none; border:1px solid #333; background:#33
 .wrapper-inline textarea				{ padding:4px 2px; border:solid 1px #bbbbbb; width:140px; margin:2px 0 15px 10px; font:12px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; float:left; }
 
 a.btn-form, input.btn-form				{ margin:5px 0 5px 150px; padding:4px 28px 4px 8px; display:inline-block; font-size:11px; color:#fff; border:1px solid #444; background:#333 url(../images/btn-arrow.png) no-repeat right; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px; cursor:pointer; }
-
 .small-label							{ display:block; font-size:10px; font-weight:normal; color:#666; text-align:right; width:140px; }
 
 /***** Tables  *****/
@@ -145,12 +152,6 @@ table tr.even td 						{ background-color:#fff; }
 table tr.odd td 						{ background-color:#f3f3f3; }
 table td.highlight 						{ color:#FFF; font-weight:bold; }
 table tr td.highlight					{ background-color:#333;  }
-
-/***** Back to Top *****/
-
-#toTop 									{ display:none; text-decoration:none; position:fixed; bottom:10px; right:10px; overflow:hidden; width:51px; height:51px; border:none; text-indent:-999px; background:url(../images/ui.totop.png) no-repeat left top; }
-#toTopHover 							{ background:url(../images/ui.totop.png) no-repeat left -51px; width:51px; height:51px; display:block; overflow:hidden; float:left; opacity: 0; -moz-opacity: 0; filter:alpha(opacity=0); }
-#toTop:active, #toTop:focus 			{ outline:none; }
 	
 /***** Global Classes *****/
 
@@ -171,7 +172,8 @@ table tr td.highlight					{ background-color:#333;  }
 .bold          							{ font-weight:bold; }
 .italic        							{ font-style:italic; }
 .underline     							{ border-bottom:1px solid; }
-.highlight     							{ background:#ffc; }
+.highlight     							{ padding:0 3px 2px; color:#333; font-size:11px; background:#00deff; font-weight:bold; }
+.intro									{ font-size:130%; line-height:130%; }
 
 .nopadding 						   		{ padding:0; }
 .noindent  						   		{ margin-left:0; padding-left:0; }
@@ -181,3 +183,8 @@ table tr td.highlight					{ background-color:#333;  }
 .hidden									{ display:none; }
 .hide 									{ display:none; }
 
+/***** Back to Top *****/
+
+#toTop 									{ display:none; text-decoration:none; position:fixed; bottom:10px; right:10px; overflow:hidden; width:51px; height:51px; border:none; text-indent:-999px; background:url(../images/ui.totop.png) no-repeat left top; }
+#toTopHover 							{ background:url(../images/ui.totop.png) no-repeat left -51px; width:51px; height:51px; display:block; overflow:hidden; float:left; opacity: 0; -moz-opacity: 0; filter:alpha(opacity=0); }
+#toTop:active, #toTop:focus 			{ outline:none; }
