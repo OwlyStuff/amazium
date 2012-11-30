@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Amazium - The responsive web framework..!</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+    
+    <script type="text/javascript">
+        var browser         = navigator.userAgent;
+        var browserRegex    = /(Android|BlackBerry|IEMobile|Nokia|iP(ad|hone|od)|Opera M(obi|ini))/;
+        var isMobile        = false;
+        if(browser.match(browserRegex)) {
+            isMobile            = true;
+            addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+            function hideURLbar(){
+                window.scrollTo(0,1);
+            }
+        }
+    </script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="includes/base.css">
+    <link rel="stylesheet" href="includes/amazium.css">
+    <link rel="stylesheet" href="includes/layout.css">
+    
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
+    
+    <!-- Scripts -->
+        
+    
+</head>
+<body>
+
+
+<div class="row">
+    <div class="grid_12">
+        <h1>The Grid</h1>
+        <p>Create powerful multi-device layouts quickly and easily with the 12-column, nestable Foundation grid. If you're familiar with grid systems, you'll feel right at home.</p>
+        <h3>The Basics</h2>
+        <p>The grid is built around two key elements: rows and columns. Rows create a max-width and contain the columns; columns create the actual structure. For layouts to work properly, always put your page content inside a row and a column.</p>
+        <p>What you need to know is that columns don't have a fixed width. They can vary based on the resolution of the screen, or the size of the window (try scaling down this window to see what we mean). Design with that in mind.</p>
+        <h2>Technical Details</h2>
+        <p>The Foundation 3 grid, like everything else in Foundation 3, is built with box-sizing: border-box, a powerful CSS property that tells the browser to consider border and padding as part of the width of an object rather than as an addition. That enables us to construct the grid extremely simply, which is good news for anyone who lamented how difficult it was to modify the Foundation 2 grid.</p>
+        <p>Gutters are created simply with padding on the columns. That means columns have simple widths like 25%, or 50%. Adjusting the padding adjusts the gutters, and this can be controlled either through Scss variables, the download customizer, or through the CSS itself.</p>
+        <h2>Examples</h2>
+        <p>Below is a visible example of the grid. Each column block is sized based on how many of the 12 columns it takes up, and where you see thicker borders it's because two columns are running against each other.</p>
+
+
+

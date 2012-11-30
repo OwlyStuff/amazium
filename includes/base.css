@@ -66,15 +66,10 @@ sub 									{ bottom:-5px; }
 
 code 									{ margin:0; padding:0 7px; font:12px/19px monospace, serif; color:#f1f1f1; display:inline-block; background:#000; white-space:pre; white-space:pre-wrap; word-wrap:break-word; }
 pre code								{ margin:16px 0 26px 0; padding:16px; font:12px/19px monospace, serif; color:#f1f1f1; display:block; background-color:#000; border:1px solid #000; }
-xmp 									{ margin:0; padding:0; }
 
 abbr[title], 
 abbr[data-original-title] 				{ border-bottom:1px dotted #999999; cursor:help; }
 address 								{ margin:26px 0; padding:0; display:block; font-style:normal; line-height:20px; }    
-
-dt, dd 									{ line-height:20px; }
-dt 										{ font-weight:bold; }
-dd 										{ margin-left:10px; }
 
 hr 										{ margin:20px 0; padding:0; border:0; border-top:1px solid #999; height:1px; width:100%; text-align:left; display:block; }
 
@@ -87,8 +82,9 @@ ul 										{ list-style:none outside; }
 ul li									{ margin:0 0 5px 0; padding:0 0 0 18px; line-height:18px; background:transparent url('../images/bullet.png') no-repeat 0 3px; }
 
 ul ul, ul ol							{ margin:5px 0 5px 0; }
-ol ol, ol ul 							{ margin:5px 0 5px 20px; }
-ul ul li, ul ol li,	ol ol li, ol ul li 	{ margin:0 0 5px 0; }
+ol ol, ol ul 							{ margin:0 0 5px 20px; }
+ul ul li 								{ margin:0 0 5px 0; }
+ul ol li,	ol ol li, ol ul li 			{ margin:0 0 3px 0; }
 
 ul.square, ul.square ul					{ list-style:square outside; }
 ul.circle, ul.circle ul 				{ list-style:circle outside; }
@@ -98,7 +94,11 @@ ul.circle li,
 ul.disc li								{ margin:0 0 5px 18px; padding:0; line-height:18px; background:none; }
 
 ol 										{ list-style:decimal; }
-ol li									{ margin:0 0 0 22px; padding:0; line-height:18px; }
+ol li									{ margin:0 0 5px 22px; padding:0; line-height:18px; }
+
+dt, dd 									{ line-height:20px; }
+dt 										{ font-weight:bold; }
+dd 										{ margin-left:10px; }
 
 /***** Blockquotes *****/
 
@@ -298,7 +298,7 @@ table tr td.highlight					{ padding:11px 8px; color:#FFF; font-weight:bold; disp
 .bold          							{ font-weight:bold; }
 .italic        							{ font-style:italic; }
 .underline     							{ border-bottom:1px solid; }
-.highlight     							{ padding:4px 7px 4px; color:#000; font-size:11px; display:inline-block; background:#00deff; font-weight:bold; }
+.highlight     							{ padding:4px 7px 4px; color:#000; line-height:19px; display:inline-block; background:#00deff; font-weight:bold; }
 .intro									{ font-size:130%; line-height:130%; }
 
 .nopadding 						   		{ padding:0; }
@@ -308,7 +308,7 @@ table tr td.highlight					{ padding:11px 8px; color:#FFF; font-weight:bold; disp
 .block									{ display:block; }
 .hidden									{ display:none; }
 .hide 									{ display:none; }
-.boxfix 								{ box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+.bfix 									{ box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
 /***** Back to Top *****/
 

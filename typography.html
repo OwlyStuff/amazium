@@ -44,12 +44,9 @@
 
 
 <div class="row">
-    <div class="grid_3">
-        Side nav here..!
-    </div>
-    <div class="grid_9">
+    <div class="grid_12">
         <h1>Typography</h1>
-        <h3>Headings</h3>
+        <h2>Headings</h2>
         <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> are available.</p>
         <div class="example-title">Example</div>
         <div class="example">
@@ -63,7 +60,7 @@
         
         
 
-        <h3>Body copy</h3>
+        <h2>Body copy</h2>
         <p>By default Amazium uses Century Gothic as it's font and a font-size of 15px, with a line-height of 26px. This has been applied to the <code>&lt;body&gt;</code> and to all <code>p</code> (paragraphs). Also the line-height of a <code>p</code> is set to have a margin of 20px by default.</p>
         <div class="example-title">Example</div>
         <div class="example">
@@ -72,7 +69,7 @@
         
         
         
-        <h3>Intro text</h3>
+        <h2>Intro text</h2>
         <p>There has been times when we've needed to make a paragraph stand out but for it not to be a headings (h1) so we created the class .intro which makes the font-size & line-height 130% and is perfect introduction text</p>
         <div class="example-title">Example</div>
         <div class="example">
@@ -82,7 +79,7 @@
 
 
 
-        <h3>Emphasis</h3>
+        <h2>Emphasis</h2>
         <p>Make use of HTML's default emphasis tags with lightweight styles.</p>
         <div class="example-title">Example</div>
         <div class="example">
@@ -94,17 +91,17 @@
             <p>This paragraph contains a <sub>Subscript</sub> word in it.</p>
             <p>This paragraph is has a <span class="highlight">Highlighted</span> word in it.</p>
         </div>
-        <pre><code>&lt;small&gt;This text is rendered for fine print.&lt;/small&gt;</code></pre>
-        <pre><code>&lt;strong&gt;This text is rendered as bold.&lt;/strong&gt;</code></pre>
-        <pre><code>&lt;em&gt;This text is rendered as italicized.&lt;/strong&gt;</em></code></pre>
-        <pre><code>&lt;abbr title="Abbreviations"&gt;abbr&lt;/abbr&gt;</em></code></pre>
-        <pre><code>&lt;sup&gt;Superscript&lt;/sup&gt;</code></pre>
-        <pre><code>&lt;sub&gt;Subscript&lt;/sub&gt;</code></pre>
-        <pre><code>&lt;span class="highlight"&gt;>Highlighted&lt;/span&gt;</code></pre>
+        <pre><code>&lt;small&gt;This text is rendered for fine print.&lt;/small&gt;
+&lt;strong&gt;This text is rendered as bold.&lt;/strong&gt;
+&lt;em&gt;This text is rendered as italicized.&lt;/strong&gt;
+&lt;abbr title="Abbreviations"&gt;abbr&lt;/abbr&gt;
+&lt;sup&gt;Superscript&lt;/sup&gt;
+&lt;sub&gt;Subscript&lt;/sub&gt;
+&lt;span class="highlight"&gt;Highlighted&lt;/span&gt;</code></pre>
 
 
 
-        <h3>Addresses</h3>
+        <h2>Addresses</h2>
         <p>Present contact information for the nearest ancestor or the entire body of work.</p>
         <div class="example-title">Example</div>
         <div class="example">
@@ -119,9 +116,14 @@
                 <a href="mailto:#">your.name@yourname.com</a>
             </address>  
         </div>
-        <pre><code>&lt;address&gt;...&lt;/address&gt;</em></code></pre>
+        <pre><code>&lt;address&gt;
+    &lt;strong>Your Company Name&lt;/strong>&lt;br /&gt;
+    123 Something Road,&lt;br /&gt;
+    Your City, AB 12345&lt;br /&gt;
+    &lt;abbr title="Telephone">T:&lt;/abbr&gt; (123) 456-7890
+&lt;/address&gt;</em></code></pre>
         
-        <h3>Blockquote</h3>
+        <h2>Blockquote</h2>
         <p>Present contact information for the nearest ancestor or the entire body of work.</p>
         <div class="example-title">Example</div>
         <div class="example">
@@ -142,64 +144,128 @@
 &lt;/figure&gt;</em></code></pre>
 
 
-        <h3>Lists</h3>  
+        <h2>Lists</h2>  
         <p>A list of items in which the order does not explicitly matter.</p>
         <div class="row">
-            <div class="grid_2">
-                <ul>
-                    <li>List item 01</li>
-                    <li>
-                        List item 02
-                        <ul>
-                            <li>List item 01a</li>
-                            <li>List item 01b</li>
-                            <li>List item 01c</li>
-                        </ul>
-                    </li>
-                    <li>List item 03</li>
-                </ul>
+            <div class="grid_3">
+                <h3>Unordered list</h3>
+                <div class="example-title">Example</div>
+                <div class="example">
+                    <ul>
+                        <li>List item 01</li>
+                        <li>
+                            List item 02
+                            <ul>
+                                <li>List item 01a</li>
+                                <li>List item 01b</li>
+                                <li>List item 01c</li>
+                            </ul>
+                        </li>
+                        <li>List item 03</li>
+                    </ul>
+                </div>
+                <pre><code>&lt;ul&gt;
+    &lt;li&gt;...&lt;/li&gt;
+    &lt;li&gt;
+        ...
+         &lt;ul&gt;
+            &lt;li&gt;...&lt;/li&gt;
+            &lt;li&gt;...&lt;/li&gt;
+            &lt;li&gt;...&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
             </div>
-            <div class="grid_2">
-                <ol>
-                    <li>List item 01</li>
-                    <li>
-                        List item 02
-                        <ol>
-                            <li>List item 01a</li>
-                            <li>List item 01b</li>
-                            <li>List item 01c</li>
-                        </ol>
-                    </li>
-                    <li>List item 03</li>
-                </ol>
+            <div class="grid_3">
+                <h3>Ordered list</h3>
+                <div class="example-title">Example</div>
+                <div class="example">
+                    <ol>
+                        <li>List item 01</li>
+                        <li>
+                            List item 02
+                            <ol>
+                                <li>List item 01a</li>
+                                <li>List item 01b</li>
+                                <li>List item 01c</li>
+                            </ol>
+                        </li>
+                        <li>List item 03</li>
+                    </ol>
+                </div>
+                <pre><code>&lt;ol&gt;
+    &lt;li&gt;...&lt;/li&gt;
+    &lt;li&gt;
+        ...
+         &lt;ol&gt;
+            &lt;li&gt;...&lt;/li&gt;
+            &lt;li&gt;...&lt;/li&gt;
+            &lt;li&gt;...&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/li&gt;
+    &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
             </div>
-            <div class="grid_2">
-                <ul class="circle">
-                    <li>List item 01</li>
-                    <li>
-                        List item 02
-                        <ul>
-                            <li>List item 01a</li>
-                            <li>List item 01b</li>
-                            <li>List item 01c</li>
-                        </ul>
-                    </li>
-                    <li>List item 03</li>
-                </ul>
+            <div class="grid_3">
+                <h3>Ordered list</h3>
+                <div class="example-title">Example</div>
+                <div class="example">
+                    <ul class="circle">
+                        <li>List item 01</li>
+                        <li>
+                            List item 02
+                            <ul>
+                                <li>List item 01a</li>
+                                <li>List item 01b</li>
+                                <li>List item 01c</li>
+                            </ul>
+                        </li>
+                        <li>List item 03</li>
+                    </ul>
+                </div>
+                <pre><code>&lt;ul class="circle"&gt;
+    &lt;li&gt;...&lt;/li&gt;
+    &lt;li&gt;
+        ...
+         &lt;ul&gt;
+            &lt;li&gt;...&lt;/li&gt;
+            &lt;li&gt;...&lt;/li&gt;
+            &lt;li&gt;...&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
             </div>
-            <div class="grid_2">
-                <ul class="square">
-                    <li>List item 01</li>
-                    <li>
-                        List item 02
-                        <ul>
-                            <li>List item 01a</li>
-                            <li>List item 01b</li>
-                            <li>List item 01c</li>
-                        </ul>
-                    </li>
-                    <li>List item 03</li>
-                </ul>
+            <div class="grid_3">
+                <h3>Ordered list</h3>
+                <div class="example-title">Example</div>
+                <div class="example">
+                    <ul class="square">
+                        <li>List item 01</li>
+                        <li>
+                            List item 02
+                            <ul>
+                                <li>List item 01a</li>
+                                <li>List item 01b</li>
+                                <li>List item 01c</li>
+                            </ul>
+                        </li>
+                        <li>List item 03</li>
+                    </ul>
+                </div>
+                <pre><code>&lt;ul class="square"&gt;
+    &lt;li&gt;...&lt;/li&gt;
+    &lt;li&gt;
+        ...
+         &lt;ul&gt;
+            &lt;li&gt;...&lt;/li&gt;
+            &lt;li&gt;...&lt;/li&gt;
+            &lt;li&gt;...&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
             </div>
         </div>
 
