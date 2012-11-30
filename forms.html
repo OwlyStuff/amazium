@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Amazium - The responsive web framework..!</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+    
+    <script type="text/javascript">
+        var browser         = navigator.userAgent;
+        var browserRegex    = /(Android|BlackBerry|IEMobile|Nokia|iP(ad|hone|od)|Opera M(obi|ini))/;
+        var isMobile        = false;
+        if(browser.match(browserRegex)) {
+            isMobile            = true;
+            addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+            function hideURLbar(){
+                window.scrollTo(0,1);
+            }
+        }
+    </script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="includes/base.css">
+    <link rel="stylesheet" href="includes/amazium.css">
+    <link rel="stylesheet" href="includes/layout.css">
+    
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
+    
+    <!-- Scripts -->
+        
+    
+</head>
+<body>
+
+<div class="row">
+    <div class="grid_12">
+        <h1>Forms</h1>
+        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper.</p>
+    </div>
+</div>
+
+<div class="row">
+	<form name="" id="" method="" action="">
+		<div class="grid_4">
+			<fieldset>
+				<label>Label</label>
+				<input name="input" id="input" placeholder="Input" autocomplete="off" tabindex="0" >
+			</fieldset>
+			<input type="text" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" >
+			<input type="text" name="text" id="text" placeholder="Text" autocomplete="off" tabindex="2" >
+			<input type="datetime" name="datetime" id="datetime" placeholder="Datetime" autocomplete="off" tabindex="4" >
+			<input type="datetime-local" name="datetime-local" id="atetime-local" placeholder="Datetime Local" autocomplete="off" tabindex="5" >
+			<input type="date" name="date" id="date" placeholder="Date" autocomplete="off" tabindex="6" >
+			<span>
+				<input type="checkbox" name="checkbox_2" />
+				<label>Checkbox 1</label>
+			</span>
+			<span>
+				<input type="checkbox" name="checkbox_2" />
+				<label>Checkbox 2</label>
+			</span>
+			<input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Submit">
+		</div>
+		<div class="grid_4">
+			<input type="month" name="month" id="month" placeholder="Month" autocomplete="off" tabindex="7" >
+			<input type="time" name="time" id="time" placeholder="Time" autocomplete="off" tabindex="8" >
+			<input type="week" name="week" id="week" placeholder="Week" autocomplete="off" tabindex="9" >
+			<input type="number" name="number" id="number" placeholder="Number" autocomplete="off" tabindex="10" >
+			<input type="color" name="color" id="color" placeholder="Color" autocomplete="off" tabindex="12" >			
+			<select id="dropdown" name="dropdown" tabindex="18">
+		    	<option selected>Option 1</option>
+		    	<option>Option 2</option>
+		    	<optgroup label="Option group 1">
+		    		<option>Sub option 1</option>
+		    		<option>Sub option 2</option>
+		    		<option>Sub option 3</option>
+		    	</optgroup>
+		    	<option>Option 3</option>
+			</select>
+			<span>
+				<input type="radio" name="radio" checked />
+				<label>Yes</label>
+			</span>
+			<span>
+				<input type="radio" name="radio" />
+				<label>No</label>
+			</span>
+			<input type="reset" name="reset" id="submitbtn" class="submitbtn" tabindex="7" value="Reset">
+		</div>
+		<div class="grid_4">
+			<input type="password" name="password" id="password" placeholder="Password" autocomplete="off" tabindex="3" >
+			<input type="url" name="url" id="url" placeholder="Url" autocomplete="off" tabindex="14" >
+			<input type="search" name="search" id="search" placeholder="Search" autocomplete="off" tabindex="15" >
+			<input type="tel" name="tel" id="tel" placeholder="Tel" autocomplete="off" tabindex="16" >
+			<input type="email" name="email" id="email" placeholder="Email" autocomplete="off" tabindex="13" >
+			<textarea name="message" id="message" placeholder="Message..." tabindex="17"></textarea>
+		</div>
+	</form>
+</div>
+
+<div class="row">
+	<form name="" id="" method="" action="">
+		<div class="grid_6">
+			<fieldset>
+				<input class="error" name="input" id="tel" placeholder="Input" autocomplete="off" tabindex="0" >
+				<small class="error">Invalid entry</small>
+			</fieldset>		
+		</div>
+	</form>
+</div>
+
+<div class="row">
+	<form name="" id="" method="" action="">
+		<div class="grid_6 search">
+			<input type="search" name="search" id="search" placeholder="Search" autocomplete="off" tabindex="15" >
+			<input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Go">
+		</div>
+		<div class="grid_6 login">
+			<input type="email" name="email" id="email" placeholder="Email" autocomplete="off" tabindex="13" >
+			<input type="password" name="password" id="password" placeholder="Password" autocomplete="off" tabindex="3" >
+			<input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Login">
+		</div>
+	</form>
+</div>
+
+</body>
+</html>
