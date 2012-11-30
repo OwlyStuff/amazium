@@ -135,7 +135,7 @@ a:hover.btn 							{ text-decoration:none; color:#333; border:1px solid #999; ba
 /***** Forms *****/
 
 form 									{ margin:16px 0; padding:0; display:inline-block; }
-form label 								{ margin:11px 0; padding:0 16px 0 0; float:left; text-align:right; display:block; font-weight:bold; width:50%; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#000; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+form label 								{ margin:11px 0; padding:0 16px 0 0; float:left; text-align:right; display:block; font-weight:bold; width:30%; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#000; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 form span 								{ margin:10px 0; padding:0; display:block; overflow:hidden; float:left; }
 form span label 						{ margin:0 16px 0 0; padding:0; display:block; font-weight:normal; width:auto; float:left; }
 fieldset 								{ margin:0; padding:0; display:block; }
@@ -186,13 +186,13 @@ form label + input[type="search"],
 form label + input[type="tel"],
 form label + input[type="color"],
 form label + textarea,
-form label + select  					{ float:left; width:50%; }
+form label + select  					{ float:left; width:70%; }
 
 select									{ padding:3px 3px 3px 4px; }
 optgroup 								{ font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#000; background-color:#f1f1f1; }
 optgroup option 						{ background-color:#FFF; }
 
-textarea 			 					{ padding-left:30px; background:transparent url('../images/icon-message.png') no-repeat 5px 5px; resize:vertical; height:112px; }
+textarea 			 					{ padding-left:30px; background:transparent url('../images/icon-message.png') no-repeat 5px 5px; resize:vertical; height:114px; }
 input[type="search"]					{ padding-left:30px; background:transparent url('../images/icon-search.png') no-repeat 5px 5px; }
 input[type="url"]						{ padding-left:30px; background:transparent url('../images/icon-url.png') no-repeat 5px 5px; }
 input[type="email"]						{ padding-left:30px; background:transparent url('../images/icon-email.png') no-repeat 5px 5px; }
