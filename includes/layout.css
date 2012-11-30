@@ -7,6 +7,8 @@
 /***** Screen 960px *****/
 
 span.example									{ margin-bottom:5px; padding:5px 0 5px 0; background-color:#EEE; text-align:center; width:100%; display:block; }
+span.example span.example						{ margin-bottom:5px; padding:5px 0 5px 0; background-color:#BBB; text-align:center; width:100%; display:block; }
+
 div.example-title								{ margin:6px 0 0 0; padding:3px 10px; background-color:#EEE; color:#333; font-size:12px; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 div.example 									{ margin:0 0 26px 0; padding:16px 16px 0 16px; border:1px solid #EEE; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 div.example + pre code							{ margin:0 0 26px 0; }
