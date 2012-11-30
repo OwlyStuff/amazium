@@ -45,7 +45,7 @@ body									{ margin:0; padding:0; background-color:#fff; font:15px/20px "Centu
 
 /***** Typography *****/
 
-h1, h2, h3, h4, h5, h6 					{ margin:0; padding:0; font-family:"Century Gothic", "Trebuchet MS", Helvetica, sans-serif; font-weight:normal; } 
+h1, h2, h3, h4, h5, h6 					{ margin:0; padding:0; font-family:"Georgia", Times New Roman, Times, serif; font-weight:normal; } 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a 		{ font-weight:inherit; color:inherit; }
 h1 										{ margin:0 0 10px 0; padding:0; font-size:50px; line-height:55px; color:#333; }
 h2										{ margin:0 0 10px 0; padding:0; font-size:40px; line-height:44px; color:#333; }
@@ -54,7 +54,7 @@ h4 										{ margin:0 0 10px 0; padding:0; font-size:24px; line-height:26px; c
 h5 										{ margin:0 0 10px 0; padding:0; font-size:18px; line-height:24px; color:#333; text-transform:uppercase; }
 h6 										{ margin:0 0 10px 0; padding:0; font-size:18px; line-height:24px; color:#333; }
 
-p 										{ margin:0 0 20px 0; padding:0; line-height:20px; }
+p 										{ margin:0 0 20px 0; padding:0; line-height:26px; }
 
 b, strong 								{ font-weight:bold; color:#333; }
 em 										{ font-style:italic; color:#666; }
@@ -64,8 +64,8 @@ sup, sub								{ height:0;	line-height:0; vertical-align:baseline; _vertical-al
 sup 									{ top:-5px; }
 sub 									{ bottom:-5px; }
 
-code 									{ margin:0; padding:4px 7px 4px; font-family:monospace, serif; color:#f1f1f1; display:inline-block; background:#000; white-space:pre; white-space:pre-wrap; word-wrap:break-word; }
-pre code								{ margin:16px 0 26px 0; padding:16px; font-family:monospace, serif; color:#f1f1f1; display:block; background-color:#000; border:1px solid #000; }
+code 									{ margin:0; padding:0 7px; font:12px/19px monospace, serif; color:#f1f1f1; display:inline-block; background:#000; white-space:pre; white-space:pre-wrap; word-wrap:break-word; }
+pre code								{ margin:16px 0 26px 0; padding:16px; font:12px/19px monospace, serif; color:#f1f1f1; display:block; background-color:#000; border:1px solid #000; }
 xmp 									{ margin:0; padding:0; }
 
 abbr[title], 
@@ -88,17 +88,17 @@ ul li									{ margin:0 0 5px 0; padding:0 0 0 18px; line-height:18px; backgrou
 
 ul ul, ul ol							{ margin:5px 0 5px 0; }
 ol ol, ol ul 							{ margin:5px 0 5px 20px; }
-ul ul li, ul ol li,	ol ol li, ol ul li 	{ margin:0 0 6px 0; }
+ul ul li, ul ol li,	ol ol li, ol ul li 	{ margin:0 0 5px 0; }
 
 ul.square, ul.square ul					{ list-style:square outside; }
 ul.circle, ul.circle ul 				{ list-style:circle outside; }
 ul.disc, ul.disc ul 					{ list-style:disc outside; }
 ul.square li,
 ul.circle li,
-ul.disc li								{ margin:0 0 5px 15px; padding:0; line-height:18px; background:none; }
+ul.disc li								{ margin:0 0 5px 18px; padding:0; line-height:18px; background:none; }
 
-ol 										{ list-style:decimal; display:block; }
-ol li									{ margin:0 0 5px 0; padding:0; line-height:18px; }
+ol 										{ list-style:decimal; }
+ol li									{ margin:0 0 0 22px; padding:0; line-height:18px; }
 
 /***** Blockquotes *****/
 
@@ -308,6 +308,7 @@ table tr td.highlight					{ padding:11px 8px; color:#FFF; font-weight:bold; disp
 .block									{ display:block; }
 .hidden									{ display:none; }
 .hide 									{ display:none; }
+.boxfix 								{ box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
 /***** Back to Top *****/
 

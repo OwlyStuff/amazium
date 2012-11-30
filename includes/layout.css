@@ -6,15 +6,17 @@
 
 /***** Screen 960px *****/
 
-span.example									{ margin-bottom:5px; padding:5px 0 5px 0; background-color:#eee; text-align:center; width:100%; display:block; }
-
-
-
+span.example									{ margin-bottom:5px; padding:5px 0 5px 0; background-color:#EEE; text-align:center; width:100%; display:block; }
+div.example-title								{ margin:6px 0 0 0; padding:3px 10px; background-color:#EEE; color:#333; font-size:12px; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+div.example 									{ margin:0 0 26px 0; padding:16px 16px 0 16px; border:1px solid #EEE; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+div.example + pre code							{ margin:0 0 26px 0; }
+div.example address 							{ margin:0 0 16px 0; }
+div.example ul, div.example ol 					{ margin:0 0 16px 0; }
 
 /***** Screen Bigger than 960px *****/
 @media only screen and (min-width:1200px) {
 
-.example										{ margin:0; padding:0; }
+
 
 }
 
@@ -23,7 +25,7 @@ span.example									{ margin-bottom:5px; padding:5px 0 5px 0; background-color:
 /***** Tablet (Smaller than 959px) *****/
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
-.example										{ margin:0; padding:0; }
+
 
 }
 
@@ -32,7 +34,7 @@ span.example									{ margin-bottom:5px; padding:5px 0 5px 0; background-color:
 /***** Phone (portrait 300px) *****/
 @media only screen and (max-width: 767px) {
 
-.example										{ margin:0; padding:0; }
+
 
 }
 
@@ -41,7 +43,7 @@ span.example									{ margin-bottom:5px; padding:5px 0 5px 0; background-color:
 /***** Phone (landscape 420px) *****/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	
-.example										{ margin:0; padding:0; }
+
 
 }
 
@@ -50,6 +52,6 @@ span.example									{ margin-bottom:5px; padding:5px 0 5px 0; background-color:
 /***** Retina *****/
 @media only screen and (-webkit-min-device-pixel-ratio:1.5) {
 
-.example										{ margin:0; padding:0; }
+
 
 }
