@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Amazium - The responsive web framework..!</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+    
+    <script type="text/javascript">
+        var browser         = navigator.userAgent;
+        var browserRegex    = /(Android|BlackBerry|IEMobile|Nokia|iP(ad|hone|od)|Opera M(obi|ini))/;
+        var isMobile        = false;
+        if(browser.match(browserRegex)) {
+            isMobile            = true;
+            addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+            function hideURLbar(){
+                window.scrollTo(0,1);
+            }
+        }
+    </script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="includes/base.css">
+    <link rel="stylesheet" href="includes/amazium.css">
+    <link rel="stylesheet" href="includes/layout.css">
+    
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
+    
+    <!-- Scripts -->
+        
+    
+</head>
+<body>
+
+
+<div class="row">
+    <div class="grid_3">
+        Side nav here..!
+    </div>
+    <div class="grid_9">
+        <h1>Typography</h1>
+        <h3>Headings</h3>
+        <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> are available.</p>
+        <div class="example-title">Example</div>
+        <div class="example">
+            <h1>H1 - Heading 1</h1>
+            <h2>H2 - Heading 2</h2>
+            <h3>H3 - Heading 3</h3>
+            <h4>H4 - Heading 4</h4>
+            <h5>H5 - Heading 5</h5>
+            <h6>H6 - Heading 6</h6>
+        </div>
+        
+        
+
+        <h3>Body copy</h3>
+        <p>By default Amazium uses Century Gothic as it's font and a font-size of 15px, with a line-height of 26px. This has been applied to the <code>&lt;body&gt;</code> and to all <code>p</code> (paragraphs). Also the line-height of a <code>p</code> is set to have a margin of 20px by default.</p>
+        <div class="example-title">Example</div>
+        <div class="example">
+            <p>Maecenas faucibus mollis interdum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Sed posuere consectetur est at lobortis.</p>
+        </div>
+        
+        
+        
+        <h3>Intro text</h3>
+        <p>There has been times when we've needed to make a paragraph stand out but for it not to be a headings (h1) so we created the class .intro which makes the font-size & line-height 130% and is perfect introduction text</p>
+        <div class="example-title">Example</div>
+        <div class="example">
+            <p class="intro">Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+        </div>
+        <pre><code>&lt;p class="intro"&gt;...&lt;/p&gt;</code></pre>
+
+
+
+        <h3>Emphasis</h3>
+        <p>Make use of HTML's default emphasis tags with lightweight styles.</p>
+        <div class="example-title">Example</div>
+        <div class="example">
+            <p><small>This paragraph is rendered for fine print.</small></p>
+            <p><strong>This paragraph is rendered as bold.</strong></p>
+            <p><em>This paragraph is rendered as italicized.</em></p>
+            <p>This paragraph contains a <abbr title="Abbreviations">abbr</abbr> word in it.</p>
+            <p>This paragraph contains a <sup>Superscript</sup> word in it.</p>
+            <p>This paragraph contains a <sub>Subscript</sub> word in it.</p>
+            <p>This paragraph is has a <span class="highlight">Highlighted</span> word in it.</p>
+        </div>
+        <pre><code>&lt;small&gt;This text is rendered for fine print.&lt;/small&gt;</code></pre>
+        <pre><code>&lt;strong&gt;This text is rendered as bold.&lt;/strong&gt;</code></pre>
+        <pre><code>&lt;em&gt;This text is rendered as italicized.&lt;/strong&gt;</em></code></pre>
+        <pre><code>&lt;abbr title="Abbreviations"&gt;abbr&lt;/abbr&gt;</em></code></pre>
+        <pre><code>&lt;sup&gt;Superscript&lt;/sup&gt;</code></pre>
+        <pre><code>&lt;sub&gt;Subscript&lt;/sub&gt;</code></pre>
+        <pre><code>&lt;span class="highlight"&gt;>Highlighted&lt;/span&gt;</code></pre>
+
+
+
+        <h3>Addresses</h3>
+        <p>Present contact information for the nearest ancestor or the entire body of work.</p>
+        <div class="example-title">Example</div>
+        <div class="example">
+            <address>
+                <strong>Your Company Name</strong><br>
+                123 Something Road,<br>
+                Your City, AB 12345<br>
+                <abbr title="Telephone">T:</abbr> (123) 456-7890
+            </address>
+            <address>
+                <strong>Your Name</strong><br>
+                <a href="mailto:#">your.name@yourname.com</a>
+            </address>  
+        </div>
+        <pre><code>&lt;address&gt;...&lt;/address&gt;</em></code></pre>
+        
+        <h3>Blockquote</h3>
+        <p>Present contact information for the nearest ancestor or the entire body of work.</p>
+        <div class="example-title">Example</div>
+        <div class="example">
+            <figure>
+                <blockquote cite="http://www.amazium.co.uk">
+                    <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur.</p>
+                </blockquote>
+                <figcaption>Mike Ballan</figcaption>
+            </figure>
+        </div>
+        <pre><code>&lt;figure&gt;
+    &lt;blockquote cite="http://www.amazium.co.uk"&gt;
+        ...
+    &lt;/blockquote&gt;
+    &lt;figcaption&gt;
+        Mike Ballan
+    &lt;/figcaption&gt;
+&lt;/figure&gt;</em></code></pre>
+
+
+        <h3>Lists</h3>  
+        <p>A list of items in which the order does not explicitly matter.</p>
+        <div class="row">
+            <div class="grid_2">
+                <ul>
+                    <li>List item 01</li>
+                    <li>
+                        List item 02
+                        <ul>
+                            <li>List item 01a</li>
+                            <li>List item 01b</li>
+                            <li>List item 01c</li>
+                        </ul>
+                    </li>
+                    <li>List item 03</li>
+                </ul>
+            </div>
+            <div class="grid_2">
+                <ol>
+                    <li>List item 01</li>
+                    <li>
+                        List item 02
+                        <ol>
+                            <li>List item 01a</li>
+                            <li>List item 01b</li>
+                            <li>List item 01c</li>
+                        </ol>
+                    </li>
+                    <li>List item 03</li>
+                </ol>
+            </div>
+            <div class="grid_2">
+                <ul class="circle">
+                    <li>List item 01</li>
+                    <li>
+                        List item 02
+                        <ul>
+                            <li>List item 01a</li>
+                            <li>List item 01b</li>
+                            <li>List item 01c</li>
+                        </ul>
+                    </li>
+                    <li>List item 03</li>
+                </ul>
+            </div>
+            <div class="grid_2">
+                <ul class="square">
+                    <li>List item 01</li>
+                    <li>
+                        List item 02
+                        <ul>
+                            <li>List item 01a</li>
+                            <li>List item 01b</li>
+                            <li>List item 01c</li>
+                        </ul>
+                    </li>
+                    <li>List item 03</li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Lists
+        Unordered
+
+        A list of items in which the order does not explicitly matter.
+
+        Lorem ipsum dolor sit amet
+        Consectetur adipiscing elit
+        Integer molestie lorem at massa
+        Facilisis in pretium nisl aliquet
+        Nulla volutpat aliquam velit
+        Phasellus iaculis neque
+        Purus sodales ultricies
+        Vestibulum laoreet porttitor sem
+        Ac tristique libero volutpat at
+        Faucibus porta lacus fringilla vel
+        Aenean sit amet erat nunc
+        Eget porttitor lorem
+
+        <ul>
+        <li>...</li>
+        </ul>
+
+        Ordered
+
+        A list of items in which the order does explicitly matter.
+
+        Lorem ipsum dolor sit amet
+        Consectetur adipiscing elit
+        Integer molestie lorem at massa
+        Facilisis in pretium nisl aliquet
+        Nulla volutpat aliquam velit
+        Faucibus porta lacus fringilla vel
+        Aenean sit amet erat nunc
+        Eget porttitor lorem
+
+        <ol>
+        <li>...</li>
+        </ol>
+
+        Unstyled
+
+        A list of items with no list-style or additional left padding.
+
+        Lorem ipsum dolor sit amet
+        Consectetur adipiscing elit
+        Integer molestie lorem at massa
+        Facilisis in pretium nisl aliquet
+        Nulla volutpat aliquam velit
+        Phasellus iaculis neque
+        Purus sodales ultricies
+        Vestibulum laoreet porttitor sem
+        Ac tristique libero volutpat at
+        Faucibus porta lacus fringilla vel
+        Aenean sit amet erat nunc
+        Eget porttitor lorem
+
+        <ul class="unstyled">
+        <li>...</li>
+        </ul>-->
