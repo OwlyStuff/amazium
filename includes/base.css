@@ -47,12 +47,12 @@ body									{ margin:0; padding:0; background-color:#fff; font:15px/20px "Centu
 
 h1, h2, h3, h4, h5, h6 					{ margin:0; padding:0; font-family:"Georgia", Times New Roman, Times, serif; font-weight:normal; } 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a 		{ font-weight:inherit; color:inherit; }
-h1 										{ margin:0 0 10px 0; padding:0; font-size:50px; line-height:55px; color:#333; }
-h2										{ margin:0 0 10px 0; padding:0; font-size:40px; line-height:44px; color:#333; }
-h3 										{ margin:0 0 10px 0; padding:0; font-size:30px; line-height:34px; color:#333; }
-h4 										{ margin:0 0 10px 0; padding:0; font-size:24px; line-height:26px; color:#333; }
-h5 										{ margin:0 0 10px 0; padding:0; font-size:18px; line-height:24px; color:#333; text-transform:uppercase; }
-h6 										{ margin:0 0 10px 0; padding:0; font-size:18px; line-height:24px; color:#333; }
+h1 										{ margin:0 0 10px 0; padding:0; font-size:38px; line-height:40px; color:#333; }
+h2										{ margin:0 0 10px 0; padding:0; font-size:32px; line-height:34px; color:#333; }
+h3 										{ margin:0 0 10px 0; padding:0; font-size:24px; line-height:26px; color:#333; }
+h4 										{ margin:0 0 10px 0; padding:0; font-size:17px; line-height:19px; color:#333; }
+h5 										{ margin:0 0 10px 0; padding:0; font-size:14px; line-height:16px; color:#333; }
+h6 										{ margin:0 0 10px 0; padding:0; font-size:11px; line-height:13px; color:#333; }
 
 p 										{ margin:0 0 20px 0; padding:0; line-height:26px; }
 
@@ -134,11 +134,12 @@ a:hover.btn 							{ text-decoration:none; color:#333; border:1px solid #999; ba
 
 /***** Forms *****/
 
-form 									{ margin:16px 0; padding:0; display:inline-block; }
+form 									{ margin:16px 0; padding:0; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 form label 								{ margin:11px 0; padding:0 16px 0 0; float:left; text-align:right; display:block; font-weight:bold; width:30%; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#000; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+form label.checkbox,
+form label.radio						{ text-align:left; width:auto; }
 form span 								{ margin:10px 0; padding:0; display:block; overflow:hidden; float:left; }
-form span label 						{ margin:0 16px 0 0; padding:0; display:block; font-weight:normal; width:auto; float:left; }
-fieldset 								{ margin:0; padding:0; display:block; }
+fieldset 								{ margin:0; padding:0; display:block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
 input,
 input[type="text"],
@@ -200,7 +201,7 @@ input[type="tel"]						{ padding-left:30px; background:transparent url('../image
 input[type="password"]					{ padding-left:30px; background:transparent url('../images/icon-password.png') no-repeat 5px 5px; }
 
 input[type="checkbox"],
-input[type="radio"] 					{ margin:3px 6px 0 0; padding:0; border:solid 1px #BBB; width:auto; float:left; }
+input[type="radio"] 					{ margin:3px 6px 0 0; padding:0; border:solid 1px #BBB; width:auto; float:left; display:block; }
 
 input[type="button"],
 input[type="submit"] 					{ margin:6px 0; padding:3px 4px 3px 6px; display:inline-block; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#fff; border:1px solid #000; float:left; width:100%; background:#000 url(../images/btn-arrow.png) no-repeat right; cursor:pointer; }
@@ -269,6 +270,35 @@ select.error							{ margin:6px 0 0 0; color:#C60F13; border-color:#C60F13; back
 
 input + small.error 					{ margin:0 0 6px 0; padding:3px 5px 5px 8px; color:#FFF; border-color:#C60F13; background-color:#C60F13; width:100%; display:block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
+
+/***** Correct *****/
+
+form label.correct 						{ color:#C60F13; }
+
+input.correct,
+input.correct[type="text"],
+input.correct[type="text"],
+input.correct[type="password"],
+input.correct[type="file"],
+input.correct[type="hidden"],
+input.correct[type="image"],
+input.correct[type="datetime"],
+input.correct[type="datetime-local"],
+input.correct[type="date"],
+input.correct[type="month"],
+input.correct[type="time"],
+input.correct[type="week"],
+input.correct[type="number"],
+input.correct[type="range"],
+input.correct[type="email"],
+input.correct[type="website"],
+input.correct[type="url"],
+input.correct[type="search"],
+input.correct[type="tel"],
+input.correct[type="color"],
+textarea.correct,
+select.correct							{ margin:6px 0 0 0; color:#468847; border-color:#468847; background-color:#FFF; }
+
 /***** Tables *****/
 
 table									{ margin:20px 0 40px 0; width:100%; }
@@ -305,6 +335,7 @@ table tr td.highlight					{ padding:11px 8px; color:#FFF; font-weight:bold; disp
 .noindent  						   		{ margin-left:0; padding-left:0; }
 .nobullet  					   			{ list-style:none; list-style-image:none; }
 
+.inline									{ display:inline; }
 .block									{ display:block; }
 .hidden									{ display:none; }
 .hide 									{ display:none; }

@@ -6,6 +6,7 @@
 
 /***** Screen 960px *****/
 
+h1 sup 											{ top:-15px; font-size:50%; }
 span.example									{ margin-bottom:5px; padding:5px 0 5px 0; background-color:#EEE; text-align:center; width:100%; display:block; }
 span.example span.example						{ margin-bottom:5px; padding:5px 0 5px 0; background-color:#BBB; text-align:center; width:100%; display:block; }
 
@@ -13,6 +14,7 @@ div.example-title								{ margin:6px 0 0 0; padding:3px 10px; background-color:
 div.example 									{ margin:0 0 26px 0; padding:16px 16px 0 16px; border:1px solid #EEE; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 div.example + pre code							{ margin:0 0 26px 0; }
 div.example address 							{ margin:0 0 16px 0; }
+div.example .grid_6								{ width:543px; }
 
 /***** Screen Bigger than 960px *****/
 @media only screen and (min-width:1200px) {

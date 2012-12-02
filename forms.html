@@ -44,134 +44,204 @@
 
 <div class="row">
     <div class="grid_12">
-        <h1>Forms</h1>
+        <h1>Amazium documentation</h1>
+        <h2>Donec id elit non mi porta gravida at eget metus.</h2>
+        <h3>Forms with Label's</h3>
         <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper.</p>
-        <h2>Forms with Label's</h2>
+
+		<div class="example-title">Example</div>
+	    <div class="example">
+	    	<form name="" id="" method="" action="">
+	    		<div class="row">
+	    			<div class="grid_6">
+						<fieldset>
+							<label>Input</label>
+							<input type="input" name="input" id="input" placeholder="Input" autocomplete="off" tabindex="1" />
+							<label>Name</label>
+							<input type="text" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" />
+							<label>Text</label>
+							<input type="text" name="text" id="text" placeholder="Text" autocomplete="off" tabindex="2" />
+							<label>Password</label>
+							<input type="password" name="password" id="password" placeholder="Password" autocomplete="off" tabindex="3" />
+							<label>URL</label>
+							<input type="url" name="url" id="url" placeholder="Url" autocomplete="off" tabindex="14" />	
+							<label>Search</label>
+							<input type="search" name="search" id="search" placeholder="Search" autocomplete="off" tabindex="15" />
+						</fieldset>
+					</div>
+					<div class="grid_6">
+						<fieldset>
+							<label>Tel</label>
+							<input type="tel" name="tel" id="tel" placeholder="Tel" autocomplete="off" tabindex="16" />
+							<label>Email</label>
+							<input type="email" name="email" id="email" placeholder="Email" autocomplete="off" tabindex="13" />
+							<label>Options</label>
+							<select id="dropdown" name="dropdown" tabindex="18" />
+						    	<option selected>Option 1</option>
+						    	<option>Option 2</option>
+						    	<optgroup label="Option group 1">
+						    		<option>Sub option 1</option>
+						    		<option>Sub option 2</option>
+						    		<option>Sub option 3</option>
+						    	</optgroup>
+						    	<option>Option 3</option>
+							</select>
+							<label>Message</label>
+							<textarea name="message" id="message" placeholder="Message..." tabindex="17"></textarea>
+						</fieldset>
+					</div>
+				</div>
+	    	</form>
+	    </div>
+	    <pre><code>&lt;label&gt;Input&lt;/label&gt;
+&lt;input type="input" name="input" id="input" placeholder="Input" autocomplete="off" tabindex="1" /&gt;</code></pre>
+
+
+        <h3>Forms without lables</h3>
         <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper.</p>
+
+		<div class="example-title">Example</div>
+	    <div class="example">
+	    	<form name="" id="" method="" action="">
+	    		<div class="row">
+	    			<div class="grid_6">
+						<fieldset>
+							<input type="input" name="input" id="input" placeholder="Input" autocomplete="off" tabindex="1" />
+							<input type="text" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" />
+							<input type="text" name="text" id="text" placeholder="Text" autocomplete="off" tabindex="2" />
+							<input type="password" name="password" id="password" placeholder="Password" autocomplete="off" tabindex="3" />
+							<input type="url" name="url" id="url" placeholder="Url" autocomplete="off" tabindex="14" />	
+							<input type="search" name="search" id="search" placeholder="Search" autocomplete="off" tabindex="15" />
+						</fieldset>
+					</div>
+					<div class="grid_6">
+						<fieldset>
+							<input type="tel" name="tel" id="tel" placeholder="Tel" autocomplete="off" tabindex="16" />
+							<input type="email" name="email" id="email" placeholder="Email" autocomplete="off" tabindex="13" />
+							<select id="dropdown" name="dropdown" tabindex="18" />
+						    	<option selected>Option 1</option>
+						    	<option>Option 2</option>
+						    	<optgroup label="Option group 1">
+						    		<option>Sub option 1</option>
+						    		<option>Sub option 2</option>
+						    		<option>Sub option 3</option>
+						    	</optgroup>
+						    	<option>Option 3</option>
+							</select>
+							<textarea name="message" id="message" placeholder="Message..." tabindex="17"></textarea>
+						</fieldset>
+					</div>
+				</div>
+	    	</form>
+    	</div>
+    	<pre><code>&lt;input type="input" name="input" id="input" placeholder="Input" autocomplete="off" tabindex="1" /&gt;</code></pre>
+
+		<h3>Radio & Checkboxes</h3>
+        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper.</p>
+
+		<div class="example-title">Example</div>
+	    <div class="example">
+	    	<form name="" id="" method="" action="">
+	    		<div class="row">
+	    			<div class="grid_6">
+						<fieldset>
+							<label class="checkbox"><input type="checkbox" name="checkbox" checked />Checkbox 1 - Maecenas sed diam eget risus varius blandit sit amet non magna.</label>
+							<label class="checkbox"><input type="checkbox" name="checkbox" />Checkbox 2</label>
+							<label class="checkbox"><input type="checkbox" name="checkbox" />Checkbox 3</label>
+						</fieldset>
+					</div>
+					<div class="grid_6">
+						<fieldset>
+							<label class="radio"><input type="radio" name="radio" checked />Yes - Cras justo odio, dapibus ac facilisis in, egestas eget quam.</label>
+							<label class="radio"><input type="radio" name="radio" />No - Maecenas sed diam eget risus varius blandit sit amet non magna.</label>
+						</fieldset>
+					</div>
+				</div>
+	    	</form>
+    	</div>
+    	<pre><code>&lt;label class="checkbox"&gt;&lt;input type="checkbox" name="checkbox" checked /&gt;...&lt;/label&gt;
+&lt;label class="radio"&gt;&lt;input type="radio" name="radio" checked /&gt;...&lt;/label&gt;</code></pre>
+		
+		<h3>Form Errors</h3>
+        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper.</p>
+
+		<div class="example-title">Example</div>
+	    <div class="example">
+	    	<form name="" id="" method="" action="">
+	    		<div class="row">
+	    			<div class="grid_6">
+						<fieldset>
+							<input class="error" name="name" id="tel" placeholder="Name" autocomplete="off" tabindex="0" >
+							<small class="error">Invalid entry</small>
+						</fieldset>
+					</div>
+					<div class="grid_6">
+						<fieldset>
+							<input class="correct" name="name" id="tel" placeholder="Name" autocomplete="off" tabindex="0" >
+						</fieldset>
+					</div>
+				</div>
+	    	</form>
+    	</div>
+    	<pre><code>&lt;input class="error" name="input" id="tel" placeholder="Input" autocomplete="off" tabindex="0"&gt;
+&lt;small class="error"&gt;Invalid entry&lt;/small&gt;</code></pre>
+
+		<h3>Search & Login</h3>
+        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper.</p>
+
+		<div class="example-title">Example</div>
+	    <div class="example">
+	    	<form name="" id="" method="" action="">
+	    		<div class="row">
+	    			<div class="grid_6">
+						<fieldset class="search">
+							<input type="search" name="search" id="search" placeholder="Search" autocomplete="off" tabindex="15" >
+							<input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Go">
+						</fieldset>
+					</div>
+					<div class="grid_6">
+						<fieldset class="login">
+							<input type="email" name="email" id="email" placeholder="Email" autocomplete="off" tabindex="13" >
+							<input type="password" name="password" id="password" placeholder="Password" autocomplete="off" tabindex="3" >
+							<input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Login">
+						</fieldset>
+					</div>
+				</div>
+	    	</form>
+    	</div>
+    	<pre><code>&lt;input type="search" name="search" id="search" placeholder="Search" autocomplete="off" tabindex="15"&gt;
+&lt;input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Go"&gt;</code></pre>
+
+    	<pre><code>&lt;input type="email" name="email" id="email" placeholder="Email" autocomplete="off" tabindex="13"&gt;
+&lt;input type="password" name="password" id="password" placeholder="Password" autocomplete="off" tabindex="3" &gt;
+&lt;input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Login"&gt;</code></pre>
+
+
+		<h3>Buttons</h3>
+        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper.</p>
+
+		<div class="example-title">Example</div>
+	    <div class="example">
+	    	<form name="" id="" method="" action="">
+	    		<div class="row">
+	    			<div class="grid_6">
+						<fieldset class="search">
+							<input type="reset" name="reset" id="submitbtn" class="submitbtn" tabindex="7" value="Reset" />
+							<input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Submit" />
+						</fieldset>
+					</div>
+					<div class="grid_6">
+						<fieldset class="login">
+							<input type="reset" name="reset" id="submitbtn" class="submitbtn" tabindex="7" value="Reset" />
+							<input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Submit" />
+						</fieldset>
+					</div>
+				</div>
+	    	</form>
+    	</div>
+    	<pre><code>&lt;input type="search" name="search" id="search" placeholder="Search" autocomplete="off" tabindex="15"&gt;
+&lt;input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Go"&gt;</code></pre>
     </div>
 </div>
-
-<div class="row">
-	<form name="" id="" method="" action="">
-		<div class="grid_6">
-			<fieldset>
-				<label>Name</label>
-				<input type="text" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" />
-				<label>Text</label>
-				<input type="text" name="text" id="text" placeholder="Text" autocomplete="off" tabindex="2" />
-				<label>Options</label>
-				<select id="dropdown" name="dropdown" tabindex="18" />
-			    	<option selected>Option 1</option>
-			    	<option>Option 2</option>
-			    	<optgroup label="Option group 1">
-			    		<option>Sub option 1</option>
-			    		<option>Sub option 2</option>
-			    		<option>Sub option 3</option>
-			    	</optgroup>
-			    	<option>Option 3</option>
-				</select>
-				<label>Password</label>
-				<input type="password" name="password" id="password" placeholder="Password" autocomplete="off" tabindex="3" />
-				<label>URL</label>
-				<input type="url" name="url" id="url" placeholder="Url" autocomplete="off" tabindex="14" />	
-				<label>Search</label>
-				<input type="search" name="search" id="search" placeholder="Search" autocomplete="off" tabindex="15" />
-			</fieldset>
-		</div>
-		<div class="grid_6">
-			<fieldset>
-				<label>Tel</label>
-				<input type="tel" name="tel" id="tel" placeholder="Tel" autocomplete="off" tabindex="16" />
-				<label>Email</label>
-				<input type="email" name="email" id="email" placeholder="Email" autocomplete="off" tabindex="13" />
-				<textarea name="message" id="message" placeholder="Message..." tabindex="17"></textarea>
-				<input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Submit" />
-			</fieldset>			
-		</div>
-	</form>
-</div>
-
-<div class="row">
-	<div class="grid_6">
-        <h2>Forms with Placeholders</h2>
-        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper.</p>
-    </div>
-</div>
-
-<div class="row">
-	<form name="" id="" method="" action="">
-		<div class="grid_6">
-			<fieldset>
-				<input name="input" id="input" placeholder="Input" autocomplete="off" tabindex="0" />
-				<input type="text" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" />
-				<input type="text" name="text" id="text" placeholder="Text" autocomplete="off" tabindex="2" />
-				<span>
-					<input type="checkbox" name="checkbox_2" />
-					<label>Checkbox 1</label>
-				</span>
-				<span>
-					<input type="checkbox" name="checkbox_2" />
-					<label>Checkbox 2</label>
-				</span>
-				<select id="dropdown" name="dropdown" tabindex="18" />
-			    	<option selected>Option 1</option>
-			    	<option>Option 2</option>
-			    	<optgroup label="Option group 1">
-			    		<option>Sub option 1</option>
-			    		<option>Sub option 2</option>
-			    		<option>Sub option 3</option>
-			    	</optgroup>
-			    	<option>Option 3</option>
-				</select>
-				<span>
-					<input type="radio" name="radio" checked />
-					<label>Yes</label>
-				</span>
-				<span>
-					<input type="radio" name="radio" />
-					<label>No</label>
-				</span>
-			</fieldset>
-		</div>
-		<div class="grid_6">
-			<fieldset>
-				<input type="password" name="password" id="password" placeholder="Password" autocomplete="off" tabindex="3" />
-				<input type="url" name="url" id="url" placeholder="Url" autocomplete="off" tabindex="14" />
-				<input type="search" name="search" id="search" placeholder="Search" autocomplete="off" tabindex="15" />
-				<input type="tel" name="tel" id="tel" placeholder="Tel" autocomplete="off" tabindex="16" />
-				<input type="email" name="email" id="email" placeholder="Email" autocomplete="off" tabindex="13" />
-				<textarea name="message" id="message" placeholder="Message..." tabindex="17"></textarea>
-				<input type="reset" name="reset" id="submitbtn" class="submitbtn" tabindex="7" value="Reset" />
-				<input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Submit" />
-			</fieldset>			
-		</div>
-	</form>
-</div>
-
-<div class="row">
-	<form name="" id="" method="" action="">
-		<div class="grid_6">
-			<fieldset>
-				<input class="error" name="input" id="tel" placeholder="Input" autocomplete="off" tabindex="0" >
-				<small class="error">Invalid entry</small>
-			</fieldset>		
-		</div>
-	</form>
-</div>
-
-<div class="row">
-	<form name="" id="" method="" action="">
-		<div class="grid_6 search">
-			<input type="search" name="search" id="search" placeholder="Search" autocomplete="off" tabindex="15" >
-			<input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Go">
-		</div>
-		<div class="grid_6 login">
-			<input type="email" name="email" id="email" placeholder="Email" autocomplete="off" tabindex="13" >
-			<input type="password" name="password" id="password" placeholder="Password" autocomplete="off" tabindex="3" >
-			<input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Login">
-		</div>
-	</form>
-</div>
-
 </body>
 </html>
