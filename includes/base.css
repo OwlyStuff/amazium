@@ -112,7 +112,7 @@ figcaption								{ margin:6px 0 0 0; padding:0; font-size:11px; }
 
 /***** Links *****/
 
-a:link 									{ color:#000; text-decoration:underline; outline:0; transition-property:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
+a:link 									{ color:#000; text-decoration:underline; outline:0; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
 a:visited 								{ color:#000; text-decoration:underline; outline:0; }
 a:active 								{ color:#000; text-decoration:underline; outline:0; }
 a:hover 			 					{ color:#999; text-decoration:underline; outline:0; }
