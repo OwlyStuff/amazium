@@ -6,8 +6,6 @@
 
 /***** Screen 960px *****/
 
-body 											{ background:transparent url('../images/bg-02.jpg') no-repeat center 0; }
-
 h1 sup 											{ top:-15px; font-size:50%; }
 span.example									{ margin-bottom:5px; padding:5px 0 5px 0; background-color:#EEE; text-align:center; width:100%; display:block; }
 span.example span.example						{ margin-bottom:5px; padding:5px 0 5px 0; background-color:#BBB; text-align:center; width:100%; display:block; }
@@ -16,7 +14,7 @@ div.example-title								{ margin:6px 0 0 0; padding:3px 10px; background-color:
 div.example 									{ margin:0 0 26px 0; padding:16px 16px 0 16px; border:1px solid #EEE; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 div.example + pre code							{ margin:0 0 26px 0; }
 div.example address 							{ margin:0 0 16px 0; }
-div.example .grid_6								{ width:543px; }
+div.example .grid_6								{ width:431px; }
 
 /***** Navigation *****/
 
@@ -38,14 +36,14 @@ a.navigation-btn img 							{ padding:0; width:36px; height:auto; }
 #navigation ul li.download						{ margin:0 0 0 18px; float:right; border:none; background:transparent url('../images/icon-download-small.png') no-repeat right 8px; }
 #navigation ul li.download a					{ margin:0 30px 0 0; background:transparent url('../images/underline.png') repeat-x 0 20px; }
 
-#bokeh-intro									{ margin:0 0 30px 0; padding:120px 0 70px 0; width:100%; }
+#bokeh-intro									{ margin:0 0 30px 0; padding:100px 0 70px 0; width:100%; background:transparent url('../images/bg-02.jpg') no-repeat center 0; }
 #bokeh-intro h1 								{ color:#FFF; font-size:40px; line-height:42px; text-shadow: #000 0 2px 2px; }
 #bokeh-intro h2 								{ color:#FFF; font-size:18px; line-height:20px; text-shadow: #000 0 2px 2px; }
 
 /***** Screen Bigger than 960px *****/
 @media only screen and (min-width:1200px) {
 
-
+div.example .grid_6								{ width:543px; }
 
 }
 
@@ -54,7 +52,12 @@ a.navigation-btn img 							{ padding:0; width:36px; height:auto; }
 /***** Tablet (Smaller than 959px) *****/
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
+div.example .grid_6								{ width:339px; }
 
+#navigation ul li.download						{ display:none; }
+#navigation ul li.last 							{ background-image:none; }
+
+#bokeh-intro									{ background-position:-700px 0; }
 
 }
 
@@ -63,7 +66,29 @@ a.navigation-btn img 							{ padding:0; width:36px; height:auto; }
 /***** Phone (portrait 300px) *****/
 @media only screen and (max-width: 767px) {
 
+div.example .grid_6								{ width:262px; }
 
+#navigation 									{ padding:5px 0 10px 0; height:auto; background-repeat:repeat; position:relative; }
+#navigation ul 									{ margin:0; padding:0; width:100%; color:#FFF; text-transform:uppercase; text-shadow: #000 0 2px 2px; }
+#navigation ul li 								{ margin:0; padding:0; float:none; display:block; background-image:none; line-height:37px; background:none; }
+
+#navigation ul li a								{ margin:0; padding:0 0 5px 0; color:#FFF; display:block; text-decoration:none; background:transparent url('../images/underline.png') repeat-x 0 30px; }
+#navigation ul li a:hover,
+#navigation ul li.current a 					{ color:#FFF; background:transparent url('../images/underline.png') repeat-x 0 30px;  }
+#navigation ul li.last 							{ background-image:none; }
+
+#navigation ul li.logo 							{ display:none; }
+
+#navigation ul li.download						{ margin:0; float:none; border:none; background:transparent url('../images/icon-download-small.png') no-repeat right 8px; }
+#navigation ul li.download a					{ margin:0; display:block; background:transparent url('../images/underline.png') repeat-x 0 30px; }
+
+a.amazium-phone									{ float:left; height:40px; overflow:hidden; }
+a.amazium-phone img								{ padding:7px 0 0 0; height:50px; }
+
+a.navigation-btn 								{ margin:0; display:inline-block; }
+.navigation										{ display:none; width:300px; }
+
+#bokeh-intro									{ padding:40px 0; background-position:left 0; }
 
 }
 
@@ -72,7 +97,9 @@ a.navigation-btn img 							{ padding:0; width:36px; height:auto; }
 /***** Phone (landscape 420px) *****/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	
+.navigation										{ width:456px; }
 
+div.example .grid_6								{ width:442px; }
 
 }
 
