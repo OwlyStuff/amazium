@@ -42,21 +42,40 @@
 </head>
 <body>
 
+<div id="navigation">
+    <div class="row">
+        <div class="grid_12">
+            <a href="#" class="amazium-phone show-phone"><img src="images/amazium-logo.png"></a>
+            <a href="#" class="navigation-btn"><img src="images/icon-menu.png" width="35" height="35"></a>
+            <div class="navigation">
+                <ul>
+                    <li class="logo"><a href="#"><img src="images/amazium-logo-small.png"></a></li>
+                    <li><a href="#">Home</a></li>
+                    <li class="current"><a href="grid.html">Grid</a></li>
+                    <li><a href="typography.html">Typography</a></li>
+                    <li><a href="forms.html">Forms</a></li>
+                    <li><a href="#">Containing</a></li>
+                    <li class="download"><a href="#">Download Amazium</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="bokeh-intro">
+    <div class="row">
+        <div class="grid_12">
+            <h1>The 960px Grid</h1>
+            <h2>The Grid. A digital frontier. I tried to picture clusters of information as they traveled through the computer. Ships, motorcycles. With the circuits like freeways. I kept dreaming of a world I thought I’d never see. And then, one day...</h2>
+        </div>
+    </div>
+</div>
 
 <div class="row">
     <div class="grid_12">
-        <h1>Amazium documentation</h1>
-        <h2>Donec id elit non mi porta gravida at eget metus.</h2>
-        <h3>The Grid</h3>
-        <p>Create powerful multi-device layouts quickly and easily with the 12-column, nestable Foundation grid. If you're familiar with grid systems, you'll feel right at home.</p>
         <h3>The Basics</h3>
-        <p>The grid is built around two key elements: rows and columns. Rows create a max-width and contain the columns; columns create the actual structure. For layouts to work properly, always put your page content inside a row and a column.</p>
-        <p>What you need to know is that columns don't have a fixed width. They can vary based on the resolution of the screen, or the size of the window (try scaling down this window to see what we mean). Design with that in mind.</p>
-        <h3>Technical Details</h3>
-        <p>The Foundation 3 grid, like everything else in Foundation 3, is built with box-sizing: border-box, a powerful CSS property that tells the browser to consider border and padding as part of the width of an object rather than as an addition. That enables us to construct the grid extremely simply, which is good news for anyone who lamented how difficult it was to modify the Foundation 2 grid.</p>
-        <p>Gutters are created simply with padding on the columns. That means columns have simple widths like 25%, or 50%. Adjusting the padding adjusts the gutters, and this can be controlled either through Scss variables, the download customizer, or through the CSS itself.</p>
-        <h3>Examples</h3>
-        <p>Below is a visible example of the grid. Each column block is sized based on how many of the 12 columns it takes up, and where you see thicker borders it's because two columns are running against each other.</p>
+        <p>OK so the 960 Grid is what you would expect most modern websites to follow as its set up to be a max width of 960px which will fit the most common screen resolution 1024x768. but as of late I've noticed a lot of sites have been pushing this to 1200 so I've added another query to allow your site to scale to 1200px..! But for the sake of the demos on this site i'll stay with the standard 960px</p>
+        <p>Now to date I have not found a simpler way to build a website than this system which only relies on the below code to achieve a solid website. And as most new browsers excepting the "Media Queries" code we are now able to resize the grid based on your screen resolution so if you were to view this on say an iPhone you would get an optimised version of the grid which means you no longer have to zoom in to see text on a website. (Go on give it a try now and see the below stay responsive..!)</p>
     </div>
 </div>
 
@@ -100,8 +119,10 @@
 
 <div class="row">
     <div class="grid_12">
+        <p>Now as you can see from the above grid layout I have made Amazium have 16px gutters/margins left & right which could be changed if you wanted less but I had been using 10px before but found them a little tight for my liking.</p>
+        
         <h3>Offsetting</h3>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+        <p>Amazium also has the option to offset a column, which should make life all the bit easier if you you need to add an extra bit of space between columns. This is done by adding the class <code>offset</code> followed by how many columns you want the offset to be i.e. if you want to have an offset of 4 then a column of 8 all you need to do is add <code>offset_4</code> after <code>grid_8</code>.</p>
     </div>
 </div>
 
@@ -128,7 +149,7 @@
 <div class="row">
     <div class="grid_12">
         <h3>Nesting</h3>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+        <p>If you wanted to nest two columns inside a larger this is no problem either as the below code shows and there is no need to add/change your CSS either..!</p>
     </div>
 </div>
         
