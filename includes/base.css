@@ -86,8 +86,10 @@ ol ol, ol ul 							{ margin:0 0 5px 20px; }
 ul ul li 								{ margin:0 0 5px 0; }
 ul ol li,	ol ol li, ol ul li 			{ margin:0 0 3px 0; }
 
-ul.square, ul.square ul					{ list-style:square outside; }
-ul.circle, ul.circle ul 				{ list-style:circle outside; }
+ul.square, ul.square ul, 
+ul.circle ul.square						{ list-style:square outside; }
+ul.circle, ul.circle ul, 
+ul.square ul.circle 					{ list-style:circle outside; }
 ul.disc, ul.disc ul 					{ list-style:disc outside; }
 ul.square li,
 ul.circle li,
@@ -96,9 +98,9 @@ ul.disc li								{ margin:0 0 5px 18px; padding:0; line-height:18px; background
 ol 										{ list-style:decimal; }
 ol li									{ margin:0 0 5px 22px; padding:0; line-height:18px; }
 
-dt, dd 									{ line-height:20px; }
-dt 										{ font-weight:bold; }
-dd 										{ margin-left:10px; }
+dl 										{ margin:16px 0 26px 0; padding:0; }
+dt 										{ margin:0 0 10px 0; font-size:18px; line-height:20px; font-weight:bold; }
+dd 										{ margin:0 0 10px 10px; }
 
 /***** Blockquotes *****/
 

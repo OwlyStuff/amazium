@@ -6,6 +6,8 @@
 
 /***** Screen 960px *****/
 
+body 											{ background:transparent url('../images/bg-02.jpg') no-repeat center 0; }
+
 h1 sup 											{ top:-15px; font-size:50%; }
 span.example									{ margin-bottom:5px; padding:5px 0 5px 0; background-color:#EEE; text-align:center; width:100%; display:block; }
 span.example span.example						{ margin-bottom:5px; padding:5px 0 5px 0; background-color:#BBB; text-align:center; width:100%; display:block; }
@@ -36,7 +38,7 @@ a.navigation-btn img 							{ padding:0; width:36px; height:auto; }
 #navigation ul li.download						{ margin:0 0 0 18px; float:right; border:none; background:transparent url('../images/icon-download-small.png') no-repeat right 8px; }
 #navigation ul li.download a					{ margin:0 30px 0 0; background:transparent url('../images/underline.png') repeat-x 0 20px; }
 
-#bokeh-intro									{ margin:0 0 30px 0; padding:120px 0 70px 0; width:100%; background:transparent url('../images/bg-01.jpg') no-repeat center 0; background-attachment:fixed;  }
+#bokeh-intro									{ margin:0 0 30px 0; padding:120px 0 70px 0; width:100%; }
 #bokeh-intro h1 								{ color:#FFF; font-size:40px; line-height:42px; text-shadow: #000 0 2px 2px; }
 #bokeh-intro h2 								{ color:#FFF; font-size:18px; line-height:20px; text-shadow: #000 0 2px 2px; }
 

@@ -85,16 +85,12 @@
             <h6>H6 - Heading 6</h6>
         </div>
         
-        
-
         <h3>Body copy</h3>
-        <p>In Amazium I have set up all the basic typography styling which includes font type defaulted to 15px Century Gothic, but you can easily change in at the very top of the base.css file and all regular paragraphs are set with 26px line height and 20px padding to the bottom of them.</p>
+        <p>Amazium have been set up so that all the basic typography styling is 15px Century Gothic, with all regular <code>p</code> paragraphs are setup with 26px line height and 20px padding to the bottom of them. But you can easily change in at the very top of the <code>base.css</code> file.</p>
         <div class="example-title">Example</div>
         <div class="example">
-            <p>Maecenas faucibus mollis interdum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Sed posuere consectetur est at lobortis.</p>
+            <p>Maecenas faucibus mollis interdum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
         </div>
-        
-        
         
         <h3>Intro text</h3>
         <p>There has been times when we've needed to make a paragraph stand out but for it not to be a headings (h1) so we created the class .intro which makes the font-size & line-height 130% and is perfect introduction text</p>
@@ -103,20 +99,24 @@
             <p class="intro">Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
         </div>
         <pre><code>&lt;p class="intro"&gt;...&lt;/p&gt;</code></pre>
-
-
-
-        <h3>Emphasis</h3>
-        <p>Make use of HTML's default emphasis tags with lightweight styles.</p>
+        
+        <h3>Generic classes</h3>
+        <p>For all the standard emphasis tags we have styled slightly as well as adding a few others like the <code>.highlight</code> class which you can see below.</p>
         <div class="example-title">Example</div>
         <div class="example">
-            <p><small>This paragraph is rendered for fine print.</small></p>
-            <p><strong>This paragraph is rendered as bold.</strong></p>
-            <p><em>This paragraph is rendered as italicized.</em></p>
-            <p>This paragraph contains a <abbr title="Abbreviations">abbr</abbr> word in it.</p>
-            <p>This paragraph contains a <sup>Superscript</sup> word in it.</p>
-            <p>This paragraph contains a <sub>Subscript</sub> word in it.</p>
-            <p>This paragraph is has a <span class="highlight">Highlighted</span> word in it.</p>
+            <div class="row">    
+                <div class="grid_6">
+                    <p><small>This paragraph is rendered for fine print.</small></p>
+                    <p><strong>This paragraph is rendered as bold.</strong></p>
+                    <p><em>This paragraph is rendered as italicized.</em></p>
+                    <p>This paragraph contains a <abbr title="Abbreviations">abbr</abbr> word in it.</p>
+                </div>
+                <div class="grid_6">
+                    <p>This paragraph contains a <sup>Superscript</sup> word in it.</p>
+                    <p>This paragraph contains a <sub>Subscript</sub> word in it.</p>
+                    <p>This paragraph is has a <span class="highlight">Highlighted</span> word in it.</p>
+                </div>
+            </div>
         </div>
         <pre><code>&lt;small&gt;This text is rendered for fine print.&lt;/small&gt;
 &lt;strong&gt;This text is rendered as bold.&lt;/strong&gt;
@@ -126,10 +126,8 @@
 &lt;sub&gt;Subscript&lt;/sub&gt;
 &lt;span class="highlight"&gt;Highlighted&lt;/span&gt;</code></pre>
 
-
-
         <h3>Addresses</h3>
-        <p>Present contact information for the nearest ancestor or the entire body of work.</p>
+        <p>...</p>
         <div class="example-title">Example</div>
         <div class="example">
             <address>
@@ -172,9 +170,9 @@
 
 
         <h3>Lists</h3>  
-        <p>A list of items in which the order does not explicitly matter.</p>
+        <p>For standard <code>&lt;ul&gt;</code> bullet ponts ive replace the normal dot with a graphic which can be changed easily and if you wish to have a circle, square or disc all you need to do is include the relevant class as shown in example 3 below.</p>
         <div class="row">
-            <div class="grid_3">
+            <div class="grid_4">
                 <h3>Unordered list</h3>
                 <div class="example-title">Example</div>
                 <div class="example">
@@ -204,7 +202,7 @@
     &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
-            <div class="grid_3">
+            <div class="grid_4">
                 <h3>Ordered list</h3>
                 <div class="example-title">Example</div>
                 <div class="example">
@@ -234,15 +232,15 @@
     &lt;li&gt;...&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
             </div>
-            <div class="grid_3">
-                <h3>Ordered list</h3>
+            <div class="grid_4">
+                <h3>Squares & Circles</h3>
                 <div class="example-title">Example</div>
                 <div class="example">
                     <ul class="circle">
                         <li>List item 01</li>
                         <li>
                             List item 02
-                            <ul>
+                            <ul class="square">
                                 <li>List item 01a</li>
                                 <li>List item 01b</li>
                                 <li>List item 01c</li>
@@ -253,44 +251,9 @@
                 </div>
                 <pre><code>&lt;ul class="circle"&gt;
     &lt;li&gt;...&lt;/li&gt;
-    &lt;li&gt;
-        ...
-         &lt;ul&gt;
-            &lt;li&gt;...&lt;/li&gt;
-            &lt;li&gt;...&lt;/li&gt;
-            &lt;li&gt;...&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;...&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-            </div>
-            <div class="grid_3">
-                <h3>Ordered list</h3>
-                <div class="example-title">Example</div>
-                <div class="example">
-                    <ul class="square">
-                        <li>List item 01</li>
-                        <li>
-                            List item 02
-                            <ul>
-                                <li>List item 01a</li>
-                                <li>List item 01b</li>
-                                <li>List item 01c</li>
-                            </ul>
-                        </li>
-                        <li>List item 03</li>
-                    </ul>
-                </div>
-                <pre><code>&lt;ul class="square"&gt;
-    &lt;li&gt;...&lt;/li&gt;
-    &lt;li&gt;
-        ...
-         &lt;ul&gt;
-            &lt;li&gt;...&lt;/li&gt;
-            &lt;li&gt;...&lt;/li&gt;
-            &lt;li&gt;...&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="circle"&gt;
     &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
