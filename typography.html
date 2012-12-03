@@ -62,7 +62,7 @@
         
 
         <h3>Body copy</h3>
-        <p>By default Amazium uses Century Gothic as it's font and a font-size of 15px, with a line-height of 26px. This has been applied to the <code>&lt;body&gt;</code> and to all <code>p</code> (paragraphs). Also the line-height of a <code>p</code> is set to have a margin of 20px by default.</p>
+        <p>In Amazium I have set up all the basic typography styling which includes font type defaulted to 15px Century Gothic, but you can easily change in at the very top of the base.css file and all regular paragraphs are set with 26px line height and 20px padding to the bottom of them.</p>
         <div class="example-title">Example</div>
         <div class="example">
             <p>Maecenas faucibus mollis interdum. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Sed posuere consectetur est at lobortis.</p>
@@ -270,6 +270,21 @@
             </div>
         </div>
 
+        <h3>Description Lists</h3>
+        <p>Present contact information for the nearest ancestor or the entire body of work.</p>
+        <div class="example-title">Example</div>
+        <div class="example">
+            <dl>
+                <dt>Description title</dt>
+                <dd>Description data - Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus.</dd>
+                <dd>Description data - Maecenas faucibus mollis interdum. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</dd>
+            </dl>
+        </div>
+        <pre><code>&lt;dl&gt;
+    &lt;dt>Description title&lt;/dt&gt;
+    &lt;dd>Description data&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+
         <h3>Tables</h3>
         <p>Present contact information for the nearest ancestor or the entire body of work.</p>
         <div class="example-title">Example</div>
@@ -327,6 +342,56 @@
         &lt;td&gt;...&lt;/th&gt;
     &lt;/tr&gt;
 &lt;/table&gt;</code></pre>
+
+        <h3>Responsive Images</h3>
+        <p>Seeing how you website will be responsive there will be times when you will need your images to be responsive to and with this in mind I've made a nice little style to make any image 100% responsive, all you need to do is add this little class to your image: <code>class="max-img"</code> and hay presto responsive images..!</p>
+        <div class="example-title">Example</div>
+        <div class="example">
+            <div class="row">    
+                <div class="grid_6">        
+                    <p><img src="images/blank.jpg" border="0" alt="blank image" class="max-img"></p>
+                </div>
+                <div class="grid_4">    
+                    <p><img src="images/blank.jpg" border="0" alt="blank image" class="max-img"></p>
+                </div>
+            </div>
+        </div>
+        <pre><code>&lt;img src="images/blank.jpg" border="0" alt="blank image" class="max-img"&gt;</code></pre>
+
+        <h3>Media</h3>
+        <p>As mentioned above about images I suspect that you would also like to have all your videos be responsive as well and with this in mind I had to do a little searching around on the web to find the answer for this which is very simple.</p>
+        <p>All you will need to do is wrap your video with a div that has a class called "video-container" and thats it one responsive video..!</p>
+        <div class="example-title">Example</div>
+        <div class="example">
+            <div class="row">
+                <div class="grid_6">
+                    <h3>Vimeo</h3>
+                    <div class="media">
+                        <iframe src="http://player.vimeo.com/video/21465475?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;autoplay=0" frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div class="grid_6">
+                    <h3>YouTube</h3>
+                    <div class="media">
+                        <iframe src="http://www.youtube.com/embed/d3J12dNz4xo" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <pre><code>&lt;div class="media"&gt;
+    &lt;iframe src="video_link_here" frameborder="0"&gt;&lt;/iframe&gt;
+&lt;/div&gt;</code></pre>
+        <p>One thing to point out is that the we have found that the new HTC mobile browsers don't seem to like the new embedding code that YouTube uses so it might be an idea to use the old fashioned method as this seems to work fine.</p>
+        <p>Although as you can see below that there is a lot more code for the old method..!</p>
+
+        <pre><code>&lt;div class="media"&gt;
+    &lt;object width="640" height="390"&gt;
+        &lt;param name="movie" value="http://www.youtube.com/v/d3J12dNz4xo?version=3&hl=en_US&rel=0"&gt;&lt;/param&gt;
+        &lt;param name="allowFullScreen" value="true"&gt;&lt;/param&gt;
+        &lt;param name="allowscriptaccess" value="always"&gt;&lt;/param&gt;
+        &lt;embed src="http://www.youtube.com/v/d3J12dNz4xo?version=3&hl=en_US&rel=0" type="application/x-shockwave-flash" width="640" height="390" allowscriptaccess="always" allowfullscreen="true"&gt;&lt;/embed&gt;
+    &lt;/object&gt;
+&lt;/div&gt;</code></pre>
 
 </body>
 </html>
