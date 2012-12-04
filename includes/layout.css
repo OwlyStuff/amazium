@@ -6,7 +6,7 @@
 
 /***** Screen 960px *****/
 
-body#homepage 									{ background:transparent url('../images/bg-01.jpg') no-repeat center 0; background-attachment:fixed; }
+body#homepage 									{ background:#000 url('../images/bg-01.jpg') no-repeat center 0; background-attachment:fixed; }
 
 h1 												{ color:#333; font-size:40px; line-height:42px; }
 h2 												{ color:#333; font-size:18px; line-height:20px; }
@@ -161,6 +161,17 @@ a.amazium-phone img								{ padding:7px 0 0 0; height:50px; }
 
 a.navigation-btn 								{ margin:0; display:inline-block; }
 .navigation										{ display:none; width:300px; }
+
+/***** Bokeh *****/
+
+#bokeh											{ margin:80px 0 0 0; padding:0; position:static; top:0; width:100%; }
+
+#bokeh .bokeh-content							{ margin:30px 0 0 0; position:static; height:300px; width:300px; text-align:center; }
+#bokeh .az 										{ position:static; top:0; left:0; }
+#bokeh .amazium 								{ display:none; }
+#bokeh p.strapline								{ position:static; top:0; left:0; width:300px; text-align:center; }
+#bokeh p.download-btn                           { display:none; }
+#bokeh p.version                                { display:none; }
 
 /***** Bokeh Intro *****/
 
