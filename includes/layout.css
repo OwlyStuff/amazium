@@ -76,6 +76,10 @@ a.made-by .overlay img 							{ width:100%; height:auto; z-index:88; }
 a.made-by .overlay								{ display:none; }
 a:hover.made-by .overlay						{ display:block; width:100%; position:absolute; z-index:99; line-height:0; }
 
+/***** Footer*****/
+
+.footer 										{ margin:30px 0 0 0; padding:20px 0; width:100%; background:#000 url('../images/bg-02.jpg') no-repeat center 0; color:#FFF; }
+
 
 
 /***** Screen Bigger than 960px *****/
