@@ -6,7 +6,14 @@
 
 /***** Screen 960px *****/
 
+body#homepage 									{ background:transparent url('../images/bg-01.jpg') no-repeat center 0; background-attachment:fixed; }
+
+h1 												{ color:#333; font-size:40px; line-height:42px; }
+h2 												{ color:#333; font-size:18px; line-height:20px; }
 h1 sup 											{ top:-15px; font-size:50%; }
+#homepage hr 									{ margin:75px 0 70px 0; border:none; height:15px; text-align:left; background:transparent url('../images/hr.png') no-repeat center 0; }
+#homepage .intro								{ margin:0 0 40px 0; font-size:130%; line-height:130%; }
+
 span.example									{ margin-bottom:5px; padding:5px 0 5px 0; background-color:#EEE; text-align:center; width:100%; display:block; }
 span.example span.example						{ margin-bottom:5px; padding:5px 0 5px 0; background-color:#BBB; text-align:center; width:100%; display:block; }
 
@@ -22,7 +29,7 @@ div.example .grid_6								{ width:431px; }
 a.navigation-btn 								{ margin:0; display:none; cursor:pointer; float:right; z-index:99; }
 a.navigation-btn img 							{ padding:0; width:36px; height:auto; }
 
-#navigation 									{ margin:0; padding:10px 0; height:60px; overflow:hidden; background:#000 url('../images/navigation.png') repeat-x 0 0; position:fixed; width:100%; z-index:99; }
+#navigation 									{ margin:0; padding:10px 0; height:60px; font-size:14px; overflow:hidden; background:#000 url('../images/navigation.png') repeat-x 0 0; position:fixed; width:100%; z-index:99; }
 #navigation ul 									{ margin:0; padding:0; width: 100%; color:#FFF; text-transform:uppercase; text-shadow: #000 0 2px 2px; }
 #navigation ul li 								{ margin:0; padding:0; float:left; background-image:none; line-height:37px; background:transparent url('../images/pipe.png') repeat-y right 0; }
 
@@ -36,14 +43,45 @@ a.navigation-btn img 							{ padding:0; width:36px; height:auto; }
 #navigation ul li.download						{ margin:0 0 0 18px; float:right; border:none; background:transparent url('../images/icon-download-small.png') no-repeat right 8px; }
 #navigation ul li.download a					{ margin:0 30px 0 0; background:transparent url('../images/underline.png') repeat-x 0 20px; }
 
+/***** Bokeh *****/
+
+#bokeh											{ margin:400px 0 0 0; padding:0; position:fixed; top:0; width:100%; }
+
+#bokeh .bokeh-content							{ position:relative; height:300px; text-align:center; }
+#bokeh .az 										{ position:absolute; top:0; left:114px; }
+#bokeh .amazium 								{ position:absolute; top:0; left:284px; }
+#bokeh p.strapline								{ position:absolute; top:100px; left:284px; width:550px; color:#FFF; font-size:18px; line-height:22px; font-weight:800; text-shadow: #000 0 2px 2px; text-align:left; }
+#bokeh p.download-btn                           { margin:0; position:absolute; top:200px; left:0; width:100%; color:#FFF; font-size:18px; font-weight:800; text-shadow: #000 0 2px 2px; text-align:center; font:24px "Georgia", "Times New Roman", Helvetica, Arial, sans-serif;  }
+#bokeh p.download-btn a.btn						{ margin:5px 0 5px 0; padding:14px 75px 14px 30px; color:#fff; border:1px solid #333; background:transparent url(../images/btn-download.png) no-repeat right; cursor:pointer; }
+#bokeh p.version                                { margin:0; position:absolute; top:275px; left:0; width:100%; color:#FFF; font-size:18px; font-weight:800; text-shadow: #000 0 2px 2px; text-align:center; font:11px "Georgia", "Times New Roman", Helvetica, Arial, sans-serif; }
+
+/***** Bokeh Intro *****/
+
 #bokeh-intro									{ margin:0 0 30px 0; padding:100px 0 70px 0; width:100%; background:transparent url('../images/bg-02.jpg') no-repeat center 0; }
-#bokeh-intro h1 								{ color:#FFF; font-size:40px; line-height:42px; text-shadow: #000 0 2px 2px; }
-#bokeh-intro h2 								{ color:#FFF; font-size:18px; line-height:20px; text-shadow: #000 0 2px 2px; }
+#bokeh-intro h1 								{ color:#FFF; text-shadow: #000 0 2px 2px; }
+#bokeh-intro h2 								{ color:#FFF; text-shadow: #000 0 2px 2px; }
+
+/***** Content 01 *****/
+
+#content-01										{ margin:0; padding:60px 0 80px 0; background:#EEE url('../images/overlay.png') no-repeat 0 0; background-size:100% 100%; position:relative; left:0; top:550px; }
+
+ul.gallery                                      { margin:0 -16px; padding:0; }
+ul.gallery li                                   { margin:0 16px; padding:0; background-image:none; float:left; }
+
+a.made-by										{ margin:16px 0; position:relative; overflow:hidden; width:275px; height:201px; border:6px solid #FFF; display:block; line-height:0; -moz-box-shadow:0px 1px 1px #999; -webkit-box-shadow:0px 1px 1px #999; box-shadow:0px 1px 1px #999; }
+a.made-by img,
+a.made-by .overlay img 							{ width:100%; height:auto; z-index:88; }
+a.made-by .overlay								{ display:none; }
+a:hover.made-by .overlay						{ display:block; width:100%; position:absolute; z-index:99; line-height:0; }
+
+
 
 /***** Screen Bigger than 960px *****/
 @media only screen and (min-width:1200px) {
 
 div.example .grid_6								{ width:543px; }
+
+
 
 }
 
@@ -58,6 +96,8 @@ div.example .grid_6								{ width:339px; }
 #navigation ul li.last 							{ background-image:none; }
 
 #bokeh-intro									{ background-position:-700px 0; }
+
+
 
 }
 
@@ -90,6 +130,8 @@ a.navigation-btn 								{ margin:0; display:inline-block; }
 
 #bokeh-intro									{ padding:40px 0; background-position:left 0; }
 
+
+
 }
 
 
@@ -100,6 +142,8 @@ a.navigation-btn 								{ margin:0; display:inline-block; }
 .navigation										{ width:456px; }
 
 div.example .grid_6								{ width:442px; }
+
+
 
 }
 
