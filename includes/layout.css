@@ -11,8 +11,10 @@ body#homepage 									{ background:transparent url('../images/bg-01.jpg') no-re
 h1 												{ color:#333; font-size:40px; line-height:42px; }
 h2 												{ color:#333; font-size:18px; line-height:20px; }
 h1 sup 											{ top:-15px; font-size:50%; }
-#homepage hr 									{ margin:75px 0 70px 0; border:none; height:15px; text-align:left; background:transparent url('../images/hr.png') no-repeat center 0; }
+#homepage hr 									{ margin:75px 0 70px 0; border:none; height:15px; text-align:left; background:transparent url('../images/hr.png') no-repeat center 0; background-size:100% auto; }
 #homepage .intro								{ margin:0 0 40px 0; font-size:130%; line-height:130%; }
+
+/***** Example *****/
 
 span.example									{ margin-bottom:5px; padding:5px 0 5px 0; background-color:#EEE; text-align:center; width:100%; display:block; }
 span.example span.example						{ margin-bottom:5px; padding:5px 0 5px 0; background-color:#BBB; text-align:center; width:100%; display:block; }
@@ -47,17 +49,17 @@ a.navigation-btn img 							{ padding:0; width:36px; height:auto; }
 
 #bokeh											{ margin:400px 0 0 0; padding:0; position:fixed; top:0; width:100%; }
 
-#bokeh .bokeh-content							{ position:relative; height:300px; text-align:center; }
-#bokeh .az 										{ position:absolute; top:0; left:114px; }
-#bokeh .amazium 								{ position:absolute; top:0; left:284px; }
-#bokeh p.strapline								{ position:absolute; top:100px; left:284px; width:550px; color:#FFF; font-size:18px; line-height:22px; font-weight:800; text-shadow: #000 0 2px 2px; text-align:left; }
+#bokeh .bokeh-content							{ margin:0 0 0 114px; position:relative; height:300px; width:700px; text-align:center; }
+#bokeh .az 										{ position:absolute; top:0; left:0; }
+#bokeh .amazium 								{ position:absolute; top:0; left:170px; }
+#bokeh p.strapline								{ position:absolute; top:100px; left:170px; width:550px; color:#FFF; font-size:18px; line-height:22px; font-weight:800; text-shadow: #000 0 2px 2px; text-align:left; }
 #bokeh p.download-btn                           { margin:0; position:absolute; top:200px; left:0; width:100%; color:#FFF; font-size:18px; font-weight:800; text-shadow: #000 0 2px 2px; text-align:center; font:24px "Georgia", "Times New Roman", Helvetica, Arial, sans-serif;  }
 #bokeh p.download-btn a.btn						{ margin:5px 0 5px 0; padding:14px 75px 14px 30px; color:#fff; border:1px solid #333; background:transparent url(../images/btn-download.png) no-repeat right; cursor:pointer; }
 #bokeh p.version                                { margin:0; position:absolute; top:275px; left:0; width:100%; color:#FFF; font-size:18px; font-weight:800; text-shadow: #000 0 2px 2px; text-align:center; font:11px "Georgia", "Times New Roman", Helvetica, Arial, sans-serif; }
 
 /***** Bokeh Intro *****/
 
-#bokeh-intro									{ margin:0 0 30px 0; padding:100px 0 70px 0; width:100%; background:transparent url('../images/bg-02.jpg') no-repeat center 0; }
+#bokeh-intro									{ margin:0 0 30px 0; padding:100px 0 70px 0; width:100%; height:300px; background:#000 url('../images/bg-02.jpg') no-repeat center 0; }
 #bokeh-intro h1 								{ color:#FFF; text-shadow: #000 0 2px 2px; }
 #bokeh-intro h2 								{ color:#FFF; text-shadow: #000 0 2px 2px; }
 
@@ -79,7 +81,17 @@ a:hover.made-by .overlay						{ display:block; width:100%; position:absolute; z-
 /***** Screen Bigger than 960px *****/
 @media only screen and (min-width:1200px) {
 
+/***** Example *****/
+
 div.example .grid_6								{ width:543px; }
+
+/***** Bokeh *****/
+
+#bokeh .bokeh-content							{ margin:0 0 0 230px; height:300px; width:700px; }
+
+/***** Content 01 *****/
+
+a.made-by										{ width:353px; height:254px; }
 
 
 
@@ -90,12 +102,26 @@ div.example .grid_6								{ width:543px; }
 /***** Tablet (Smaller than 959px) *****/
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
+/***** Example *****/
+
 div.example .grid_6								{ width:339px; }
+
+/***** Navigation *****/
 
 #navigation ul li.download						{ display:none; }
 #navigation ul li.last 							{ background-image:none; }
 
+/***** Bokeh *****/
+
+#bokeh .bokeh-content							{ margin:0 0 0 19px; height:300px; width:700px; }
+
+/***** Bokeh Intro *****/
+
 #bokeh-intro									{ background-position:-700px 0; }
+
+/***** Content 01 *****/
+
+a.made-by										{ width:213px; height:154px; }
 
 
 
@@ -106,7 +132,11 @@ div.example .grid_6								{ width:339px; }
 /***** Phone (portrait 300px) *****/
 @media only screen and (max-width: 767px) {
 
+/***** Example *****/
+
 div.example .grid_6								{ width:262px; }
+
+/***** Navigation *****/
 
 #navigation 									{ padding:5px 0 10px 0; height:auto; background-repeat:repeat; position:relative; }
 #navigation ul 									{ margin:0; padding:0; width:100%; color:#FFF; text-transform:uppercase; text-shadow: #000 0 2px 2px; }
@@ -128,6 +158,8 @@ a.amazium-phone img								{ padding:7px 0 0 0; height:50px; }
 a.navigation-btn 								{ margin:0; display:inline-block; }
 .navigation										{ display:none; width:300px; }
 
+/***** Bokeh Intro *****/
+
 #bokeh-intro									{ padding:40px 0; background-position:left 0; }
 
 
@@ -138,8 +170,8 @@ a.navigation-btn 								{ margin:0; display:inline-block; }
 	
 /***** Phone (landscape 420px) *****/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-	
-.navigation										{ width:456px; }
+
+/***** Example *****/
 
 div.example .grid_6								{ width:442px; }
 
