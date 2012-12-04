@@ -145,7 +145,7 @@ fieldset 								{ margin:0; padding:0; display:block; box-sizing:border-box; -w
 
 input,
 textarea,
-select  								{ margin:6px 0; padding:4px 4px 4px 6px; display:inline-block; border:solid 1px #BBB; width:100%; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#999; overflow:hidden; outline:0 none; transition-property:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; box-sizing:border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
+select  								{ margin:6px 0; padding:4px 4px 4px 6px; display:inline-block; border:solid 1px #BBB; width:100%; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#999; overflow:hidden; -webkit-appearance:none; outline:0 none; transition-property:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; box-sizing:border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
 
 form label + input,
 form label + textarea,
@@ -217,7 +217,7 @@ select.correct							{ margin:6px 0 0 0; color:#468847; border-color:#468847; ba
 
 input[type="button"],
 input[type="submit"],
-input[type="reset"] 					{ margin:6px 0; padding:3px 4px 3px 6px; display:inline-block; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#fff; border:1px solid #C60F13; float:left; width:100%; background:#C60F13 url(../images/btn-arrow.png) no-repeat right; cursor:pointer; }
+input[type="reset"] 					{ margin:6px 0; padding:3px 4px 3px 6px; display:inline-block; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#fff; border:1px solid #C60F13; float:left; width:100%; background:#C60F13 url(../images/btn-arrow.png) no-repeat right; cursor:pointer; -webkit-appearance:none; }
 
 input:hover[type="button"],
 input:hover[type="submit"] 				{ color:#333; border:1px solid #999; background-color:#999; }
