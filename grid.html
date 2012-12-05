@@ -178,7 +178,35 @@
             &lt;div class="grid_6"&gt;...&lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;</code></pre></div>
+&lt;/div&gt;</code></pre>
+
+
+        <h3>Show & Hide</h3>
+        <p>There are times when you may need to only show something on a desktop and not a tablet &amp; phone or the reverse and with that in mind rather than adding a <code>display:none;</code> class I've done the work for you with some extra classes to hide & show content.</p>
+        <div class="example-title">Example</div>
+        <div class="example">
+            <div class="row">    
+                <div class="grid_12">        
+                    <p class="show-tablet"><img src="images/tablet.png" alt="tablet" class="max-img"></p>
+                    <p class="show-screen"><img src="images/screen.png" alt="Screen" class="max-img"></p>
+                    <p class="show-phone"><img src="images/phone.png" alt="phone" class="max-img"></p>
+                    <table>
+                        <tr class="even">
+                            <td class="first">hide-tablet</td>
+                            <td>hide-screen</td>
+                            <td class="last">hide-phone</td>
+                        </tr>
+                        <tr class="even">
+                            <td class="first">show-tablet</td>
+                            <td>show-screen</td>
+                            <td class="last">show-phone</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <pre><code>&lt;img src="images/tablet.png" alt="tablet" class="hide-tablet"&gt;</code></pre>
+    </div>
 </div>
 
 <div class="footer">

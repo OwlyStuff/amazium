@@ -25,6 +25,7 @@ div.example 									{ margin:0 0 26px 0; padding:16px 16px 0 16px; border:1px s
 div.example + pre code							{ margin:0 0 26px 0; }
 div.example address 							{ margin:0 0 16px 0; }
 div.example .grid_6								{ width:431px; }
+div.example .grid_12							{ width:894px; }
 
 /***** Navigation *****/
 
@@ -90,6 +91,7 @@ a:hover.made-by .overlay						{ display:block; width:100%; position:absolute; z-
 /***** Example *****/
 
 div.example .grid_6								{ width:543px; }
+div.example .grid_12							{ width:894px; }
 
 /***** Bokeh *****/
 
@@ -118,6 +120,7 @@ body#homepage 									{ background-size:auto 100% ; }
 /***** Example *****/
 
 div.example .grid_6								{ width:339px; }
+div.example .grid_12							{ width:708px; }
 
 /***** Navigation *****/
 
@@ -149,7 +152,8 @@ body#homepage 									{ background-size:auto 100% ; }
 
 /***** Example *****/
 
-div.example .grid_6								{ width:262px; }
+div.example .grid_6,
+div.example .grid_12							{ width:262px; }
 
 /***** Navigation *****/
 
@@ -198,7 +202,8 @@ a.navigation-btn 								{ margin:0; display:inline-block; }
 
 /***** Example *****/
 
-div.example .grid_6								{ width:422px; }
+div.example .grid_6,
+div.example .grid_12							{ width:422px; }
 
 /***** Bokeh *****/
 

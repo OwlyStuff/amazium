@@ -89,7 +89,7 @@
 							<label for="input">Input</label>
 							<input type="input" name="input" id="input" placeholder="Input" autocomplete="off" tabindex="1" />
 							<label for="name">Name</label>
-							<input type="text" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" />
+							<input type="name" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" />
 							<label for="text">Text</label>
 							<input type="text" name="text" id="text" placeholder="Text" autocomplete="off" tabindex="2" />
 							<label for="password">Password</label>
@@ -124,8 +124,10 @@
 				</div>
 	    	</form>
 	    </div>
-	    <pre><code>&lt;label&gt;Input&lt;/label&gt;
-&lt;input type="input" name="input" id="input" placeholder="Input" autocomplete="off" tabindex="1" /&gt;</code></pre>
+	    <pre><code>&lt;form name="" id="" method="" action=""&gt;
+	&lt;label&gt;Input for="input"&lt;/label&gt;
+	&lt;input type="input" name="input" id="input" placeholder="Input" autocomplete="off" tabindex="1" /&gt;
+&lt;/form&gt;</code></pre>
 
 
         <h3>Forms without lables</h3>
@@ -138,7 +140,7 @@
 	    			<div class="grid_6">
 						<fieldset>
 							<input type="input" name="input" id="input" placeholder="Input" autocomplete="off" tabindex="1" />
-							<input type="text" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" />
+							<input type="name" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" />
 							<input type="text" name="text" id="text" placeholder="Text" autocomplete="off" tabindex="2" />
 							<input type="password" name="password" id="password" placeholder="Password" autocomplete="off" tabindex="3" />
 							<input type="url" name="url" id="url" placeholder="Url" autocomplete="off" tabindex="14" />	
@@ -165,7 +167,9 @@
 				</div>
 	    	</form>
     	</div>
-    	<pre><code>&lt;input type="input" name="input" id="input" placeholder="Input" autocomplete="off" tabindex="1" /&gt;</code></pre>
+    	<pre><code>&lt;form name="" id="" method="" action=""&gt;
+    &lt;input type="input" name="input" id="input" placeholder="Input" autocomplete="off" tabindex="1" /&gt;
+&lt;/form&gt;</code></pre>
 
 		<h3>Radio & Checkboxes</h3>
         <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper.</p>
@@ -240,12 +244,16 @@
 				</div>
 	    	</form>
     	</div>
-    	<pre><code>&lt;input type="search" name="search" id="search" placeholder="Search" autocomplete="off" tabindex="15"&gt;
-&lt;input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Go"&gt;</code></pre>
+    	<pre><code>&lt;fieldset class="search"&gt;
+	&lt;input type="search" name="search" id="search" placeholder="Search" autocomplete="off" tabindex="15"&gt;
+	&lt;input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Go"&gt;
+&lt;/form&gt;</code></pre>
 
-    	<pre><code>&lt;input type="email" name="email" id="email" placeholder="Email" autocomplete="off" tabindex="13"&gt;
-&lt;input type="password" name="password" id="password" placeholder="Password" autocomplete="off" tabindex="3" &gt;
-&lt;input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Login"&gt;</code></pre>
+    	<pre><code>&lt;fieldset class="login"&gt;
+	&lt;input type="email" name="email" id="email" placeholder="Email" autocomplete="off" tabindex="13"&gt;
+	&lt;input type="password" name="password" id="password" placeholder="Password" autocomplete="off" tabindex="3" &gt;
+	&lt;input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Login"&gt;
+&lt;/form&gt;</code></pre>
 
 
 		<h3>Buttons</h3>
