@@ -6,6 +6,7 @@
 
 /***** Screen 960px *****/
 
+html 											{ height:100%; }
 body#homepage 									{ background:#000 url('../images/bg-01.jpg') no-repeat center 0; background-attachment:fixed; }
 
 h1 												{ color:#333; font-size:40px; line-height:42px; }
@@ -48,7 +49,7 @@ a.navigation-btn img 							{ padding:4px 0 0 0; width:36px; height:auto; }
 
 /***** Bokeh *****/
 
-#bokeh											{ margin:400px 0 0 0; padding:0; position:fixed; top:0; width:100%; }
+#bokeh											{ margin:-150px 0 0 0; height:300px; padding:0; top:50%; position:fixed; width:100%; }
 
 #bokeh .bokeh-content							{ margin:0 0 0 114px; position:relative; height:300px; width:700px; text-align:center; }
 #bokeh .az 										{ position:absolute; top:0; left:0; }
@@ -112,6 +113,8 @@ a.made-by										{ width:353px; height:254px; }
 /***** Tablet (Smaller than 959px) *****/
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
+body#homepage 									{ background-size:auto 100% ; }
+
 /***** Example *****/
 
 div.example .grid_6								{ width:339px; }
@@ -122,6 +125,7 @@ div.example .grid_6								{ width:339px; }
 
 /***** Bokeh *****/
 
+#bokeh											{ position:absolute; } 
 #bokeh .bokeh-content							{ margin:0 0 0 19px; height:300px; width:700px; }
 
 /***** Bokeh Intro *****/
@@ -140,6 +144,8 @@ a.made-by										{ width:213px; height:154px; }
 
 /***** Phone (portrait 300px) *****/
 @media only screen and (max-width: 767px) {
+
+body#homepage 									{ background-size:auto 100% ; }
 
 /***** Example *****/
 
@@ -167,9 +173,9 @@ a.navigation-btn 								{ margin:0; display:inline-block; }
 
 /***** Bokeh *****/
 
-#bokeh											{ margin:80px 0 0 0; padding:0; position:static; top:0; width:100%; }
+#bokeh											{ margin:-130px 0 0 0; height:260px; padding:0; top:50%; position:absolute; width:100%; }
 
-#bokeh .bokeh-content							{ margin:30px 0 0 0; position:static; height:300px; width:300px; text-align:center; }
+#bokeh .bokeh-content							{ margin:0; position:static; height:260px; width:300px; text-align:center; }
 #bokeh .az 										{ position:static; top:0; left:0; }
 #bokeh .amazium 								{ display:none; }
 #bokeh p.strapline								{ position:static; top:0; left:0; width:300px; text-align:center; }
@@ -196,7 +202,7 @@ div.example .grid_6								{ width:422px; }
 
 /***** Bokeh *****/
 
-#bokeh .bokeh-content							{ margin:0; position:relative; height:300px; width:456px; text-align:left; }
+#bokeh .bokeh-content							{ margin:0; position:static; height:300px; width:456px; text-align:left; }
 #bokeh .az 										{ position:absolute; top:0; left:0; }
 #bokeh p.strapline								{ position:absolute; top:13px; left:170px; width:290px; color:#FFF; font-size:18px; line-height:22px; font-weight:800; text-shadow: #000 0 2px 2px; text-align:left; }
 
