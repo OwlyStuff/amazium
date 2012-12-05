@@ -10,8 +10,9 @@ html 											{ height:100%; }
 body#homepage 									{ background:#000 url('../images/bg-01.jpg') no-repeat center 0; background-attachment:fixed; }
 
 h1 												{ color:#333; font-size:40px; line-height:42px; }
-h2 												{ color:#333; font-size:18px; line-height:20px; }
 h1 sup 											{ top:-15px; font-size:50%; }
+h2 												{ color:#333; font-size:18px; line-height:20px; }
+
 #homepage hr 									{ margin:75px 0 70px 0; border:none; height:15px; text-align:left; background:transparent url('../images/hr.png') no-repeat center 0; background-size:100% auto; }
 #homepage .intro								{ margin:0 0 40px 0; font-size:130%; line-height:130%; }
 
@@ -70,10 +71,15 @@ a.navigation-btn img 							{ padding:4px 0 0 0; width:36px; height:auto; }
 
 #content-01										{ margin:0; padding:60px 0 0 0; background:#EEE url('../images/overlay.png') no-repeat 0 0; background-size:100% 100%; position:relative; left:0; top:550px; }
 
-ul.gallery                                      { margin:0 -16px; padding:0; }
-ul.gallery li                                   { margin:0 16px; padding:0; background-image:none; float:left; }
+ul.gallery, ul.gallery-small                    { margin:0 -16px 26px -16px; padding:0; display:inline-block; }
+ul.gallery li, ul.gallery-small li              { margin:0 16px; padding:0; background-image:none; float:left; text-align:center; }
 
-a.made-by										{ margin:16px 0; position:relative; overflow:hidden; width:275px; height:201px; border:6px solid #FFF; display:block; line-height:0; -moz-box-shadow:0px 1px 1px #999; -webkit-box-shadow:0px 1px 1px #999; box-shadow:0px 1px 1px #999; }
+ul.gallery li h4								{ width:275px; }
+ul.gallery-small li h4							{ width:206px; }
+
+a.made-by										{ margin:16px 0; position:relative; overflow:hidden; width:275px; height:auto; border:6px solid #FFF; display:block; line-height:0; -moz-box-shadow:0px 1px 1px #999; -webkit-box-shadow:0px 1px 1px #999; box-shadow:0px 1px 1px #999; }
+ul.gallery-small li a.made-by					{ width:206px; border:1px solid #999; -moz-box-shadow:none; -webkit-box-shadow:none; box-shadow:none; }
+
 a.made-by img,
 a.made-by .overlay img 							{ width:100%; height:auto; z-index:88; }
 a.made-by .overlay								{ display:none; }
@@ -82,8 +88,10 @@ a:hover.made-by .overlay						{ display:block; width:100%; position:absolute; z-
 /***** Footer*****/
 
 .footer 										{ margin:80px 0 0 0; padding:20px 0; width:100%; background:#000 url('../images/bg-02.jpg') no-repeat center 0; color:#FFF; }
+.footer a 										{ color:#FFF; text-decoration:none; }
 
-
+a.amazium:link, 
+a.amazium:visited 								{ margin:20px 0; padding:0 0 0 30px; background:transparent url("../images/amazium.jpg") no-repeat 0 0; display:block; font-style:italic; height:22px; font-size:12px; line-height:22px; text-decoration:none; }
 
 /***** Screen Bigger than 960px *****/
 @media only screen and (min-width:1200px) {
@@ -91,7 +99,7 @@ a:hover.made-by .overlay						{ display:block; width:100%; position:absolute; z-
 /***** Example *****/
 
 div.example .grid_6								{ width:543px; }
-div.example .grid_12							{ width:894px; }
+div.example .grid_12							{ width:1122px; }
 
 /***** Bokeh *****/
 
@@ -104,9 +112,10 @@ div.example .grid_12							{ width:894px; }
 
 /***** Content 01 *****/
 
-a.made-by										{ width:353px; height:254px; }
-
-
+a.made-by, 
+ul.gallery li h4								{ width:353px; }
+ul.gallery-small li a.made-by, 
+ul.gallery-small li h4							{ width:204px; }
 
 }
 
@@ -137,8 +146,10 @@ div.example .grid_12							{ width:708px; }
 
 /***** Content 01 *****/
 
-a.made-by										{ width:213px; height:154px; }
-
+a.made-by, 
+ul.gallery li h4								{ width:213px; }
+ul.gallery-small li a.made-by, 
+ul.gallery-small li h4							{ width:159px; }
 
 
 }
@@ -191,6 +202,13 @@ a.navigation-btn 								{ margin:0; display:inline-block; }
 #bokeh-intro									{ padding:40px 0; height:280px; background-position:left 0; }
 #bokeh-intro .img-left 							{ margin:0 20px 0 0; height: 40px; width:auto; }
 
+/***** Content 01 *****/
+
+a.made-by, 
+ul.gallery li h4								{ width:122px; font-size: 14px; }
+ul.gallery-small li a.made-by, 
+ul.gallery-small li h4							{ width:130px; font-size: 14px; }
+
 
 
 }
@@ -216,6 +234,12 @@ div.example .grid_12							{ width:422px; }
 
 #bokeh-intro									{ height:240px; }
 
+/***** Content 01 *****/
+
+a.made-by, 
+ul.gallery li h4								{ width:200px; }
+ul.gallery-small li a.made-by, 
+ul.gallery-small li h4							{ width:210px; }
 
 
 }
