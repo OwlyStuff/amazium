@@ -68,7 +68,7 @@ a.navigation-btn img 							{ padding:4px 0 0 0; width:36px; height:auto; }
 
 /***** Content 01 *****/
 
-#content-01										{ margin:0; padding:60px 0 80px 0; background:#EEE url('../images/overlay.png') no-repeat 0 0; background-size:100% 100%; position:relative; left:0; top:550px; }
+#content-01										{ margin:0; padding:60px 0 0 0; background:#EEE url('../images/overlay.png') no-repeat 0 0; background-size:100% 100%; position:relative; left:0; top:550px; }
 
 ul.gallery                                      { margin:0 -16px; padding:0; }
 ul.gallery li                                   { margin:0 16px; padding:0; background-image:none; float:left; }
@@ -81,7 +81,7 @@ a:hover.made-by .overlay						{ display:block; width:100%; position:absolute; z-
 
 /***** Footer*****/
 
-.footer 										{ margin:30px 0 0 0; padding:20px 0; width:100%; background:#000 url('../images/bg-02.jpg') no-repeat center 0; color:#FFF; }
+.footer 										{ margin:80px 0 0 0; padding:20px 0; width:100%; background:#000 url('../images/bg-02.jpg') no-repeat center 0; color:#FFF; }
 
 
 
