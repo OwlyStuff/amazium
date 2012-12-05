@@ -145,7 +145,7 @@ fieldset 								{ margin:0; padding:0; display:block; box-sizing:border-box; -w
 
 input,
 textarea,
-select  								{ margin:6px 0; padding:4px 4px 4px 6px; display:inline-block; border:solid 1px #BBB; width:100%; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#999; overflow:hidden; -webkit-appearance:none; outline:0 none; transition-property:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; box-sizing:border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
+select  								{ margin:6px 0; padding:4px 4px 4px 6px; display:inline-block; border:solid 1px #BBB; width:100%; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#999; overflow:hidden; outline:0 none; transition-property:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; box-sizing:border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
 
 form label + input,
 form label + textarea,
