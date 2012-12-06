@@ -62,6 +62,7 @@
             <div class="navigation">
                 <ul>
                     <li class="logo"><a href="index.html"><img src="images/amazium-logo-small.png"></a></li>
+                    <li><a href="setting-up.html">Setting up</a></li>
                     <li><a href="grid.html">Grid</a></li>
                     <li class="current"><a href="typography.html">Typography</a></li>
                     <li><a href="forms.html">Forms</a></li>
@@ -118,25 +119,18 @@
         <div class="example">
             <div class="row">    
                 <div class="grid_6">
-                    <p><small>This paragraph is rendered for fine print.</small></p>
-                    <p><strong>This paragraph is rendered as bold.</strong></p>
-                    <p><em>This paragraph is rendered as italicized.</em></p>
-                    <p>This paragraph contains a <abbr title="Abbreviations">abbr</abbr> word in it.</p>
+                    <p><code>&lt;small&gt;</code> - <small>This paragraph is rendered for fine print.</small></p>
+                    <p><code>&lt;strong&gt;</code> - <strong>This paragraph is rendered as bold.</strong></p>
+                    <p><code>&lt;em&gt;</code> - <em>This paragraph is rendered as italicized.</em></p>
+                    <p><code>&lt;abbr title="Abbreviations"&gt;</code> - This paragraph contains a <abbr title="Abbreviations">abbr</abbr> word in it.</p>
                 </div>
                 <div class="grid_6">
-                    <p>This paragraph contains a <sup>Superscript</sup> word in it.</p>
-                    <p>This paragraph contains a <sub>Subscript</sub> word in it.</p>
-                    <p>This paragraph is has a <span class="highlight">Highlighted</span> word in it.</p>
+                    <p><code>&lt;sup&gt;</code> - This paragraph contains a <sup>Superscript</sup> word in it.</p>
+                    <p><code>&lt;sub&gt;</code> - This paragraph contains a <sub>Subscript</sub> word in it.</p>
+                    <p><code>&lt;span class="highlight"&gt;</code> - This paragraph is has a <span class="highlight">Highlight</span> word in it.</p>
                 </div>
             </div>
         </div>
-        <pre><code>&lt;small&gt;This text is rendered for fine print.&lt;/small&gt;
-&lt;strong&gt;This text is rendered as bold.&lt;/strong&gt;
-&lt;em&gt;This text is rendered as italicized.&lt;/strong&gt;
-&lt;abbr title="Abbreviations"&gt;abbr&lt;/abbr&gt;
-&lt;sup&gt;Superscript&lt;/sup&gt;
-&lt;sub&gt;Subscript&lt;/sub&gt;
-&lt;span class="highlight"&gt;Highlighted&lt;/span&gt;</code></pre>
 
         <h3>Addresses</h3>
         <p>...</p>
@@ -297,31 +291,26 @@
                 <tr>
                     <th class="first">Item:</th>
                     <th>Category:</th>
-                    <th>Description:</th>
                     <th class="last">Size:</th>
                 </tr>
                 <tr class="even">
                     <td class="first">Bananas</td>
                     <td>Fruit</td>
-                    <td>Desc</td>
                     <td class="last">1KG</td>
                 </tr>
                 <tr class="odd">
                     <td class="first">Apples</td>
                     <td>Fruit</td>
-                    <td>Desc</td>
                     <td class="last">3KG</td>
                 </tr>
                 <tr class="even">
                     <td class="first">Oranges</td>
-                    <td>Fruit</td>
-                    <td>Desc</td>
+                    <td class="highlight">Fruit</td>
                     <td class="last">2.5KG</td>
                 </tr>
                 <tr class="odd">
                     <td class="first">Mango</td>
                     <td>Fruit</td>
-                    <td class="highlight">Desc</td>
                     <td class="last">6KG</td>
                 </tr>
             </table>
@@ -339,7 +328,7 @@
     &lt;/tr&gt;
     &lt;tr&gt;
         &lt;td&gt;...&lt;/th&gt;
-        &lt;td&gt;...&lt;/th&gt;
+        &lt;td class="highlight"&gt;...&lt;/th&gt;
         &lt;td&gt;...&lt;/th&gt;
         &lt;td&gt;...&lt;/th&gt;
     &lt;/tr&gt;

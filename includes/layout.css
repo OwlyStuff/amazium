@@ -12,6 +12,7 @@ body#homepage 									{ background:#000 url('../images/bg-01.jpg') no-repeat ce
 h1 												{ color:#333; font-size:40px; line-height:42px; }
 h1 sup 											{ top:-15px; font-size:50%; }
 h2 												{ color:#333; font-size:18px; line-height:20px; }
+pre + h3 										{ margin-top:60px; }
 
 #homepage hr 									{ margin:75px 0 70px 0; border:none; height:15px; text-align:left; background:transparent url('../images/hr.png') no-repeat center 0; background-size:100% auto; }
 #homepage .intro								{ margin:0 0 40px 0; font-size:130%; line-height:130%; }
@@ -22,8 +23,10 @@ span.example									{ margin-bottom:5px; padding:5px 0 5px 0; background-color:
 span.example span.example						{ margin-bottom:5px; padding:5px 0 5px 0; background-color:#BBB; text-align:center; width:100%; display:block; }
 
 div.example-title								{ margin:6px 0 0 0; padding:3px 10px; background-color:#EEE; color:#333; font-size:12px; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+div.example h2 									{ font-size:32px; line-height:34px; }
 div.example 									{ margin:0 0 26px 0; padding:16px 16px 0 16px; border:1px solid #EEE; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
-div.example + pre code							{ margin:0 0 26px 0; }
+div.example + h3 								{ margin-top:60px; }
+div.example + pre								{ margin:0 0 60px 0; }
 div.example address 							{ margin:0 0 16px 0; }
 div.example .grid_6								{ width:431px; }
 div.example .grid_12							{ width:894px; }
