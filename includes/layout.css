@@ -1,5 +1,5 @@
 /* 
-* Amazium V1.3
+* Amazium V3.1
 * Copyright 2012, Mike Ballan
 * www.amazium.co.uk
 */
@@ -30,7 +30,7 @@ div.example + pre                               { margin:0 0 60px 0; }
 div.example address                             { margin:0 0 16px 0; }
 div.example .grid_4                             { width:311px; }
 div.example .grid_6                             { width:414px; }
-/*div.example .grid_6                               { width:431px; }*/=
+div.example .grid_9                             { width:654px; }
 div.example .grid_12                            { width:894px; }
 
 /***** Navigation *****/
@@ -76,19 +76,13 @@ a.navigation-btn img                            { padding:4px 0 0 0; width:36px;
 
 #content-01                                     { margin:0; padding:60px 0 0 0; background:#EEE url('../images/overlay.png') no-repeat 0 0; background-size:100% 100%; position:relative; left:0; top:550px; }
 
-ul.gallery, ul.gallery-small                    { margin:0 -16px 26px -16px; padding:0; display:inline-block; }
-ul.gallery li, ul.gallery-small li              { margin:0 16px; padding:0; background-image:none; float:left; text-align:center; }
-
+ul.gallery										{ margin:0 -16px 26px -16px; padding:0; display:inline-block; }
+ul.gallery-small                			    { margin:0 -16px 26px -16px; padding:0; display:inline-block; }
+ul.gallery li									{ margin:0 16px; padding:0; background-image:none; float:left; text-align:center; }
 ul.gallery li h4                                { width:275px; }
-ul.gallery-small li h4                          { width:206px; }
 
 a.made-by                                       { margin:16px 0; position:relative; overflow:hidden; width:275px; height:auto; border:6px solid #FFF; display:block; line-height:0; -moz-box-shadow:0px 1px 1px #999; -webkit-box-shadow:0px 1px 1px #999; box-shadow:0px 1px 1px #999; }
-ul.gallery-small li a.made-by                   { width:206px; border:1px solid #999; -moz-box-shadow:none; -webkit-box-shadow:none; box-shadow:none; }
-
-a.made-by img,
-a.made-by .overlay img                          { width:100%; height:auto; z-index:88; }
-a.made-by .overlay                              { display:none; }
-a:hover.made-by .overlay                        { display:block; width:100%; position:absolute; z-index:99; line-height:0; }
+a.made-by img									{ width:100%; height:auto; z-index:88; }
 
 /***** Footer*****/
 
@@ -105,8 +99,8 @@ a.amazium:visited                               { margin:20px 0; padding:0 0 0 3
 
 div.example .grid_4                             { width:393px; }
 div.example .grid_6                             { width:526px; }
-/*div.example .grid_6                               { width:543px; }
-div.example .grid_12                            { width:1122px; }*/
+div.example .grid_9                             { width:822px; }
+div.example .grid_12                            { width:894px; }
 
 /***** Bokeh *****/
 
