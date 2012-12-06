@@ -155,16 +155,15 @@ select									{ padding:3px 3px 3px 4px; }
 optgroup 								{ font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#000; background-color:#f1f1f1; }
 optgroup option 						{ background-color:#FFF; }
 
-textarea 			 					{ padding-left:30px; background:transparent url('../images/icon-message.png') no-repeat 5px 5px; resize:vertical; height:114px; }
-input[type="name"]						{ padding-left:30px; background:transparent url('../images/icon-name.png') no-repeat 5px 5px; }
-input[type="text"]						{ padding-left:30px; background:transparent url('../images/icon-text.png') no-repeat 5px 5px; }
-input[type="search"]					{ padding-left:30px; background:transparent url('../images/icon-search.png') no-repeat 5px 5px; }
-input[type="url"]						{ padding-left:30px; background:transparent url('../images/icon-url.png') no-repeat 5px 5px; }
-input[type="email"]						{ padding-left:30px; background:transparent url('../images/icon-email.png') no-repeat 5px 5px; }
-input[type="tel"]						{ padding-left:30px; background:transparent url('../images/icon-tel.png') no-repeat 5px 5px; }
-input[type="password"]					{ padding-left:30px; background:transparent url('../images/icon-password.png') no-repeat 5px 5px; }
-
-input.no-icon 							{ padding-left:6px; background:none; }
+textarea                                { resize:vertical; height:114px; }
+textarea.icon			 				{ padding-left:30px; background:transparent url('../images/icon-message.png') no-repeat 5px 5px; }
+input[type="name"].icon				    { padding-left:30px; background:transparent url('../images/icon-name.png') no-repeat 5px 5px; }
+input[type="text"].icon				    { padding-left:30px; background:transparent url('../images/icon-text.png') no-repeat 5px 5px; }
+input[type="search"].icon				{ padding-left:30px; background:transparent url('../images/icon-search.png') no-repeat 5px 5px; }
+input[type="url"].icon					{ padding-left:30px; background:transparent url('../images/icon-url.png') no-repeat 5px 5px; }
+input[type="email"].icon				{ padding-left:30px; background:transparent url('../images/icon-email.png') no-repeat 5px 5px; }
+input[type="tel"].icon					{ padding-left:30px; background:transparent url('../images/icon-tel.png') no-repeat 5px 5px; }
+input[type="password"].icon			    { padding-left:30px; background:transparent url('../images/icon-password.png') no-repeat 5px 5px; }
 
 input[type="checkbox"],
 input[type="radio"] 					{ margin:3px 6px 0 0; padding:0; border:solid 1px #BBB; width:auto; float:left; display:block; }
