@@ -12,11 +12,18 @@
 	<!-- Mobile Specific Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
 	
-	<script type="text/javascript">
-		/mobile/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
-			if (!pageYOffset) window.scrollTo(0, 1);
-	  	}, 1000);
-	</script>
+    <script type="text/javascript">
+        var browser         = navigator.userAgent;
+        var browserRegex    = /(Android|BlackBerry|IEMobile|Nokia|iP(ad|hone|od)|Opera M(obi|ini))/;
+        var isMobile        = false;
+        if(browser.match(browserRegex)) {
+            isMobile            = true;
+            addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+            function hideURLbar(){
+                window.scrollTo(0,1);
+            }
+        }
+    </script>
 	
 	<!-- CSS -->
 	<link rel="stylesheet" href="includes/base.css">
@@ -29,11 +36,9 @@
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
 	
-	<!-- To Top scripts -->
-	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="includes/pagescroller.js"></script>
-	
+	<!-- To Top scripts -->	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="includes/jquery.pagescroller.lite.js"></script>
 	<script src="includes/amazium.js" type="text/javascript"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -41,7 +46,6 @@
 				$('#content-01').css('margin-top', $(window).height()+'px');	
 			});
 			$(window).resize();
-			$().UItoTop({ easingType: 'easeOutQuart' });
 		});
 	</script>
 </head>
@@ -137,7 +141,7 @@
 					<h4>Tower8</h4>
 				</li>
 			</ul>
-			<a href="containing.html" class="btn containing">View all</a>
+			<a href="containing.html" class="btn containing">View more sites containing Amazium?</a>
 		</div>
 	</div>
 </div>

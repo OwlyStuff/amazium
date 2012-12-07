@@ -37,18 +37,19 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
     
     <!-- To Top scripts -->
-    <script src="includes/smoothscroll.js"type="text/javascript" ></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
-    <script src="includes/jquery.easing.1.3.js" type="text/javascript"></script>
-    <script src="includes/jquery.ui.totop.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="includes/jquery.pagescroller.lite.js"></script>
     <script src="includes/amazium.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $(window).resize(function(){
-                $('#content-01').css('top', $(window).height()+'px');   
+                $('#content-01').css('margin-top', $(window).height()+'px');    
             });
             $(window).resize();
-            $().UItoTop({ easingType: 'easeOutQuart' });
+            $('body').pageScroller({
+                navigation:     '#sidenav',
+                scrollOffset:   -80
+            });
         });
     </script>
 </head>
@@ -87,19 +88,22 @@
 <div id="content-02">
     <div class="row">
         <div class="grid_3">
-            <ul>
-                <li>List item 01a</li>
-                <li>List item 01b</li>
-                <li>List item 01c</li>
-            </ul>
+            <div id="sidenav" class="sidenav">
+                <ul>
+                    <li><a href="#">1. Download</a></li>
+                    <li><a href="#">2. File structure</a></li>
+                    <li><a href="#">3. What's included</a></li>
+                    <li><a href="#">4. Basic HTML template</a></li>
+                </ul>
+            </div>
         </div>
         <div class="grid_9">
-            <h3>1. Download</h3>
+            <h3 class="section">1. Download</h3>
             <p>Before downloading, be sure to have a code editor (we recommend Sublime Text 2) and some working knowledge of HTML and CSS. We won't walk through the source files here, but they are available for download. We'll focus on getting started with the compiled Bootstrap files.</p>
             <p>Fastest way to get started: get the compiled and minified versions of our CSS, JS, and images. No docs or original source files.</p>
             <p><a href="#" class="btn">Download here</a></p>
             
-            <h3>2. File structure</h3>
+            <h3 class="section">2. File structure</h3>
             <p>Within the download you'll find the following file structure and contents, logically grouping common assets and providing both compiled and minified variations.</p>
             <p>Once downloaded, unzip the compressed folder to see the structure of (the compiled) Bootstrap. You'll see something like this:</p>
             <pre><code>Amazium/
@@ -116,7 +120,7 @@
             <p>This is the most basic form of Bootstrap: compiled files for quick drop-in usage in nearly any web project. We provide compiled CSS and JS (bootstrap.*), as well as compiled and minified CSS and JS (bootstrap.min.*). The image files are compressed using ImageOptim, a Mac app for compressing PNGs.</p>
             <p>Please note that all JavaScript plugins require jQuery to be included.</p>
 
-            <h3>3. What's included</h3>
+            <h3 class="section">3. What's included</h3>
             <p>Bootstrap comes equipped with HTML, CSS, and JS for all sorts of things, but they can be summarized with a handful of categories visible at the top of the Bootstrap documentation.</p>
 
             <h3>Docs sections</h3>
@@ -156,7 +160,7 @@
             </ul>
             <p>In future guides, we may walk through these components individually in more detail. Until then, look for each of these in the documentation for information on how to utilize and customize them.</p>
 
-            <h3>4. Basic HTML template</h3>
+            <h3 class="section">4. Basic HTML template</h3>
             <p>With a brief intro into the contents out of the way, we can focus on putting Bootstrap to use. To do that, we'll utilize a basic HTML template that includes everything we mentioned in the File structure.</p>
             <p>Now, here's a look at a typical HTML file:</p>
             <pre><code>&lt;!doctype html&gt;
