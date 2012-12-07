@@ -37,18 +37,19 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
     
     <!-- To Top scripts -->
-    <script src="includes/smoothscroll.js"type="text/javascript" ></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
-    <script src="includes/jquery.easing.1.3.js" type="text/javascript"></script>
-    <script src="includes/jquery.ui.totop.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="includes/jquery.pagescroller.lite.js"></script>
     <script src="includes/amazium.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $(window).resize(function(){
-                $('#content-01').css('top', $(window).height()+'px');   
+                $('#content-01').css('margin-top', $(window).height()+'px');    
             });
             $(window).resize();
-            $().UItoTop({ easingType: 'easeOutQuart' });
+            $('body').pageScroller({
+                navigation:     '#sidenav',
+                scrollOffset:   -80
+            });
         });
     </script>
 </head>
@@ -64,7 +65,7 @@
                     <li class="logo"><a href="index.html"><img src="images/amazium-logo-small.png"></a></li>
                     <li><a href="setting-up.html">Setting up</a></li>
                     <li><a href="grid.html">Grid</a></li>
-                    <li class="current"><a href="typography.html">Typography</a></li>
+                    <li class="current"><a href="typography.html">Simple Code Base</a></li>
                     <li><a href="forms.html">Forms</a></li>
                     <li class="last"><a href="containing.html">Containing</a></li>
                     <li class="download"><a href="#">Download Amazium</a></li>
@@ -78,7 +79,7 @@
     <div class="row">
         <div class="grid_12">
             <img src="images/icon-code-white.png" class="img-left">
-            <h1>Typography</h1>
+            <h1>Simple Code Base</h1>
             <h2>Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. </h2>
         </div>
     </div>
@@ -87,14 +88,20 @@
 <div id="content-02">
     <div class="row">
         <div class="grid_3">
-            <ul>
-                <li>List item 01a</li>
-                <li>List item 01b</li>
-                <li>List item 01c</li>
-            </ul>
+            <div id="sidenav" class="sidenav">
+                <ul>
+                    <li><a href="#">1. Typography</a></li>
+                    <li><a href="#">2. Generic classes</a></li>
+                    <li><a href="#">3. Blockquote</a></li>
+                    <li><a href="#">4. Lists</a></li>
+                    <li><a href="#">5. Tables</a></li>
+                    <li><a href="#">6. Responsive Images</a></li>
+                    <li><a href="#">7. Media</a></li>
+                </ul>
+            </div>
         </div>
         <div class="grid_9">
-            <h3>Headings</h3>
+            <h3 class="section">Typography</h3>
             <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> are available.</p>
             <div class="example-title">Example</div>
             <div class="example">
@@ -121,20 +128,20 @@
             </div>
             <pre><code>&lt;p class="intro"&gt;...&lt;/p&gt;</code></pre>
             
-            <h3>Generic classes</h3>
+            <h3 class="section">Generic classes</h3>
             <p>We have slightly styled all the standard emphasis tags you would use on a website like <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code> as well as adding a few others like the <code>.highlight</code> class.</p>
             <div class="example-title">Example</div>
             <div class="example">
                 <div class="row">    
                     <div class="grid_4">
-                        <p><small>This paragraph is rendered for fine print.</small></p>
-                        <p><strong>This paragraph is rendered as bold.</strong></p>
-                        <p><em>This paragraph is rendered as italicized.</em></p>
+                        <p>For some<small>fine print</small>.</p>
+                        <p>For a <strong>bold</strong> word.</p>
+                        <p>For a <em>italicized.</em> word.</p>
                     </div>
                     <div class="grid_4">
                         <p>For a <abbr title="Abbreviations">abbr</abbr> word.</p>
-                        <p>This paragraph contains a <sup>Superscript</sup> word in it.</p>
-                        <p>This paragraph contains a <sub>Subscript</sub> word in it.</p>
+                        <p>For a <sup>Superscript</sup> word.</p>
+                        <p>For a <sub>Subscript</sub> word.</p>
                     </div>
                 </div>
             </div>
@@ -161,7 +168,7 @@
     &lt;abbr title="Telephone">T:&lt;/abbr&gt; (123) 456-7890
 &lt;/address&gt;</em></code></pre>
         
-            <h3>Blockquote</h3>
+            <h3 class="section">Blockquote</h3>
             <p>Present contact information for the nearest ancestor or the entire body of work.</p>
             <div class="example-title">Example</div>
             <div class="example">
@@ -182,7 +189,7 @@
 &lt;/figure&gt;</em></code></pre>
 
 
-            <h3>Lists</h3>  
+            <h3 class="section">Lists</h3>  
             <p>For the standard <code>&lt;ul&gt;</code> bullet point weve replace the normal boring dot with a graphic which can be easily changed as well as that if you wish to have a circle, square or disc all you need to do is include the relevant class to the <code>&lt;ul&gt;</code> as shown in example 3 below.</p>
             <div class="row">
                 <div class="grid_4">
@@ -312,7 +319,7 @@
     &lt;dd>Description data&lt;/dd&gt;
 &lt;/dl&gt;</code></pre>
 
-            <h3>Tables</h3>
+            <h3 class="section">Tables</h3>
             <p>Weve also included some styling for tables which to be honest I haven't used that much outside building emails but it's there in case you ever need it..!</p>
             <div class="example-title">Example</div>
             <div class="example">
@@ -366,7 +373,7 @@
     &lt;/tr&gt;
 &lt;/table&gt;</code></pre>
 
-            <h3>Responsive Images</h3>
+            <h3 class="section">Responsive Images</h3>
             <p>Seeing how you website will be responsive there will be times when you will need your images to be responsive to and with this in mind I've made a nice little style to make any image 100% responsive, all you need to do is add this little class to your image: <code>class="max-img"</code> and hay presto responsive images..!</p>
             <p>The images below are sitting in a <code>grid_6</code> and a <code>grid_3</code> but you will notice that the with and height will change based on the screen size.</p>
             <div class="example-title">Example</div>
@@ -382,7 +389,7 @@
             </div>
             <pre><code>&lt;img src="images/blank.jpg" border="0" alt="blank image" class="max-img"&gt;</code></pre>
 
-            <h3>Media</h3>
+            <h3 class="section">Media</h3>
             <p>As mentioned above about images I suspect that you would also like to have all your videos be responsive as well and with this in mind I had to do a little searching around on the web to find the answer for this which is very simple.</p>
             <p>All you will need to do is wrap your video with a div that has a class called <code>.media</code> and thats it one responsive video..!</p>
             <div class="example-title">Example</div>
