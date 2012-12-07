@@ -14,6 +14,8 @@ h1 sup                                          { top:-15px; font-size:50%; }
 h2                                              { color:#333; font-size:18px; line-height:20px; }
 pre + h3                                        { margin-top:60px; }
 
+.grid_4_5                                       { width:328px; margin:0 16px; overflow:hidden; float:left; display:inline; }
+
 #homepage hr                                    { margin:75px 0 70px 0; border:none; height:15px; text-align:left; background:transparent url('../images/hr.png') no-repeat center 0; background-size:100% auto; }
 #homepage .intro                                { margin:0 0 40px 0; font-size:130%; line-height:130%; }
 
@@ -56,7 +58,7 @@ a.navigation-btn img                            { padding:4px 0 0 0; width:36px;
 
 /***** Side Navigation *****/
 
-.sidenav ul                                     { margin:0; padding:0; display:block; list-style:none; background-color:#000; }
+.sidenav ul                                     { margin:0; padding:0; display:block; list-style:none; background-color:#000; position:fixed; }
 .sidenav li                                     { margin:0; padding:0; display:block; }
 .sidenav li a                                   { display:block; font-weight:normal; padding:8px 10px; text-decoration:none; color:#FFF; font-size:12px; border-bottom:1px solid #333; background:transparent url(../images/btn-arrow.png) no-repeat right; }   
 .sidenav li a:hover,
@@ -107,6 +109,8 @@ a.amazium:visited                               { margin:20px 0; padding:0 0 0 3
 /***** Screen Bigger than 960px *****/
 @media only screen and (min-width:1200px) {
 
+.grid_4_5                                       { width:410px; margin:0 20px; overflow:hidden; float:left; display:inline; }
+
 /***** Example *****/
 
 div.example .grid_4                             { width:393px; }
@@ -136,6 +140,8 @@ ul.gallery-small li h4                          { width:204px; }
 
 /***** Tablet (Smaller than 959px) *****/
 @media only screen and (min-width: 768px) and (max-width: 959px) {
+
+.grid_4_5                                       { width:260px; margin:0 14px; overflow:hidden; float:left; display:inline; }
 
 /***** Example *****/
 
@@ -169,6 +175,8 @@ ul.gallery-small li h4                          { width:159px; }
 
 /***** Phone (portrait 300px) *****/
 @media only screen and (max-width: 767px) {
+
+.grid_4_5                                       { width:300px; margin:0; overflow:hidden; float:left; display:inline; }
 
 /***** Example *****/
 
@@ -226,6 +234,8 @@ ul.gallery-small li h4                          { width:130px; font-size: 14px; 
     
 /***** Phone (landscape 420px) *****/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+.grid_4_5                                       { width:456px; margin:0; overflow:hidden; float:left; display:inline; }
 
 /***** Example *****/
 

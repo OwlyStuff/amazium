@@ -1,6 +1,6 @@
 /*
 |--------------------------------------------------------------------------
-| UItoTop jQuery Plugin 1.1
+| UItoTop jQuery Plugin 1.2
 | http://www.mattvarone.com/web-design/uitotop-jquery-plugin/
 |--------------------------------------------------------------------------
 */
@@ -15,7 +15,7 @@
 			outDelay:400,
   			containerID: 'toTop',
 			containerHoverID: 'toTopHover',
-			scrollSpeed: 1200,
+			scrollSpeed: 800,
 			easingType: 'linear'
  		};
 
