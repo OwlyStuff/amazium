@@ -31,10 +31,8 @@
 	
     <!-- To Top scripts -->
     <script type="text/javascript" src="includes/jquery-1.8.0.min.js"></script>
-    <script type="text/javascript" src="includes/jquery.pagescroller.lite.js"></script>    
     <script type="text/javascript" src="includes/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" src="includes/jquery.ui.totop.js"></script>
-    <script type="text/javascript" src="includes/amazium.js"></script>
+    <script type="text/javascript" src="includes/jquery.ui.totop.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $().UItoTop({ easingType: 'easeOutQuart' });
@@ -47,6 +45,37 @@
 	<div class="grid_12">
 		<h1>Example</h1>
 		<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <form name="" id="" method="" action="">
+            <div class="row">
+                <div class="grid_6">
+                    <fieldset>
+                        <input type="input" name="input" id="input" placeholder="Input" autocomplete="off" tabindex="1" />
+                        <input type="name" class="icon" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" />
+                        <input type="text" class="icon" name="text" id="text" placeholder="Text" autocomplete="off" tabindex="2" />
+                        <input type="password" class="icon" name="password" id="password" placeholder="Password" autocomplete="off" tabindex="3" />
+                        <input type="url" class="icon" name="url" id="url" placeholder="Url" autocomplete="off" tabindex="14" />    
+                        <input type="search" class="icon" name="search" id="search" placeholder="Search" autocomplete="off" tabindex="15" />
+                    </fieldset>
+                </div>
+                <div class="grid_6">
+                    <fieldset>
+                        <input type="tel" class="icon" name="tel" id="tel" placeholder="Tel" autocomplete="off" tabindex="16" />
+                        <input type="email" class="icon" name="email" id="email" placeholder="Email" autocomplete="off" tabindex="13" />
+                        <select id="dropdown" name="dropdown" tabindex="18" />
+                            <option selected>Option 1</option>
+                            <option>Option 2</option>
+                            <optgroup label="Option group 1">
+                                <option>Sub option 1</option>
+                                <option>Sub option 2</option>
+                                <option>Sub option 3</option>
+                            </optgroup>
+                            <option>Option 3</option>
+                        </select>
+                        <textarea name="message" class="icon" id="message" placeholder="Message..." tabindex="17"></textarea>
+                    </fieldset>
+                </div>
+            </div>
+        </form>
 	</div>
 </div>
 
