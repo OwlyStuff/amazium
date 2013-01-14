@@ -201,27 +201,22 @@ select:focus                            { color:#000; border-color:#333; outline
 /***** Errors with Labels *****/
 
 fieldset.error label                    { color:#C60F13; }
-
 fieldset.error label + input,
 fieldset.error label + textarea,
 fieldset.error label + select           { margin:6px 0 0 0; color:#C60F13; border-color:#C60F13; background-color:#f4cfd0; }
-
 fieldset.error label + input + small    { margin:0 0 6px 0; padding:3px 5px 5px 8px; color:#FFF; border-color:#C60F13; background-color:#C60F13; width:70%; float:right; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
 /***** Errors without Labels *****/
 
 fieldset.error label                    { color:#C60F13; }
-
 fieldset.error input,
 fieldset.error textarea,
 fieldset.error select                   { margin:6px 0 0 0; color:#C60F13; border-color:#C60F13; background-color:#f4cfd0 !important; }
-
 fieldset.error input + small            { margin:0 0 6px 0; padding:3px 5px 5px 8px; color:#FFF; border-color:#C60F13; background-color:#C60F13; width:100%; display:block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
 /***** Correct *****/
 
 fieldset.correct form label             { color:#468847; }
-
 fieldset.correct input,
 fieldset.correct textarea,
 fieldset.correct select                 { margin:6px 0 0 0; color:#468847; border-color:#468847; background-color:#dae7da !important; }
