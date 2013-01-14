@@ -136,38 +136,49 @@ a:hover.btn                             { text-decoration:none; color:#333; bord
 
 /***** Forms *****/
 
-form                                    { margin:16px 0; padding:0; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
-form label                              { margin:11px 0; padding:0 16px 0 0; float:left; text-align:right; display:block; font-weight:bold; width:30%; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#000; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+form                                    { margin:16px 0; padding:0; display:inline-block; width:100%; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+form label                              { margin:6px 0 0; padding:0 16px 0 0; float:left; text-align:right; display:block; font-weight:bold; width:30%; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#000; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 form label.checkbox,
 form label.radio                        { text-align:left; width:auto; }
 form span                               { margin:10px 0; padding:0; display:block; overflow:hidden; float:left; }
-fieldset                                { margin:0; padding:0; display:block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+fieldset                                { margin:16px 0 0 0; padding:0; display:block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+
+::-webkit-input-placeholder             { color:#999; }
+:-moz-placeholder                       { color:#999; }
+::-moz-placeholder                      { color:#999; }
+:-ms-input-placeholder                  { color:#999; }
 
 input,
 textarea,
-select                                  { margin:6px 0; padding:4px 4px 4px 6px; display:inline-block; border:solid 1px #BBB; width:100%; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#999; overflow:hidden; outline:0 none; transition-property:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; box-sizing:border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
+select                                  { margin:0; padding:4px 4px 4px 6px; display:inline-block; border:solid 1px #BBB; border-radius:0; width:100%; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#999; overflow:hidden; outline:0 none; transition-property:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; box-sizing:border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-appearance:none; }
 
 form label + input,
 form label + textarea,
 form label + select                     { float:right; width:70%; }
 
+form.hide-lables label + input,
+form.hide-lables label + textarea,
+form.hide-lables label + select         { float:left; width:100%; }
+
+form.hide-lables label                  { display:none; }
+
 select                                  { padding:3px 3px 3px 4px; }
 optgroup                                { font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#000; background-color:#f1f1f1; }
 optgroup option                         { background-color:#FFF; }
 
-input[type="name"].icon                 { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 0; }
-input[type="text"].icon                 { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -50px; }
-input[type="search"].icon               { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -100px; }
-input[type="url"].icon                  { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -150px; }
-input[type="email"].icon                { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -200px; }
-input[type="tel"].icon                  { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -250px; }
-input[type="password"].icon             { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -300px; }
+form.icons input[type="name"]           { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 0; }
+form.icons input[type="text"]           { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -50px; }
+form.icons input[type="search"]         { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -100px; }
+form.icons input[type="url"]            { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -150px; }
+form.icons input[type="email"]          { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -200px; }
+form.icons input[type="tel"]            { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -250px; }
+form.icons input[type="password"]       { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -300px; }
 
-textarea                                { resize:vertical; height:114px; }
-textarea.icon                           { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -350px; }
+textarea                                { resize:vertical; height:122px; }
+form.icons textarea.icon                { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -350px; }
 
-input[type="checkbox"],
-input[type="radio"]                     { margin:3px 6px 0 0; padding:0; border:solid 1px #BBB; width:auto; float:left; display:block; }
+input[type="checkbox"]                  { margin:3px 6px 0 0; padding:0; border:solid 1px #BBB; width:auto; float:left; display:block; -webkit-appearance:checkbox !important; }
+input[type="radio"]                     { margin:3px 6px 0 0; padding:0; border:solid 1px #BBB; width:auto; float:left; display:block; -webkit-appearance:radio !important; }
 
 input:focus,
 textarea:focus,
@@ -175,35 +186,40 @@ select:focus                            { color:#000; border-color:#333; outline
 
 /***** Search *****/
 
-.search input[type="search"]            { width:85%; float:left; border-right:none; }
+form.search input[type="search"]            { width:85%; float:left; border-right:none; }
 
-.search input[type="button"],
-.search input[type="submit"],
-.search input[type="reset"]             { width:15%; float:left; background-image:none; color:#FFF; background-color:#000; border-color:#000; }
+form.search input[type="button"],
+form.search input[type="submit"],
+form.search input[type="reset"]             { margin:0 !important; padding-right:0 !important; width:15%; float:left; background-image:none; color:#FFF; background-color:#000; border-color:#000; }
 
-.search input:hover[type="button"],
-.search input:hover[type="submit"],
-.search input:hover[type="reset"]       { color:#333; border:1px solid #999; background-color:#999; }
+form.search input:hover[type="button"],
+form.search input:hover[type="submit"],
+form.search input:hover[type="reset"]       { margin:0 !important; color:#333; border:1px solid #999; background-color:#999; }
 
 /***** Login *****/
 
-.login input[type="email"],
-.login input[type="password"]           { margin-right:1%; width:40%; float:left; }
+form.login input[type="email"],
+form.login input[type="password"]           { margin-right:1%; width:40%; float:left; }
 
-.login input[type="button"],
-.login input[type="submit"],
-.login input[type="reset"]              { width:18%; float:left; background-image:none; color:#FFF; background-color:#000; border-color:#000; }
+form.login input[type="button"],
+form.login input[type="submit"],
+form.login input[type="reset"]              { margin:0 !important; padding-right:0 !important; width:18%; float:left; background-image:none; color:#FFF; background-color:#000; border-color:#000; }
 
-.login input:hover[type="button"],
-.login input:hover[type="submit"],
-.login input:hover[type="reset"]        { color:#333; border:1px solid #999; background-color:#999; }
+form.login input:hover[type="button"],
+form.login input:hover[type="submit"],
+form.login input:hover[type="reset"]        { margin:0 !important; color:#333; border:1px solid #999; background-color:#999; }
 
 /***** Errors with Labels *****/
+
+fieldset.error ::-webkit-input-placeholder  { color:#C60F13; }
+fieldset.error :-moz-placeholder            { color:#C60F13; }
+fieldset.error ::-moz-placeholder           { color:#C60F13; }
+fieldset.error :-ms-input-placeholder       { color:#C60F13; }
 
 fieldset.error label                    { color:#C60F13; }
 fieldset.error label + input,
 fieldset.error label + textarea,
-fieldset.error label + select           { margin:6px 0 0 0; color:#C60F13; border-color:#C60F13; background-color:#f4cfd0; }
+fieldset.error label + select           { margin:0; color:#C60F13 !important; border-color:#C60F13; background-color:#f4cfd0; }
 fieldset.error label + input + small    { margin:0 0 6px 0; padding:3px 5px 5px 8px; color:#FFF; border-color:#C60F13; background-color:#C60F13; width:70%; float:right; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
 /***** Errors without Labels *****/
@@ -212,9 +228,14 @@ fieldset.error label                    { color:#C60F13; }
 fieldset.error input,
 fieldset.error textarea,
 fieldset.error select                   { margin:6px 0 0 0; color:#C60F13; border-color:#C60F13; background-color:#f4cfd0 !important; }
-fieldset.error input + small            { margin:0 0 6px 0; padding:3px 5px 5px 8px; color:#FFF; border-color:#C60F13; background-color:#C60F13; width:100%; display:block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+form.hide-lables fieldset.error input + small            { margin:0 0 6px 0; padding:3px 5px 5px 8px; color:#FFF; border-color:#C60F13; background-color:#C60F13; width:100%; display:block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
 /***** Correct *****/
+
+fieldset.correct ::-webkit-input-placeholder  { color:#468847; }
+fieldset.correct :-moz-placeholder            { color:#468847; }
+fieldset.correct ::-moz-placeholder           { color:#468847; }
+fieldset.correct :-ms-input-placeholder       { color:#468847; }
 
 fieldset.correct form label             { color:#468847; }
 fieldset.correct input,
@@ -225,7 +246,7 @@ fieldset.correct select                 { margin:6px 0 0 0; color:#468847; borde
 
 input[type="button"],
 input[type="submit"],
-input[type="reset"]                     { margin:6px 0; padding:3px 4px 3px 6px; display:inline-block; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#fff; border:1px solid #C60F13; float:left; width:100%; background:#C60F13 url(../images/btn-arrow.png) no-repeat right; cursor:pointer; -webkit-appearance:none; }
+input[type="reset"]                     { margin:6px 0; padding:3px 30px 3px 6px; display:inline-block; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#fff; border:1px solid #C60F13; float:left; width:auto; background:#C60F13 url(../images/btn-arrow.png) no-repeat right; cursor:pointer; -webkit-appearance:none; }
 
 input:hover[type="button"],
 input:hover[type="submit"]              { color:#333; border:1px solid #999; background-color:#999; }

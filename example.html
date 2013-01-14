@@ -56,7 +56,6 @@
                     <fieldset class="error">
                         <label for="name">Name</label>
                         <input type="name" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" />
-                        <small class="error">Invalid entry</small>
                     </fieldset>
                     <fieldset>
                         <label for="text">Text</label>
@@ -66,7 +65,7 @@
                         <label for="password">Password</label>
                         <input type="password" name="password" id="password" placeholder="Password" autocomplete="off" tabindex="3" />
                     </fieldset>
-                    <fieldset class="correct">
+                    <fieldset>
                         <label for="url">URL</label>
                         <input type="url" name="url" id="url" placeholder="Url" autocomplete="off" tabindex="14" /> 
                     </fieldset>
@@ -105,37 +104,45 @@
             </div>
         </form>
 
-        <form name="" id="" method="" action="">
+        <form name="" id="" method="" action="" class="hide-lables icons">
             <div class="row">
                 <div class="grid_6">
                     <fieldset>
+                        <label for="input">Input</label>
                         <input type="input" name="input" id="input" placeholder="Input" autocomplete="off" tabindex="1" />
                     </fieldset>
                     <fieldset class="error">
-                        <input type="name" class="icon" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" />
-                        <small class="error">Invalid entry</small>
+                        <label for="name">Name</label>
+                        <input type="name" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" />
                     </fieldset>
                     <fieldset>
-                        <input type="text" class="icon" name="text" id="text" placeholder="Text" autocomplete="off" tabindex="2" />
+                        <label for="text">Text</label>
+                        <input type="text" name="text" id="text" placeholder="Text" autocomplete="off" tabindex="2" />
                     </fieldset>
                     <fieldset>
-                        <input type="password" class="icon" name="password" id="password" placeholder="Password" autocomplete="off" tabindex="3" />
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Password" autocomplete="off" tabindex="3" />
                     </fieldset>
-                    <fieldset class="correct">
-                        <input type="url" class="icon" name="url" id="url" placeholder="Url" autocomplete="off" tabindex="14" />  
+                    <fieldset>
+                        <label for="url">URL</label>
+                        <input type="url" name="url" id="url" placeholder="Url" autocomplete="off" tabindex="14" /> 
                     </fieldset>
-                    <fieldset>  
-                        <input type="search" class="icon" name="search" id="search" placeholder="Search" autocomplete="off" tabindex="15" />
+                    <fieldset>
+                        <label for="search">Search</label>
+                        <input type="search" name="search" id="search" placeholder="Search" autocomplete="off" tabindex="15" />
                     </fieldset>
                 </div>
                 <div class="grid_6">
                     <fieldset>
-                        <input type="tel" class="icon" name="tel" id="tel" placeholder="Tel" autocomplete="off" tabindex="16" />
+                        <label for="tel">Tel</label>
+                        <input type="tel" name="tel" id="tel" placeholder="Tel" autocomplete="off" tabindex="16" />
                     </fieldset>
                     <fieldset>
-                        <input type="email" class="icon" name="email" id="email" placeholder="Email" autocomplete="off" tabindex="13" />
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" tabindex="13" />
                     </fieldset>
                     <fieldset>
+                        <label for="options">Options</label>
                         <select id="dropdown" name="dropdown" tabindex="18" />
                             <option selected>Option 1</option>
                             <option>Option 2</option>
@@ -148,7 +155,8 @@
                         </select>
                     </fieldset>
                     <fieldset>
-                        <textarea name="message" class="icon" id="message" placeholder="Message..." tabindex="17"></textarea>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Message..." tabindex="17"></textarea>
                     </fieldset>
                 </div>
             </div>
