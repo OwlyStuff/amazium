@@ -32,8 +32,8 @@
 
 
 
-/***** Phone (portrait 300px) *****/
-@media only screen and (max-width: 767px) {
+/***** Mobile (portrait 300px) *****/
+@media only screen and (min-width:481px) and (max-width: 767px) {
 
 .example 								{  }
 
@@ -43,8 +43,8 @@
 
 
 
-/***** Phone (landscape 420px) *****/
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+/***** Mobile (landscape 420px) *****/
+@media only screen and (max-width: 480px) {
 
 .example 								{  }
 

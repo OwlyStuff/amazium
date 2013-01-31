@@ -304,12 +304,13 @@ table tr td.highlight                           { padding:11px 8px; color:#FFF; 
 #toTopHover                                     { background:url(../img/ui.totop.png) no-repeat left -51px; width:51px; height:51px; display:block; overflow:hidden; float:left; opacity: 0; -moz-opacity: 0; filter:alpha(opacity=0); }
 #toTop:active, #toTop:focus                     { outline:none; }
 
-/***** Phone (portrait 300px) *****/
+/***** Mobile *****/
 @media only screen and (max-width: 767px) {
 
 form label                                      { margin:0; text-align:left; float:left; width:100%; }
 form label + input,
 form label + textarea,
-form label + select                             { float:left; width:100%; }
+form label + select,
+fieldset.error label + input + small            { float:left; width:100%; }
 
 }
