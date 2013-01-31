@@ -79,7 +79,7 @@ div                                             { box-sizing:border-box; -webkit
 
 ul, ol                                          { margin:26px 0 36px 0; display:block; }
 ul                                              { list-style:none outside; }
-ul li                                           { margin:0 0 5px 0; padding:0 0 0 18px; line-height:18px; background:transparent url('../images/bullet.png') no-repeat 0 3px; }
+ul li                                           { margin:0 0 5px 0; padding:0 0 0 18px; line-height:18px; background:transparent url('../img/bullet.png') no-repeat 0 3px; }
 
 ul ul, ul ol                                    { margin:5px 0 5px 0; }
 ol ol, ol ul                                    { margin:0 0 5px 20px; }
@@ -131,7 +131,7 @@ img                                             { border:0; vertical-align:middl
 
 /***** Buttons  *****/
 
-a.btn, .btn                                     { margin:5px 0 5px 0; padding:4px 25px 4px 10px; display:inline-block; color:#FFF; border:1px solid #000; background:#000 url(../images/btn-arrow.png) no-repeat right; text-decoration:none; cursor:pointer; }
+a.btn, .btn                                     { margin:5px 0 5px 0; padding:4px 25px 4px 10px; display:inline-block; color:#FFF; border:1px solid #000; background:#000 url(../img/btn-arrow.png) no-repeat right; text-decoration:none; cursor:pointer; }
 a:hover.btn                                     { text-decoration:none; color:#333; border:1px solid #999; background-color:#999; }
 
 /***** Forms *****/
@@ -166,16 +166,16 @@ select                                          { padding:3px 3px 3px 4px; }
 optgroup                                        { font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#000; background-color:#f1f1f1; }
 optgroup option                                 { background-color:#FFF; }
 
-form.icons input[type="name"]                   { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 0; }
-form.icons input[type="text"]                   { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -50px; }
-form.icons input[type="search"]                 { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -100px; }
-form.icons input[type="url"]                    { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -150px; }
-form.icons input[type="email"]                  { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -200px; }
-form.icons input[type="tel"]                    { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -250px; }
-form.icons input[type="password"]               { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -300px; }
+form.icons input[type="name"]                   { padding-left:30px; background:transparent url('../img/form.png') no-repeat 0 0; }
+form.icons input[type="text"]                   { padding-left:30px; background:transparent url('../img/form.png') no-repeat 0 -50px; }
+form.icons input[type="search"]                 { padding-left:30px; background:transparent url('../img/form.png') no-repeat 0 -100px; }
+form.icons input[type="url"]                    { padding-left:30px; background:transparent url('../img/form.png') no-repeat 0 -150px; }
+form.icons input[type="email"]                  { padding-left:30px; background:transparent url('../img/form.png') no-repeat 0 -200px; }
+form.icons input[type="tel"]                    { padding-left:30px; background:transparent url('../img/form.png') no-repeat 0 -250px; }
+form.icons input[type="password"]               { padding-left:30px; background:transparent url('../img/form.png') no-repeat 0 -300px; }
 
 textarea                                        { resize:vertical; height:122px; }
-form.icons textarea.icon                        { padding-left:30px; background:transparent url('../images/form.png') no-repeat 0 -350px; }
+form.icons textarea.icon                        { padding-left:30px; background:transparent url('../img/form.png') no-repeat 0 -350px; }
 
 input[type="checkbox"]                          { margin:3px 6px 0 0; padding:0; border:solid 1px #BBB; width:auto; float:left; display:block; -webkit-appearance:checkbox !important; }
 input[type="radio"]                             { margin:3px 6px 0 0; padding:0; border:solid 1px #BBB; width:auto; float:left; display:block; -webkit-appearance:radio !important; }
@@ -246,7 +246,7 @@ fieldset.correct select                         { margin:6px 0 0 0; color:#46884
 
 input[type="button"],
 input[type="submit"],
-input[type="reset"]                             { margin:6px 6px 6px 0; padding:3px 30px 3px 6px; display:inline-block; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; font-weight:bold; color:#fff; border:1px solid #C60F13; float:left; width:auto; background:#C60F13 url(../images/btn-arrow.png) no-repeat right; cursor:pointer; -webkit-appearance:none; }
+input[type="reset"]                             { margin:6px 6px 6px 0; padding:3px 30px 3px 6px; display:inline-block; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; font-weight:bold; color:#fff; border:1px solid #C60F13; float:left; width:auto; background:#C60F13 url(../img/btn-arrow.png) no-repeat right; cursor:pointer; -webkit-appearance:none; }
 
 input[type="button"]                            { color:#FFF; border-color:#000; background-color:#333; }
 input[type="submit"]                            { color:#FFF; border-color:#1c7c93; background-color:#2399B5; }
@@ -300,8 +300,8 @@ table tr td.highlight                           { padding:11px 8px; color:#FFF; 
 
 /***** Back to Top *****/
 
-#toTop                                          { display:none; text-decoration:none; position:fixed; bottom:10px; right:10px; overflow:hidden; width:51px; height:51px; border:none; text-indent:-999px; background:url(../images/ui.totop.png) no-repeat left top; z-index:99; }
-#toTopHover                                     { background:url(../images/ui.totop.png) no-repeat left -51px; width:51px; height:51px; display:block; overflow:hidden; float:left; opacity: 0; -moz-opacity: 0; filter:alpha(opacity=0); }
+#toTop                                          { display:none; text-decoration:none; position:fixed; bottom:10px; right:10px; overflow:hidden; width:51px; height:51px; border:none; text-indent:-999px; background:url(../img/ui.totop.png) no-repeat left top; z-index:99; }
+#toTopHover                                     { background:url(../img/ui.totop.png) no-repeat left -51px; width:51px; height:51px; display:block; overflow:hidden; float:left; opacity: 0; -moz-opacity: 0; filter:alpha(opacity=0); }
 #toTop:active, #toTop:focus                     { outline:none; }
 
 /***** Phone (portrait 300px) *****/
