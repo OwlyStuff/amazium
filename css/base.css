@@ -275,11 +275,11 @@ table tr td.highlight                           { padding:11px 8px; color:#FFF; 
 .float-left                                     { float:left; }
 .float-right                                    { float:right; }
 
-.text-big                                       { color:#a2bd30; font-weight:bold; line-height:26px; }
-.text-left                                      { text-align:left; }
-.text-right                                     { text-align:right; }
-.text-center                                    { text-align:center; }
-.text-justify                                   { text-align:justify; }
+.txt-big                                       	{ color:#a2bd30; font-weight:bold; line-height:26px; }
+.txt-left                                      	{ text-align:left; }
+.txt-right                                     	{ text-align:right; }
+.txt-center                                    	{ text-align:center; }
+.txt-justify                                   	{ text-align:justify; }
 
 .normal                                         { font-weight:normal; }
 .bold                                           { font-weight:bold; }
