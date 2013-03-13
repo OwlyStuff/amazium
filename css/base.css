@@ -131,8 +131,21 @@ img                                             { border:0; vertical-align:middl
 
 /***** Buttons  *****/
 
-a.btn, .btn                                     { margin:5px 0 5px 0; padding:4px 25px 4px 10px; display:inline-block; color:#FFF; border:1px solid #000; background:#000 url(../img/btn-arrow.png) no-repeat right; text-decoration:none; cursor:pointer; }
-a:hover.btn                                     { text-decoration:none; color:#333; border:1px solid #999; background-color:#999; }
+a.btn, 
+.btn                                     		{ margin:5px 10px 5px 0; padding:0 20px; display:inline-block; color:#FFF; border:1px solid #000; background-color:#000; font-size:16px; line-height:40px; text-decoration:none; cursor:pointer; }
+a:hover.btn                                     { color:#333; border:1px solid #CCC; background-color:#FFF; }
+
+a.btn.small, 
+.btn.small                         				{ padding:0 10px; font-size:12px; line-height:25px; }
+
+.btn.white										{ border-color:#CCC; background-color:#FFF; color:#333; }
+a:hover.btn.white								{ border-color:#000; background-color:#000; color:#FFF; }			
+
+.btn.red										{ border-color:#E74C3C; background-color:#E74C3C; }
+a:hover.btn.red									{ border-color:#E74C3C; background-color:#b93d30; color:#FFF; }
+
+.btn.blue										{ border-color:#3498DB; background-color:#3498DB; }
+a:hover.btn.blue								{ border-color:#3498DB; background-color:#2a7aaf; color:#FFF; }
 
 /***** Tables *****/
 
@@ -181,14 +194,5 @@ table tr td.highlight                           { padding:11px 8px; color:#FFF; 
 #toTop                                          { display:none; text-decoration:none; position:fixed; bottom:10px; right:10px; overflow:hidden; width:51px; height:51px; border:none; text-indent:-999px; background:url(../img/ui.totop.png) no-repeat left top; z-index:99; }
 #toTopHover                                     { background:url(../img/ui.totop.png) no-repeat left -51px; width:51px; height:51px; display:block; overflow:hidden; float:left; opacity: 0; -moz-opacity: 0; filter:alpha(opacity=0); }
 #toTop:active, #toTop:focus                     { outline:none; }
-
-/***** Mobile *****/
-@media only screen and (max-width: 767px) {
-
-form label                                      { margin:0; text-align:left; float:left; width:100%; }
-form label + input,
-form label + textarea,
-form label + select,
-fieldset.error label + input + small            { float:left; width:100%; }
 
 }

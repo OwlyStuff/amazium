@@ -42,9 +42,9 @@
     </script>
 </head>
 <body>
-	
-<div class="row">
-	<div class="grid_12">
+
+<section class="row">
+    <article class="grid_12">
 		<h1>H1 - Heading 1</h1>
         <h2>H2 - Heading 2</h2>
         <h3>H3 - Heading 3</h3>
@@ -53,103 +53,14 @@
         <h6>H6 - Heading 6</h6>
 		<p class="intro">This is some intro text - Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
         <p>This is a nomal paragraph - Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-    </div>
-</div>
-<div class="row">
-    <div class="grid_1">1</div>
-    <div class="grid_1">1</div>
-    <div class="grid_1">1</div>
-    <div class="grid_1">1</div>
-    <div class="grid_1">1</div>
-    <div class="grid_1">1</div>
-    <div class="grid_1">1</div>
-    <div class="grid_1">1</div>
-    <div class="grid_1">1</div>
-    <div class="grid_1">1</div>
-    <div class="grid_1">1</div>
-    <div class="grid_1">1</div>
-</div>
-<div class="row">
-    <div class="grid_2">2</div>
-    <div class="grid_2">2</div>
-    <div class="grid_2">2</div>
-    <div class="grid_2">2</div>
-    <div class="grid_2">2</div>
-    <div class="grid_2">2</div>
-</div>
-<div class="row">
-    <div class="grid_4">4</div>
-    <div class="grid_4">4</div>
-    <div class="grid_4">4</div>
-</div>
-<div class="row">
-    <div class="grid_6">6</div>
-    <div class="grid_6">6</div>
-</div>
-<div class="row">
-    <div class="grid_12">12</div>
-</div>
-<div class="row">
-    <div class="grid_12">
-        <form name="" id="" method="" action="">
-            <div class="row">
-                <div class="grid_6">
-                    <fieldset>
-                        <label for="input">Input</label>
-                        <input type="input" name="input" id="input" placeholder="Input" autocomplete="off" tabindex="1" />
-                    </fieldset>
-                    <fieldset class="error">
-                        <label for="name">Name</label>
-                        <input type="name" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" />
-                        <small>Invalid entry</small>
-                    </fieldset>
-                    <fieldset>
-                        <label for="text">Text</label>
-                        <input type="text" name="text" id="text" placeholder="Text" autocomplete="off" tabindex="2" />
-                    </fieldset>
-                    <fieldset>
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" placeholder="Password" autocomplete="off" tabindex="3" />
-                    </fieldset>
-                    <fieldset>
-                        <label for="url">URL</label>
-                        <input type="url" name="url" id="url" placeholder="Url" autocomplete="off" tabindex="14" /> 
-                    </fieldset>
-                    <fieldset>
-                        <label for="search">Search</label>
-                        <input type="search" name="search" id="search" placeholder="Search" autocomplete="off" tabindex="15" />
-                    </fieldset>
-                </div>
-                <div class="grid_6">
-                    <fieldset>
-                        <label for="tel">Tel</label>
-                        <input type="tel" name="tel" id="tel" placeholder="Tel" autocomplete="off" tabindex="16" />
-                    </fieldset>
-                    <fieldset>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" tabindex="13" />
-                    </fieldset>
-                    <fieldset>
-                        <label for="options">Options</label>
-                        <select id="dropdown" name="dropdown" tabindex="18" />
-                            <option selected>Option 1</option>
-                            <option>Option 2</option>
-                            <optgroup label="Option group 1">
-                                <option>Sub option 1</option>
-                                <option>Sub option 2</option>
-                                <option>Sub option 3</option>
-                            </optgroup>
-                            <option>Option 3</option>
-                        </select>
-                    </fieldset>
-                    <fieldset>
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" placeholder="Message..." tabindex="17"></textarea>
-                    </fieldset>
-                </div>
-            </div>
-        </form>
+        <p><a href="#" class="btn">Normal Button</a><a href="#" class="btn red">Normal Red Button</a><a href="#" class="btn blue">Normal Blue Button</a><a href="#" class="btn white">Normal White Button</a></p>
+        <p><a href="#" class="btn small">Small Button</a><a href="#" class="btn red small">Small Red Button</a><a href="#" class="btn blue small">Small Blue Button</a><a href="#" class="btn white small">Small White Button</a></p>
+    </article>
+</section>
 
+<section class="row">
+    <article class="grid_12">
+        <h3>Form</h3>
         <form name="" id="" method="" action="" class="hide-lables icons">
             <div class="row">
                 <div class="grid_6">
@@ -157,8 +68,8 @@
                         <label for="input">Input</label>
                         <input type="input" name="input" id="input" placeholder="Input" autocomplete="off" tabindex="1" />
                     </fieldset>
-                    <fieldset class="error">
-                        <label for="name">Name</label>
+                    <fieldset>
+                        <label for="name" class="error">Name</label>
                         <input type="name" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" />
                         <small>Invalid entry</small>
                     </fieldset>
@@ -207,9 +118,72 @@
                     </fieldset>
                 </div>
             </div>
+            <div class="row">
+                <div class="grid_12">
+                    <fieldset>
+                        <input type="submit" name="submit" id="submitbtn" tabindex="7" value="Submit Button" />
+                        <input type="reset" name="reset" id="submitbtn" tabindex="7" value="Reset Button" />
+                        <input type="button" name="button" id="submitbtn" tabindex="7" value="Button" />
+                    </fieldset>
+                </div>
+            </div>
         </form>
-	</div>
-</div>
+	</article>
+</section>
+
+<section class="row">
+    <article class="grid_6">
+        <h3>100% Video</h3>
+        <div class="media">
+            <iframe src="http://player.vimeo.com/video/21465475?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;autoplay=0" frameborder="0"></iframe>
+        </div>
+    </article>
+    <article class="grid_6">
+        <h3>100% Image</h3>
+        <img src="img/blank.jpg" border="0" alt="blank image" class="max-img">
+    </article>
+</section>
+
+<section class="row">
+    <article class="grid_12">
+        <h3>Grid Examples</h3>
+    </article>
+</section>
+
+<section class="row grid-highlight">
+    <article class="grid_1">1</article>
+    <article class="grid_1">1</article>
+    <article class="grid_1">1</article>
+    <article class="grid_1">1</article>
+    <article class="grid_1">1</article>
+    <article class="grid_1">1</article>
+    <article class="grid_1">1</article>
+    <article class="grid_1">1</article>
+    <article class="grid_1">1</article>
+    <article class="grid_1">1</article>
+    <article class="grid_1">1</article>
+    <article class="grid_1">1</article>
+</section>
+<section class="row grid-highlight">
+    <article class="grid_2">2</article>
+    <article class="grid_2">2</article>
+    <article class="grid_2">2</article>
+    <article class="grid_2">2</article>
+    <article class="grid_2">2</article>
+    <article class="grid_2">2</article>
+</section>
+<section class="row grid-highlight">
+    <article class="grid_4">4</article>
+    <article class="grid_4">4</article>
+    <article class="grid_4">4</article>
+</section>
+<section class="row grid-highlight">
+    <article class="grid_6">6</article>
+    <article class="grid_6">6</article>
+</section>
+<section class="row grid-highlight">
+    <article class="grid_12">12</article>
+</section>
 
 </body>
 </html>

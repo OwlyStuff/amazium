@@ -5,15 +5,19 @@
 */
 
 
-/***** Screen 960px *****/
+/***** Screen 1200px+ *****/
 
-.example 								{  }
+body	 								{ margin:20px 0; background-color:#F1F1F1; }
+
+section									{ margin-bottom:20px!important; }
+
+.grid-highlight							{ margin-bottom:5px; }
+.grid-highlight [class^="grid_"]		{ padding:5px; text-align:center; background-color:#FFF; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
 
 
-
-/***** Screen Bigger than 960px *****/
-@media only screen and (min-width:1200px) {
+/***** Screen Smaller than 1200px *****/
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
 
 .example 								{  }
 

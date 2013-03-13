@@ -5,48 +5,7 @@
 */
 
 
-/***** Screen 960px *****/
-
-.row 								{ margin:0 auto; width:960px; overflow:hidden; }
-.row .row 							{ margin:0 -16px; width:auto; display:inline-block; }
-
-.grid_1								{ width:48px; margin:0 16px; overflow:hidden; float:left; display:inline; }
-.grid_2 							{ width:128px; margin:0 16px; overflow:hidden; float:left; display:inline; }
-.grid_3 							{ width:208px; margin:0 16px; overflow:hidden; float:left; display:inline; }
-.grid_4 							{ width:288px; margin:0 16px; overflow:hidden; float:left; display:inline; }
-.grid_5 							{ width:368px; margin:0 16px; overflow:hidden; float:left; display:inline; }		
-.grid_6 							{ width:448px; margin:0 16px; overflow:hidden; float:left; display:inline; }
-.grid_7 							{ width:528px; margin:0 16px; overflow:hidden; float:left; display:inline; }
-.grid_8 							{ width:608px; margin:0 16px; overflow:hidden; float:left; display:inline; }
-.grid_9								{ width:688px; margin:0 16px; overflow:hidden; float:left; display:inline; }
-.grid_10							{ width:768px; margin:0 16px; overflow:hidden; float:left; display:inline; }
-.grid_11							{ width:848px; margin:0 16px; overflow:hidden; float:left; display:inline; }
-.grid_12							{ width:928px; margin:0 16px; overflow:hidden; float:left; display:inline; }
-	
-.offset_1							{ margin-left:96px; }
-.offset_2							{ margin-left:176px; }
-.offset_3 							{ margin-left:256px; }
-.offset_4 							{ margin-left:336px; }
-.offset_5 							{ margin-left:416px; }
-.offset_6 							{ margin-left:496px; }
-.offset_7 							{ margin-left:576px; }
-.offset_8 							{ margin-left:656px; }
-.offset_9							{ margin-left:736px; }
-.offset_10							{ margin-left:816px; }
-.offset_11							{ margin-left:896px; }
-
-.show-phone 						{ display:none !important; }
-.show-tablet 						{ display:none !important; }
-.show-screen						{ display:inherit !important; }
-	
-.hide-phone							{ display:inherit !important; }
-.hide-tablet						{ display:inherit !important; }
-.hide-screen						{ display:none !important; }
-
-
-
-/***** Screen Bigger than 960px *****/
-@media only screen and (min-width:1200px) {
+/***** Screen 1200px+ *****/
 
 .row 								{ margin:0 auto; width:1200px; overflow:hidden; }
 .row .row 							{ margin:0 -20px; width:auto; display:inline-block; }
@@ -80,6 +39,45 @@
 .show-tablet 						{ display:none !important; }
 .show-screen						{ display:inherit; }
 
+.hide-phone							{ display:inherit !important; }
+.hide-tablet						{ display:inherit !important; }
+.hide-screen						{ display:none !important; }
+
+/***** Screen Smaller than 1200px *****/
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+.row 								{ margin:0 auto; width:960px; overflow:hidden; }
+.row .row 							{ margin:0 -16px; width:auto; display:inline-block; }
+
+.grid_1								{ width:48px; margin:0 16px; overflow:hidden; float:left; display:inline; }
+.grid_2 							{ width:128px; margin:0 16px; overflow:hidden; float:left; display:inline; }
+.grid_3 							{ width:208px; margin:0 16px; overflow:hidden; float:left; display:inline; }
+.grid_4 							{ width:288px; margin:0 16px; overflow:hidden; float:left; display:inline; }
+.grid_5 							{ width:368px; margin:0 16px; overflow:hidden; float:left; display:inline; }		
+.grid_6 							{ width:448px; margin:0 16px; overflow:hidden; float:left; display:inline; }
+.grid_7 							{ width:528px; margin:0 16px; overflow:hidden; float:left; display:inline; }
+.grid_8 							{ width:608px; margin:0 16px; overflow:hidden; float:left; display:inline; }
+.grid_9								{ width:688px; margin:0 16px; overflow:hidden; float:left; display:inline; }
+.grid_10							{ width:768px; margin:0 16px; overflow:hidden; float:left; display:inline; }
+.grid_11							{ width:848px; margin:0 16px; overflow:hidden; float:left; display:inline; }
+.grid_12							{ width:928px; margin:0 16px; overflow:hidden; float:left; display:inline; }
+	
+.offset_1							{ margin-left:96px; }
+.offset_2							{ margin-left:176px; }
+.offset_3 							{ margin-left:256px; }
+.offset_4 							{ margin-left:336px; }
+.offset_5 							{ margin-left:416px; }
+.offset_6 							{ margin-left:496px; }
+.offset_7 							{ margin-left:576px; }
+.offset_8 							{ margin-left:656px; }
+.offset_9							{ margin-left:736px; }
+.offset_10							{ margin-left:816px; }
+.offset_11							{ margin-left:896px; }
+
+.show-phone 						{ display:none !important; }
+.show-tablet 						{ display:none !important; }
+.show-screen						{ display:inherit !important; }
+	
 .hide-phone							{ display:inherit !important; }
 .hide-tablet						{ display:inherit !important; }
 .hide-screen						{ display:none !important; }
