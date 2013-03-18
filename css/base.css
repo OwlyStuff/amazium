@@ -147,6 +147,9 @@ a:hover.btn.red									{ border-color:#E74C3C; background-color:#b93d30; color:
 .btn.blue										{ border-color:#3498DB; background-color:#3498DB; }
 a:hover.btn.blue								{ border-color:#3498DB; background-color:#2a7aaf; color:#FFF; }
 
+.btn.green                                      { border-color:#2ECC71; background-color:#2ECC71; }
+a:hover.btn.green                               { border-color:#2ECC71; background-color:#25a35a; color:#FFF; }
+
 /***** Tables *****/
 
 table                                           { margin:20px 0 40px 0; width:100%; }

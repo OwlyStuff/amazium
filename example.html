@@ -21,7 +21,7 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/amazium.css">
-    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/form.css">
 	<link rel="stylesheet" href="css/layout.css">
 	
 	<!-- Favicons -->
@@ -45,7 +45,8 @@
 
 <section class="row">
     <article class="grid_12">
-        <h3>Grid Examples</h3>
+        <h1>Amazium Example</h1>
+        <p>Hi, And thanks for downloading Amazium! On this page you will find some example for what you can do using Amazium, If you want to know more head over to <a href="http://www.amazium.co.uk">www.amazium.co.uk</a> for a complete list and examples.</p>
     </article>
 </section>
 
@@ -86,83 +87,156 @@
 
 <section class="row">
     <article class="grid_12">
-		<h1>H1 - Heading 1</h1>
-		<p class="intro">This is some intro text - Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-        <p>This is a nomal paragraph - Nullam id dolor id nibh ultricies vehicula ut id elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-        <p><a href="#" class="btn">Normal Button</a><a href="#" class="btn red">Normal Red Button</a><a href="#" class="btn blue">Normal Blue Button</a><a href="#" class="btn white">Normal White Button</a></p>
-        <p><a href="#" class="btn small">Small Button</a><a href="#" class="btn red small">Small Red Button</a><a href="#" class="btn blue small">Small Blue Button</a><a href="#" class="btn white small">Small White Button</a></p>
+		<hr />
+        <h3>Buttons</h3>
+        <p><a href="#" class="btn">Normal Button</a><a href="#" class="btn red">Normal Red Button</a><a href="#" class="btn blue">Normal Blue Button</a><a href="#" class="btn green">Normal Green Button</a><a href="#" class="btn white">Normal White Button</a></p>
+        <p><a href="#" class="btn small">Small Button</a><a href="#" class="btn red small">Small Red Button</a><a href="#" class="btn blue small">Small Blue Button</a><a href="#" class="btn green small">Small Green Button</a><a href="#" class="btn white small">Small White Button</a></p>
+        <hr />
     </article>
 </section>
 
 <section class="row">
-    <article class="grid_12">
-        <h3>Form</h3>
+    <article class="grid_6">
+        <h3>Form without Labels</h3>
         <form name="" id="" method="" action="" class="hide-lables icons">
-            <div class="row">
-                <div class="grid_6">
-                    <fieldset>
-                        <label for="input">Input</label>
-                        <input type="input" name="input" id="input" placeholder="Input" autocomplete="off" tabindex="1" />
-                    </fieldset>
-                    <fieldset>
-                        <label for="name" class="error">Name</label>
-                        <input type="name" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" />
-                        <small>Invalid entry</small>
-                    </fieldset>
-                    <fieldset>
-                        <label for="text">Text</label>
-                        <input type="text" name="text" id="text" placeholder="Text" autocomplete="off" tabindex="2" />
-                    </fieldset>
-                    <fieldset>
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" placeholder="Password" autocomplete="off" tabindex="3" />
-                    </fieldset>
-                    <fieldset>
-                        <label for="url">URL</label>
-                        <input type="url" name="url" id="url" placeholder="Url" autocomplete="off" tabindex="14" /> 
-                    </fieldset>
-                    <fieldset>
-                        <label for="search">Search</label>
-                        <input type="search" name="search" id="search" placeholder="Search" autocomplete="off" tabindex="15" />
-                    </fieldset>
-                </div>
-                <div class="grid_6">
-                    <fieldset>
-                        <label for="tel">Tel</label>
-                        <input type="tel" name="tel" id="tel" placeholder="Tel" autocomplete="off" tabindex="16" />
-                    </fieldset>
-                    <fieldset>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" tabindex="13" />
-                    </fieldset>
-                    <fieldset>
-                        <label for="options">Options</label>
-                        <select id="dropdown" name="dropdown" tabindex="18" />
-                            <option selected>Option 1</option>
-                            <option>Option 2</option>
-                            <optgroup label="Option group 1">
-                                <option>Sub option 1</option>
-                                <option>Sub option 2</option>
-                                <option>Sub option 3</option>
-                            </optgroup>
-                            <option>Option 3</option>
-                        </select>
-                    </fieldset>
-                    <fieldset>
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" placeholder="Message..." tabindex="17"></textarea>
-                    </fieldset>
-                </div>
-            </div>
-            <div class="row">
-                <div class="grid_12">
-                    <fieldset>
-                        <input type="submit" name="submit" id="submitbtn" tabindex="7" value="Submit Button" />
-                        <input type="reset" name="reset" id="submitbtn" tabindex="7" value="Reset Button" />
-                        <input type="button" name="button" id="submitbtn" tabindex="7" value="Button" />
-                    </fieldset>
-                </div>
-            </div>
+            <fieldset>
+                <label for="input">Input</label>
+                <input type="input" name="input" id="input" placeholder="Input" autocomplete="off" tabindex="1" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="name" class="error">Name</label>
+                <input type="name" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="text">Text</label>
+                <input type="text" name="text" id="text" placeholder="Text" autocomplete="off" tabindex="2" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password" autocomplete="off" tabindex="3" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="url">URL</label>
+                <input type="url" name="url" id="url" placeholder="Url" autocomplete="off" tabindex="14" /> 
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="search">Search</label>
+                <input type="search" name="search" id="search" placeholder="Search" autocomplete="off" tabindex="15" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="tel">Tel</label>
+                <input type="tel" name="tel" id="tel" placeholder="Tel" autocomplete="off" tabindex="16" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" tabindex="13" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="options">Options</label>
+                <select id="dropdown" name="dropdown" tabindex="18" />
+                    <option selected>Option 1</option>
+                    <option>Option 2</option>
+                    <optgroup label="Option group 1">
+                        <option>Sub option 1</option>
+                        <option>Sub option 2</option>
+                        <option>Sub option 3</option>
+                    </optgroup>
+                    <option>Option 3</option>
+                </select>
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Message..." tabindex="17"></textarea>
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="checkbox_1" class="checkbox"><input type="checkbox" name="checkbox" checked />Checkbox 1 - Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum.</label>
+                <label for="checkbox_2" class="checkbox"><input type="checkbox" name="checkbox" />Checkbox 2</label>
+                <label for="checkbox_3" class="checkbox"><input type="checkbox" name="checkbox" />Checkbox 3</label>
+            </fieldset>
+            <fieldset>
+                <label for="radio_1" class="radio"><input type="radio" name="radio" checked />Yes - Cras justo odio, dapibus ac facilisis in, egestas eget quam.</label>
+                <label for="radio_2" class="radio"><input type="radio" name="radio" />No - Maecenas sed diam eget risus varius blandit sit amet non magna.</label>
+            </fieldset>
+            <fieldset>
+                <input type="submit" name="submit" id="submitbtn" tabindex="7" value="Submit Button" />
+            </fieldset>
+        </form>
+    </article>
+    <article class="grid_6">
+        <h3>Form with Labels</h3>
+        <form name="" id="" method="" action="" class="icons">
+            <fieldset>
+                <label for="input">Input</label>
+                <input type="input" name="input" id="input" placeholder="Input" autocomplete="off" tabindex="1" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="name" class="error">Name</label>
+                <input type="name" name="name" id="name" placeholder="Name" autocomplete="off" tabindex="1" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="text">Text</label>
+                <input type="text" name="text" id="text" placeholder="Text" autocomplete="off" tabindex="2" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password" autocomplete="off" tabindex="3" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="url">URL</label>
+                <input type="url" name="url" id="url" placeholder="Url" autocomplete="off" tabindex="14" /> 
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="search">Search</label>
+                <input type="search" name="search" id="search" placeholder="Search" autocomplete="off" tabindex="15" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="tel">Tel</label>
+                <input type="tel" name="tel" id="tel" placeholder="Tel" autocomplete="off" tabindex="16" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" tabindex="13" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="options">Options</label>
+                <select id="dropdown" name="dropdown" tabindex="18" />
+                    <option selected>Option 1</option>
+                    <option>Option 2</option>
+                    <optgroup label="Option group 1">
+                        <option>Sub option 1</option>
+                        <option>Sub option 2</option>
+                        <option>Sub option 3</option>
+                    </optgroup>
+                    <option>Option 3</option>
+                </select>
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Message..." tabindex="17"></textarea>
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <input type="submit" name="submit" id="submitbtn" tabindex="7" value="Submit Button" />
+            </fieldset>
         </form>
 	</article>
 </section>

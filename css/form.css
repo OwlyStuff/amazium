@@ -1,6 +1,6 @@
 /* 
 * Amazium V3.1
-* Copyright 2012, Mike Ballan
+* Copyright 2013, Mike Ballan
 * www.amazium.co.uk
 */
 
@@ -13,6 +13,7 @@ form label.checkbox,
 form label.radio                                { text-align:left; width:auto; }
 form span                                       { margin:10px 0; padding:0; display:block; overflow:hidden; float:left; }
 fieldset                                        { margin:0 0 16px 0; padding:0; display:block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+fieldset small                                  { display:none; }
 
 ::-webkit-input-placeholder                     { color:#999; }
 :-moz-placeholder                               { color:#999; }
@@ -27,11 +28,14 @@ form label + input,
 form label + textarea,
 form label + select                             { float:right; width:70%; }
 
+
 form.hide-lables label + input,
 form.hide-lables label + textarea,
 form.hide-lables label + select                 { float:left; width:100%; }
 
 form.hide-lables label                          { display:none; }
+form.hide-lables label.checkbox,
+form.hide-lables label.radio                    { display:block; }
 
 select                                          { padding:3px 3px 3px 4px; }
 optgroup                                        { font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#000; background-color:#f1f1f1; }
@@ -82,42 +86,46 @@ form.login fieldset input:hover[type="reset"]   { margin:0 !important; }
 
 /***** Errors with Labels *****/
 
-label.error ::-webkit-input-placeholder      	{ color:#E74C3C; }
-label.error :-moz-placeholder                	{ color:#E74C3C; }
-label.error ::-moz-placeholder               	{ color:#E74C3C; }
-label.error :-ms-input-placeholder           	{ color:#E74C3C; }
+label.error ::-webkit-input-placeholder         { color:#E74C3C; }
+label.error :-moz-placeholder                   { color:#E74C3C; }
+label.error ::-moz-placeholder                  { color:#E74C3C; }
+label.error :-ms-input-placeholder              { color:#E74C3C; }
 
-label.error                            			{ color:#E74C3C; }
+label.error                                     { color:#E74C3C; }
 label.error + input,
 label.error + textarea,
-label.error + select                   			{ margin:0; color:#E74C3C !important; border-color:#E74C3C; background-color:#f4cfd0; }
-label.error + input + small            			{ margin:0 0 6px 0; padding:3px 5px 5px 8px; color:#FFF; border-color:#E74C3C; background-color:#E74C3C; width:70%; float:right; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+label.error + select                            { margin:0; color:#E74C3C !important; border-color:#E74C3C; }
+label.error + input + small                     { margin:0; padding:3px 5px 5px 8px; color:#FFF; border-color:#E74C3C; background-color:#E74C3C; width:70%; float:right; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
 /***** Errors without Labels *****/
 
-.hide-lables label.error                            			{ color:#E74C3C; }
+.hide-lables label.error                        { color:#E74C3C; }
 .hide-lables label.error input,
 .hide-lables label.error textarea,
-.hide-lables label.error select                           	{ margin:6px 0 0 0; color:#E74C3C; border-color:#E74C3C; background-color:#FFF !important; }
-.hide-lables label.error + input + small   	{ margin:0 0 6px 0; padding:3px 5px 5px 8px; color:#FFF; border-color:#E74C3C; background-color:#E74C3C; width:100%; display:block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+.hide-lables label.error select                 { margin:6px 0 0 0; color:#E74C3C; border-color:#E74C3C; }
+.hide-lables label.error + input + small        { margin:0; padding:3px 5px 5px 8px; color:#FFF; border-color:#E74C3C; background-color:#E74C3C; width:100%; display:block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
 /***** Correct *****/
 
-label.correct ::-webkit-input-placeholder    	{ color:#468847; }
-label.correct :-moz-placeholder              	{ color:#468847; }
-label.correct ::-moz-placeholder             	{ color:#468847; }
-label.correct :-ms-input-placeholder         	{ color:#468847; }
+label.correct ::-webkit-input-placeholder       { color:#468847; }
+label.correct :-moz-placeholder                 { color:#468847; }
+label.correct ::-moz-placeholder                { color:#468847; }
+label.correct :-ms-input-placeholder            { color:#468847; }
 
-label.correct form label                     	{ color:#468847; }
+label.correct form label                        { color:#468847; }
 label.correct input,
 label.correct textarea,
-label.correct select                         	{ margin:6px 0 0 0; color:#468847; border-color:#2ECC71; background-color:#dae7da !important; }
+label.correct select                            { margin:6px 0 0 0; color:#468847; border-color:#2ECC71; background-color:#dae7da !important; }
 
 /***** Buttons *****/
 
 input[type="button"],
 input[type="submit"],
-input[type="reset"]                             { margin:6px 6px 6px 0; padding:0 20px; display:inline-block; height:45px; font:16px/40px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; font-weight:normal; color:#fff; border:1px solid #000; float:left; width:auto; background-color:#000; cursor:pointer; -webkit-appearance:none; }
+input[type="reset"]                             { margin:6px 6px 6px 30%;padding:0 20px; display:inline-block; height:45px; font:16px/40px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; font-weight:normal; color:#fff; border:1px solid #000; float:left; width:auto; background-color:#000; cursor:pointer; -webkit-appearance:none; }
+
+form.hide-lables input[type="button"],
+form.hide-lables input[type="submit"],
+form.hide-lables input[type="reset"]            { margin:6px 6px 6px 0; }
 
 input[type="button"]                            { color:#FFF; border-color:#000; background-color:#000; }
 input[type="submit"]                            { color:#FFF; border-color:#2ECC71; background-color:#2ECC71; }
@@ -134,4 +142,9 @@ form label                                      { margin:0; text-align:left; flo
 form label + input,
 form label + textarea,
 form label + select,
-fieldset.error label + input + small            { float:left; width:100%; }
+label.error + input + small                     { float:left; width:100%; }
+input[type="button"],
+input[type="submit"],
+input[type="reset"]                             { margin:6px 6px 6px 0; }
+
+
