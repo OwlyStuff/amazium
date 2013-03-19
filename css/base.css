@@ -132,20 +132,20 @@ img                                             { border:0; vertical-align:middl
 /***** Buttons  *****/
 
 a.btn, 
-.btn                                     		{ margin:5px 10px 5px 0; padding:0 20px; display:inline-block; color:#FFF; border:1px solid #000; background-color:#000; font-size:16px; line-height:40px; text-decoration:none; cursor:pointer; }
+.btn                                            { margin:5px 10px 5px 0; padding:0 20px; display:inline-block; color:#FFF; border:1px solid #000; background-color:#000; font-size:16px; line-height:40px; text-decoration:none; cursor:pointer; }
 a:hover.btn                                     { color:#333; border:1px solid #CCC; background-color:#FFF; }
 
 a.btn.small, 
-.btn.small                         				{ padding:0 10px; font-size:12px; line-height:25px; }
+.btn.small                                      { padding:0 10px; font-size:12px; line-height:25px; }
 
-.btn.white										{ border-color:#CCC; background-color:#FFF; color:#333; }
-a:hover.btn.white								{ border-color:#000; background-color:#000; color:#FFF; }			
+.btn.white                                      { border-color:#CCC; background-color:#FFF; color:#333; }
+a:hover.btn.white                               { border-color:#000; background-color:#000; color:#FFF; }           
 
-.btn.red										{ border-color:#E74C3C; background-color:#E74C3C; }
-a:hover.btn.red									{ border-color:#E74C3C; background-color:#b93d30; color:#FFF; }
+.btn.red                                        { border-color:#E74C3C; background-color:#E74C3C; }
+a:hover.btn.red                                 { border-color:#E74C3C; background-color:#b93d30; color:#FFF; }
 
-.btn.blue										{ border-color:#3498DB; background-color:#3498DB; }
-a:hover.btn.blue								{ border-color:#3498DB; background-color:#2a7aaf; color:#FFF; }
+.btn.blue                                       { border-color:#3498DB; background-color:#3498DB; }
+a:hover.btn.blue                                { border-color:#3498DB; background-color:#2a7aaf; color:#FFF; }
 
 .btn.green                                      { border-color:#2ECC71; background-color:#2ECC71; }
 a:hover.btn.green                               { border-color:#2ECC71; background-color:#25a35a; color:#FFF; }
@@ -169,11 +169,11 @@ table tr td.highlight                           { padding:11px 8px; color:#FFF; 
 .float-left                                     { float:left; }
 .float-right                                    { float:right; }
 
-.txt-big                                       	{ color:#a2bd30; font-weight:bold; line-height:26px; }
-.txt-left                                      	{ text-align:left; }
-.txt-right                                     	{ text-align:right; }
-.txt-center                                    	{ text-align:center; }
-.txt-justify                                   	{ text-align:justify; }
+.txt-big                                        { color:#a2bd30; font-weight:bold; line-height:26px; }
+.txt-left                                       { text-align:left; }
+.txt-right                                      { text-align:right; }
+.txt-center                                     { text-align:center; }
+.txt-justify                                    { text-align:justify; }
 
 .normal                                         { font-weight:normal; }
 .bold                                           { font-weight:bold; }

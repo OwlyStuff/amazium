@@ -12,8 +12,6 @@ body	 								{ margin:20px 0; background-color:#F1F1F1; }
 .grid-highlight							{ margin-bottom:5px; }
 .grid-highlight [class^="grid_"]		{ padding:5px; text-align:center; background-color:#FFF; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
-
-
 /***** Screen Smaller than 1199px *****/
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
 
@@ -22,33 +20,23 @@ body	 								{ margin:20px 0; background-color:#F1F1F1; }
 
 }
 
-
-
 /***** Tablet (Smaller than 959px) *****/
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
 .example 								{  }
 
-	
 }
-
-
 
 /***** Mobile (portrait 300px) *****/
 @media only screen and (min-width:481px) and (max-width: 767px) {
 
-.example 								{ margin-bottom:0; }
-
-			
+.example 								{  }
+		
 }	 
-
-
-
 
 /***** Mobile (landscape 420px) *****/
 @media only screen and (max-width: 480px) {
 
 .example 								{  }
-
 
 }
