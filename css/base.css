@@ -79,7 +79,7 @@ div                                             { box-sizing:border-box; -webkit
 
 ul, ol                                          { margin:26px 0 36px 0; display:block; }
 ul                                              { list-style:none outside; }
-ul li                                           { margin:0 0 5px 0; padding:0 0 0 18px; line-height:18px; background:transparent url('../img/bullet.png') no-repeat 0 3px; }
+ul li                                           { margin:0 0 15px 0; padding:0 0 0 18px; line-height:18px; background:transparent url('../img/bullet.png') no-repeat 0 3px; }
 
 ul ul, ul ol                                    { margin:5px 0 5px 0; }
 ol ol, ol ul                                    { margin:0 0 5px 20px; }
@@ -197,5 +197,3 @@ table tr td.highlight                           { padding:11px 8px; color:#FFF; 
 #toTop                                          { display:none; text-decoration:none; position:fixed; bottom:10px; right:10px; overflow:hidden; width:51px; height:51px; border:none; text-indent:-999px; background:url(../img/ui.totop.png) no-repeat left top; z-index:99; }
 #toTopHover                                     { background:url(../img/ui.totop.png) no-repeat left -51px; width:51px; height:51px; display:block; overflow:hidden; float:left; opacity: 0; -moz-opacity: 0; filter:alpha(opacity=0); }
 #toTop:active, #toTop:focus                     { outline:none; }
-
-}

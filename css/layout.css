@@ -10,7 +10,7 @@
 body	 								{ margin:20px 0; background-color:#F1F1F1; }
 
 .grid-highlight							{ margin-bottom:5px; }
-.grid-highlight [class^="grid_"]		{ padding:5px; text-align:center; background-color:#FFF; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+.grid-highlight [class^="grid_"]		{ line-height:30px; text-align:center; background-color:#FFF; }
 
 /***** Screen Smaller than 1199px *****/
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
