@@ -41,11 +41,11 @@ table                                           { border-collapse:collapse; bord
 /***** Basic Styles *****/
 
 html                                            { overflow-y:scroll; overflow:-moz-scrollbars-vertical; }
-body                                            { margin:0; padding:0; background-color:#fff; font:15px/20px "Century Gothic", "Trebuchet MS", Helvetica, sans-serif; color:#333; -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:none; }
+body                                            { margin:0; padding:0; background-color:#fff; font:15px/20px Sans-Serif; color:#333; -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:none; }
 
 /***** Typography *****/
 
-h1, h2, h3, h4, h5, h6                          { margin:0; padding:0; font-family:"Georgia", Times New Roman, Times, serif; font-weight:normal; } 
+h1, h2, h3, h4, h5, h6                          { margin:0; padding:0; font-family:Sans-Serif; font-weight:normal; } 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a              { font-weight:inherit; color:inherit; }
 h1                                              { margin:0 0 10px 0; padding:0; font-size:38px; line-height:40px; color:#333; }
 h2                                              { margin:0 0 10px 0; padding:0; font-size:32px; line-height:34px; color:#333; }
@@ -56,16 +56,15 @@ h6                                              { margin:0 0 10px 0; padding:0; 
 
 p                                               { margin:0 0 20px 0; padding:0; line-height:26px; }
 
-b, strong                                       { font-weight:bold; color:#333; }
-em                                              { font-style:italic; color:#666; }
-small                                           { font-size:75%; }
+b, strong                                       { font-weight:bold; }
+em                                              { font-style:italic; }
+small                                           { font-size:11px; }
 
 sup, sub                                        { height:0; line-height:0; vertical-align:baseline; _vertical-align:bottom; position:relative; font-size:80%; }
 sup                                             { top:-5px; }
 sub                                             { bottom:-5px; }
 
-code                                            { margin:0; padding:0 7px; font:12px/19px monospace, serif; color:#f1f1f1; display:inline-block; background:#000; white-space:pre; white-space:pre-wrap; word-wrap:break-word; }
-pre code                                        { margin:16px 0 26px 0; padding:16px; font:12px/19px monospace, serif; color:#f1f1f1; display:block; background-color:#000; border:1px solid #000; }
+pre code                                        { margin:16px 0 26px 0; padding:16px; font:12px/19px 'monospace', Sans-Serif; color:#f1f1f1; display:block; background-color:#000; border:1px solid #000; }
 
 abbr[title], 
 abbr[data-original-title]                       { border-bottom:1px dotted #999999; cursor:help; }
@@ -132,11 +131,11 @@ img                                             { border:0; vertical-align:middl
 /***** Buttons  *****/
 
 a.btn, 
-.btn                                            { margin:5px 10px 5px 0; padding:0 20px; display:inline-block; color:#FFF; border:1px solid #000; background-color:#000; font-size:16px; line-height:40px; text-decoration:none; cursor:pointer; }
+.btn                                            { margin:5px 10px 5px 0; padding:1px 20px 0; display:inline-block; color:#FFF; border:1px solid #000; background-color:#000; font-size:16px; line-height:40px; text-decoration:none; cursor:pointer; }
 a:hover.btn                                     { color:#333; border:1px solid #CCC; background-color:#FFF; }
 
 a.btn.small, 
-.btn.small                                      { padding:0 10px; font-size:12px; line-height:25px; }
+.btn.small                                      { padding:2px 10px 0; font-size:12px; line-height:25px; }
 
 .btn.white                                      { border-color:#CCC; background-color:#FFF; color:#333; }
 a:hover.btn.white                               { border-color:#000; background-color:#000; color:#FFF; }           

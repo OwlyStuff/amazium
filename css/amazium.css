@@ -43,6 +43,8 @@
 .hide-tablet                        { display:inherit !important; }
 .hide-screen                        { display:none !important; }
 
+
+
 /***** Screen Smaller than 1200px *****/
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
 
@@ -129,7 +131,6 @@
 
 
 
-
 /***** Mobile *****/
 /***** Updated based on essencious Mobile version *****/
 @media only screen and (max-width: 767px) {
@@ -159,6 +160,8 @@
 .hide-screen                        { display:inherit !important; }
 
 }
+
+
 
 /***** Clean up *****/
 
