@@ -45,11 +45,6 @@
         <h3>Form without Labels</h3>
         <form name="" id="" method="" action="" class="hide-lables icons">
             <fieldset>
-                <label for="input">Input</label>
-                <input type="input" name="input" id="input" placeholder="Input" autocomplete="on" tabindex="1" />
-                <small>Invalid entry</small>
-            </fieldset>
-            <fieldset>
                 <label for="text">Text</label>
                 <input type="text" name="text" id="text" placeholder="Text" autocomplete="on" tabindex="2" />
                 <small>Invalid entry</small>
@@ -65,7 +60,7 @@
                 <small>Invalid entry</small>
             </fieldset>
             <fieldset>
-                <label for="search" class="error">Search</label>
+                <label for="search">Search</label>
                 <input type="search" name="search" id="search" placeholder="Search" autocomplete="on" tabindex="15" />
                 <small>Invalid entry</small>
             </fieldset>
@@ -80,7 +75,7 @@
                 <small>Invalid entry</small>
             </fieldset>
             <fieldset>
-                <label for="options" class="error">Options</label>
+                <label for="options">Options</label>
                 <span class="select">
                     <select id="dropdown" name="dropdown" tabindex="18" />
                         <option selected>Option 1</option>
@@ -96,11 +91,16 @@
                 <small>Invalid entry</small>
             </fieldset>
             <fieldset>
+                <label for="input" class="error">Input</label>
+                <input type="input" name="input" id="input" placeholder="Input" autocomplete="on" tabindex="1" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
                 <label for="message">Message</label>
                 <textarea name="message" id="message" placeholder="Message..." tabindex="17"></textarea>
                 <small>Invalid entry</small>
             </fieldset>
-            <fieldset class="error">
+            <fieldset>
                 <label for="checkbox_1" class="checkbox"><input type="checkbox" name="checkbox" checked />Checkbox 1 - Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum.</label>
                 <label for="checkbox_2" class="checkbox"><input type="checkbox" name="checkbox" />Checkbox 2</label>
                 <label for="checkbox_3" class="checkbox"><input type="checkbox" name="checkbox" />Checkbox 3</label>
@@ -120,11 +120,6 @@
     <article class="grid_12">
         <h3>Form with Labels</h3>
         <form name="" id="" method="" action="" class="icons">
-            <fieldset>
-                <label for="input">Input</label>
-                <input type="input" name="input" id="input" placeholder="Input" autocomplete="on" tabindex="1" />
-                <small>Invalid entry</small>
-            </fieldset>
             <fieldset>
                 <label for="text">Text</label>
                 <input type="text" name="text" id="text" placeholder="Text" autocomplete="on" tabindex="2" />
@@ -151,12 +146,12 @@
                 <small>Invalid entry</small>
             </fieldset>
             <fieldset>
-                <label for="email" >Email</label>
+                <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="Email" autocomplete="on" tabindex="13" />
                 <small>Invalid entry</small>
             </fieldset>
             <fieldset>
-                <label for="options" class="error">Options</label>
+                <label for="options">Options</label>
                 <span class="select">
                     <select id="dropdown" name="dropdown" tabindex="18" />
                         <option selected>Option 1</option>
@@ -169,6 +164,11 @@
                         <option>Option 3</option>
                     </select>
                 </span>
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="input" class="error">Input</label>
+                <input type="input" name="input" id="input" placeholder="Input" autocomplete="on" tabindex="1" />
                 <small>Invalid entry</small>
             </fieldset>
             <fieldset>
