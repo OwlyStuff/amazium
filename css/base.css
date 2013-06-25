@@ -45,7 +45,7 @@ body                                            { margin:0; padding:0; backgroun
 
 /***** Typography *****/
 
-h1, h2, h3, h4, h5, h6                          { margin:0; padding:0; font-family:Sans-Serif; font-weight:normal; } 
+h1, h2, h3, h4, h5, h6                          { margin:0; padding:0; font-family:Serif; font-weight:normal; } 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a              { font-weight:inherit; color:inherit; }
 h1                                              { margin:0 0 10px 0; padding:0; font-size:38px; line-height:40px; color:#333; }
 h2                                              { margin:0 0 10px 0; padding:0; font-size:32px; line-height:34px; color:#333; }
@@ -73,6 +73,10 @@ address                                         { margin:26px 0; padding:0; disp
 hr                                              { margin:20px 0; padding:0; border:0; border-top:1px solid #999; height:1px; width:100%; text-align:left; display:block; }
 
 div                                             { box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+
+::selection                                     { background:#444; color:#fff; text-shadow:none; }
+::-moz-selection                                { background:#444; color:#fff; text-shadow:none; }
+  
 
 /***** Lists *****/
 
@@ -130,12 +134,10 @@ img                                             { border:0; vertical-align:middl
 
 /***** Buttons  *****/
 
-a.btn, 
-.btn                                            { margin:5px 10px 5px 0; padding:1px 20px 0; display:inline-block; color:#FFF; border:1px solid #000; background-color:#000; font-size:16px; line-height:40px; text-decoration:none; cursor:pointer; }
+a.btn, .btn                                     { margin:5px 10px 5px 0; padding:1px 20px 0; display:inline-block; color:#FFF; border:1px solid #000; background-color:#000; font-size:16px; line-height:40px; text-decoration:none; cursor:pointer; }
 a:hover.btn                                     { color:#333; border:1px solid #CCC; background-color:#FFF; }
 
-a.btn.small, 
-.btn.small                                      { padding:2px 10px 0; font-size:12px; line-height:25px; }
+a.btn.small, .btn.small                         { padding:2px 10px 0; font-size:12px; line-height:25px; }
 
 .btn.white                                      { border-color:#CCC; background-color:#FFF; color:#333; }
 a:hover.btn.white                               { border-color:#000; background-color:#000; color:#FFF; }           

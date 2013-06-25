@@ -5,82 +5,42 @@
 */
 
 
-/***** Forms *****/
+/***** Forms with labels *****/
 
-form                                            { margin:0 0 16px; padding:0; display:inline-block; width:100%; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
-form label                                      { margin:6px 0 0; padding:0 16px 0 0; float:left; text-align:right; display:block; font-weight:bold; width:30%; font:14px/20px Sans-Serif; color:#000; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
-form label.checkbox,
-form label.radio                                { text-align:left; width:auto; }
-form span                                       { margin:10px 0; padding:0; display:block; overflow:hidden; float:left; }
-fieldset                                        { margin:0 0 16px 0; padding:0; display:block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
-fieldset small                                  { display:none; }
+form                                                    { margin:0 0 16px; padding:0; display:inline-block; width:100%; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
-::-webkit-input-placeholder,
-:-moz-placeholder,
-::-moz-placeholder
-:-ms-input-placeholder                          { color:#999; }
+fieldset                                                { margin:0 0 16px 0; padding:0; display:block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+fieldset small                                          { display:none; }
 
-input,
-textarea,
-select                                          { margin:0; padding:8px 8px 4px 8px; display:inline-block; border:solid 1px #BBB; border-radius:0; width:100%; font:14px/20px Sans-Serif; color:#999; overflow:hidden; outline:0 none; transition-property:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; box-sizing:border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-appearance:none; }
+label                                                   { margin:6px 0 0; padding:0 16px 0 0; float:left; text-align:right; display:block; font-weight:bold; width:30%; font:14px/20px Sans-Serif; color:#000; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+label.checkbox, label.radio                             { text-align:left; width:auto; }
 
-form label + input,
-form label + textarea,
-form label + select                             { float:right; width:70%; }
+form span                                               { margin:10px 0; padding:0; display:block; overflow:hidden; float:left; }
 
-form.hide-lables label + input,
-form.hide-lables label + textarea,
-form.hide-lables label + select                 { float:left; width:100%; }
+input, textarea, select                                 { margin:0; padding:8px 8px 4px 8px; display:inline-block; border:solid 1px #BBB; border-radius:0; width:100%; height:32px; font:14px/20px Sans-Serif; color:#999; overflow:hidden; outline:0 none; transition-property:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; box-sizing:border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-appearance:none; }
 
-form.hide-lables label                          { display:none; }
-form.hide-lables label.checkbox,
-form.hide-lables label.radio                    { display:block; }
+label + input,
+label + textarea,
+label + select                                          { float:right; width:70%; }
 
-select                                          { padding:4px 4px 5px; }
-optgroup                                        { font:15px/20px Sans-Serif; color:#000; background-color:#f1f1f1; }
-optgroup option                                 { background-color:#FFF; }
+span.select                                             { margin:0; padding:0; position:relative; display:block; width:70%; right:0; top:0; line-height:26px; }
+span.select:after                                       { margin:0; padding:0; content:'\25BC'; color:#aaa; line-height:29px; text-align:center; right:4px; top:2px; background:#FFF; width:26px; height:29px; position:absolute; pointer-events:none; }
+select                                                  { margin:0; padding:4px 6px 0; border:solid 1px #BBB; color:#888888; outline:none; display:inline-block; -webkit-appearance:none; -moz-appearance:none; appearance:none; cursor:pointer; }
+optgroup                                                { color:#000; background-color:#f1f1f1; }
+optgroup option                                         { background-color:#FFF; }
 
-form.icons input[type="text"]                   { padding-left:30px; background:#FFF url('../img/form.png') no-repeat 0 -50px; }
-form.icons input[type="search"]                 { padding-left:30px; background:#FFF url('../img/form.png') no-repeat 0 -100px; }
-form.icons input[type="url"]                    { padding-left:30px; background:#FFF url('../img/form.png') no-repeat 0 -150px; }
-form.icons input[type="email"]                  { padding-left:30px; background:#FFF url('../img/form.png') no-repeat 0 -200px; }
-form.icons input[type="tel"]                    { padding-left:30px; background:#FFF url('../img/form.png') no-repeat 0 -250px; }
-form.icons input[type="password"]               { padding-left:30px; background:#FFF url('../img/form.png') no-repeat 0 -300px; }
+textarea                                                { resize:vertical; height:122px; }
 
-textarea                                        { resize:vertical; height:122px; }
-form.icons textarea.icon                        { padding-left:30px; background:#FFF url('../img/form.png') no-repeat 0 -350px; }
-
-input[type="checkbox"]                          { margin:3px 6px 0 0; padding:0; border:solid 1px #BBB; width:auto; float:left; display:block; -webkit-appearance:checkbox !important; }
-input[type="radio"]                             { margin:3px 6px 0 0; padding:0; border:solid 1px #BBB; width:auto; float:left; display:block; -webkit-appearance:radio !important; }
+input[type="checkbox"]                                  { margin:3px 6px 0 0; padding:0; border:solid 1px #BBB; width:auto; height:auto; float:left; display:block; -webkit-appearance:checkbox !important; }
+input[type="radio"]                                     { margin:3px 6px 0 0; padding:0; border:solid 1px #BBB; width:auto; height:auto; float:left; display:block; -webkit-appearance:radio !important; }
 
 input:focus,
 textarea:focus,
-select:focus                                    { color:#000; border-color:#999; outline:0 none; }
-
-/***** Search *****/
-
-form.search fieldset input[type="search"]       { width:85%; float:left; border-right:none; }
-
-form.search fieldset input[type="button"],
-form.search fieldset input[type="submit"],
-form.search fieldset input[type="reset"]        { margin:0 !important; padding:0; width:15%; float:left; height:30px; line-height:20px; border:#000; background-color:#000; }
-
-form.search fieldset input:hover[type="button"],
-form.search fieldset input:hover[type="submit"],
-form.search fieldset input:hover[type="reset"]  { margin:0 !important; }
-
-/***** Login *****/
-
-form.login fieldset input[type="email"],
-form.login fieldset input[type="password"]      { margin-right:1%; width:40%; float:left; }
-
-form.login fieldset input[type="button"],
-form.login fieldset input[type="submit"],
-form.login fieldset input[type="reset"]         { margin:0 !important; padding:0; width:18%; float:left; height:30px; line-height:20px; border:#000; background-color:#000; }
-
-form.login fieldset input:hover[type="button"],
-form.login fieldset input:hover[type="submit"],
-form.login fieldset input:hover[type="reset"]   { margin:0 !important; }
+select:focus                                            { color:#000; border-color:#999; outline:0 none; }
+::-webkit-input-placeholder                             { color:#000; }
+:-moz-placeholder                                       { color:#000; }
+::-moz-placeholder                                      { color:#000; }
+:-ms-input-placeholder                                  { color:#000; }
 
 /***** Errors with Labels *****/
 
@@ -88,20 +48,74 @@ label.error,
 label.error ::-webkit-input-placeholder,
 label.error :-moz-placeholder,
 label.error ::-moz-placeholder,
-label.error :-ms-input-placeholder              { color:#E74C3C; }
+label.error :-ms-input-placeholder                      { color:#E74C3C; }
 
 label.error + input,
 label.error + textarea,
-label.error + select                            { margin:0; color:#E74C3C !important; border-color:#E74C3C; }
-label.error + input + small                     { margin:0; padding:3px 8px; color:#FFF; border-color:#E74C3C; background-color:#E74C3C; width:70%; float:right; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+label.error + span select                               { margin:0; color:#E74C3C !important; border-color:#E74C3C !important; }
+label.error + input + small,
+label.error + span + small                              { margin:0; padding:3px 8px; color:#FFF; border-color:#E74C3C; background-color:#E74C3C; width:70%; float:right; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+
+/***** Forms without labels *****/
+
+.hide-lables label + input,
+.hide-lables label + textarea,
+.hide-lables label + select,
+.hide-lables label + span.select                        { float:left; width:100%; }
+.hide-lables label                                      { display:none; }
+.hide-lables label.checkbox,
+.hide-lables label.radio                                { display:block; }
+
+fieldset.hide-lables label + input,
+fieldset.hide-lables label + textarea,
+fieldset.hide-lables label + select                     { float:right; width:70%; }
 
 /***** Errors without Labels *****/
 
-.hide-lables label.error                        { color:#E74C3C; }
+.hide-lables label.error                                { color:#E74C3C; }
 .hide-lables label.error input,
 .hide-lables label.error textarea,
-.hide-lables label.error select                 { margin:6px 0 0 0; color:#E74C3C; border-color:#E74C3C; }
-.hide-lables label.error + input + small        { margin:0; padding:3px 8px; color:#FFF; border-color:#E74C3C; background-color:#E74C3C; width:100%; display:block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+.hide-lables label.error select                         { margin:6px 0 0 0; color:#E74C3C; border-color:#E74C3C; }
+.hide-lables label.error + input + small,
+.hide-lables label.error + span + small,
+fieldset.error small                                    { margin:0; padding:3px 8px; color:#FFF; border-color:#E74C3C; background-color:#E74C3C; width:100%; display:block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+fieldset.error small                                    { margin:10px 0 0; display:inline-block; }
+fieldset.hide-lables label.error + input + small        { float:right; width:70%; }
+
+/***** Icons in forms *****/
+
+.icons input[type="text"]                               { padding-left:30px; background:#FFF url('../img/form.png') no-repeat 0 -50px; }
+.icons input[type="search"]                             { padding-left:30px; background:#FFF url('../img/form.png') no-repeat 0 -100px; }
+.icons input[type="url"]                                { padding-left:30px; background:#FFF url('../img/form.png') no-repeat 0 -150px; }
+.icons input[type="email"]                              { padding-left:30px; background:#FFF url('../img/form.png') no-repeat 0 -200px; }
+.icons input[type="tel"]                                { padding-left:30px; background:#FFF url('../img/form.png') no-repeat 0 -250px; }
+.icons input[type="password"]                           { padding-left:30px; background:#FFF url('../img/form.png') no-repeat 0 -300px; }
+.icons textarea.icon                                    { padding-left:30px; background:#FFF url('../img/form.png') no-repeat 0 -350px; }
+
+/***** Search *****/
+
+.search fieldset input[type="search"]                   { width:85%; float:left; border-right:none; }
+
+.search fieldset input[type="button"],
+.search fieldset input[type="submit"],
+.search fieldset input[type="reset"]                    { margin:0 !important; padding:0; width:15%; float:left; height:30px; line-height:20px; border:#000; background-color:#000; }
+
+.search fieldset input:hover[type="button"],
+.search fieldset input:hover[type="submit"],
+.search fieldset input:hover[type="reset"]              { margin:0 !important; }
+
+/***** Login *****/
+
+.login fieldset input[type="email"],
+.login fieldset input[type="password"]                  { margin-right:1%; width:40%; float:left; }
+
+.login fieldset input[type="button"],
+.login fieldset input[type="submit"],
+.login fieldset input[type="reset"]                     { margin:0 !important; padding:0; width:18%; float:left; height:30px; line-height:20px; border:#000; background-color:#000; }
+
+.login fieldset input:hover[type="button"],
+.login fieldset input:hover[type="submit"],
+.login fieldset input:hover[type="reset"]               { margin:0 !important; }
 
 /***** Correct *****/
 
@@ -109,39 +123,41 @@ label.correct form label,
 label.correct ::-webkit-input-placeholder,
 label.correct :-moz-placeholder,
 label.correct ::-moz-placeholder,
-label.correct :-ms-input-placeholder            { color:#468847; }
+label.correct :-ms-input-placeholder                    { color:#468847; }
 label.correct input,
 label.correct textarea,
-label.correct select                            { margin:6px 0 0 0; color:#468847; border-color:#2ECC71; background-color:#dae7da !important; }
+label.correct select                                    { margin:6px 0 0 0; color:#468847; border-color:#2ECC71; background-color:#dae7da !important; }
 
 /***** Buttons *****/
 
 input[type="button"],
 input[type="submit"],
-input[type="reset"]                             { margin:6px 6px 6px 30%;padding:0 20px; display:inline-block; height:45px; font:16px/40px Sans-Serif; font-weight:normal; color:#fff; border:1px solid #000; float:left; width:auto; background-color:#000; cursor:pointer; -webkit-appearance:none; }
+input[type="reset"]                                     { margin:6px 6px 6px 30%;padding:0 20px; display:inline-block; height:45px; font:16px/40px Sans-Serif; font-weight:normal; color:#fff; border:1px solid #000; float:left; width:auto; background-color:#000; cursor:pointer; -webkit-appearance:none; }
 
-form.hide-lables input[type="button"],
-form.hide-lables input[type="submit"],
-form.hide-lables input[type="reset"]            { margin:6px 6px 6px 0; }
+.hide-lables input[type="button"],
+.hide-lables input[type="submit"],
+.hide-lables input[type="reset"]                        { margin:6px 6px 6px 0; }
 
-input[type="button"]                            { color:#FFF; border-color:#000; background-color:#000; }
-input[type="submit"]                            { color:#FFF; border-color:#2ECC71; background-color:#2ECC71; }
-input[type="reset"]                             { color:#999; border-color:#CCC; background-color:#FFF; }
+input[type="button"]                                    { color:#FFF; border-color:#000; background-color:#000; }
+input[type="submit"]                                    { color:#FFF; border-color:#2ECC71; background-color:#2ECC71; }
+input[type="reset"]                                     { color:#999; border-color:#CCC; background-color:#FFF; }
 
-input:hover[type="button"]                      { color:#999; border-color:#CCC; background-color:#FFF; }
-input:hover[type="submit"]                      { color:#FFF; border-color:#2ECC71; background-color:#25a35a; }
-input:hover[type="reset"]                       { color:#FFF; border-color:#000; background-color:#000; }
+input:hover[type="button"]                              { color:#999; border-color:#CCC; background-color:#FFF; }
+input:hover[type="submit"]                              { color:#FFF; border-color:#2ECC71; background-color:#25a35a; }
+input:hover[type="reset"]                               { color:#FFF; border-color:#000; background-color:#000; }
+
+
 
 /***** Mobile *****/
 @media only screen and (max-width: 767px) {
 
-form label                                      { margin:0; text-align:left; float:left; width:100%; }
+form label                                              { margin:0; text-align:left; float:left; width:100%; }
 form label + input,
 form label + textarea,
 form label + select,
-label.error + input + small                     { float:left; width:100%; }
+label.error + input + small                             { float:left; width:100%; }
 input[type="button"],
 input[type="submit"],
-input[type="reset"]                             { margin:6px 6px 6px 0; }
+input[type="reset"]                                     { margin:6px 6px 6px 0; }
 
 }

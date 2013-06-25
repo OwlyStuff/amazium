@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Amazium example</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+	
+    <script type="text/javascript">
+        /mobi/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
+          if (!pageYOffset) window.scrollTo(0, 1);
+        }, 1000);
+    </script>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/amazium.css">
+    <link rel="stylesheet" href="css/form.css">
+	<link rel="stylesheet" href="css/layout.css">
+	
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png">
+</head>
+<body>
+
+<section class="row">
+    <article class="grid_12">
+        <h1>Amazium Forms</h1>
+        <p>Now forms can be one of the biggest pains in the neck for web developers, so I have included a simple form in Amazium with some very basic styling which has all the elements you will need to make your own form.</p>
+    </article>
+</section>
+
+<section class="row">
+    <article class="grid_12">
+        <h3>Form without Labels</h3>
+        <form name="" id="" method="" action="" class="hide-lables icons">
+            <fieldset>
+                <label for="input">Input</label>
+                <input type="input" name="input" id="input" placeholder="Input" autocomplete="on" tabindex="1" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="text">Text</label>
+                <input type="text" name="text" id="text" placeholder="Text" autocomplete="on" tabindex="2" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password" autocomplete="on" tabindex="3" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="url">URL</label>
+                <input type="url" name="url" id="url" placeholder="Url" autocomplete="on" tabindex="14" /> 
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="search" class="error">Search</label>
+                <input type="search" name="search" id="search" placeholder="Search" autocomplete="on" tabindex="15" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="tel">Tel</label>
+                <input type="tel" name="tel" id="tel" placeholder="Tel" autocomplete="on" tabindex="16" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email" autocomplete="on" tabindex="13" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="options" class="error">Options</label>
+                <span class="select">
+                    <select id="dropdown" name="dropdown" tabindex="18" />
+                        <option selected>Option 1</option>
+                        <option>Option 2</option>
+                        <optgroup label="Option group 1">
+                            <option>Sub option 1</option>
+                            <option>Sub option 2</option>
+                            <option>Sub option 3</option>
+                        </optgroup>
+                        <option>Option 3</option>
+                    </select>
+                </span>
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Message..." tabindex="17"></textarea>
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset class="error">
+                <label for="checkbox_1" class="checkbox"><input type="checkbox" name="checkbox" checked />Checkbox 1 - Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum.</label>
+                <label for="checkbox_2" class="checkbox"><input type="checkbox" name="checkbox" />Checkbox 2</label>
+                <label for="checkbox_3" class="checkbox"><input type="checkbox" name="checkbox" />Checkbox 3</label>
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="radio_1" class="radio"><input type="radio" name="radio" checked />Yes - Cras justo odio, dapibus ac facilisis in, egestas eget quam.</label>
+                <label for="radio_2" class="radio"><input type="radio" name="radio" />No - Maecenas sed diam eget risus varius blandit sit amet non magna.</label>
+            </fieldset>
+            <fieldset>
+                <input type="submit" name="submit" id="submitbtn" tabindex="7" value="Submit Button" />
+            </fieldset>
+        </form>
+    </article>
+</section>
+<section class="row">
+    <article class="grid_12">
+        <h3>Form with Labels</h3>
+        <form name="" id="" method="" action="" class="icons">
+            <fieldset>
+                <label for="input">Input</label>
+                <input type="input" name="input" id="input" placeholder="Input" autocomplete="on" tabindex="1" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="text">Text</label>
+                <input type="text" name="text" id="text" placeholder="Text" autocomplete="on" tabindex="2" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password" autocomplete="on" tabindex="3" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="url">URL</label>
+                <input type="url" name="url" id="url" placeholder="Url" autocomplete="on" tabindex="14" /> 
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="search">Search</label>
+                <input type="search" name="search" id="search" placeholder="Search" autocomplete="on" tabindex="15" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="tel">Tel</label>
+                <input type="tel" name="tel" id="tel" placeholder="Tel" autocomplete="on" tabindex="16" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="email" >Email</label>
+                <input type="email" name="email" id="email" placeholder="Email" autocomplete="on" tabindex="13" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="options" class="error">Options</label>
+                <span class="select">
+                    <select id="dropdown" name="dropdown" tabindex="18" />
+                        <option selected>Option 1</option>
+                        <option>Option 2</option>
+                        <optgroup label="Option group 1">
+                            <option>Sub option 1</option>
+                            <option>Sub option 2</option>
+                            <option>Sub option 3</option>
+                        </optgroup>
+                        <option>Option 3</option>
+                    </select>
+                </span>
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Message..." tabindex="17"></textarea>
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <input type="submit" name="submit" id="submitbtn" tabindex="7" value="Submit Button" />
+            </fieldset>
+        </form>
+	</article>
+</section>
+
+<!-- Scripts -->
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $().UItoTop({ easingType: 'easeOutQuart' });
+    });
+</script>
+
+</body>
+</html>
