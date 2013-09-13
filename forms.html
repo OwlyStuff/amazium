@@ -41,9 +41,9 @@
 </section>
 
 <section class="row">
-    <article class="grid_12">
-        <h3>Form without Labels</h3>
-        <form name="" id="" method="" action="" class="hide-lables icons">
+    <article class="grid_6">
+        <h3>Form with Labels</h3>
+        <form name="" id="" method="" action="" class="">
             <fieldset>
                 <label for="text">Text</label>
                 <input type="text" name="text" id="text" placeholder="Text" autocomplete="on" tabindex="2" />
@@ -91,7 +91,12 @@
                 <small>Invalid entry</small>
             </fieldset>
             <fieldset>
-                <label for="input" class="error">Input</label>
+                <label for="input">Input</label>
+                <input type="input" name="input" id="input" placeholder="Input" autocomplete="on" tabindex="1" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label class="error" for="input">Input</label>
                 <input type="input" name="input" id="input" placeholder="Input" autocomplete="on" tabindex="1" />
                 <small>Invalid entry</small>
             </fieldset>
@@ -101,25 +106,50 @@
                 <small>Invalid entry</small>
             </fieldset>
             <fieldset>
-                <label for="checkbox_1" class="checkbox"><input type="checkbox" name="checkbox" checked />Checkbox 1 - Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum.</label>
-                <label for="checkbox_2" class="checkbox"><input type="checkbox" name="checkbox" />Checkbox 2</label>
-                <label for="checkbox_3" class="checkbox"><input type="checkbox" name="checkbox" />Checkbox 3</label>
-                <small>Invalid entry</small>
+                <label for="radio">Checkboxes</label>
+                <div class="checkbox">
+                    <span>
+                        <input type="checkbox" tabindex="1" name="c1" id="c1">
+                        <label for="c1"><span></span>Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum, Donec id elit non mi porta gravida at eget metus.</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" tabindex="1" name="c2" id="c2">
+                        <label for="c2"><span></span>Curabitur blandit.</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" tabindex="1" name="c3" id="c3">
+                        <label for="c3"><span></span>Risus Condimentum.</label>
+                    </span>
+                    <small>Invalid entry</small>
+                </div>                
             </fieldset>
             <fieldset>
-                <label for="radio_1" class="radio"><input type="radio" name="radio" checked />Yes - Cras justo odio, dapibus ac facilisis in, egestas eget quam.</label>
-                <label for="radio_2" class="radio"><input type="radio" name="radio" />No - Maecenas sed diam eget risus varius blandit sit amet non magna.</label>
+                <label for="radio">Radio Buttons</label>
+                <div class="radio">
+                    <span>
+                        <input type="radio" tabindex="1" name="r1" id="r1">
+                        <label for="r1"><span></span>Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum, Donec id elit non mi porta gravida at eget metus.</label>
+                    </span>
+                    <span>
+                        <input type="radio" tabindex="1" name="r1" id="r2">
+                        <label for="r2"><span></span>Yes</label>
+                    </span>
+                    <span>
+                        <input type="radio" tabindex="1" name="r1" id="r3">
+                        <label for="r3"><span></span>No</label>
+                    </span>
+                    <small>Invalid entry</small>
+                </div>
             </fieldset>
             <fieldset>
-                <input type="submit" name="submit" id="submitbtn" tabindex="7" value="Submit Button" />
+                <input type="submit" name="submit" id="submitbtn" tabindex="7" value="Submit" class="first" />
+                <input type="reset" name="reset" id="submitbtn" tabindex="7" value="Reset" />
             </fieldset>
         </form>
     </article>
-</section>
-<section class="row">
-    <article class="grid_12">
-        <h3>Form with Labels</h3>
-        <form name="" id="" method="" action="" class="icons">
+    <article class="grid_6">        
+        <h3>Form without Labels</h3>
+        <form name="" id="" method="" action="" class="hide-lables">
             <fieldset>
                 <label for="text">Text</label>
                 <input type="text" name="text" id="text" placeholder="Text" autocomplete="on" tabindex="2" />
@@ -167,7 +197,12 @@
                 <small>Invalid entry</small>
             </fieldset>
             <fieldset>
-                <label for="input" class="error">Input</label>
+                <label for="input">Input</label>
+                <input type="input" name="input" id="input" placeholder="Input" autocomplete="on" tabindex="1" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset>
+                <label class="error" for="input">Input</label>
                 <input type="input" name="input" id="input" placeholder="Input" autocomplete="on" tabindex="1" />
                 <small>Invalid entry</small>
             </fieldset>
@@ -177,10 +212,47 @@
                 <small>Invalid entry</small>
             </fieldset>
             <fieldset>
-                <input type="submit" name="submit" id="submitbtn" tabindex="7" value="Submit Button" />
+                <label for="radio">Checkboxes</label>
+                <div class="checkbox">
+                    <span>
+                        <input type="checkbox" tabindex="1" name="c4" id="c4">
+                        <label for="c4"><span></span>Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum, Donec id elit non mi porta gravida at eget metus.</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" tabindex="1" name="c5" id="c5">
+                        <label for="c5"><span></span>Curabitur blandit.</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" tabindex="1" name="c6" id="c6">
+                        <label for="c6"><span></span>Risus Condimentum.</label>
+                    </span>
+                    <small>Invalid entry</small>
+                </div>                
+            </fieldset>
+            <fieldset>
+                <label for="radio">Radio Buttons</label>
+                <div class="radio">
+                    <span>
+                        <input type="radio" tabindex="1" name="r1" id="r4">
+                        <label for="r4"><span></span>Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum, Donec id elit non mi porta gravida at eget metus.</label>
+                    </span>
+                    <span>
+                        <input type="radio" tabindex="1" name="r1" id="r5">
+                        <label for="r5"><span></span>Yes</label>
+                    </span>
+                    <span>
+                        <input type="radio" tabindex="1" name="r1" id="r6">
+                        <label for="r6"><span></span>No</label>
+                    </span>
+                    <small>Invalid entry</small>
+                </div>
+            </fieldset>
+            <fieldset>
+                <input type="submit" name="submit" id="submitbtn" tabindex="7" value="Submit" class="first" />
+                <input type="reset" name="reset" id="submitbtn" tabindex="7" value="Reset" />
             </fieldset>
         </form>
-	</article>
+    </article>
 </section>
 
 <!-- Scripts -->
