@@ -45,7 +45,7 @@ body                                            { margin:0; padding:0; backgroun
 
 /***** Typography *****/
 
-h1, h2, h3, h4, h5, h6                          { margin:0; padding:0; font-family:Serif; font-weight:normal; } 
+h1, h2, h3, h4, h5, h6                          { margin:0; padding:0; font-family:Sans-Serif; font-weight:normal; } 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a              { font-weight:inherit; color:inherit; }
 h1                                              { margin:0 0 10px 0; padding:0; font-size:38px; line-height:40px; color:#333; }
 h2                                              { margin:0 0 10px 0; padding:0; font-size:32px; line-height:34px; color:#333; }
@@ -64,7 +64,7 @@ sup, sub                                        { height:0; line-height:0; verti
 sup                                             { top:-5px; }
 sub                                             { bottom:-5px; }
 
-pre code                                        { margin:16px 0 26px 0; padding:16px; font:12px/19px 'monospace', Sans-Serif; color:#f1f1f1; display:block; background-color:#000; border:1px solid #000; }
+pre code                                        { margin:16px 0 26px 0; padding:16px; font:12px/19px 'monospace', Sans-Serif; color:#f1f1f1; display:block; background-color:#111; border:1px solid #111; }
 
 abbr[title], 
 abbr[data-original-title]                       { border-bottom:1px dotted #999999; cursor:help; }
@@ -74,18 +74,14 @@ hr                                              { margin:20px 0; padding:0; bord
 
 div                                             { box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
-::selection                                     { background:#444; color:#fff; text-shadow:none; }
-::-moz-selection                                { background:#444; color:#fff; text-shadow:none; }
-  
-
 /***** Lists *****/
 
 ul, ol                                          { margin:26px 0 36px 0; display:block; }
 ul                                              { list-style:none outside; }
 ul li                                           { margin:0 0 15px 0; padding:0 0 0 18px; line-height:18px; background:transparent url('../img/bullet.png') no-repeat 0 3px; }
 
-ul ul, ul ol                                    { margin:5px 0 5px 0; }
-ol ol, ol ul                                    { margin:0 0 5px 20px; }
+ul ul, ul ol                                    { margin:11px 0 5px 0; }
+ol ol, ol ul                                    { margin:8px 0 5px 20px; }
 ul ul li                                        { margin:0 0 5px 0; }
 ul ol li,   ol ol li, ol ul li                  { margin:0 0 3px 0; }
 
@@ -99,7 +95,7 @@ ul.circle li,
 ul.disc li                                      { margin:0 0 5px 18px; padding:0; line-height:18px; background:none; }
 
 ol                                              { list-style:decimal; }
-ol li                                           { margin:0 0 5px 22px; padding:0; line-height:18px; }
+ol li                                           { margin:0 0 10px 22px; padding:0; line-height:18px; }
 
 dl                                              { margin:16px 0 26px 0; padding:0; }
 dt                                              { margin:0 0 10px 0; font-size:18px; line-height:20px; font-weight:bold; }
@@ -134,26 +130,30 @@ img                                             { border:0; vertical-align:middl
 
 /***** Buttons  *****/
 
-a.btn, .btn                                     { margin:5px 10px 5px 0; padding:1px 20px 0; display:inline-block; color:#FFF; border:1px solid #000; background-color:#000; font-size:16px; line-height:40px; text-decoration:none; cursor:pointer; }
-a:hover.btn                                     { color:#333; border:1px solid #CCC; background-color:#FFF; }
+a.btn, 
+.btn,
+button                                          { margin:5px; padding:1px 20px 0; display:inline-block; color:#FFF; border:1px solid #000; background-color:#000; font-size:16px; line-height:40px; text-decoration:none; cursor:pointer; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
+:hover.btn                                      { border:1px solid #CCC; background-color:#FFF; color:#333; }
 
-a.btn.small, .btn.small                         { padding:2px 10px 0; font-size:12px; line-height:25px; }
+a.btn.small, 
+.btn.small                                      { padding:2px 10px; font-size:12px; line-height:25px; }
 
 .btn.white                                      { border-color:#CCC; background-color:#FFF; color:#333; }
-a:hover.btn.white                               { border-color:#000; background-color:#000; color:#FFF; }           
+:hover.btn.white                                { border-color:#000; background-color:#000; color:#FFF; }           
 
 .btn.red                                        { border-color:#E74C3C; background-color:#E74C3C; }
-a:hover.btn.red                                 { border-color:#E74C3C; background-color:#b93d30; color:#FFF; }
+:hover.btn.red                                  { border-color:#E74C3C; background-color:#b93d30; color:#FFF; }
 
 .btn.blue                                       { border-color:#3498DB; background-color:#3498DB; }
-a:hover.btn.blue                                { border-color:#3498DB; background-color:#2a7aaf; color:#FFF; }
+:hover.btn.blue                                 { border-color:#3498DB; background-color:#2a7aaf; color:#FFF; }
 
 .btn.green                                      { border-color:#2ECC71; background-color:#2ECC71; }
-a:hover.btn.green                               { border-color:#2ECC71; background-color:#25a35a; color:#FFF; }
+:hover.btn.green                                { border-color:#2ECC71; background-color:#25a35a; color:#FFF; }
 
 /***** Tables *****/
 
 table                                           { margin:20px 0 40px 0; width:100%; }
+table caption                                   { margin:0 0 10px; }
 table th                                        { padding:10px 8px 10px 8px; background-color:#f1f1f1; color:#333; font-weight:bold; border:1px solid #BBB; }
 table td                                        { padding:10px 8px 10px 8px; background-color:#f1f1f1; color:#333; border:1px solid #BBB; }
 table tr.even td                                { background-color:#fff; }
