@@ -7,15 +7,15 @@
 
 /***** Screen 1200px+ *****/
 
-body	 								{ margin:20px 0; background-color:#F1F1F1; }
+.example								{  }
 
-.grid-highlight							{ margin-bottom:5px; }
-.grid-highlight [class^="grid_"]		{ line-height:30px; text-align:center; background-color:#FFF; }
+
 
 /***** Screen Smaller than 1199px *****/
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
 
 .example 								{  }
+
 
 
 }
@@ -25,12 +25,16 @@ body	 								{ margin:20px 0; background-color:#F1F1F1; }
 
 .example 								{  }
 
+
+
 }
 
 /***** Mobile (portrait 300px) *****/
 @media only screen and (min-width:481px) and (max-width: 767px) {
 
 .example 								{  }
+
+
 		
 }	 
 
@@ -38,5 +42,7 @@ body	 								{ margin:20px 0; background-color:#F1F1F1; }
 @media only screen and (max-width: 480px) {
 
 .example 								{  }
+
+
 
 }
