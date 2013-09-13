@@ -64,7 +64,7 @@ sup, sub                                        { height:0; line-height:0; verti
 sup                                             { top:-5px; }
 sub                                             { bottom:-5px; }
 
-pre code                                        { margin:16px 0 26px 0; padding:16px; font:12px/19px 'monospace', Sans-Serif; color:#f1f1f1; display:block; background-color:#111; border:1px solid #111; }
+pre code                                        { margin:16px 0 26px 0; padding:16px; font:12px/19px 'Consolas', Courier, monospace; color:#f1f1f1; display:block; background-color:#111; border:1px solid #111; }
 
 abbr[title], 
 abbr[data-original-title]                       { border-bottom:1px dotted #999999; cursor:help; }
