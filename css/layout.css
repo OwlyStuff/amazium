@@ -4,23 +4,24 @@
 * www.amazium.co.uk
 */
 
-/***** Example us only *****/
-body									{ margin:20px 0; background-color:#F1F1F1; }
-.grid-highlight								{ margin-bottom:5px; }
-.grid-highlight [class^="grid_"]					{ line-height:30px; text-align:center; background-color:#FFF; }
+/***** Example us only - Delete when done..! *****/
+
+body                                    { margin:20px 0; background-color:#F1F1F1; }
+.grid-highlight                         { margin-bottom:5px; }
+.grid-highlight [class^="grid_"]        { line-height:30px; text-align:center; background-color:#FFF; }
 
 
 
 /***** Screen 1200px+ *****/
 
-.example								{  }
+.example                                {  }
 
 
 
 /***** Screen Smaller than 1199px *****/
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
 
-.example 								{  }
+.example                                {  }
 
 
 
@@ -29,25 +30,25 @@ body									{ margin:20px 0; background-color:#F1F1F1; }
 /***** Tablet (Smaller than 959px) *****/
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
-.example 								{  }
+.example                                {  }
 
 
 
 }
 
 /***** Mobile (portrait 300px) *****/
-@media only screen and (min-width:481px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
 
-.example 								{  }
+.example                                {  }
 
 
-		
-}	 
+
+}
 
 /***** Mobile (landscape 420px) *****/
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
 
-.example 								{  }
+.example                                {  }
 
 
 
