@@ -37,10 +37,10 @@
 
 .show-mobile                                    { display:none !important; }
 .show-tablet                                    { display:none !important; }
-.show-screen                                    { display:inherit; }
+.show-screen                                    { display:auto; }
 
-.hide-mobile                                    { display:inherit !important; }
-.hide-tablet                                    { display:inherit !important; }
+.hide-mobile                                    { display:auto !important; }
+.hide-tablet                                    { display:auto !important; }
 .hide-screen                                    { display:none !important; }
 
 
@@ -78,10 +78,10 @@
 
 .show-mobile                                    { display:none !important; }
 .show-tablet                                    { display:none !important; }
-.show-screen                                    { display:inherit !important; }
+.show-screen                                    { display:auto !important; }
     
-.hide-mobile                                    { display:inherit !important; }
-.hide-tablet                                    { display:inherit !important; }
+.hide-mobile                                    { display:auto !important; }
+.hide-tablet                                    { display:auto !important; }
 .hide-screen                                    { display:none !important; }
 
 }
@@ -120,12 +120,12 @@
 .offset_11                                      { margin-left:718px; }
     
 .show-mobile                                    { display:none !important; }
-.show-tablet                                    { display:inherit !important; }
+.show-tablet                                    { display:auto !important; }
 .show-screen                                    { display:none !important; }
     
-.hide-mobile                                    { display:inherit !important; }
+.hide-mobile                                    { display:auto !important; }
 .hide-tablet                                    { display:none !important; }
-.hide-screen                                    { display:inherit !important; }
+.hide-screen                                    { display:auto !important; }
 
 }
 
@@ -142,13 +142,13 @@
 .grid_5, .grid_6, .grid_7, .grid_8,
 .grid_9, .grid_10, .grid_11, .grid_12           { width:100%; margin:10px 0 0 0; float:none; display:block; }
 
-.show-mobile                                    { display:inherit !important; }
+.show-mobile                                    { display:auto !important; }
 .show-tablet                                    { display:none !important; }
 .show-screen                                    { display:none !important; }
     
 .hide-mobile                                    { display:none !important; }
-.hide-tablet                                    { display:inherit !important; }
-.hide-screen                                    { display:inherit !important; }
+.hide-tablet                                    { display:auto !important; }
+.hide-screen                                    { display:auto !important; }
 
 }
 
