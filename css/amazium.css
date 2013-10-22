@@ -106,6 +106,19 @@
 .grid_10                                        { width:612px; margin:0 14px; }
 .grid_11                                        { width:676px; margin:0 14px; }
 .grid_12                                        { width:740px; margin:0 14px; }
+
+.grid_1_tablet                                  { width:36px; }
+.grid_2_tablet                                  { width:100px; }
+.grid_3_tablet                                  { width:164px; }
+.grid_4_tablet                                  { width:228px; }
+.grid_5_tablet                                  { width:292px; }
+.grid_6_tablet                                  { width:356px; }
+.grid_7_tablet                                  { width:420px; }
+.grid_8_tablet                                  { width:484px; }
+.grid_9_tablet                                  { width:548px; }
+.grid_10_tablet                                 { width:612px; }
+.grid_11_tablet                                 { width:676px; }
+.grid_12_tablet                                 { width:740px; }
         
 .offset_1                                       { margin-left:78px; }
 .offset_2                                       { margin-left:142px; }
