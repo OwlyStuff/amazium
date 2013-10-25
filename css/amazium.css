@@ -155,6 +155,10 @@
 .grid_5, .grid_6, .grid_7, .grid_8,
 .grid_9, .grid_10, .grid_11, .grid_12           { width:100%; margin:10px 0 0 0; float:none; display:block; }
 
+.grid_6_mobile                                  { width: 48%; float: left; }
+.grid_6_mobile + .grid_6_mobile                 { float: right; }
+
+
 .show-mobile                                    { display:inherit !important; }
 .show-tablet                                    { display:none !important; }
 .show-screen                                    { display:none !important; }
