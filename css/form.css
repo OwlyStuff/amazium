@@ -76,28 +76,28 @@ input:hover[type="reset"]                                   { border-color:#000;
 
 /***** Forms without labels *****/
 
-.hide-lables label                                          { display:none; }
-.hide-lables .checkbox label,
-.hide-lables .radio label                                   { display:block; }
+.hide-labels label                                          { display:none; }
+.hide-labels .checkbox label,
+.hide-labels .radio label                                   { display:block; }
 
-.hide-lables input,
-.hide-lables textarea, 
-.hide-lables select,
-.hide-lables .select                                        { width:100%; }
+.hide-labels input,
+.hide-labels textarea, 
+.hide-labels select,
+.hide-labels .select                                        { width:100%; }
 
-.hide-lables .radio, .hide-lables .checkbox                 { width:100%; float:right; }
+.hide-labels .radio, .hide-labels .checkbox                 { width:100%; float:right; }
 
 /***** Errors *****/
 
-.hide-lables label.error + input + small,
-.hide-lables label.error + span + small,
-.hide-lables label.error + textarea + small                 { width:100%; }
+.hide-labels label.error + input + small,
+.hide-labels label.error + span + small,
+.hide-labels label.error + textarea + small                 { width:100%; }
 
 /***** Buttons *****/
 
-.hide-lables input[type="button"],
-.hide-lables input[type="submit"],
-.hide-lables input[type="reset"]                            { margin:6px 6px 6px 0; width:auto; }
+.hide-labels input[type="button"],
+.hide-labels input[type="submit"],
+.hide-labels input[type="reset"]                            { margin:6px 6px 6px 0; width:auto; }
 
 /***** Placeholder *****/
 
