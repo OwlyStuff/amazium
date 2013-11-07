@@ -44,20 +44,11 @@ input[type="radio"]                                         { display:none; }
 input[type="radio"] + label:before                          { margin:0; content:''; position:absolute; left:0; top:0; background-color:#FFF; border:1px solid #CCC; cursor:pointer; display:inline-block; height:20px; width:20px; text-align:center; font:13px/22px sans; color:#CCC; border-radius:50%; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; transition:all .3s linear 0s; -moz-transition:all .3s linear 0s; -webkit-transition:all .3s linear 0s; -o-transition:all .3s linear 0s; }
 input[type="radio"]:checked + label:before                  { border:7px solid #000; transition:all .3s linear 0s; -moz-transition:all .3s linear 0s; -webkit-transition:all .3s linear 0s; -o-transition:all .3s linear 0s; }
 
-/***** Errors *****/
+/***** Validation *****/
 
-label.error                                                 { color:#E74C3C; }
-label.error ::-webkit-input-placeholder                     { color:#E74C3C; }
-label.error :-moz-placeholder                               { color:#E74C3C; }
-label.error ::-moz-placeholder                              { color:#E74C3C; }
-label.error :-ms-input-placeholder                          { color:#E74C3C; }
-
-label.error + input,
-label.error + textarea                                      { margin:0; color:#E74C3C; border-color:#E74C3C; }
-label.error + .select select                                { margin:0; border-color:#E74C3C; }
-label.error + input + small,
-label.error + span + small,
-label.error + textarea + small                              { margin:0; padding:3px 8px; font:11px/20px Sans-Serif; color:#FFF; border-color:#E74C3C; background-color:#E74C3C; width:70%; float:right; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+input:not(:focus):invalid,
+input:focus:invalid                                         { margin:0; color:#E74C3C; border-color:#E74C3C; }
+input:not(:focus):invalid + small                           { margin:0; padding:3px 8px; font:11px/20px Sans-Serif; color:#FFF; border-color:#E74C3C; background-color:#E74C3C; width:70%; float:right; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
 /***** Buttons *****/
 
@@ -76,28 +67,26 @@ input:hover[type="reset"]                                   { border-color:#000;
 
 /***** Forms without labels *****/
 
-.hide-labels label                                          { display:none; }
-.hide-labels .checkbox label,
-.hide-labels .radio label                                   { display:block; }
+.hide-lables label                                          { display:none; }
+.hide-lables .checkbox label,
+.hide-lables .radio label                                   { display:block; }
 
-.hide-labels input,
-.hide-labels textarea, 
-.hide-labels select,
-.hide-labels .select                                        { width:100%; }
+.hide-lables input,
+.hide-lables textarea, 
+.hide-lables select,
+.hide-lables .select                                        { width:100%; }
 
-.hide-labels .radio, .hide-labels .checkbox                 { width:100%; float:right; }
+.hide-lables .radio, .hide-lables .checkbox                 { width:100%; float:right; }
 
-/***** Errors *****/
+/***** Validation *****/
 
-.hide-labels label.error + input + small,
-.hide-labels label.error + span + small,
-.hide-labels label.error + textarea + small                 { width:100%; }
+.hide-lables input:not(:focus):invalid + small              { width:100%; }
 
 /***** Buttons *****/
 
-.hide-labels input[type="button"],
-.hide-labels input[type="submit"],
-.hide-labels input[type="reset"]                            { margin:6px 6px 6px 0; width:auto; }
+.hide-lables input[type="button"],
+.hide-lables input[type="submit"],
+.hide-lables input[type="reset"]                            { margin:6px 6px 6px 0; width:auto; }
 
 /***** Placeholder *****/
 
