@@ -1,0 +1,16 @@
+{
+  "name": "Amazium",
+  "version": "3.3.0",
+  "homepage": "https://github.com/MikeBallan/Amazium",
+  "authors": [
+    "info@mikeballan.co.uk"
+  ],
+  "description": "The responsive CSS web framework",
+  "main": "./css/amazium.css",
+  "keywords": [
+    "responsive",
+    "css",
+    "framework"
+  ],
+  "license": "MIT"
+}
