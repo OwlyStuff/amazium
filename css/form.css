@@ -14,7 +14,7 @@ form span                                                   { margin:10px 0; pad
 fieldset                                                    { margin:0 0 16px 0; padding:0; display:block; }
 fieldset small                                              { display:none; }
 input, textarea, select, textarea                           { margin:0; padding:0 10px; display:block; border:none; border-radius:0; width:70%; height:40px; font:14px/40px Sans-Serif; color:#555; border:solid 1px #BBB; overflow:hidden; outline:0 none; box-sizing:border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-appearance:none; }
-textarea                                                    { padding:0 0 0 10px; resize:vertical; min-height:122px; }
+textarea                                                    { padding:0 0 0 10px; resize:none; min-height:122px; }
 input[type="search"]                                        { -webkit-padding-start:0;  }
 
 /***** Styled Select fields *****/
