@@ -8,22 +8,22 @@
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	
+
 	<!-- Mobile Specific Metas -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
     <script type="text/javascript">
         /mobi/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
           if (!pageYOffset) window.scrollTo(0, 1);
         }, 1000);
     </script>
-	
+
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/amazium.css">
     <link rel="stylesheet" href="css/form.css">
 	<link rel="stylesheet" href="css/layout.css">
-	
+
 	<!-- Favicons -->
 	<link rel="shortcut icon" href="images/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144x144.png" />
@@ -44,6 +44,7 @@
     <article class="grid_6">
         <h3>Form with Labels</h3>
         <form name="" id="" method="" action="" class="">
+            <small>Invalid form entry</small>
             <fieldset>
                 <label for="text">Text</label>
                 <input type="text" name="text" id="text" placeholder="Text" autocomplete="on" tabindex="2" />
@@ -56,7 +57,7 @@
             </fieldset>
             <fieldset>
                 <label for="url">URL</label>
-                <input type="url" name="url" id="url" placeholder="Url" autocomplete="on" tabindex="14" /> 
+                <input type="url" name="url" id="url" placeholder="Url" autocomplete="on" tabindex="14" />
                 <small>Invalid entry</small>
             </fieldset>
             <fieldset>
@@ -72,6 +73,11 @@
             <fieldset>
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="Email" autocomplete="on" tabindex="13" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset class="error">
+                <label for="text">Error</label>
+                <input type="text" name="text" id="text" placeholder="Text with an Error" autocomplete="on" tabindex="2" />
                 <small>Invalid entry</small>
             </fieldset>
             <fieldset>
@@ -115,8 +121,7 @@
                         <input type="checkbox" tabindex="1" name="c3" id="c3">
                         <label for="c3" onclick=""><span></span>Risus Condimentum.</label>
                     </span>
-                    <small>Invalid entry</small>
-                </div>                
+                </div>
             </fieldset>
             <fieldset>
                 <label for="radio">Radio Buttons</label>
@@ -133,7 +138,6 @@
                         <input type="radio" tabindex="1" name="r1" id="r3">
                         <label for="r3" onclick=""><span></span>No</label>
                     </span>
-                    <small>Invalid entry</small>
                 </div>
             </fieldset>
             <fieldset>
@@ -142,9 +146,10 @@
             </fieldset>
         </form>
     </article>
-    <article class="grid_6">        
+    <article class="grid_6">
         <h3>Form without Labels</h3>
         <form name="" id="" method="" action="" class="hide-lables">
+            <small>Invalid form entry</small>
             <fieldset>
                 <label for="text">Text</label>
                 <input type="text" name="text" id="text" placeholder="Text" autocomplete="on" tabindex="2" />
@@ -157,7 +162,7 @@
             </fieldset>
             <fieldset>
                 <label for="url">URL</label>
-                <input type="url" name="url" id="url" placeholder="Url" autocomplete="on" tabindex="14" /> 
+                <input type="url" name="url" id="url" placeholder="Url" autocomplete="on" tabindex="14" />
                 <small>Invalid entry</small>
             </fieldset>
             <fieldset>
@@ -173,6 +178,11 @@
             <fieldset>
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="Email" autocomplete="on" tabindex="13" />
+                <small>Invalid entry</small>
+            </fieldset>
+            <fieldset class="error">
+                <label for="text">Error</label>
+                <input type="text" name="text" id="text" placeholder="Text with an Error" autocomplete="on" tabindex="2" />
                 <small>Invalid entry</small>
             </fieldset>
             <fieldset>
@@ -216,8 +226,7 @@
                         <input type="checkbox" tabindex="1" name="c6" id="c6">
                         <label for="c6" onclick=""><span></span>Risus Condimentum.</label>
                     </span>
-                    <small>Invalid entry</small>
-                </div>                
+                </div>
             </fieldset>
             <fieldset>
                 <label for="radio">Radio Buttons</label>
@@ -234,7 +243,6 @@
                         <input type="radio" tabindex="1" name="r1" id="r6">
                         <label for="r6" onclick=""><span></span>No</label>
                     </span>
-                    <small>Invalid entry</small>
                 </div>
             </fieldset>
             <fieldset>
