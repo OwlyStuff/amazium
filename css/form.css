@@ -1,4 +1,4 @@
-/* 
+/*
 * Amazium V3.3.0
 * Copyright 2013, Mike Ballan
 * www.amazium.co.uk
@@ -46,9 +46,15 @@ input[type="radio"]:checked + label:before                  { border:7px solid #
 
 /***** Validation *****/
 
-input:not(:focus):invalid,
-input:focus:invalid                                         { margin:0; color:#E74C3C; border-color:#E74C3C; }
-input:not(:focus):invalid + small                           { margin:0; padding:3px 8px; font:11px/20px Sans-Serif; color:#FFF; border-color:#E74C3C; background-color:#E74C3C; width:70%; float:right; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+fieldset input:not(:focus):invalid,
+fieldset input:focus:invalid,
+fieldset.error input                                        { margin:0; color:#E74C3C; border-color:#E74C3C; display:block; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; }
+
+fieldset input:not(:focus):invalid + small,
+fieldset.error input + small,
+small                                                       { margin:0; padding:3px 8px; font:11px/20px Sans-Serif; color:#FFF; border-color:#E74C3C; background-color:#E74C3C; width:70%; float:right; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+
+small                                                       { margin:0 0 16px 30%; width:70%; }
 
 /***** Buttons *****/
 
@@ -72,10 +78,11 @@ input:hover[type="reset"]                                   { border-color:#000;
 .hide-lables .radio label                                   { display:block; }
 
 .hide-lables input,
-.hide-lables textarea, 
+.hide-lables textarea,
 .hide-lables select,
-.hide-lables .select                                        { width:100%; }
-
+.hide-lables .select,
+.hide-lables fieldset.error input + small                   { width:100%; }
+.hide-lables small                                          { margin:0 0 16px 0; width:100%; }
 .hide-lables .radio, .hide-lables .checkbox                 { width:100%; float:right; }
 
 /***** Validation *****/
