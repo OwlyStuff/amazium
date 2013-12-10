@@ -114,7 +114,12 @@ select:focus                                                { color:#000; border
 
 /***** NYSMNYD *****/
 
-#nysmnyd fieldset label                                     { display:block; position:absolute; left:0; top:0; height:auto; width:auto; z-index:1; font:12px/40px Sans-Serif; color:#999; transition:all .1s ease-out 0s; -moz-transition:all .1s ease-out 0s; -webkit-transition:all .1s ease-out 0s; -o-transition:all .1s ease-out 0s; }
+#nysmnyd fieldset label                                     { display:block; position:absolute; left:1px; top:0; height:auto; width:auto; z-index:1; font:12px/40px Sans-Serif; color:#999; transition:all .1s ease-out 0s; -moz-transition:all .1s ease-out 0s; -webkit-transition:all .1s ease-out 0s; -o-transition:all .1s ease-out 0s; }
 #nysmnyd fieldset.show-all label                            { top:-27px; transition:all .1s ease-out 0s; -moz-transition:all .1s ease-out 0s; -webkit-transition:all .1s ease-out 0s; -o-transition:all .1s ease-out 0s; }
 #nysmnyd input, #nysmnyd textarea,
 #nysmnyd .select, #nysmnyd textarea                         { z-index:2; }
+#nysmnyd input, #nysmnyd textarea,
+#nysmnyd select, #nysmnyd .select,
+#nysmnyd fieldset.error input + small,
+#nysmnyd small                                              { width:100%; }
+#nysmnyd .radio, #nysmnyd .checkbox                         { width:100%; float:right; }
