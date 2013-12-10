@@ -1,4 +1,4 @@
-/* 
+/*
 * Amazium V3.3.0
 * Copyright 2013, Mike Ballan
 * www.amazium.co.uk
@@ -23,8 +23,8 @@ header, hgroup, menu, nav, output,
 ruby, section, summary, time, mark,
 audio, video                                    { margin: 0; padding: 0; border: 0; font-size:100%; font:inherit; vertical-align:baseline; }
 
-article, aside, details, figcaption, 
-figure, footer, header, hgroup, menu, 
+article, aside, details, figcaption,
+figure, footer, header, hgroup, menu,
 nav, section                                    { display:block; }
 
 body                                            { line-height:1; }
@@ -37,7 +37,7 @@ blockquote:before, blockquote:after,
 q:before, q:after                               { content:''; content:none; }
 
 table                                           { border-collapse:collapse; border-spacing:0; }
-    
+
 /***** Basic Styles *****/
 
 html                                            { overflow-y:scroll; overflow:-moz-scrollbars-vertical; }
@@ -45,7 +45,7 @@ body                                            { margin:0; padding:0; backgroun
 
 /***** Typography *****/
 
-h1, h2, h3, h4, h5, h6                          { margin:0; padding:0; font-family:Sans-Serif; font-weight:normal; } 
+h1, h2, h3, h4, h5, h6                          { margin:0; padding:0; font-family:Sans-Serif; font-weight:normal; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a              { font-weight:inherit; color:inherit; }
 h1                                              { margin:0 0 10px 0; padding:0; font-size:38px; line-height:40px; color:#333; }
 h2                                              { margin:0 0 10px 0; padding:0; font-size:32px; line-height:34px; color:#333; }
@@ -66,9 +66,9 @@ sub                                             { bottom:-5px; }
 
 pre code                                        { margin:16px 0 26px 0; padding:16px; font:12px/19px 'Consolas', Courier, monospace; color:#f1f1f1; display:block; background-color:#111; border:1px solid #111; }
 
-abbr[title], 
+abbr[title],
 abbr[data-original-title]                       { border-bottom:1px dotted #999999; cursor:help; }
-address                                         { margin:26px 0; padding:0; display:block; font-style:normal; line-height:20px; }    
+address                                         { margin:26px 0; padding:0; display:block; font-style:normal; line-height:20px; }
 
 hr                                              { margin:20px 0; padding:0; border:0; border-top:1px solid #999; height:1px; width:100%; text-align:left; display:block; }
 
@@ -85,9 +85,9 @@ ol ol, ol ul                                    { margin:8px 0 5px 20px; }
 ul ul li                                        { margin:0 0 5px 0; }
 ul ol li,   ol ol li, ol ul li                  { margin:0 0 3px 0; }
 
-ul.square, ul.square ul, 
+ul.square, ul.square ul,
 ul.circle ul.square                             { list-style:square outside; }
-ul.circle, ul.circle ul, 
+ul.circle, ul.circle ul,
 ul.square ul.circle                             { list-style:circle outside; }
 ul.disc, ul.disc ul                             { list-style:disc outside; }
 ul.square li,
@@ -119,24 +119,27 @@ a:focus                                         { outline:none; -moz-outline-sty
 /***** Images, iFrames & Videos  *****/
 
 img                                             { border:0; vertical-align:middle; -ms-interpolation-mode:bicubic; }
-.max-img                                        { width:100%; height:auto; }        
+.img-left                                       { float:left; margin:0 30px 30px 0; border:none; }
+.img-right                                      { float:right; margin:0 0 30px 30px; border:none; }
+.img-max                                        { width:100%; height:auto; }
+
 .media                                          { position:relative; margin:0 0 15px 0; padding-bottom:51%; padding-top:30px; height:0; overflow:hidden; border:1px solid #ccc; }
 .media iframe,
-.media object,  
+.media object,
 .media embed                                    { position:absolute; top:0; left:0; width:100%; height:100%; }
 
 /***** Buttons  *****/
 
-a.btn, 
+a.btn,
 .btn,
 button                                          { margin:5px; padding:1px 20px 0; display:inline-block; color:#FFF; border:1px solid #000; background-color:#000; font-size:16px; line-height:40px; text-decoration:none; cursor:pointer; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
 :hover.btn                                      { border:1px solid #CCC; background-color:#FFF; color:#333; }
 
-a.btn.small, 
+a.btn.small,
 .btn.small                                      { padding:2px 10px; font-size:12px; line-height:25px; }
 
 .btn.white                                      { border-color:#CCC; background-color:#FFF; color:#333; }
-:hover.btn.white                                { border-color:#000; background-color:#000; color:#FFF; }           
+:hover.btn.white                                { border-color:#000; background-color:#000; color:#FFF; }
 
 .btn.red                                        { border-color:#E74C3C; background-color:#E74C3C; }
 :hover.btn.red                                  { border-color:#E74C3C; background-color:#b93d30; color:#FFF; }
@@ -157,12 +160,9 @@ table tr.even td                                { background-color:#fff; }
 table tr.odd td                                 { background-color:#f1f1f1; }
 table td.highlight,
 table tr td.highlight                           { padding:11px 8px; color:#FFF; font-weight:bold; display:block; font-size:inherit; border:none; background-color:#333; }
-    
+
 /***** Global Classes *****/
 
-.img-left                                       { float:left; margin:0 30px 30px 0; border:none; }
-.img-right                                      { float:right; margin:0 0 30px 30px; border:none; }
-    
 .clear                                          { clear:both; }
 .float-left                                     { float:left; }
 .float-right                                    { float:right; }
