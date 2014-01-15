@@ -132,7 +132,7 @@ img                                             { border:0; vertical-align:middl
 
 a.btn,
 .btn,
-button                                          { margin:0 5px 5px; padding:1px 20px 0; display:inline-block; color:#FFF; border:1px solid #000; background-color:#000; font-size:16px; line-height:40px; text-decoration:none; cursor:pointer; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
+button                                          { margin:0 5px 5px 0; padding:1px 20px 0; display:inline-block; color:#FFF; border:1px solid #000; background-color:#000; font-size:16px; line-height:40px; text-decoration:none; cursor:pointer; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
 :hover.btn                                      { border:1px solid #CCC; background-color:#FFF; color:#333; }
 
 a.btn.small,
