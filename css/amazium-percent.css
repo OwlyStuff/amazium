@@ -1,0 +1,58 @@
+/*
+* Amazium V3.3.0
+* Copyright 2013, Mike Ballan
+* www.amazium.co.uk
+*/
+
+
+/***** Screen 100% *****/
+
+.row-max                                    { margin:0 auto; padding:0; width:100%; display:table; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+.row-max .row-max                           { padding:0; }
+.row-max .grid_1, .row-max .grid_2,
+.row-max .grid_3, .row-max .grid_4,
+.row-max .grid_5, .row-max .grid_6,
+.row-max .grid_7, .row-max .grid_8,
+.row-max .grid_9, .row-max .grid_10,
+.row-max .grid_11, .row-max .grid_12        { margin:0; padding:0 20px; float:left; display:inline; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+
+.row-max .grid_1                            { width:8.333%; }
+.row-max .grid_2                            { width:16.667%; }
+.row-max .grid_3                            { width:25%; }
+.row-max .grid_4                            { width:33.333%; }
+.row-max .grid_5                            { width:41.667%; }
+.row-max .grid_6                            { width:50%; }
+.row-max .grid_7                            { width:58.333%; }
+.row-max .grid_8                            { width:66.667%; }
+.row-max .grid_9                            { width:75%; }
+.row-max .grid_10                           { width:83.333%; }
+.row-max .grid_11                           { width:91.667%; }
+.row-max .grid_12                           { width:100%; }
+
+.row-max .offset_1                          { margin-left:8.333%; }
+.row-max .offset_2                          { margin-left:16.667%; }
+.row-max .offset_3                          { margin-left:25%; }
+.row-max .offset_4                          { margin-left:33.333%; }
+.row-max .offset_5                          { margin-left:41.667%; }
+.row-max .offset_6                          { margin-left:50%; }
+.row-max .offset_7                          { margin-left:58.333%; }
+.row-max .offset_8                          { margin-left:66.667%; }
+.row-max .offset_9                          { margin-left:75%; }
+.row-max .offset_10                         { margin-left:83.333%; }
+.row-max .offset_11                         { margin-left:91.667%; }
+
+
+/***** Mobile *****/
+@media only screen and (max-width: 767px) {
+
+.row-max                                    { padding:0 16px; display:block; }
+.row-max .row-max                           { margin:0; padding:0; width:100%; display:block; }
+
+.row-max .grid_1, .row-max .grid_2,
+.row-max .grid_3, .row-max .grid_4,
+.row-max .grid_5, .row-max .grid_6,
+.row-max .grid_7, .row-max .grid_8,
+.row-max .grid_9, .row-max .grid_10,
+.row-max .grid_11, .row-max .grid_12        { width:100%; margin:10px 0 0 0; float:none; display:block; }
+
+}
