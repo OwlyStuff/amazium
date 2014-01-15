@@ -54,8 +54,8 @@ fieldset.error input                                        { margin:0; color:#E
 
 fieldset input:not(:focus):invalid + small,
 fieldset.error input + small,
-small                                                       { margin:0; padding:3px 8px; font:11px/20px Sans-Serif; color:#FFF; border-color:#E74C3C; background-color:#E74C3C; width:70%; float:right; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
-small                                                       { margin:0 0 16px 30%; width:70%; }
+fieldset small                                              { margin:0; padding:3px 8px; font:11px/20px Sans-Serif; color:#FFF; border-color:#E74C3C; background-color:#E74C3C; width:70%; float:right; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+fieldset small                                              { margin:0 0 16px 30%; width:70%; }
 
 /***** Buttons *****/
 
