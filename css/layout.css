@@ -1,11 +1,10 @@
-/* 
+/*
 * Amazium V3.3.0
 * Copyright 2013, Mike Ballan
 * www.amazium.co.uk
 */
 
-/***** Example us only - Delete when done..! *****/
-
+/***** Example use only - Delete when done..! *****/
 body                                    { margin:20px 0; background-color:#F1F1F1; }
 .grid-highlight                         { margin-bottom:5px; }
 .grid-highlight [class^="grid_"]        { line-height:30px; text-align:center; background-color:#FFF; }
@@ -13,7 +12,6 @@ body                                    { margin:20px 0; background-color:#F1F1F
 
 
 /***** Screen 1200px+ *****/
-
 .example                                {  }
 
 
