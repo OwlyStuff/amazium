@@ -142,13 +142,13 @@ a.btn.small,
 :hover.btn.white                                { border-color:#000; background-color:#000; color:#FFF; }
 
 .btn.red                                        { border-color:#E74C3C; background-color:#E74C3C; }
-:hover.btn.red                                  { border-color:#E74C3C; background-color:#b93d30; color:#FFF; }
+:hover.btn.red                                  { border-color:#E74C3C; background-color:#B93D30; color:#FFF; }
 
 .btn.blue                                       { border-color:#3498DB; background-color:#3498DB; }
-:hover.btn.blue                                 { border-color:#3498DB; background-color:#2a7aaf; color:#FFF; }
+:hover.btn.blue                                 { border-color:#3498DB; background-color:#2A7AAF; color:#FFF; }
 
 .btn.green                                      { border-color:#2ECC71; background-color:#2ECC71; }
-:hover.btn.green                                { border-color:#2ECC71; background-color:#25a35a; color:#FFF; }
+:hover.btn.green                                { border-color:#2ECC71; background-color:#25A35A; color:#FFF; }
 
 /***** Tables *****/
 
@@ -172,7 +172,7 @@ td.highlight                                    { padding:11px 8px; color:#EEE; 
 .float-left                                     { float:left; }
 .float-right                                    { float:right; }
 
-.txt-big                                        { color:#a2bd30; font-weight:bold; line-height:26px; }
+.txt-big                                        { color:#A2BD30; font-weight:bold; line-height:26px; }
 .txt-left                                       { text-align:left; }
 .txt-right                                      { text-align:right; }
 .txt-center                                     { text-align:center; }
@@ -182,7 +182,7 @@ td.highlight                                    { padding:11px 8px; color:#EEE; 
 .bold                                           { font-weight:bold; }
 .italic                                         { font-style:italic; }
 .underline                                      { border-bottom:1px solid; }
-.highlight                                      { padding:4px 7px 4px; color:#000; line-height:19px; display:inline-block; background:#00deff; font-weight:bold; }
+.highlight                                      { padding:4px 7px 4px; color:#000; line-height:19px; display:inline-block; background:#00DEFF; font-weight:bold; }
 .intro                                          { font-size:130%; line-height:130%; }
 
 .nopadding                                      { padding:0; }
