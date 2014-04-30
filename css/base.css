@@ -41,7 +41,7 @@ table                                           { border-collapse:collapse; bord
 /***** Basic Styles *****/
 
 html                                            { overflow-y:scroll; overflow:-moz-scrollbars-vertical; }
-body                                            { margin:0; padding:0; background-color:#fff; font:15px/20px Sans-Serif; color:#333; -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:none; }
+body                                            { margin:0; padding:0; background-color:#FFF; font:15px/20px Sans-Serif; color:#333; -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:none; }
 
 /***** Typography *****/
 
@@ -64,13 +64,13 @@ sup, sub                                        { height:0; line-height:0; verti
 sup                                             { top:-5px; }
 sub                                             { bottom:-5px; }
 
-pre code                                        { margin:16px 0 26px 0; padding:16px; font:12px/19px 'Consolas', Courier, monospace; color:#f1f1f1; display:block; background-color:#111; border:1px solid #111; }
+pre code                                        { margin:16px 0 26px 0; padding:16px; font:12px/19px 'Consolas', Courier, monospace; color:#F1F1F1; display:block; background-color:#111; border:1px solid #111; }
 
 abbr[title],
 abbr[data-original-title]                       { border-bottom:1px dotted #999999; cursor:help; }
 address                                         { margin:26px 0; padding:0; display:block; font-style:normal; line-height:20px; }
 
-hr                                              { margin:20px 0; padding:0; border:0; border-top:1px solid #999; height:1px; width:100%; text-align:left; display:block; }
+hr                                              { margin:20px 0; padding:0; border:0; border-top:1px solid #D6D6D6; height:1px; width:100%; text-align:left; display:block; }
 
 div                                             { box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
@@ -142,24 +142,29 @@ a.btn.small,
 :hover.btn.white                                { border-color:#000; background-color:#000; color:#FFF; }
 
 .btn.red                                        { border-color:#E74C3C; background-color:#E74C3C; }
-:hover.btn.red                                  { border-color:#E74C3C; background-color:#b93d30; color:#FFF; }
+:hover.btn.red                                  { border-color:#E74C3C; background-color:#B93D30; color:#FFF; }
 
 .btn.blue                                       { border-color:#3498DB; background-color:#3498DB; }
-:hover.btn.blue                                 { border-color:#3498DB; background-color:#2a7aaf; color:#FFF; }
+:hover.btn.blue                                 { border-color:#3498DB; background-color:#2A7AAF; color:#FFF; }
 
 .btn.green                                      { border-color:#2ECC71; background-color:#2ECC71; }
-:hover.btn.green                                { border-color:#2ECC71; background-color:#25a35a; color:#FFF; }
+:hover.btn.green                                { border-color:#2ECC71; background-color:#25A35A; color:#FFF; }
 
 /***** Tables *****/
 
-table                                           { margin:20px 0 40px 0; width:100%; }
-table caption                                   { margin:0 0 10px; }
-table th                                        { padding:10px 8px 10px 8px; background-color:#f1f1f1; color:#333; font-weight:bold; border:1px solid #BBB; }
-table td                                        { padding:10px 8px 10px 8px; background-color:#f1f1f1; color:#333; border:1px solid #BBB; }
-table tr.even td                                { background-color:#fff; }
-table tr.odd td                                 { background-color:#f1f1f1; }
-table td.highlight,
-table tr td.highlight                           { padding:11px 8px; color:#FFF; font-weight:bold; display:block; font-size:inherit; border:none; background-color:#333; }
+table                                           { margin:20px 0 40px 0; width:100%; overflow:hidden; font:13px/17px Sans-Serif; border-bottom:1px solid #D6D6D6; }
+caption                                         { margin:0 0 10px; }
+
+tr                                              { background-color:#FFF; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
+tr:hover                                        { background-color:#F1F1F1; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
+tr.even                                         { background-color:#FFF; }
+tr.odd                                          { background-color:#F1F1F1; }
+
+th                                              { padding:8px; background-color:#F1F1F1; color:#222; font-weight:bold; border:none; border-bottom:3px solid #D6D6D6; text-align:left; white-space:nowrap; }
+
+td                                              { padding:8px; min-width:100px; background-color:transparent; color:#666; border:none; border-top:1px solid #D6D6D6; }
+td.highlight                                    { padding:11px 8px; color:#EEE; font-weight:bold; display:block; font-size:inherit; border:none; background-color:#333; }
+
 
 /***** Global Classes *****/
 
@@ -167,7 +172,7 @@ table tr td.highlight                           { padding:11px 8px; color:#FFF; 
 .float-left                                     { float:left; }
 .float-right                                    { float:right; }
 
-.txt-big                                        { color:#a2bd30; font-weight:bold; line-height:26px; }
+.txt-big                                        { color:#A2BD30; font-weight:bold; line-height:26px; }
 .txt-left                                       { text-align:left; }
 .txt-right                                      { text-align:right; }
 .txt-center                                     { text-align:center; }
@@ -177,7 +182,7 @@ table tr td.highlight                           { padding:11px 8px; color:#FFF; 
 .bold                                           { font-weight:bold; }
 .italic                                         { font-style:italic; }
 .underline                                      { border-bottom:1px solid; }
-.highlight                                      { padding:4px 7px 4px; color:#000; line-height:19px; display:inline-block; background:#00deff; font-weight:bold; }
+.highlight                                      { padding:4px 7px 4px; color:#000; line-height:19px; display:inline-block; background:#00DEFF; font-weight:bold; }
 .intro                                          { font-size:130%; line-height:130%; }
 
 .nopadding                                      { padding:0; }
@@ -198,5 +203,5 @@ table tr td.highlight                           { padding:11px 8px; color:#FFF; 
 
 /***** disable Chrome blue border *****/
 
-input:focus, select:focus, 
+input:focus, select:focus,
 textarea:focus, button:focus                    { outline: none; }
