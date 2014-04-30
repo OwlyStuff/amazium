@@ -1,12 +1,13 @@
-/* 
+/*
 * Amazium V3.3.0
 * Copyright 2013, Mike Ballan
 * www.amazium.co.uk
 */
 
 
-/***** Screen 1200px+ *****/
-
+/***********************************************
+Screen 1200px+
+***********************************************/
 .row                                            { margin:0 auto; width:1200px; display:table; }
 .row .row                                       { margin:0 -20px; width:auto; display:inline-block; }
 
@@ -45,8 +46,10 @@
 
 
 
-/***** Screen Smaller than 1200px *****/
-@media only screen and (min-width: 960px) and (max-width: 1199px) {
+/***********************************************
+Screen Smaller than 1199px
+***********************************************/
+@media only screen and (min-width:960px) and (max-width: 1199px) {
 
 .row                                            { width:960px; }
 .row .row                                       { margin:0 -16px; }
@@ -55,7 +58,7 @@
 .grid_2                                         { width:128px; margin:0 16px; }
 .grid_3                                         { width:208px; margin:0 16px; }
 .grid_4                                         { width:288px; margin:0 16px; }
-.grid_5                                         { width:368px; margin:0 16px; }     
+.grid_5                                         { width:368px; margin:0 16px; }
 .grid_6                                         { width:448px; margin:0 16px; }
 .grid_7                                         { width:528px; margin:0 16px; }
 .grid_8                                         { width:608px; margin:0 16px; }
@@ -63,7 +66,7 @@
 .grid_10                                        { width:768px; margin:0 16px; }
 .grid_11                                        { width:848px; margin:0 16px; }
 .grid_12                                        { width:928px; margin:0 16px; }
-    
+
 .offset_1                                       { margin-left:96px; }
 .offset_2                                       { margin-left:176px; }
 .offset_3                                       { margin-left:256px; }
@@ -79,7 +82,7 @@
 .show-mobile                                    { display:none !important; }
 .show-tablet                                    { display:none !important; }
 .show-screen                                    { display:inherit !important; }
-    
+
 .hide-mobile                                    { display:inherit !important; }
 .hide-tablet                                    { display:inherit !important; }
 .hide-screen                                    { display:none !important; }
@@ -88,12 +91,14 @@
 
 
 
-/***** Tablet (Smaller than 959px) *****/
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+/***********************************************
+Tablet (Smaller than 959px)
+***********************************************/
+@media only screen and (min-width:768px) and (max-width: 959px) {
 
 .row                                            { width:768px; }
 .row .row                                       { margin:0 -14px; }
-        
+
 .grid_1                                         { width:36px; margin:0 14px; }
 .grid_2                                         { width:100px; margin:0 14px; }
 .grid_3                                         { width:164px; margin:0 14px; }
@@ -119,7 +124,7 @@
 .grid_10_tablet                                 { width:612px; }
 .grid_11_tablet                                 { width:676px; }
 .grid_12_tablet                                 { width:740px; }
-        
+
 .offset_1                                       { margin-left:78px; }
 .offset_2                                       { margin-left:142px; }
 .offset_3                                       { margin-left:206px; }
@@ -131,11 +136,11 @@
 .offset_9                                       { margin-left:590px; }
 .offset_10                                      { margin-left:654px; }
 .offset_11                                      { margin-left:718px; }
-    
+
 .show-mobile                                    { display:none !important; }
 .show-tablet                                    { display:inherit !important; }
 .show-screen                                    { display:none !important; }
-    
+
 .hide-mobile                                    { display:inherit !important; }
 .hide-tablet                                    { display:none !important; }
 .hide-screen                                    { display:inherit !important; }
@@ -144,9 +149,10 @@
 
 
 
-/***** Mobile *****/
-/***** Updated based on essencious Mobile version *****/
-@media only screen and (max-width: 767px) {
+/***********************************************
+Mobile (portrait 300px)
+***********************************************/
+@media only screen and (max-width:767px) {
 
 .row                                            { padding:0 16px; width:100%; display:block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 .row .row                                       { margin:0; padding:0; width:100%; display:block; }
@@ -162,7 +168,7 @@
 .show-mobile                                    { display:inherit !important; }
 .show-tablet                                    { display:none !important; }
 .show-screen                                    { display:none !important; }
-    
+
 .hide-mobile                                    { display:none !important; }
 .hide-tablet                                    { display:inherit !important; }
 .hide-screen                                    { display:inherit !important; }
@@ -173,12 +179,12 @@
 
 /***** Clean up *****/
 
-.container:after                                { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; } 
+.container:after                                { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
 .clearfix:before,
 .clearfix:after,
 .row:before,
 .row:after                                      { content:'\0020'; display:block; overflow:hidden; visibility:hidden; width:0; height:0; }
 .row:after, .clearfix:after                     { clear:both; }
-.row, 
+.row,
 .clearfix                                       { zoom:1; }
 .clear                                          { clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0; }
