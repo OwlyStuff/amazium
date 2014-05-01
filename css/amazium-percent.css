@@ -1,12 +1,13 @@
 /*
-* Amazium V3.3.0
-* Copyright 2013, Mike Ballan
-* www.amazium.co.uk
+* Amazium (http://www.amazium.co.uk)
+* Copyright 2010 - 2013, Mike Ballan
+* Licensed under MIT (https://github.com/OwlyStuff/Amazium/blob/master/LICENSE)
 */
 
 
-/***** Screen 100% *****/
-
+/***********************************************
+Screen 100%
+***********************************************/
 .row-max                                    { margin:0 auto; padding:0; width:100%; display:table; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 .row-max .row-max                           { padding:0; }
 .row-max .grid_1, .row-max .grid_2,
@@ -42,7 +43,9 @@
 .row-max .offset_11                         { margin-left:91.667%; }
 
 
-/***** Mobile *****/
+/***********************************************
+Mobile
+***********************************************/
 @media only screen and (max-width: 767px) {
 
 .row-max                                    { padding:0 16px; display:block; }

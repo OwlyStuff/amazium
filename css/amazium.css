@@ -1,12 +1,13 @@
-/* 
-* Amazium V3.3.0
-* Copyright 2013, Mike Ballan
-* www.amazium.co.uk
+/*
+* Amazium (http://www.amazium.co.uk)
+* Copyright 2010 - 2013, Mike Ballan
+* Licensed under MIT (https://github.com/OwlyStuff/Amazium/blob/master/LICENSE)
 */
 
 
-/***** Screen 1200px+ *****/
-
+/***********************************************
+/***** Screen 1200px+
+***********************************************/
 .row                                            { margin:0 auto; width:1200px; display:table; }
 .row .row                                       { margin:0 -20px; width:auto; display:inline-block; }
 
@@ -45,7 +46,9 @@
 
 
 
-/***** Screen Smaller than 1200px *****/
+/***********************************************
+Screen Smaller than 1200px
+***********************************************/
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
 
 .row                                            { width:960px; }
@@ -88,7 +91,9 @@
 
 
 
-/***** Tablet (Smaller than 959px) *****/
+/***********************************************
+Tablet (Smaller than 959px)
+***********************************************/
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
 .row                                            { width:768px; }
@@ -144,8 +149,9 @@
 
 
 
-/***** Mobile *****/
-/***** Updated based on essencious Mobile version *****/
+/***********************************************
+Mobile
+***********************************************/
 @media only screen and (max-width: 767px) {
 
 .row                                            { padding:0 16px; width:100%; display:block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
@@ -171,8 +177,9 @@
 
 
 
-/***** Clean up *****/
-
+/***********************************************
+Clean up
+***********************************************/
 .container:after                                { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; } 
 .clearfix:before,
 .clearfix:after,
