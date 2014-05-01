@@ -1,12 +1,12 @@
 /*
-* Amazium V3.3.0
-* Copyright 2013, Mike Ballan
-* www.amazium.co.uk
+* Amazium (http://www.amazium.co.uk)
+* Copyright 2010 - 2014, Mike Ballan
+* Licensed under MIT (https://github.com/OwlyStuff/Amazium/blob/master/LICENSE)
 */
 
-
-/***** Reset & Basics *****/
-
+/***********************************************
+Reset & Basic Setup
+***********************************************/
 html, body, div, span, applet,
 object, iframe, h1, h2, h3, h4,
 h5, h6, p, blockquote, pre, a,
@@ -27,24 +27,17 @@ article, aside, details, figcaption,
 figure, footer, header, hgroup, menu,
 nav, section                                    { display:block; }
 
-body                                            { line-height:1; }
-
-ol, ul                                          { list-style:none; }
-
 blockquote, q                                   { quotes:none; }
 
 blockquote:before, blockquote:after,
 q:before, q:after                               { content:''; content:none; }
 
-table                                           { border-collapse:collapse; border-spacing:0; }
-
-/***** Basic Styles *****/
-
 html                                            { overflow-y:scroll; overflow:-moz-scrollbars-vertical; }
-body                                            { margin:0; padding:0; background-color:#FFF; font:15px/20px Sans-Serif; color:#333; -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:none; }
+body                                            { margin:0; padding:0; background-color:#FFF; font:15px/20px Sans-Serif; color:#333; line-height:1; -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:none; }
 
-/***** Typography *****/
-
+/***********************************************
+Typography
+***********************************************/
 h1, h2, h3, h4, h5, h6                          { margin:0; padding:0; font-family:Sans-Serif; font-weight:normal; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a              { font-weight:inherit; color:inherit; }
 h1                                              { margin:0 0 10px 0; padding:0; font-size:38px; line-height:40px; color:#333; }
@@ -74,9 +67,10 @@ hr                                              { margin:20px 0; padding:0; bord
 
 div                                             { box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
-/***** Lists *****/
-
-ul, ol                                          { margin:26px 0 36px 0; display:block; }
+/***********************************************
+Lists
+***********************************************/
+ul, ol                                          { margin:26px 0 36px 0; display:block; list-style:none; }
 ul                                              { list-style:none outside; }
 ul li                                           { margin:0 0 15px 0; padding:0 0 0 18px; line-height:18px; background:transparent url('../img/bullet.png') no-repeat 0 3px; }
 
@@ -101,8 +95,9 @@ dl                                              { margin:16px 0 26px 0; padding:
 dt                                              { margin:0 0 10px 0; font-size:18px; line-height:20px; font-weight:bold; }
 dd                                              { margin:0 0 10px 10px; }
 
-/***** Blockquotes *****/
-
+/***********************************************
+Blockquotes
+***********************************************/
 figure                                          { margin:16px 0 26px 0; padding:0; }
 blockquote                                      { margin:0; padding:0 0 0 10px; border-left:1px solid #747474; }
 blockquote p                                    { margin:0; padding:0; color:#777; font-style:italic; }
@@ -111,13 +106,15 @@ blockquote p:after                              { content:"\201D"; }
 figcaption:before                               { content:"\2014 \202F"; }
 figcaption                                      { margin:6px 0 0 0; padding:0; font-size:11px; }
 
-/***** Links *****/
-
+/***********************************************
+Links
+***********************************************/
 a                                               { color:#000; text-decoration:underline; outline:0; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
 a:focus                                         { outline:none; -moz-outline-style:none; }
 
-/***** Images, iFrames & Videos  *****/
-
+/***********************************************
+Images, iFrames & Videos
+***********************************************/
 img                                             { border:0; vertical-align:middle; -ms-interpolation-mode:bicubic; }
 .img-left                                       { float:left; margin:0 30px 30px 0; border:none; }
 .img-right                                      { float:right; margin:0 0 30px 30px; border:none; }
@@ -128,8 +125,9 @@ img                                             { border:0; vertical-align:middl
 .media object,
 .media embed                                    { position:absolute; top:0; left:0; width:100%; height:100%; }
 
-/***** Buttons  *****/
-
+/***********************************************
+Buttons
+***********************************************/
 a.btn,
 .btn,
 button                                          { margin:0 5px 5px 0; padding:1px 20px 0; display:inline-block; color:#FFF; border:1px solid #000; background-color:#000; font-size:16px; line-height:40px; text-decoration:none; cursor:pointer; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
@@ -150,9 +148,10 @@ a.btn.small,
 .btn.green                                      { border-color:#2ECC71; background-color:#2ECC71; }
 :hover.btn.green                                { border-color:#2ECC71; background-color:#25A35A; color:#FFF; }
 
-/***** Tables *****/
-
-table                                           { margin:20px 0 40px 0; width:100%; overflow:hidden; font:13px/17px Sans-Serif; border-bottom:1px solid #D6D6D6; }
+/***********************************************
+Tables
+***********************************************/
+table                                           { margin:20px 0 40px 0; border-collapse:collapse; border-spacing:0; width:100%; overflow:hidden; font:13px/17px Sans-Serif; border-bottom:1px solid #D6D6D6; }
 caption                                         { margin:0 0 10px; }
 
 tr                                              { background-color:#FFF; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
@@ -166,8 +165,9 @@ td                                              { padding:8px; min-width:100px; 
 td.highlight                                    { padding:11px 8px; color:#EEE; font-weight:bold; display:block; font-size:inherit; border:none; background-color:#333; }
 
 
-/***** Global Classes *****/
-
+/***********************************************
+Global Classes
+***********************************************/
 .clear                                          { clear:both; }
 .float-left                                     { float:left; }
 .float-right                                    { float:right; }
@@ -195,13 +195,17 @@ td.highlight                                    { padding:11px 8px; color:#EEE; 
 .hide                                           { display:none; }
 .bfix                                           { box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
-/***** Back to Top *****/
+/***********************************************
+Back to Top
+***********************************************/
 
 #toTop                                          { display:none; text-decoration:none; position:fixed; bottom:10px; right:10px; overflow:hidden; width:51px; height:51px; border:none; text-indent:-999px; background:url(../img/ui.totop.png) no-repeat left top; z-index:99; }
 #toTopHover                                     { background:url(../img/ui.totop.png) no-repeat left -51px; width:51px; height:51px; display:block; overflow:hidden; float:left; opacity: 0; -moz-opacity: 0; filter:alpha(opacity=0); }
 #toTop:active, #toTop:focus                     { outline:none; }
 
-/***** disable Chrome blue border *****/
+/***********************************************
+disable Chrome blue border
+***********************************************/
 
 input:focus, select:focus,
 textarea:focus, button:focus                    { outline: none; }

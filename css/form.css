@@ -1,12 +1,12 @@
 /*
-* Amazium V3.3.0
-* Copyright 2013, Mike Ballan
-* www.amazium.co.uk
+* Amazium (http://www.amazium.co.uk)
+* Copyright 2010 - 2014, Mike Ballan
+* Licensed under MIT (https://github.com/OwlyStuff/Amazium/blob/master/LICENSE)
 */
 
-
-/***** Forms with labels *****/
-
+/***********************************************
+Forms with labels
+***********************************************/
 form                                                        { margin:0 0 16px; padding:0; display:inline-block; width:100%; }
 label                                                       { margin:0; padding:0 16px 0 0; float:left; text-align:right; width:30%; height:40px; font:14px/40px Sans-Serif; color:#666; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 label.checkbox, label.radio                                 { text-align:left; width:auto; }
@@ -17,8 +17,9 @@ input, textarea, select, textarea                           { margin:0; padding:
 textarea                                                    { padding:0 0 0 10px; resize:none; min-height:100px; overflow-y:auto; }
 input[type="search"]                                        { -webkit-padding-start:0;  }
 
-/***** Styled Select fields *****/
-
+/***********************************************
+Styled Select fields
+***********************************************/
 .select                                                     { margin:0; padding:0; position:relative; display:inline-block; width:70%; right:0; top:0; height:40px; background:#FFF; overflow:hidden; border:solid 1px #BBB; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 .select:after                                               { margin:0; padding:0; content:'\25be'; color:#999; line-height:35px; text-align:center; right:1px; top:1px; background:#FFF; width:38px; height:38px; position:absolute; pointer-events:none; }
 .select select                                              { padding:10px; padding-top:11px; -webkit-padding-before:0; -webkit-padding-start:6px; width:100%; height:40px; font:14px/40px Sans-Serif; float:left; color:#999; border:none; display:block; -webkit-appearance:none; -moz-appearance:none; appearance:none; cursor:pointer; }
@@ -28,8 +29,9 @@ input[type="search"]                                        { -webkit-padding-st
 .select optgroup option                                     { border-bottom:1px solid #F2F2F2; font:12px/40px Sans-Serif; }
 .select optgroup option:first-child                         { margin:10px 0 0 0; border-top:1px solid #F2F2F2; }
 
-/***** Styled Checkboxes *****/
-
+/***********************************************
+Styled Checkboxes
+***********************************************/
 .checkbox                                                   { padding:8px 0 0; width:70%; float:right; }
 .checkbox > span                                            { margin:0 0 10px; padding:0 20px 0 0; float:left; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 .checkbox > span label                                      { padding:2px 0 0 32px; width:100%; height:auto; font:14px/20px Sans-Serif; text-align:left; cursor:pointer; display:block; position:relative; left:0; top:0; }
@@ -37,8 +39,9 @@ input[type="checkbox"]                                      { display:none; }
 input[type="checkbox"] + label:before                       { margin:0; content:'\2718'; position:absolute; left:0; top:0; background-color:#FFF; border:1px solid #CCC; cursor:pointer; display:inline-block; height:20px; width:20px; text-align:center; font:13px/22px sans; color:#CCC; transition:all .3s linear 0s; -moz-transition:all .3s linear 0s; -webkit-transition:all .3s linear 0s; -o-transition:all .3s linear 0s; }
 input[type="checkbox"]:checked + label:before               { background-color:#000; content:'\2714'; border-color:#000; color:#FFF; transition:all .6s linear 0s; -moz-transition:all .6s linear 0s; -webkit-transition:all .6s linear 0s; -o-transition:all .6s linear 0s; }
 
-/***** Styled Radio button *****/
-
+/***********************************************
+Styled Radio button
+***********************************************/
 .radio                                                      { padding:8px 0 0; width:70%; float:right; }
 .radio > span                                               { margin:0 0 10px; padding:0 20px 0 0; float:left; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 .radio > span label                                         { margin:0; padding:2px 0 0 32px; width:100%; height:auto; font:14px/20px Sans-Serif; text-align:left; cursor:pointer; display:block; position:relative; left:0; top:0; }
@@ -46,8 +49,9 @@ input[type="radio"]                                         { display:none; }
 input[type="radio"] + label:before                          { margin:0; content:''; position:absolute; left:0; top:0; background-color:#FFF; border:1px solid #CCC; cursor:pointer; display:inline-block; height:20px; width:20px; text-align:center; font:13px/22px sans; color:#CCC; border-radius:50%; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; transition:all .3s linear 0s; -moz-transition:all .3s linear 0s; -webkit-transition:all .3s linear 0s; -o-transition:all .3s linear 0s; }
 input[type="radio"]:checked + label:before                  { border:7px solid #000; transition:all .3s linear 0s; -moz-transition:all .3s linear 0s; -webkit-transition:all .3s linear 0s; -o-transition:all .3s linear 0s; }
 
-/***** Validation *****/
-
+/***********************************************
+Validation
+***********************************************/
 fieldset input:not(:focus):invalid,
 fieldset input:focus:invalid,
 fieldset.error input                                        { margin:0; color:#E74C3C; border-color:#E74C3C; display:block; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; }
@@ -55,8 +59,9 @@ fieldset.error input                                        { margin:0; color:#E
 fieldset input:not(:focus):invalid + small,
 fieldset.error input + small                                { margin:0; padding:3px 8px; font:11px/20px Sans-Serif; color:#FFF; border-color:#E74C3C; background-color:#E74C3C; width:70%; float:right; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
-/***** Buttons *****/
-
+/***********************************************
+Buttons
+***********************************************/
 input[type="button"],
 input[type="submit"],
 input[type="reset"]                                         { margin:6px 6px 6px 0; padding:0 10px; display:inline-block; height:40px; width:auto; font:14px/40px Sans-Serif; font-weight:normal; color:#fff; border:1px solid #000; float:left; width:auto; background-color:#000; cursor:pointer; -webkit-appearance:none; }
@@ -70,7 +75,9 @@ input:hover[type="button"]                                  { border-color:#CCC;
 input:hover[type="submit"]                                  { border-color:#2ECC71; background-color:#25a35a; color:#FFF; }
 input:hover[type="reset"]                                   { border-color:#000; background-color:#000; color:#FFF; }
 
-/***** Forms without labels *****/
+/***********************************************
+Forms without labels
+***********************************************/
 
 .hide-lables label                                          { display:none; }
 .hide-lables .checkbox label,
@@ -84,18 +91,21 @@ input:hover[type="reset"]                                   { border-color:#000;
 .hide-lables small                                          { margin:0 0 16px 0; width:100%; }
 .hide-lables .radio, .hide-lables .checkbox                 { width:100%; float:right; }
 
-/***** Validation *****/
-
+/***********************************************
+Validation
+***********************************************/
 .hide-lables input:not(:focus):invalid + small              { width:100%; }
 
-/***** Buttons *****/
-
+/***********************************************
+Buttons
+***********************************************/
 .hide-lables input[type="button"],
 .hide-lables input[type="submit"],
 .hide-lables input[type="reset"]                            { margin:6px 6px 6px 0; width:auto; }
 
-/***** Placeholder *****/
-
+/***********************************************
+Placeholder
+***********************************************/
 ::-webkit-input-placeholder                                 { color:#333; opacity:.5; }
 :-moz-placeholder                                           { color:#333; opacity:.5; }
 ::-moz-placeholder                                          { color:#333; opacity:.5; }
@@ -110,8 +120,9 @@ input:focus                                                 { color:#000; border
 textarea:focus                                              { color:#000; border-color:#999; outline:none; }
 select:focus                                                { color:#000; border-color:#999; outline:none; }
 
-/***** NYSMNYD *****/
-
+/***********************************************
+NYSMNYD
+***********************************************/
 .nysmnyd-labels fieldset label                              { display:block; position:absolute; left:1px; top:0; height:auto; width:auto; z-index:1; font:12px/40px Sans-Serif; color:#999; transition:all .1s ease-out 0s; -moz-transition:all .1s ease-out 0s; -webkit-transition:all .1s ease-out 0s; -o-transition:all .1s ease-out 0s; }
 .nysmnyd-labels fieldset.show-all label                     { top:-27px; transition:all .1s ease-out 0s; -moz-transition:all .1s ease-out 0s; -webkit-transition:all .1s ease-out 0s; -o-transition:all .1s ease-out 0s; }
 
