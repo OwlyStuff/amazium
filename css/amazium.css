@@ -6,7 +6,7 @@
 
 
 /***********************************************
-/***** Screen 1200px+
+Screen 1200px+
 ***********************************************/
 .row                                            { margin:0 auto; width:1200px; display:table; }
 .row .row                                       { margin:0 -20px; width:auto; display:inline-block; }
