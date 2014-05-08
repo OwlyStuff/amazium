@@ -22,28 +22,16 @@ article, aside, canvas, details,
 embed, figure, figcaption, footer,
 header, hgroup, menu, nav, output,
 ruby, section, summary, time, mark,
-audio, video                                    { margin: 0; padding: 0; border: 0; font-size:100%; font:inherit; vertical-align:baseline; }
+audio, video                                    { margin: 0; padding: 0; border: 0; font-size:100%; font:inherit; vertical-align:baseline; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
 article, aside, details, figcaption,
 figure, footer, header, hgroup, menu,
-nav, section                                    { display:block; }
-
-body                                            { line-height:1; }
-
-ol, ul                                          { list-style:none; }
+nav, section                                    { display:block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
 blockquote, q                                   { quotes:none; }
-
 blockquote:before, blockquote:after,
 q:before, q:after                               { content:''; content:none; }
 
-table                                           { border-collapse:collapse; border-spacing:0; }
-
-
-
-/***********************************************
-Basic Styles
-***********************************************/
 html                                            { overflow-y:scroll; overflow:-moz-scrollbars-vertical; }
 body                                            { margin:0; padding:0; background-color:#FFF; font:15px/20px Sans-Serif; color:#333; -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:none; }
 
@@ -52,16 +40,16 @@ body                                            { margin:0; padding:0; backgroun
 /***********************************************
 Typography
 ***********************************************/
-h1, h2, h3, h4, h5, h6                          { margin:0; padding:0; font-family:Sans-Serif; font-weight:normal; }
+h1, h2, h3, h4, h5, h6                          { margin:0 0 10px; padding:0; font-family:Sans-Serif; color:#333; font-weight:normal; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a              { font-weight:inherit; color:inherit; }
-h1                                              { margin:0 0 10px 0; padding:0; font-size:38px; line-height:40px; color:#333; }
-h2                                              { margin:0 0 10px 0; padding:0; font-size:32px; line-height:34px; color:#333; }
-h3                                              { margin:0 0 10px 0; padding:0; font-size:24px; line-height:26px; color:#333; }
-h4                                              { margin:0 0 10px 0; padding:0; font-size:17px; line-height:19px; color:#333; }
-h5                                              { margin:0 0 10px 0; padding:0; font-size:14px; line-height:16px; color:#333; }
-h6                                              { margin:0 0 10px 0; padding:0; font-size:11px; line-height:13px; color:#333; }
+h1                                              { font:38px/40px Sans-Serif; }
+h2                                              { font:32px/34px Sans-Serif; }
+h3                                              { font:24px/26px Sans-Serif; }
+h4                                              { font:17px/19px Sans-Serif; }
+h5                                              { font:14px/16px Sans-Serif; }
+h6                                              { font:11px/13px Sans-Serif; }
 
-p                                               { margin:0 0 20px 0; padding:0; line-height:26px; }
+p                                               { margin:0 0 20px 0; padding:0; font:15px/26px Sans-Serif; }
 
 b, strong                                       { font-weight:bold; }
 em                                              { font-style:italic; }
@@ -79,14 +67,12 @@ address                                         { margin:26px 0; padding:0; disp
 
 hr                                              { margin:20px 0; padding:0; border:0; border-top:1px solid #D6D6D6; height:1px; width:100%; text-align:left; display:block; }
 
-div                                             { box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
-
 
 
 /***********************************************
 Lists
 ***********************************************/
-ul, ol                                          { margin:26px 0 36px 0; display:block; }
+ul, ol                                          { margin:26px 0 36px 0; display:block; list-style:none; }
 ul                                              { list-style:none outside; }
 ul li                                           { margin:0 0 15px 0; padding:0 0 0 18px; line-height:18px; background:transparent url('../img/bullet.png') no-repeat 0 3px; }
 
@@ -177,7 +163,7 @@ a.btn.small,
 /***********************************************
 Tables
 ***********************************************/
-table                                           { margin:20px 0 40px 0; width:100%; overflow:hidden; font:13px/17px Sans-Serif; border-bottom:1px solid #D6D6D6; }
+table                                           { margin:20px 0 40px 0; width:100%; overflow:hidden; font:13px/17px Sans-Serif; border-bottom:1px solid #D6D6D6; border-collapse:collapse; border-spacing:0; }
 caption                                         { margin:0 0 10px; }
 
 tr                                              { background-color:#FFF; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
@@ -219,7 +205,6 @@ Global Classes
 .block                                          { display:block; }
 .hidden                                         { display:none; }
 .hide                                           { display:none; }
-.bfix                                           { box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
 
 
