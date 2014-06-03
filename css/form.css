@@ -85,7 +85,7 @@ Buttons
 ***********************************************/
 input[type="button"],
 input[type="submit"],
-input[type="reset"]                                         { margin:6px 6px 6px 0; padding:0 10px; display:inline-block; height:40px; width:auto; font:14px/40px Sans-Serif; font-weight:normal; color:#fff; border:1px solid #000; float:left; width:auto; background-color:#000; cursor:pointer; -webkit-appearance:none; }
+input[type="reset"]                                         { margin:6px 6px 6px 0; padding:0 10px; display:inline-block; height:40px; width:auto; font:14px/40px Sans-Serif; font-weight:normal; color:#fff; border:1px solid #000; float:left; width:auto; background-color:#000; cursor:pointer; position:relative; top:0; left:0; -webkit-appearance:none; }
 input.first                                                 { margin-left:30%; }
 
 input[type="button"]                                        { color:#FFF; border-color:#000; background-color:#000; transition:all .3s linear 0s; -moz-transition:all .3s linear 0s; -webkit-transition:all .3s linear 0s; -o-transition:all .3s linear 0s; }
@@ -95,6 +95,13 @@ input[type="reset"]                                         { color:#999; border
 input:hover[type="button"]                                  { border-color:#CCC; background-color:#FFF; color:#333; }
 input:hover[type="submit"]                                  { border-color:#2ECC71; background-color:#25a35a; color:#FFF; }
 input:hover[type="reset"]                                   { border-color:#000; background-color:#000; color:#FFF; }
+
+
+
+/***********************************************
+Loading effect on input buttons
+***********************************************/
+.loading .spinner, .loading .spinner:hover                  { padding-top:38px; background:url(../img/spinner.gif) no-repeat center center #999; border-color:#999; cursor:default;x }
 
 
 
