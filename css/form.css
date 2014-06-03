@@ -24,7 +24,7 @@ input[type="search"]                                        { -webkit-padding-st
 Styled Select fields
 ***********************************************/
 .select                                                     { margin:0; padding:0; position:relative; display:inline-block; width:70%; right:0; top:0; height:40px; background:#FFF; overflow:hidden; border:solid 1px #BBB; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
-.select:after                                               { margin:0; padding:0; content:'\25be'; color:#999; line-height:35px; text-align:center; right:1px; top:1px; background:#FFF; width:38px; height:38px; position:absolute; pointer-events:none; }
+.select:after                                               { margin:0; padding:0; content:'\25be'; color:#999; line-height:35px; text-align:center; right:0; top:0; background:#FFF; width:38px; height:38px; position:absolute; pointer-events:none; }
 .select select                                              { padding:10px; padding-top:11px; -webkit-padding-before:0; -webkit-padding-start:6px; width:100%; height:40px; font:14px/40px Sans-Serif; float:left; color:#999; border:none; display:block; -webkit-appearance:none; -moz-appearance:none; appearance:none; cursor:pointer; }
 .select option                                              { padding:10px; border-bottom:1px solid #F2F2F2;  }
 .select optgroup                                            { padding:0 10px; color:#000; background-color:#FFF; }
