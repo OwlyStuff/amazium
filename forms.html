@@ -46,63 +46,61 @@
             <h3>Form without Labels</h3>
             <fieldset>
                 <label for="text">Text</label>
-                <input type="text" name="text" id="text" placeholder="Text" autocomplete="on" tabindex="2" />
+                <input type="text" name="text" id="text" placeholder="Text" autocomplete="on" tabindex="1" />
+            </fieldset>
+            <fieldset>
+                <label for="text">Text</label>
+                <input type="text" name="text" id="text" placeholder="Text - Invalid entry" autocomplete="on" tabindex="1" />
                 <small>Invalid entry</small>
             </fieldset>
             <fieldset>
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="Password" autocomplete="on" tabindex="3" />
-                <small>Invalid entry</small>
+                <input type="password" name="password" id="password" placeholder="Password" autocomplete="on" tabindex="2" />
             </fieldset>
             <fieldset>
                 <label for="url">URL</label>
-                <input type="url" name="url" id="url" placeholder="Url" autocomplete="on" tabindex="14" />
-                <small>URL's must start with http(s):</small>
+                <input type="url" name="url" id="url" placeholder="Url" autocomplete="on" tabindex="3" />
             </fieldset>
             <fieldset>
                 <label for="tel">Tel</label>
-                <input type="tel" name="tel" id="tel" placeholder="Tel" autocomplete="on" tabindex="16" pattern="[0-9\-.\(\)\+\s]+" />
-                <small>Numbers only</small>
+                <input type="tel" name="tel" id="tel" placeholder="Tel" autocomplete="on" tabindex="4" pattern="[0-9\-.\(\)\+\s]+" />
             </fieldset>
             <fieldset>
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Email" autocomplete="on" tabindex="13" />
-                <small>Must be a vaild email address</small>
+                <input type="email" name="email" id="email" placeholder="Email" autocomplete="on" tabindex="5" />
             </fieldset>
             <fieldset>
                 <label for="options">Options</label>
                 <span class="select">
-                    <select id="dropdown" name="dropdown" tabindex="18" />
-                        <option selected>Option 1</option>
-                        <option>Option 2</option>
+                    <select id="dropdown" name="dropdown" tabindex="6" />
+                        <option value="">Option 1</option>
+                        <option value="opt2">Option 2</option>
                         <optgroup label="Option group 1">
-                            <option>Sub option 1</option>
-                            <option>Sub option 2</option>
-                            <option>Sub option 3</option>
+                            <option value="opt3">Sub option 1</option>
+                            <option value="opt4">Sub option 2</option>
+                            <option value="opt5">Sub option 3</option>
                         </optgroup>
                         <option>Option 3</option>
                     </select>
                 </span>
-                <small>Invalid entry</small>
             </fieldset>
             <fieldset>
                 <label for="message">Message</label>
-                <textarea name="message" id="message" placeholder="Message..." tabindex="17"></textarea>
-                <small>Invalid entry</small>
+                <textarea name="message" id="message" placeholder="Message..." tabindex="7"></textarea>
             </fieldset>
             <fieldset>
                 <label for="radio">Checkboxes</label>
                 <div class="checkbox">
                     <span>
-                        <input type="checkbox" tabindex="1" name="c4" id="c4">
+                        <input type="checkbox" tabindex="8" name="c4" id="c4" >
                         <label for="c4" onclick="">Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum, Donec id elit non mi porta gravida at eget metus.</label>
                     </span>
                     <span>
-                        <input type="checkbox" tabindex="1" name="c5" id="c5">
+                        <input type="checkbox" tabindex="9" name="c5" id="c5">
                         <label for="c5" onclick="">Curabitur blandit.</label>
                     </span>
                     <span>
-                        <input type="checkbox" tabindex="1" name="c6" id="c6">
+                        <input type="checkbox" tabindex="10" name="c6" id="c6">
                         <label for="c6" onclick="">Risus Condimentum.</label>
                     </span>
                 </div>
@@ -111,22 +109,22 @@
                 <label for="radio">Radio Buttons</label>
                 <div class="radio">
                     <span>
-                        <input type="radio" tabindex="1" name="r1" id="r4">
+                        <input type="radio" tabindex="11" name="r1" id="r4">
                         <label for="r4" onclick="">Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum, Donec id elit non mi porta gravida at eget metus.</label>
                     </span>
                     <span>
-                        <input type="radio" tabindex="1" name="r1" id="r5">
+                        <input type="radio" tabindex="12" name="r1" id="r5">
                         <label for="r5" onclick="">Yes</label>
                     </span>
                     <span>
-                        <input type="radio" tabindex="1" name="r1" id="r6">
+                        <input type="radio" tabindex="13" name="r1" id="r6">
                         <label for="r6" onclick="">No</label>
                     </span>
                 </div>
             </fieldset>
             <fieldset>
-                <input type="submit" name="submit" id="submitbtn" tabindex="7" value="Submit" class="first" />
-                <input type="reset" name="reset" id="submitbtn" tabindex="7" value="Reset" />
+                <input type="submit" name="submit" id="submitbtn" tabindex="14" value="Submit" class="first" />
+                <input type="reset" name="reset" id="submitbtn" tabindex="15" value="Reset" />
             </fieldset>
         </form>
     </article>
@@ -135,34 +133,34 @@
             <h3>Form with Labels</h3>
             <fieldset>
                 <label for="text">Text</label>
-                <input type="text" name="text" id="text" placeholder="Text" autocomplete="on" tabindex="2" />
+                <input type="text" name="text" id="text" placeholder="Text" autocomplete="on" tabindex="1" />
+            </fieldset>
+            <fieldset>
+                <label for="text">Text</label>
+                <input type="text" name="text" id="text" placeholder="Text - Invalid entry" autocomplete="on" tabindex="1" />
                 <small>Invalid entry</small>
             </fieldset>
             <fieldset>
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="Password" autocomplete="on" tabindex="3" />
-                <small>Invalid entry</small>
+                <input type="password" name="password" id="password" placeholder="Password" autocomplete="on" tabindex="21" />
             </fieldset>
             <fieldset>
                 <label for="url">URL</label>
-                <input type="url" name="url" id="url" placeholder="Url" autocomplete="on" tabindex="14" />
-                <small>URL's must start with http(s):</small>
+                <input type="url" name="url" id="url" placeholder="Url" autocomplete="on" tabindex="22" />
             </fieldset>
             <fieldset>
                 <label for="tel">Tel</label>
-                <input type="tel" name="tel" id="tel" placeholder="Tel" autocomplete="on" tabindex="16" pattern="[0-9\-.\(\)\+\s]+" />
-                <small>Numbers only</small>
+                <input type="tel" name="tel" id="tel" placeholder="Tel" autocomplete="on" tabindex="23" pattern="[0-9\-.\(\)\+\s]+" />
             </fieldset>
             <fieldset>
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Email" autocomplete="on" tabindex="13" />
-                <small>Must be a vaild email address</small>
+                <input type="email" name="email" id="email" placeholder="Email" autocomplete="on" tabindex="24" />
             </fieldset>
             <fieldset>
                 <label for="options">Options</label>
                 <span class="select">
-                    <select id="dropdown" name="dropdown" tabindex="18" />
-                        <option selected>Option 1</option>
+                    <select id="dropdown" name="dropdown" tabindex="25" />
+                        <option value="">Option 1</option>
                         <option>Option 2</option>
                         <optgroup label="Option group 1">
                             <option>Sub option 1</option>
@@ -172,26 +170,24 @@
                         <option>Option 3</option>
                     </select>
                 </span>
-                <small>Invalid entry</small>
             </fieldset>
             <fieldset>
                 <label for="message">Message</label>
-                <textarea name="message" id="message" placeholder="Message..." tabindex="17"></textarea>
-                <small>Invalid entry</small>
+                <textarea name="message" id="message" placeholder="Message..." tabindex="26"></textarea>
             </fieldset>
             <fieldset>
                 <label for="checkbox">Checkboxes</label>
                 <div class="checkbox">
                     <span>
-                        <input type="checkbox" tabindex="1" name="c1" id="c1">
-                        <label for="c1" onclick="">Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum, Donec id elit non mi porta gravida at eget metus.</label>
+                        <input type="checkbox" tabindex="27" name="c1" id="c1">
+                        <label for="c1" onclick="">Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum.</label>
                     </span>
                     <span>
-                        <input type="checkbox" tabindex="1" name="c2" id="c2">
+                        <input type="checkbox" tabindex="28" name="c2" id="c2">
                         <label for="c2" onclick="">Curabitur blandit.</label>
                     </span>
                     <span>
-                        <input type="checkbox" tabindex="1" name="c3" id="c3">
+                        <input type="checkbox" tabindex="29" name="c3" id="c3">
                         <label for="c3" onclick="">Risus Condimentum.</label>
                     </span>
                 </div>
@@ -200,22 +196,22 @@
                 <label for="radio">Radio Buttons</label>
                 <div class="radio">
                     <span>
-                        <input type="radio" tabindex="1" name="r1" id="r1">
-                        <label for="r1" onclick="">Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum, Donec id elit non mi porta gravida at eget metus.</label>
+                        <input type="radio" tabindex="30" name="r1" id="r1">
+                        <label for="r1" onclick="">Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum.</label>
                     </span>
                     <span>
-                        <input type="radio" tabindex="1" name="r1" id="r2">
+                        <input type="radio" tabindex="31" name="r1" id="r2">
                         <label for="r2" onclick="">Yes</label>
                     </span>
                     <span>
-                        <input type="radio" tabindex="1" name="r1" id="r3">
+                        <input type="radio" tabindex="32" name="r1" id="r3">
                         <label for="r3" onclick="">No</label>
                     </span>
                 </div>
             </fieldset>
             <fieldset>
-                <input type="submit" name="submit" id="submitbtn" tabindex="7" value="Submit" class="first" />
-                <input type="reset" name="reset" id="submitbtn" tabindex="7" value="Reset" />
+                <input type="submit" name="submit" id="submitbtn" tabindex="33" value="Submit" class="first" />
+                <input type="reset" name="reset" id="submitbtn" tabindex="34" value="Reset" />
             </fieldset>
         </form>
     </article>
@@ -233,46 +229,39 @@
         <article class="grid_6">
             <fieldset>
                 <label for="text">Text</label>
-                <input type="text" name="text" id="text" placeholder="Text" tabindex="17" />
-                <small>Invalid entry</small>
+                <input type="text" name="text" id="text" placeholder="Text" tabindex="40" />
             </fieldset>
             <fieldset>
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="Password" tabindex="18" />
-                <small>Invalid entry</small>
+                <input type="password" name="password" id="password" placeholder="Password" tabindex="41" />
             </fieldset>
             <fieldset>
                 <label for="url">URL</label>
-                <input type="url" name="url" id="url" placeholder="Url" tabindex="19" />
-                <small>Invalid entry</small>
+                <input type="url" name="url" id="url" placeholder="Url" tabindex="42" />
             </fieldset>
             <fieldset>
                 <label for="tel">Tel</label>
-                <input type="tel" name="tel" id="tel" placeholder="Tel" tabindex="21" />
-                <small>Invalid entry</small>
+                <input type="tel" name="tel" id="tel" placeholder="Tel" tabindex="43" />
             </fieldset>
         </article>
         <article class="grid_6">
             <fieldset>
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Email" tabindex="22" />
-                <small>Invalid entry</small>
+                <input type="email" name="email" id="email" placeholder="Email" tabindex="44" />
             </fieldset>
             <fieldset>
                 <label for="options">Options</label>
                 <span class="select">
-                    <select id="dropdown" name="dropdown" tabindex="26" />
+                    <select id="dropdown" name="dropdown" tabindex="45" />
                         <option selected>Option 1</option>
                         <option>Option 2</option>
                         <option>Option 3</option>
                     </select>
                 </span>
-                <small>Invalid entry</small>
             </fieldset>
             <fieldset>
                 <label for="message">Message</label>
-                <textarea name="message" id="message" placeholder="Message..." tabindex="29"></textarea>
-                <small>Invalid entry</small>
+                <textarea name="message" id="message" placeholder="Message..." tabindex="46"></textarea>
             </fieldset>
         </article>
     </form>
@@ -280,14 +269,7 @@
 
 <!-- Scripts -->
 <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
 <script type="text/javascript" src="js/amazium.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $().UItoTop({ easingType: 'easeOutQuart' });
-    });
-</script>
 
 </body>
 </html>
