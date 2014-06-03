@@ -85,7 +85,7 @@ Buttons
 ***********************************************/
 input[type="button"],
 input[type="submit"],
-input[type="reset"]                                         { margin:6px 6px 6px 0; padding:0 10px; display:inline-block; height:40px; width:auto; font:14px/40px Sans-Serif; font-weight:normal; color:#fff; border:1px solid #000; float:left; width:auto; background-color:#000; cursor:pointer; position:relative; top:0; left:0; -webkit-appearance:none; }
+input[type="reset"]                                         { margin:6px 6px 6px 0; padding:0 10px; display:inline-block; height:40px; width:auto; font:14px/40px Sans-Serif; font-weight:normal; color:#fff; border:1px solid #000; float:left; width:auto; background-color:#000; cursor:pointer; -webkit-appearance:none; }
 input.first                                                 { margin-left:30%; }
 
 input[type="button"]                                        { color:#FFF; border-color:#000; background-color:#000; transition:all .3s linear 0s; -moz-transition:all .3s linear 0s; -webkit-transition:all .3s linear 0s; -o-transition:all .3s linear 0s; }
