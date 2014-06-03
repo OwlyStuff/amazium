@@ -63,12 +63,20 @@ input[type="radio"]:checked + label:before                  { border:7px solid #
 /***********************************************
 Validation
 ***********************************************/
-fieldset input:not(:focus):invalid,
-fieldset input:focus:invalid,
-fieldset.error input                                        { margin:0; color:#E74C3C; border-color:#E74C3C; display:block; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; }
+input:not(:focus):invalid                                   { -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; }
 
-fieldset input:not(:focus):invalid + small,
-fieldset.error input + small                                { margin:0; padding:3px 8px; font:11px/20px Sans-Serif; color:#FFF; border-color:#E74C3C; background-color:#E74C3C; width:70%; float:right; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+input:focus:invalid,
+.error input,
+select:focus:invalid,
+input[type="checkbox"]:focus:invalid,
+input[type="checkbox"]:focus:invalid + label:before         { color:#E74C3C; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; }
+
+input:focus:invalid::-webkit-input-placeholder              { color:#E74C3C; opacity:1; }
+input:focus:invalid:-moz-placeholder                        { color:#E74C3C; opacity:1; }
+input:focus:invalid::-moz-placeholder                       { color:#E74C3C; opacity:1; }
+input:focus:invalid:-ms-input-placeholder                   { color:#E74C3C; opacity:1; }
+
+.error input + small                                        { margin:0; padding:3px 8px; font:11px/20px Sans-Serif; color:#FFF; border-color:#E74C3C; background-color:#E74C3C; width:70%; float:right; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
 
 
@@ -105,6 +113,10 @@ Forms without labels
 .hide-lables small                                          { margin:0 0 16px 0; width:100%; }
 .hide-lables .radio, .hide-lables .checkbox                 { width:100%; float:right; }
 
+input[type="checkbox"],
+input[type="checkbox"]:not(:focus):invalid,
+input[type="radio"],
+input[type="radio"]:not(:focus):invalid                  { width:20px; height:20px; }
 
 
 /***********************************************
