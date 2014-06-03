@@ -13,7 +13,7 @@ label                                                       { margin:0; padding:
 label.checkbox, label.radio                                 { text-align:left; width:auto; }
 form span                                                   { margin:10px 0; padding:0; display:block; overflow:hidden; float:left; }
 fieldset                                                    { margin:0 0 20px 0; padding:0; display:block; position:relative; top:0; left:0; }
-fieldset small                                              { margin:0 0 16px 30%; width:70%; display:none; }
+fieldset small                                              { margin:0 0 16px 30%; width:70%; }
 input, textarea, select, textarea                           { margin:0; padding:0 10px; display:block; border:none; border-radius:0; width:70%; height:40px; font:14px/40px Sans-Serif; color:#555; border:solid 1px #BBB; overflow:hidden; position:relative; top:0; left:0; outline:0 none; box-sizing:border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-appearance:none; }
 textarea                                                    { padding:0 0 0 10px; resize:none; min-height:100px; overflow-y:auto; }
 input[type="search"]                                        { -webkit-padding-start:0;  }
