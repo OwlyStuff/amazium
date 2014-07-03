@@ -53,7 +53,7 @@ Styled Radio button
 .radio > span                                               { margin:0 0 10px; padding:0 20px 0 0; float:left; position:relative; top:0; left:0; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 .radio > span label                                         { margin:0; padding:2px 0 0 32px; width:100%; height:auto; font:14px/20px Sans-Serif; text-align:left; cursor:pointer; display:block; position:relative; left:0; top:0; }
 input[type="radio"],
-input[type="radio"]:not(:focus):invalid                     { width:22px; height:22px; position:absolute; top:0; left:0; }
+input[type="radio"]:not(:focus):invalid                     { width:22px; height:22px; border:none; position:absolute; top:0; left:0; }
 input[type="radio"] + label:before                          { margin:0; content:''; position:absolute; left:0; top:0; background-color:#FFF; border:1px solid #CCC; cursor:pointer; display:inline-block; height:20px; width:20px; text-align:center; font:13px/22px sans; color:#CCC; border-radius:50%; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; transition:all .3s linear 0s; -moz-transition:all .3s linear 0s; -webkit-transition:all .3s linear 0s; -o-transition:all .3s linear 0s; }
 input[type="radio"]:checked + label:before                  { border:7px solid #000; transition:all .3s linear 0s; -moz-transition:all .3s linear 0s; -webkit-transition:all .3s linear 0s; -o-transition:all .3s linear 0s; }
 input[type="radio"] + label + small                         { margin:0; padding:0 0 0 32px; background:none; border:none; color:#E74C3C; width:auto; float:none; }
