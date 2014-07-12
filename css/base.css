@@ -33,23 +33,23 @@ blockquote:before, blockquote:after,
 q:before, q:after                               { content:''; content:none; }
 
 html                                            { overflow-y:scroll; overflow:-moz-scrollbars-vertical; }
-body                                            { margin:0; padding:0; background-color:#FFF; font:15px/20px Sans-Serif; color:#333; -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:none; }
+body                                            { margin:0; padding:0; background-color:#FFF; font-family:sans-serif; font-size:15px; line-height:20px; color:#333; -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:none; }
 
 
 
 /***********************************************
 Typography
 ***********************************************/
-h1, h2, h3, h4, h5, h6                          { margin:0 0 10px; padding:0; font-family:Sans-Serif; color:#333; font-weight:normal; }
+h1, h2, h3, h4, h5, h6                          { margin:0 0 10px; padding:0; color:#333; font-weight:normal; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a              { font-weight:inherit; color:inherit; }
-h1                                              { font:38px/40px Sans-Serif; }
-h2                                              { font:32px/34px Sans-Serif; }
-h3                                              { font:24px/26px Sans-Serif; }
-h4                                              { font:17px/19px Sans-Serif; }
-h5                                              { font:14px/16px Sans-Serif; }
-h6                                              { font:11px/13px Sans-Serif; }
+h1                                              { font-size:38px; line-height:40px; }
+h2                                              { font-size:32px; line-height:34px; }
+h3                                              { font-size:24px; line-height:26px; }
+h4                                              { font-size:17px; line-height:19px; }
+h5                                              { font-size:14px; line-height:16px; }
+h6                                              { font-size:11px; line-height:13px; }
 
-p                                               { margin:0 0 20px 0; padding:0; font:15px/26px Sans-Serif; }
+p                                               { margin:0 0 20px 0; padding:0; font-size:15px; line-height:26px; }
 
 b, strong                                       { font-weight:bold; }
 em                                              { font-style:italic; }
@@ -59,7 +59,7 @@ sup, sub                                        { height:0; line-height:0; verti
 sup                                             { top:-5px; }
 sub                                             { bottom:-5px; }
 
-pre code                                        { margin:16px 0 26px 0; padding:16px; font:12px/19px 'Consolas', Courier, monospace; color:#F1F1F1; display:block; background-color:#111; border:1px solid #111; }
+pre code                                        { margin:16px 0 26px 0; padding:16px; font-family: 'Consolas', Courier, monospace; font-size:12px; line-height:19px; color:#F1F1F1; display:block; background-color:#111; border:1px solid #111; }
 
 abbr[title],
 abbr[data-original-title]                       { border-bottom:1px dotted #999999; cursor:help; }
@@ -121,7 +121,7 @@ a:focus                                         { outline:none; -moz-outline-sty
 
 
 /***********************************************
-Images, iFrames & Videos 
+Images, iFrames & Videos
 ***********************************************/
 img                                             { border:0; vertical-align:middle; -ms-interpolation-mode:bicubic; }
 .img-left                                       { float:left; margin:0 30px 30px 0; border:none; }
@@ -136,7 +136,7 @@ img                                             { border:0; vertical-align:middl
 
 
 /***********************************************
-Buttons 
+Buttons
 ***********************************************/
 a.btn,
 .btn,
@@ -163,7 +163,7 @@ a.btn.small,
 /***********************************************
 Tables
 ***********************************************/
-table                                           { margin:20px 0 40px 0; width:100%; overflow:hidden; font:13px/17px Sans-Serif; border-bottom:1px solid #D6D6D6; border-collapse:collapse; border-spacing:0; }
+table                                           { margin:20px 0 40px 0; width:100%; overflow:hidden; font-size:13px; line-height:17px; border-bottom:1px solid #D6D6D6; border-collapse:collapse; border-spacing:0; }
 caption                                         { margin:0 0 10px; }
 
 tr                                              { background-color:#FFF; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
