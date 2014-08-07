@@ -99,6 +99,13 @@ input:hover[type="reset"]                                   { border-color:#000;
 
 
 /***********************************************
+Loading effect on input buttons
+***********************************************/
+.loading .spinner, .loading .spinner:hover                  { padding-top:38px; background:url(../img/spinner.gif) no-repeat center center #999; border-color:#999; cursor:default; }
+
+
+
+/***********************************************
 Forms without labels
 ***********************************************/
 .hide-lables label                                          { display:none; }
