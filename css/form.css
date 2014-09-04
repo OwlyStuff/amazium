@@ -13,11 +13,10 @@ label                                                       { margin:0; padding:
 label.checkbox, label.radio                                 { text-align:left; width:auto; }
 form span                                                   { margin:10px 0; padding:0; display:block; overflow:hidden; float:left; }
 fieldset                                                    { margin:0 0 20px 0; padding:0; display:block; position:relative; top:0; left:0; }
-fieldset small                                              { margin:0 0 0 30%; padding:3px 8px; font-family:sans-serif; font-size:11px; line-height:20px; color:#FFF; border-color:#E74C3C; background-color:#E74C3C; width:70%; float:right; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+fieldset small                                              { margin:0 0 0 30%; padding:3px 8px; font-family:sans-serif; font-size:11px; line-height:20px; color:#FFF; border-color:#E74C3C; background-color:#E74C3C; width:70%; float:right; display:inline-block; position:relative; top:-1px; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 input, textarea, select, textarea                           { margin:0; padding:0 10px; display:block; border-radius:0; width:70%; height:40px; font-family:sans-serif; font-size:14px; line-height:40px; color:#555; border:solid 1px #BBB; overflow:hidden; position:relative; top:0; left:0; outline:0 none; box-sizing:border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-appearance:none; }
 textarea                                                    { padding:0 0 0 10px; resize:none; min-height:100px; overflow-y:auto; }
 input[type="search"]                                        { -webkit-padding-start:0;  }
-
 
 
 /***********************************************
@@ -33,7 +32,6 @@ Styled Select fields
 .select optgroup option:first-child                         { margin:10px 0 0 0; border-top:1px solid #F2F2F2; }
 
 
-
 /***********************************************
 Styled Checkboxes
 ***********************************************/
@@ -42,9 +40,10 @@ Styled Checkboxes
 .checkbox > span label                                      { padding:2px 0 0 32px; width:100%; height:auto; font-family:sans-serif; font-size:14px; line-height:20px; text-align:left; cursor:pointer; float:none; display:block; position:relative; left:0; top:0; }
 input[type="checkbox"],
 input[type="checkbox"]:not(:focus):invalid                  { width:22px; height:22px; position:absolute; top:0; left:0; }
-input[type="checkbox"] + label:before                       { margin:0; content:'\2718'; position:absolute; left:0; top:0; background-color:#FFF; border:1px solid #CCC; cursor:pointer; display:inline-block; height:20px; width:20px; text-align:center; font-family:sans-serif; font-size:13px; line-height:22px; color:#CCC; transition:all .3s linear 0s; -moz-transition:all .3s linear 0s; -webkit-transition:all .3s linear 0s; -o-transition:all .3s linear 0s; }
+input[type="checkbox"] + label:before                       { margin:0; content:'\2718'; position:absolute; left:0; top:0; background-color:#FFF; border:1px solid #CCC; cursor:pointer; display:inline-block; height:20px; width:20px; text-align:center; font-family:sans-serif; font-size:13px; line-height:22px; color:#CCC; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
 input[type="checkbox"]:checked + label:before               { background-color:#000; content:'\2714'; border-color:#000; color:#FFF; transition:all .6s linear 0s; -moz-transition:all .6s linear 0s; -webkit-transition:all .6s linear 0s; -o-transition:all .6s linear 0s; }
 input[type="checkbox"] + label + small                      { margin:0; padding:0 0 0 32px; background:none; border:none; color:#E74C3C; width:auto; float:none; }
+
 
 /***********************************************
 Styled Radio button
@@ -54,10 +53,9 @@ Styled Radio button
 .radio > span label                                         { margin:0; padding:2px 0 0 32px; width:100%; height:auto; font-family:sans-serif; font-size:14px; line-height:20px; text-align:left; cursor:pointer; display:block; position:relative; left:0; top:0; }
 input[type="radio"],
 input[type="radio"]:not(:focus):invalid                     { width:22px; height:22px; border:none; position:absolute; top:0; left:0; }
-input[type="radio"] + label:before                          { margin:0; content:''; position:absolute; left:0; top:0; background-color:#FFF; border:1px solid #CCC; cursor:pointer; display:inline-block; height:20px; width:20px; text-align:center; font-family:sans-serif; font-size:13px; line-height:22px; color:#CCC; border-radius:50%; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; transition:all .3s linear 0s; -moz-transition:all .3s linear 0s; -webkit-transition:all .3s linear 0s; -o-transition:all .3s linear 0s; }
-input[type="radio"]:checked + label:before                  { border:7px solid #000; transition:all .3s linear 0s; -moz-transition:all .3s linear 0s; -webkit-transition:all .3s linear 0s; -o-transition:all .3s linear 0s; }
+input[type="radio"] + label:before                          { margin:0; content:''; position:absolute; left:0; top:0; background-color:#FFF; border:1px solid #CCC; cursor:pointer; display:inline-block; height:20px; width:20px; text-align:center; font-family:sans-serif; font-size:13px; line-height:22px; color:#CCC; border-radius:50%; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
+input[type="radio"]:checked + label:before                  { border:7px solid #000; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
 input[type="radio"] + label + small                         { margin:0; padding:0 0 0 32px; background:none; border:none; color:#E74C3C; width:auto; float:none; }
-
 
 
 /***********************************************
@@ -79,23 +77,43 @@ input:focus:invalid:-ms-input-placeholder                   { color:#E74C3C; opa
 .error input + small                                        { margin:0; padding:3px 8px; font-family:sans-serif; font-size:11px; line-height:20px; color:#FFF; border-color:#E74C3C; background-color:#E74C3C; width:70%; float:right; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 
 
-
 /***********************************************
 Buttons
 ***********************************************/
 input[type="button"],
 input[type="submit"],
-input[type="reset"]                                         { margin:6px 6px 6px 0; padding:0 10px; display:inline-block; height:40px; font-family:sans-serif; font-size:14px; line-height:40px; font-weight:normal; color:#fff; border:1px solid #000; float:left; width:auto; background-color:#000; cursor:pointer; -webkit-appearance:none; }
+input[type="reset"]                                         { margin:0 6px 6px 0; padding:0 28px; display:inline-block; height:40px; font-family:sans-serif; font-size:14px; line-height:40px; font-weight:normal; float:left; width:auto; cursor:pointer; -webkit-appearance:none; }
 input.first                                                 { margin-left:30%; }
 
-input[type="button"]                                        { color:#FFF; border-color:#000; background-color:#000; transition:all .3s linear 0s; -moz-transition:all .3s linear 0s; -webkit-transition:all .3s linear 0s; -o-transition:all .3s linear 0s; }
-input[type="submit"]                                        { color:#FFF; border-color:#2ECC71; background-color:#2ECC71; transition:all .3s linear 0s; -moz-transition:all .3s linear 0s; -webkit-transition:all .3s linear 0s; -o-transition:all .3s linear 0s; }
-input[type="reset"]                                         { color:#999; border-color:#CCC; background-color:#FFF; transition:all .3s linear 0s; -moz-transition:all .3s linear 0s; -webkit-transition:all .3s linear 0s; -o-transition:all .3s linear 0s; }
+input[type="button"],
+input[type="submit"],
+input[type="reset"]                                         { transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
 
 input:hover[type="button"]                                  { border-color:#CCC; background-color:#FFF; color:#333; }
-input:hover[type="submit"]                                  { border-color:#2ECC71; background-color:#25a35a; color:#FFF; }
+input:hover[type="submit"]                                  { border-color:#25A35A; background-color:#25A35A; color:#FFF; }
 input:hover[type="reset"]                                   { border-color:#000; background-color:#000; color:#FFF; }
 
+.loading                                                    { padding:0 36px 0 20px; border-color:#25A35A; background-color:#25A35A; position:relative; cursor:default; }
+.loading:hover                                              { border-color:#25A35A; background-color:#25A35A; }
+.loading:after                                              { margin-top:-10px; content:''; width:20px; height:20px; background:transparent url('../img/loading.png') no-repeat 0 0; position:absolute; top:50%; right:10px; -webkit-animation:spinner 1.0s infinite linear; animation:spinner 1.0s infinite linear; }
+
+.success                                                    { padding:0 36px 0 20px; border-color:#25A35A; background-color:#25A35A; position:relative; cursor:default; }
+.success:hover                                              { border-color:#25A35A; background-color:#25A35A; }
+.success:after                                              { content:'\2714'; width:20px; height:20px; line-height:30px; position:absolute; top:5px; right:10px; }
+
+.error                                                      { padding:0 36px 0 20px; position:relative; background-color:#E74C3C; border-color:#E74C3C; cursor:default; }
+.error:after                                                { content:'\00D7'; width:20px; height:20px; line-height:30px; position:absolute; top:5px; right:8px; }
+.error:hover                                                { background-color:#E74C3C; border-color:#E74C3C; }
+
+@keyframes spinner {
+    0%                                                      { transform:rotate(0deg); -webkit-transform:rotate(0deg); }
+    100%                                                    { transform:rotate(-360deg); -webkit-transform:rotate(-360deg); }
+}
+
+@-webkit-keyframes spinner {
+    0%                                                      { transform:rotate(0deg); -webkit-transform:rotate(0deg); }
+    100%                                                    { transform:rotate(-360deg); -webkit-transform:rotate(-360deg); }
+}
 
 
 /***********************************************
@@ -125,14 +143,12 @@ Validation
 .hide-lables input:not(:focus):invalid + small              { width:100%; }
 
 
-
 /***********************************************
 Buttons
 ***********************************************/
 .hide-lables input[type="button"],
 .hide-lables input[type="submit"],
 .hide-lables input[type="reset"]                            { margin:6px 6px 6px 0; width:auto; }
-
 
 
 /***********************************************
@@ -151,7 +167,6 @@ Placeholder
 input:focus                                                 { color:#000; border-color:#999; outline:none; }
 textarea:focus                                              { color:#000; border-color:#999; outline:none; }
 select:focus                                                { color:#000; border-color:#999; outline:none; }
-
 
 
 /***********************************************
