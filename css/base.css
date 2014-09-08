@@ -212,3 +212,20 @@ Disable Chrome blue border
 ***********************************************/
 input:focus, select:focus,
 textarea:focus, button:focus                    { outline: none; }
+
+
+/***********************************************
+Mobile (portrait 300px)
+***********************************************/
+@media only screen and (max-width:767px) {
+
+table, tbody, tr, th, td                        { border:0; display:block; padding:3px 0; text-align:left; white-space:normal; }
+table                                           { padding:0; border-top:1px solid #D6D6D6; table-layout:fixed; }
+tr                                              { margin:5px 0; padding:0 0 6px; border-bottom:1px solid #D6D6D6; }
+tr:hover                                        { background-color:transparent; }
+tr:first-child, th, td:empty                    { display:none; visibility:hidden; }
+td:first-child                                  { font-weight:bold; }
+th[data-title]:before, td[data-title]:before    { content:attr(data-title) ":\00A0"; font-weight:bold; }
+
+
+}
