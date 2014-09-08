@@ -34,6 +34,7 @@
     <article class="grid_12">
         <h1>Amazium Forms</h1>
         <p>Now forms can be one of the biggest pains in the neck for web developers, so I have included a simple form in Amazium with some very basic styling which has all the elements you will need to make your own form.</p>
+        <hr>
     </article>
 </section>
 
@@ -120,8 +121,8 @@
                 </div>
             </fieldset>
             <fieldset>
-                <input type="submit" name="submit" id="submitbtn" tabindex="14" value="Submit" class="first" />
-                <input type="reset" name="reset" id="submitbtn" tabindex="15" value="Reset" />
+                <input class="green" type="submit" name="submit" id="submitbtn" tabindex="14" value="Submit" />
+                <input class="white" type="reset" name="reset" id="submitbtn" tabindex="15" value="Reset" />
             </fieldset>
         </form>
     </article>
@@ -207,16 +208,32 @@
                 </div>
             </fieldset>
             <fieldset>
-                <input type="submit" name="submit" id="submitbtn" tabindex="33" value="Submit" class="first" />
-                <input type="reset" name="reset" id="submitbtn" tabindex="34" value="Reset" />
+                <input class="green" type="submit" name="submit" id="submitbtn" tabindex="33" value="Submit" />
+                <input class="white" type="reset" name="reset" id="submitbtn" tabindex="34" value="Reset" />
             </fieldset>
         </form>
     </article>
 </section>
 
+<section class="row">
+    <article class="grid_12">
+        <hr>
+        <h2>Loading states for buttons</h2>
+        <p>For times when you would like to show the user that your form is doing something weve made these classes to add to your buttons: Loading, Success &amp; Error.</p>
+        <form name="" id="" method="" action="" class="">
+            <fieldset>
+                <button type="submit" class="green">Submit</button>
+                <button type="submit" class="green loading">Submit</button>
+                <button type="submit" class="green success">Submit</button>
+                <button type="submit" class="green error">Submit</button>
+            </fieldset>
+        </form>
+    </article>
+</section>
 
 <section class="row">
     <article class="grid_12">
+        <hr>
         <h2>Now you see me, Now you don't lables</h2>
         <p>Thanks to the awesome <a href="https://github.com/shahrukhomar" target="_blank">Shahrukh Omar</a> who has made it possible to show the label of an input when the user starts typing in a field so know what each field is. All you will need to do is add <strong>class="nysmnyd-labels"</strong> to your form and make sure you have the Amazium.js file included and you too will have fancy show/hide lables on your inputs.</p>
     </article>
