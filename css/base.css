@@ -120,7 +120,7 @@ Images, iFrames & Videos
 img                                             { border:0; vertical-align:middle; -ms-interpolation-mode:bicubic; }
 .img-left                                       { float:left; margin:0 30px 30px 0; border:none; }
 .img-right                                      { float:right; margin:0 0 30px 30px; border:none; }
-.img-max                                        { width:100%; height:auto; }
+.img-max                                        { margin:0 0 30px; width:100%; height:auto; }
 
 .media                                          { position:relative; margin:0 0 15px 0; padding-bottom:51%; padding-top:30px; height:0; overflow:hidden; border:1px solid #ccc; }
 .media iframe,
@@ -169,33 +169,39 @@ td                                              { padding:8px; min-width:100px; 
 td.highlight                                    { padding:11px 8px; color:#EEE; font-weight:bold; display:block; font-size:inherit; border:none; background-color:#333; }
 
 /***********************************************
-Global Classes
+Utility Classes
 ***********************************************/
-.clear                                          { clear:both; }
+.float-clear                                    { clear:both; }
 .float-left                                     { float:left; }
 .float-right                                    { float:right; }
 
-.txt-big                                        { color:#A2BD30; font-weight:bold; line-height:26px; }
 .txt-left                                       { text-align:left; }
 .txt-right                                      { text-align:right; }
 .txt-center                                     { text-align:center; }
 .txt-justify                                    { text-align:justify; }
 
-.normal                                         { font-weight:normal; }
-.bold                                           { font-weight:bold; }
-.italic                                         { font-style:italic; }
-.underline                                      { border-bottom:1px solid; }
-.highlight                                      { padding:4px 7px 4px; color:#000; line-height:19px; display:inline-block; background:#00DEFF; font-weight:bold; }
-.intro                                          { font-size:130%; line-height:130%; }
+.txt-normal                                     { font-weight:normal; }
+.txt-bold                                       { font-weight:bold; }
+.txt-italic                                     { font-style:italic; }
+.txt-underline                                  { border-bottom:1px solid; }
+.txt-highlight                                  { padding:4px 7px 4px; color:#000; line-height:19px; display:inline-block; background:#00DEFF; font-weight:bold; }
+.txt-intro                                      { font-size:130%; line-height:130%; }
+.txt-big                                        { color:#A2BD30; font-weight:bold; line-height:26px; }
 
-.nopadding                                      { padding:0; }
-.noindent                                       { margin-left:0; padding-left:0; }
-.nobullet                                       { list-style:none; list-style-image:none; }
+.rounded                                        { border-radius:50%; }
+.radius                                         { border-radius:3px; }
+
+.no-padding                                     { padding:0; }
+.no-indent                                      { margin-left:0; padding-left:0; }
+.no-bullet                                      { list-style:none; list-style-image:none; }
+.no-styling                                     { margin:0; padding:0; list-style:none; }
 
 .inline                                         { display:inline; }
-.block                                          { display:block; }
-.hidden                                         { display:none; }
-.hide                                           { display:none; }
+.block, .show                                   { display:block; }
+.hidden, .hide                                  { display:none; }                                       
+
+.invisable                                      { display:none; visibility:hidden; }
+.visable                                        { display:block; visibility:visible; }
 
 /***********************************************
 Disable Chrome blue border
