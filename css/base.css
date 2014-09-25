@@ -69,26 +69,20 @@ hr                                              { margin:20px 0; padding:0; bord
 /***********************************************
 Lists
 ***********************************************/
-ul, ol                                          { margin:26px 0 36px 0; display:block; list-style:none; }
-ul                                              { list-style:none outside; }
-ul li                                           { margin:0 0 15px 0; padding:0 0 0 18px; line-height:18px; background:transparent url('../img/bullet.png') no-repeat 0 3px; }
+ul, ol                                          { margin:20px 0 30px 20px; padding:0; display:block; }
+ol                                              { list-style:decimal; }
+li                                              { margin:0 0 10px 0; padding:0; }
 
-ul ul, ul ol                                    { margin:11px 0 5px 0; }
-ol ol, ol ul                                    { margin:8px 0 5px 20px; }
-ul ul li                                        { margin:0 0 5px 0; }
-ul ol li,   ol ol li, ol ul li                  { margin:0 0 3px 0; }
+ul ul, ul ol, ol ol, ol ul                      { margin:10px 0 20px 20px; }
 
 ul.square, ul.square ul,
-ul.circle ul.square                             { list-style:square outside; }
+ul.circle ul.square                             { list-style:square inside; }
 ul.circle, ul.circle ul,
-ul.square ul.circle                             { list-style:circle outside; }
-ul.disc, ul.disc ul                             { list-style:disc outside; }
+ul.square ul.circle                             { list-style:circle inside; }
+ul.disc, ul.disc ul                             { list-style:disc inside; }
 ul.square li,
 ul.circle li,
 ul.disc li                                      { margin:0 0 5px 18px; padding:0; line-height:18px; background:none; }
-
-ol                                              { list-style:decimal; }
-ol li                                           { margin:0 0 10px 22px; padding:0; line-height:18px; }
 
 dl                                              { margin:16px 0 26px 0; padding:0; }
 dt                                              { margin:0 0 10px 0; font-size:18px; line-height:20px; font-weight:bold; }
