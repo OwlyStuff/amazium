@@ -129,30 +129,6 @@ img                                             { border:0; vertical-align:middl
 
 
 /***********************************************
-Buttons
-***********************************************/
-.btn, button                                    { margin:0 5px 5px 0; padding:0 28px; display:inline-block; color:#FFF; border:1px solid #000; background-color:#000; font-size:14px; line-height:40px; text-decoration:none; cursor:pointer; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
-.btn:hover, button:hover                        { border:1px solid #CCC; background-color:#FFF; color:#333; }
-
-.small                                          { padding:2px 10px; font-size:12px; line-height:25px; }
-
-.white                                          { border-color:#CCC; background-color:#FFF; color:#333; }
-.white:hover                                    { border-color:#000; background-color:#000; color:#FFF; }
-
-.green                                          { border-color:#2ECC71; background-color:#2ECC71; color:#FFF; }
-.green:hover                                    { border-color:#25A35A; background-color:#25A35A; color:#FFF; }
-
-.blue                                           { border-color:#3498DB; background-color:#3498DB; color:#FFF; }
-.blue:hover                                     { border-color:#2A7AAF; background-color:#2A7AAF; color:#FFF; }
-
-.amber                                          { border-color:#FA9300; background-color:#FA9300; color:#FFF; }
-.amber:hover                                    { border-color:#B46F29; background-color:#B46F29; color:#FFF; }
-
-.red                                            { border-color:#E74C3C; background-color:#E74C3C; color:#FFF; }
-.red:hover                                      { border-color:#B93D30; background-color:#B93D30; color:#FFF; }
-
-
-/***********************************************
 Tables
 ***********************************************/
 table                                           { margin:20px 0 40px 0; width:100%; overflow:hidden; font-size:13px; line-height:17px; border-bottom:1px solid #D6D6D6; border-collapse:collapse; border-spacing:0; }
@@ -167,6 +143,55 @@ th                                              { padding:8px; background-color:
 
 td                                              { padding:8px; min-width:100px; background-color:transparent; color:#666; border:none; border-top:1px solid #D6D6D6; }
 td.highlight                                    { padding:11px 8px; color:#EEE; font-weight:bold; display:block; font-size:inherit; border:none; background-color:#333; }
+
+
+/***********************************************
+Buttons
+***********************************************/
+.btn, button                                    { margin:0 5px 5px 0; padding:0 28px; display:inline-block; color:#FFF; border:1px solid #000; background-color:#000; font-size:14px; line-height:40px; text-decoration:none; cursor:pointer; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
+.btn:hover, button:hover                        { border:1px solid #CCC; background-color:#FFF; color:#333; }
+
+.small                                          { padding:2px 10px; font-size:12px; line-height:25px; }
+
+.btn.white                                      { border-color:#CCC; background-color:#FFF; color:#333; }
+.btn.white:hover                                { border-color:#000; background-color:#000; color:#FFF; }
+
+/* Green */
+.btn.success                                    { border-color:#2ECC71; background-color:#2ECC71; color:#FFF; }
+.btn.success:hover                              { border-color:#25A35A; background-color:#25A35A; color:#FFF; }
+
+/* Blue */
+.btn.info                                       { border-color:#3498DB; background-color:#3498DB; color:#FFF; }
+.btn.info:hover                                 { border-color:#2A7AAF; background-color:#2A7AAF; color:#FFF; }
+
+/* Amber */
+.btn.warning                                    { border-color:#FA9300; background-color:#FA9300; color:#FFF; }
+.btn.warning:hover                              { border-color:#B46F29; background-color:#B46F29; color:#FFF; }
+
+/* Red */
+.btn.error                                      { border-color:#E74C3C; background-color:#E74C3C; color:#FFF; }
+.btn.error:hover                                { border-color:#B93D30; background-color:#B93D30; color:#FFF; }
+
+
+/***********************************************
+Colors
+***********************************************/
+.txt-success                                    { color:#2ECC71; }
+.bg-success                                     { background-color:#2ECC71; }
+.border-success                                 { border-color:#2ECC71; }
+
+.txt-info                                       { color:#3498DB; }
+.bg-info                                        { background-color:#3498DB; }
+.border-info                                    { border-color:#3498DB; }
+
+.txt-warning                                    { color:#FA9300; }
+.bg-warning                                     { background-color:#FA9300; }
+.border-warning                                 { border-color:#FA9300; }
+
+.txt-error                                      { color:#E74C3C; }
+.bg-error                                       { background-color:#E74C3C; }
+.border-error                                   { border-color:#E74C3C; }
+
 
 /***********************************************
 Global Classes
