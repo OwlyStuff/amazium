@@ -130,8 +130,8 @@ caption                                         { margin:0 0 10px; }
 
 tr                                              { background-color:#FFF; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
 tr:hover                                        { background-color:#F1F1F1; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
-tr.even                                         { background-color:#FFF; }
-tr.odd                                          { background-color:#F1F1F1; }
+tbody.striped tr:nth-child(even), tr.even       { background-color:#FFF; }
+tbody.striped tr:nth-child(odd), tr.odd         { background-color:#F1F1F1; }
 
 th                                              { padding:8px; background-color:#F1F1F1; color:#222; font-weight:bold; border:none; border-bottom:3px solid #D6D6D6; text-align:left; white-space:nowrap; }
 
