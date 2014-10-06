@@ -139,6 +139,65 @@
 </section>
 
 <section class="row">
+    <article class="grid_12">
+        <hr />
+        <h3>Code Formatting</h3>
+        <pre>
+            <code>
+&lt;?php
+include "lib/Template.class.php";
+$template = new Template();
+
+$table = [
+    ['id' => 1, 'first_name' => 'Bruce', 'last_name' => 'Wayne', 'location' => 'Gotham City'],
+    ['id' => 2, 'first_name' => 'Clarke', 'last_name' => 'Kent', 'location' => 'Metropilis'],
+    ['id' => 3, 'first_name' => 'Oliver', 'last_name' => 'Queen', 'location' => 'Star City'],
+    ['id' => 4, 'first_name' => 'Diana', 'last_name' => 'Prince', 'location' => 'Themyscira']
+];
+
+$template->assign('table', $table);
+$template->display('templates/tables.phtml');            
+            </code>
+        </pre>
+        <h3>Output Formatting</h3>
+        <pre>
+            <p>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+      &lt;meta charset="utf-8"&gt;
+      &lt;title&gt;&lt;/title&gt;
+      &lt;meta name="description" content=""&gt;
+      &lt;meta name="author" content=""&gt;
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+      &lt;div&gt;
+          &lt;h1&gt;Jade is Wonderful....&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+          &lt;p&gt;
+              Nullam a dolor id arcu semper finibus ut pulvinar orci. Proin 
+              sodales nisi et dictum pulvinar. Duis orci velit, suscipit et 
+              porttitor gravida, molestie ac purus. Cum sociis natoque penatibus 
+              et magnis dis parturient montes, nascetur ridiculus mus. Cras felis 
+              neque, gravida a blandit ac, rutrum ut sapien. Vivamus tincidunt 
+              volutpat libero eget tempor. Nam dolor mauris, mollis in euismod 
+              vitae, viverra ac libero
+          &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+          &lt;p&gt;Copyright 2014 www.jade4php.com. All rights reserved.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;script type="text/javascript" src="js/jquery-1.8.0.min.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;           
+            </p>
+        </pre>
+    </article>
+</section>
+
+<section class="row">
     <article class="grid_6">
         <h3>100% Video</h3>
         <div class="media">
