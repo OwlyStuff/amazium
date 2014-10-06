@@ -57,7 +57,8 @@ sup, sub                                        { height:0; line-height:0; verti
 sup                                             { top:-5px; }
 sub                                             { bottom:-5px; }
 
-pre code                                        { margin:16px 0 26px 0; padding:16px; font-family: 'Consolas', Courier, monospace; font-size:12px; line-height:19px; color:#F1F1F1; display:block; background-color:#111; border:1px solid #111; }
+pre code                                        { margin:16px 0 26px 0; padding:16px; font-family: 'Consolas', Courier, monospace; font-size:12px; line-height:19px; color:#F1F1F1; display:block; background-color:#111; border:1px solid #111; overflow: auto; }
+pre p                                           { margin:0; padding:10px; line-height:20px; overflow: auto;}
 
 abbr[title],
 abbr[data-original-title]                       { border-bottom:1px dotted #999999; cursor:help; }
