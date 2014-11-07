@@ -9,7 +9,7 @@
 Screen 1200px+
 ***********************************************/
 .row                                            { margin:0 auto; width:1200px; display:table; }
-.row .row                                       { margin:0 -20px; width:auto; display:inline-block; }
+.row .row                                       { margin:0 -20px; width:auto; }
 
 .grid_1                                         { width:60px; margin:0 20px; float:left; display:inline; }
 .grid_2                                         { width:160px; margin:0 20px; float:left; display:inline; }
@@ -155,7 +155,7 @@ Mobile
 @media only screen and (max-width: 767px) {
 
 .row                                            { padding:0 16px; width:100%; display:block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
-.row .row                                       { margin:0; padding:0; width:100%; display:block; }
+.row .row                                       { margin:0; padding:0; width:100%; }
 
 .grid_1, .grid_2, .grid_3, .grid_4,
 .grid_5, .grid_6, .grid_7, .grid_8,
