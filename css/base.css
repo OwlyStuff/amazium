@@ -108,14 +108,14 @@ Links
 a                                               { color:#333; text-decoration:underline; outline:0; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
 a:focus                                         { outline:none; -moz-outline-style:none; }
 
-.btn                                            { margin:0 0 20px; padding:16px 20px; background-color:#FFF; min-width:100px; min-height:40px; display:inline-block; text-align:center; color:#666; text-decoration:none; position:relative; top:0; left:0; }
+.btn                                            { margin:0 0 20px; padding:16px 20px; background-color:#F1F1F1; min-width:100px; min-height:40px; display:inline-block; text-align:center; color:#666; text-decoration:none; position:relative; top:0; left:0; }
 .btn:hover                                      { background-color:#222; color:#FFF; }
-.btn.small                                      { padding:8px 10px; min-width:50px; min-height:20px; font-size:13px; }
+.btn.small                                      { padding:8px 10px 6px; min-width:50px; min-height:20px; font-size:13px; }
 
-.btn.success                                    { background-color:#2ECC71; color:#FFF; }
-.btn.info                                       { background-color:#3498DB; color:#FFF; }
-.btn.warning                                    { background-color:#FA9300; color:#FFF; }
-.btn.error                                      { background-color:#E74C3C; color:#FFF; }
+.success                                        { background-color:#2ECC71; color:#FFF; }
+.info                                           { background-color:#3498DB; color:#FFF; }
+.warning                                        { background-color:#FA9300; color:#FFF; }
+.error                                          { background-color:#E74C3C; color:#FFF; }
 
 
 /***********************************************
