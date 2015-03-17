@@ -83,7 +83,7 @@ Buttons
 button,
 input[type="button"],
 input[type="submit"],
-input[type="reset"]                                         { margin:0 0 20px; padding:0 16px; min-width:100px; min-height:40px; width:auto; border:none; display:inline-block; text-align:center; font:14px/20px "joey", sans-serif; }
+input[type="reset"]                                         { margin:0 0 20px; padding:0 16px; min-width:100px; min-height:40px; width:auto; border:none; display:inline-block; text-align:center; font:14px/20px "joey", sans-serif; cursor:pointer; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
 
 input:first-of-type[type="button"],
 input:first-of-type[type="submit"],
