@@ -83,11 +83,12 @@ Buttons
 button,
 input[type="button"],
 input[type="submit"],
-input[type="reset"]                                         { margin:0 0 20px; width:auto; height:auto; border:none; display:inline-block; font:14px/20px "joey", sans-serif; }
+input[type="reset"]                                         { margin:0 0 20px; padding:0 16px; min-width:100px; min-height:40px; width:auto; border:none; display:inline-block; text-align:center; font:14px/20px "joey", sans-serif; }
 
 input:first-of-type[type="button"],
 input:first-of-type[type="submit"],
-input:first-of-type[type="reset"]                           { margin-left:30%; }
+input:first-of-type[type="reset"],
+button:first-of-type                                        { margin-left:30%; }
 
 .loading                                                    { padding-right:46px; background-color:#25A35A; position:relative; cursor:default; color:#FFF; }
 .loading:hover                                              { background-color:#25A35A; }
@@ -142,9 +143,10 @@ Validation
 /***********************************************
 Buttons
 ***********************************************/
-.hide-lables input[type="button"],
-.hide-lables input[type="submit"],
-.hide-lables input[type="reset"]                            { margin:6px 6px 6px 0; width:auto; }
+.hide-lables input:first-of-type[type="button"],
+.hide-lables input:first-of-type[type="submit"],
+.hide-lables input:first-of-type[type="reset"],
+.hide-lables button:first-of-type                           { margin:6px 6px 6px 0; width:auto; }
 
 
 /***********************************************
