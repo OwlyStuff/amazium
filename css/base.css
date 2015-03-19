@@ -1,6 +1,6 @@
 /*
 * Amazium (http://www.amazium.co.uk)
-* Copyright 2010 - 2013, Mike Ballan
+* Copyright 2010 - 2015, Mike Ballan
 * Licensed under MIT (https://github.com/OwlyStuff/Amazium/blob/master/LICENSE)
 */
 
@@ -32,13 +32,13 @@ blockquote:before, blockquote:after,
 q:before, q:after                               { content:''; content:none; }
 
 html                                            { overflow-y:scroll; overflow:-moz-scrollbars-vertical; }
-body                                            { margin:0; padding:0; background-color:#FFF; font-family:sans-serif; font-size:15px; line-height:20px; color:#333; }
+body                                            { margin:0; padding:0; background-color:#FFF; font-family:sans-serif; font-size:14px; line-height:20px; color:#333; }
 
 
 /***********************************************
 Typography
 ***********************************************/
-h1, h2, h3, h4, h5, h6                          { margin:0 0 10px; padding:0; color:#333; font-weight:normal; }
+h1, h2, h3, h4, h5, h6                          { margin:0 0 16px; padding:0; color:#333; font-weight:normal; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a              { font-weight:inherit; color:inherit; }
 h1                                              { font-size:38px; line-height:40px; }
 h2                                              { font-size:32px; line-height:34px; }
@@ -47,7 +47,7 @@ h4                                              { font-size:17px; line-height:19
 h5                                              { font-size:14px; line-height:16px; }
 h6                                              { font-size:11px; line-height:13px; }
 
-p                                               { margin:0 0 20px 0; padding:0; font-size:15px; line-height:26px; }
+p                                               { margin:0 0 20px 0; padding:0; font-size:14px; line-height:20px; }
 
 b, strong                                       { font-weight:bold; }
 em                                              { font-style:italic; }
@@ -57,7 +57,8 @@ sup, sub                                        { height:0; line-height:0; verti
 sup                                             { top:-5px; }
 sub                                             { bottom:-5px; }
 
-pre code                                        { margin:16px 0 26px 0; padding:16px; font-family: 'Consolas', Courier, monospace; font-size:12px; line-height:19px; color:#F1F1F1; display:block; background-color:#111; border:1px solid #111; }
+pre                                             { padding:18px 26px 16px 26px; }
+pre code                                        { margin:0; padding:0; font-family: 'Consolas', Courier, monospace; font-size:12px; line-height:19px; color:#F1F1F1; display:block; background-color:#111; border:1px solid #111; overflow:hidden; overflow-x:auto; }
 
 abbr[title],
 abbr[data-original-title]                       { border-bottom:1px dotted #999999; cursor:help; }
@@ -70,19 +71,19 @@ hr                                              { margin:20px 0; padding:0; bord
 Lists
 ***********************************************/
 ul, ol                                          { margin:20px 0 30px 20px; padding:0; display:block; }
-ol                                              { list-style:decimal; }
+ol                                              { list-style:decimal inside; }
 li                                              { margin:0 0 10px 0; padding:0; }
 
 ul ul, ul ol, ol ol, ol ul                      { margin:10px 0 20px 20px; }
 
 ul.square, ul.square ul,
-ul.circle ul.square                             { list-style:square inside; }
+ul.circle ul.square                             { list-style:square; }
 ul.circle, ul.circle ul,
-ul.square ul.circle                             { list-style:circle inside; }
-ul.disc, ul.disc ul                             { list-style:disc inside; }
+ul.square ul.circle                             { list-style:circle; }
+ul.disc, ul.disc ul                             { list-style:disc; }
 ul.square li,
 ul.circle li,
-ul.disc li                                      { margin:0 0 5px 18px; padding:0; line-height:18px; background:none; }
+ul.disc li                                      { margin:0 0 5px 0; padding:0; line-height:18px; background:none; }
 
 dl                                              { margin:16px 0 26px 0; padding:0; }
 dt                                              { margin:0 0 10px 0; font-size:18px; line-height:20px; font-weight:bold; }
@@ -104,8 +105,17 @@ figcaption                                      { margin:6px 0 0 0; padding:0; f
 /***********************************************
 Links
 ***********************************************/
-a                                               { color:#000; text-decoration:underline; outline:0; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
+a                                               { color:#333; text-decoration:underline; outline:0; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
 a:focus                                         { outline:none; -moz-outline-style:none; }
+
+.btn                                            { margin:0 0 20px; padding:16px 20px; background-color:#F1F1F1; min-width:100px; min-height:40px; display:inline-block; text-align:center; color:#666; text-decoration:none; position:relative; top:0; left:0; }
+.btn:hover                                      { background-color:#222; color:#FFF; }
+.btn.small                                      { padding:8px 10px 6px; min-width:50px; min-height:20px; font-size:13px; }
+
+.success                                        { background-color:#2ECC71; color:#FFF; }
+.info                                           { background-color:#3498DB; color:#FFF; }
+.warning                                        { background-color:#FA9300; color:#FFF; }
+.error                                          { background-color:#E74C3C; color:#FFF; }
 
 
 /***********************************************
@@ -130,42 +140,12 @@ caption                                         { margin:0 0 10px; }
 
 tr                                              { background-color:#FFF; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
 tr:hover                                        { background-color:#F1F1F1; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
-tr.even                                         { background-color:#FFF; }
 tr.odd                                          { background-color:#F1F1F1; }
 
 th                                              { padding:8px; background-color:#F1F1F1; color:#222; font-weight:bold; border:none; border-bottom:3px solid #D6D6D6; text-align:left; white-space:nowrap; }
 
 td                                              { padding:8px; min-width:100px; background-color:transparent; color:#666; border:none; border-top:1px solid #D6D6D6; }
 td.highlight                                    { padding:11px 8px; color:#EEE; font-weight:bold; display:block; font-size:inherit; border:none; background-color:#333; }
-
-
-/***********************************************
-Buttons
-***********************************************/
-.btn, button                                    { margin:0 5px 5px 0; padding:0 28px; display:inline-block; color:#FFF; border:1px solid #000; background-color:#000; font-size:14px; line-height:40px; text-decoration:none; cursor:pointer; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
-.btn:hover, button:hover                        { border:1px solid #CCC; background-color:#FFF; color:#333; }
-
-.small                                          { padding:2px 10px; font-size:12px; line-height:25px; }
-
-.btn.white                                      { border-color:#CCC; background-color:#FFF; color:#333; }
-.btn.white:hover                                { border-color:#000; background-color:#000; color:#FFF; }
-
-/* Green */
-.btn.success                                    { border-color:#2ECC71; background-color:#2ECC71; color:#FFF; }
-.btn.success:hover                              { border-color:#25A35A; background-color:#25A35A; color:#FFF; }
-
-/* Blue */
-.btn.info                                       { border-color:#3498DB; background-color:#3498DB; color:#FFF; }
-.btn.info:hover                                 { border-color:#2A7AAF; background-color:#2A7AAF; color:#FFF; }
-
-/* Amber */
-.btn.warning                                    { border-color:#FA9300; background-color:#FA9300; color:#FFF; }
-.btn.warning:hover                              { border-color:#B46F29; background-color:#B46F29; color:#FFF; }
-
-/* Red */
-.btn.error                                      { border-color:#E74C3C; background-color:#E74C3C; color:#FFF; }
-.btn.error:hover                                { border-color:#B93D30; background-color:#B93D30; color:#FFF; }
-
 
 /***********************************************
 Colors
@@ -217,7 +197,7 @@ Utility Classes
 
 .inline                                         { display:inline; }
 .block, .show                                   { display:block; }
-.hidden, .hide                                  { display:none; }                                       
+.hidden, .hide                                  { display:none; }
 
 .invisable                                      { display:none; visibility:hidden; }
 .visable                                        { display:block; visibility:visible; }
@@ -234,13 +214,13 @@ Mobile (portrait 300px)
 ***********************************************/
 @media only screen and (max-width:767px) {
 
-table, tbody, tr, th, td                        { border:0; display:block; padding:3px 0; text-align:left; white-space:normal; }
+table, tbody, tr, th, td                        { border:0; display:block; text-align:left; white-space:normal; }
 table                                           { padding:0; border-top:1px solid #D6D6D6; table-layout:fixed; }
-tr                                              { margin:5px 0; padding:0 0 6px; border-bottom:1px solid #D6D6D6; }
-tr:hover                                        { background-color:transparent; }
-tr:first-child, th, td:empty                    { display:none; visibility:hidden; }
+tr                                              { margin:0; padding:6px; border-bottom:1px solid #D6D6D6; }
+tr:hover                                        { background-color:#FFF; }
+thead, th, td:empty                             { display:none; visibility:hidden; }
+td                                              { padding:0; }
 td:first-child                                  { font-weight:bold; }
 th[data-title]:before, td[data-title]:before    { content:attr(data-title) ":\00A0"; font-weight:bold; }
-
 
 }

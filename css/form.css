@@ -1,6 +1,6 @@
 /*
 * Amazium (http://www.amazium.co.uk)
-* Copyright 2010 - 2013, Mike Ballan
+* Copyright 2010 - 2015, Mike Ballan
 * Licensed under MIT (https://github.com/OwlyStuff/Amazium/blob/master/LICENSE)
 */
 
@@ -9,12 +9,12 @@
 Forms with labels
 ***********************************************/
 form                                                        { margin:0 0 16px; padding:0; display:inline-block; width:100%; }
-label                                                       { margin:0; padding:0 16px 0 0; float:left; text-align:right; width:30%; height:40px; font-family:sans-serif; font-size:14px; line-height:40px; color:#666; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+label                                                       { margin:0; padding:11px 16px 0 0; float:left; text-align:right; width:30%; min-height:40px; font-family:sans-serif; font-size:14px; line-height:16px; color:#666; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 label.checkbox, label.radio                                 { text-align:left; width:auto; }
 form span                                                   { margin:10px 0; padding:0; display:block; overflow:hidden; float:left; }
 fieldset                                                    { margin:0 0 20px 0; padding:0; display:block; position:relative; top:0; left:0; }
 fieldset small                                              { margin:0 0 0 30%; padding:3px 8px; font-family:sans-serif; font-size:11px; line-height:20px; color:#FFF; border-color:#E74C3C; background-color:#E74C3C; width:70%; float:right; display:inline-block; position:relative; top:-1px; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
-input, textarea, select, textarea                           { margin:0; padding:0 10px; display:block; border-radius:0; width:70%; height:40px; font-family:sans-serif; font-size:14px; line-height:40px; color:#555; border:solid 1px #BBB; overflow:hidden; position:relative; top:0; left:0; outline:0 none; box-sizing:border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-appearance:none; }
+input, textarea, select, textarea                           { margin:0; padding:0 10px; display:block; border-radius:0; width:70%; height:40px; font-family:sans-serif; font-size:14px; line-height:40px; color:#555; border:solid 1px #DDD; overflow:hidden; position:relative; top:0; left:0; outline:0 none; box-sizing:border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-appearance:none; }
 textarea                                                    { padding:0 0 0 10px; resize:none; min-height:100px; overflow-y:auto; }
 input[type="search"]                                        { -webkit-padding-start:0;  }
 
@@ -22,9 +22,9 @@ input[type="search"]                                        { -webkit-padding-st
 /***********************************************
 Styled Select fields
 ***********************************************/
-.select                                                     { margin:0; padding:0; position:relative; display:inline-block; width:70%; right:0; top:0; height:40px; background:#FFF; overflow:hidden; border:solid 1px #BBB; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
-.select:after                                               { margin:0; padding:0; content:'\25be'; color:#999; line-height:35px; text-align:center; right:0; top:0; background:#FFF; width:38px; height:38px; position:absolute; pointer-events:none; }
-.select select                                              { padding:10px; padding-top:11px; -webkit-padding-before:0; -webkit-padding-start:6px; width:100%; height:40px; font-family:sans-serif; font-size:14px; line-height:40px; float:left; color:#999; border:none; display:block; -webkit-appearance:none; -moz-appearance:none; appearance:none; cursor:pointer; }
+.select                                                     { margin:0; padding:0; position:relative; display:inline-block; width:70%; right:0; top:0; height:40px; background:#FFF; overflow:hidden; border:solid 1px #DDD; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+.select:after                                               { margin:0; padding:0; content:'\25be'; color:#999; line-height:38px; text-align:center; right:0; top:0; background:#FFF; width:38px; height:38px; border-left:1px solid #F1F1F1; position:absolute; pointer-events:none; }
+.select select                                              { padding:10px; padding-top:11px; background-color:#FFF; -webkit-padding-before:0; -webkit-padding-start:6px; width:100%; height:40px; font-family:sans-serif; font-size:14px; line-height:40px; float:left; color:#999; border:none; display:block; -webkit-appearance:none; -moz-appearance:none; appearance:none; cursor:pointer; }
 .select option                                              { padding:10px; border-bottom:1px solid #F2F2F2;  }
 .select optgroup                                            { padding:0 10px; color:#000; background-color:#FFF; }
 .select optgroup[label]                                     { padding-top:10px; background-color:#FFF; font-style:normal; }
@@ -80,33 +80,27 @@ input:focus:invalid:-ms-input-placeholder                   { color:#E74C3C; opa
 /***********************************************
 Buttons
 ***********************************************/
+button,
 input[type="button"],
 input[type="submit"],
-input[type="reset"]                                         { margin:0 6px 6px 0; padding:0 28px; display:inline-block; height:40px; font-family:sans-serif; font-size:14px; line-height:40px; font-weight:normal; float:left; width:auto; cursor:pointer; -webkit-appearance:none; }
+input[type="reset"]                                         { margin:0 0 20px; padding:0 16px; min-width:100px; min-height:40px; width:auto; border:none; display:inline-block; text-align:center; font:14px/20px "joey", sans-serif; cursor:pointer; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
 
 input:first-of-type[type="button"],
 input:first-of-type[type="submit"],
-input:first-of-type[type="reset"]                           { margin-left:30%; }
+input:first-of-type[type="reset"],
+button:first-of-type                                        { margin-left:30%; }
 
-input[type="button"],
-input[type="submit"],
-input[type="reset"]                                         { transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
+.loading                                                    { padding-right:46px; background-color:#25A35A; position:relative; cursor:default; color:#FFF; }
+.loading:hover                                              { background-color:#25A35A; }
+.loading:after                                              { margin:-10px 0 0 0; content:''; width:20px; height:20px; background:transparent url('../img/loading.png') no-repeat 0 0; position:absolute; top:50%; right:16px; -webkit-animation:spinner 1.0s infinite linear reverse; animation:spinner 1.0s infinite linear reverse; }
 
-input:hover[type="button"]                                  { border-color:#CCC; background-color:#FFF; color:#333; }
-input:hover[type="submit"]                                  { border-color:#25A35A; background-color:#25A35A; color:#FFF; }
-input:hover[type="reset"]                                   { border-color:#000; background-color:#000; color:#FFF; }
+.successful                                                 { padding-right:46px; background-color:#25A35A; position:relative; cursor:default; color:#FFF; }
+.successful:hover                                           { border-color:#25A35A; background-color:#25A35A; }
+.successful:after                                           { content:'\2714'; width:20px; height:20px; font-size:14px; line-height:30px; position:absolute; top:10px; right:16px; }
 
-.loading                                                    { padding:0 36px 0 20px; border-color:#25A35A; background-color:#25A35A; position:relative; cursor:default; }
-.loading:hover                                              { border-color:#25A35A; background-color:#25A35A; }
-.loading:after                                              { margin-top:-10px; content:''; width:20px; height:20px; background:transparent url('../img/loading.png') no-repeat 0 0; position:absolute; top:50%; right:10px; -webkit-animation:spinner 1.0s infinite linear; animation:spinner 1.0s infinite linear; }
-
-.success                                                    { padding:0 36px 0 20px; border-color:#25A35A; background-color:#25A35A; position:relative; cursor:default; }
-.success:hover                                              { border-color:#25A35A; background-color:#25A35A; }
-.success:after                                              { content:'\2714'; width:20px; height:20px; line-height:30px; position:absolute; top:5px; right:10px; }
-
-.error                                                      { padding:0 36px 0 20px; position:relative; background-color:#E74C3C; border-color:#E74C3C; cursor:default; }
-.error:after                                                { content:'\00D7'; width:20px; height:20px; line-height:30px; position:absolute; top:5px; right:8px; }
-.error:hover                                                { background-color:#E74C3C; border-color:#E74C3C; }
+.failure                                                    { padding-right:46px; background-color:#E74C3C; position:relative; cursor:default; color:#FFF; }
+.failure:after                                              { content:'\00D7'; width:20px; height:20px; font-size:20px; line-height:30px; position:absolute; top:10px; right:16px; }
+.failure:hover                                              { background-color:#E74C3C; border-color:#E74C3C; }
 
 @keyframes spinner {
     0%                                                      { transform:rotate(0deg); -webkit-transform:rotate(0deg); }
@@ -149,9 +143,10 @@ Validation
 /***********************************************
 Buttons
 ***********************************************/
-.hide-lables input[type="button"],
-.hide-lables input[type="submit"],
-.hide-lables input[type="reset"]                            { margin:6px 6px 6px 0; width:auto; }
+.hide-lables input:first-of-type[type="button"],
+.hide-lables input:first-of-type[type="submit"],
+.hide-lables input:first-of-type[type="reset"],
+.hide-lables button:first-of-type                           { margin:6px 6px 6px 0; width:auto; }
 
 
 /***********************************************
@@ -175,12 +170,15 @@ select:focus                                                { color:#000; border
 /***********************************************
 NYSMNYD
 ***********************************************/
-.nysmnyd-labels fieldset label                              { display:block; position:absolute; left:1px; top:0; height:auto; width:auto; z-index:1; font-family:sans-serif; font-size:12px; line-height:40px; color:#999; transition:all .1s ease-out 0s; -moz-transition:all .1s ease-out 0s; -webkit-transition:all .1s ease-out 0s; -o-transition:all .1s ease-out 0s; }
+.nysmnyd-labels fieldset                                    { margin:0 0 30px; }
+.nysmnyd-labels fieldset label                              { padding:0; display:block; position:absolute; left:1px; top:0; height:auto; width:auto; z-index:1; font-family:sans-serif; font-size:12px; line-height:40px; color:#999; transition:all .1s ease-out 0s; -moz-transition:all .1s ease-out 0s; -webkit-transition:all .1s ease-out 0s; -o-transition:all .1s ease-out 0s; }
 .nysmnyd-labels fieldset.show-all label                     { top:-27px; transition:all .1s ease-out 0s; -moz-transition:all .1s ease-out 0s; -webkit-transition:all .1s ease-out 0s; -o-transition:all .1s ease-out 0s; }
 
 .nysmnyd-labels input,
 .nysmnyd-labels .select,
 .nysmnyd-labels textarea                                    { z-index:2; }
+
+.nysmnyd-labels textarea                                    { min-height:110px; }
 
 .nysmnyd-labels input,
 .nysmnyd-labels textarea,
