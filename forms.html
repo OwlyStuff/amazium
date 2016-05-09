@@ -24,262 +24,90 @@
     <link rel="stylesheet" href="styles/vendors/amazium-form.css">
     <link rel="stylesheet" href="styles/vendors/amazium-layout.css">
 
+    <link rel="stylesheet" href="styles/layout/layout.css">
+
     <!-- Favicons -->
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png">
 </head>
 <body>
 
-<section class="row">
-    <article class="grid_12">
-        <h1>Amazium Forms</h1>
-        <p>Now forms can be one of the biggest pains in the neck for web developers, so I have included a simple form in Amazium with some very basic styling which has all the elements you will need to make your own form.</p>
-        <hr>
-    </article>
-</section>
+<div class="section">
+    <div class="row">
+        <div class="grid-12">
+            <h1>Default Form</h1>
+            <p>All form elements by default are set to 100% width with a 1px border which on focus will turn blue to allow the user to clearly see which field they are currently on.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="grid-6">
+            <form>
+                <fieldset>
+                    <label for="text">First Name</label>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam expedita fugiat laborum odio officiis corrupti numquam sunt magni aspernatur alias a asperiores illum voluptates quod, aliquam reprehenderit cupiditate blanditiis? Officiis.</p>
+                    <input type="text" name="text" id="text" placeholder="Enter your full name" tabindex="1" />
+                </fieldset>
+                <fieldset>
+                    <label for="text">Last Name</label>
+                    <input type="text" name="text" id="text" placeholder="Enter your full name" tabindex="1" />
+                </fieldset>
+                <fieldset>
+                    <label for="text">Your Age</label>
+                    <span class="select" tabindex="10">
+                        <select>
+                            <option selected disabled>-- Choose your age --</option>
+                            <option value="">0 - 10</option>
+                            <option value="">11 - 20</option>
+                            <option value="">21 - 30</option>
+                            <option value="">31 - 40</option>
+                            <option value="">41 - 50</option>
+                            <option value="">50+</option>
+                        </select>
+                    </span>
+                </fieldset>
+                <fieldset>
+                    <label for="text">Message</label>
+                    <textarea cols="50" rows="4" name="comment" placeholder="Write your message here"></textarea>
+                </fieldset>
+                <fieldset>
+                    <button class="btn btn--color-positive">Save</button>
+                </fieldset>
+            </form>
+        </div>
+        <div class="grid-6">
+            <pre><code>&lt;form&gt;
+    &lt;fieldset&gt;
+        &lt;label for="text"&gt;Input&lt;/label&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+        &lt;input type="text" name="text" id="text" placeholder="" tabindex="1" /&gt;
+    &lt;/fieldset&gt;
 
-<section class="row">
-    <article class="grid_6">
-        <form name="" id="" method="" action="" class="hide-lables">
-            <h3>Form without Labels</h3>
-            <fieldset>
-                <label for="text">Text</label>
-                <input type="text" name="text" id="text" placeholder="Text" autocomplete="on" tabindex="1" />
-            </fieldset>
-            <fieldset>
-                <label for="text">Text</label>
-                <input type="text" name="text" id="text" placeholder="Text - Invalid entry" autocomplete="on" tabindex="1" />
-                <small>Invalid entry</small>
-            </fieldset>
-            <fieldset>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="Password" autocomplete="on" tabindex="2" />
-            </fieldset>
-            <fieldset>
-                <label for="url">URL</label>
-                <input type="url" name="url" id="url" placeholder="Url" autocomplete="on" tabindex="3" />
-            </fieldset>
-            <fieldset>
-                <label for="tel">Tel</label>
-                <input type="tel" name="tel" id="tel" placeholder="Tel" autocomplete="on" tabindex="4" pattern="[0-9\-.\(\)\+\s]+" />
-            </fieldset>
-            <fieldset>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Email" autocomplete="on" tabindex="5" />
-            </fieldset>
-            <fieldset>
-                <label for="options">Options</label>
-                <span class="select">
-                    <select id="dropdown" name="dropdown" tabindex="6" />
-                        <option value="">Option 1</option>
-                        <option value="opt2">Option 2</option>
-                        <optgroup label="Option group 1">
-                            <option value="opt3">Sub option 1</option>
-                            <option value="opt4">Sub option 2</option>
-                            <option value="opt5">Sub option 3</option>
-                        </optgroup>
-                        <option>Option 3</option>
-                    </select>
-                </span>
-            </fieldset>
-            <fieldset>
-                <label for="message">Message</label>
-                <textarea name="message" id="message" placeholder="Message..." tabindex="7"></textarea>
-            </fieldset>
-            <fieldset>
-                <label for="radio">Checkboxes</label>
-                <div class="checkbox">
-                    <span>
-                        <input type="checkbox" tabindex="8" name="c4" id="c4" >
-                        <label for="c4" onclick="">Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum, Donec id elit non mi porta gravida at eget metus.</label>
-                    </span>
-                    <span>
-                        <input type="checkbox" tabindex="9" name="c5" id="c5">
-                        <label for="c5" onclick="">Curabitur blandit.</label>
-                    </span>
-                    <span>
-                        <input type="checkbox" tabindex="10" name="c6" id="c6">
-                        <label for="c6" onclick="">Risus Condimentum.</label>
-                    </span>
-                </div>
-            </fieldset>
-            <fieldset>
-                <label for="radio">Radio Buttons</label>
-                <div class="radio">
-                    <span>
-                        <input type="radio" tabindex="11" name="r1" id="r4">
-                        <label for="r4" onclick="">Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum, Donec id elit non mi porta gravida at eget metus.</label>
-                    </span>
-                    <span>
-                        <input type="radio" tabindex="12" name="r1" id="r5">
-                        <label for="r5" onclick="">Yes</label>
-                    </span>
-                    <span>
-                        <input type="radio" tabindex="13" name="r1" id="r6">
-                        <label for="r6" onclick="">No</label>
-                    </span>
-                </div>
-            </fieldset>
-            <fieldset>
-                <button type="submit" class="btn success">Submit</button>
-                <button type="submit" class="btn">Reset</button>
-            </fieldset>
-        </form>
-    </article>
-    <article class="grid_6">
-        <form name="" id="" method="" action="" class="">
-            <h3>Form with Labels</h3>
-            <fieldset>
-                <label for="text">Text</label>
-                <input type="text" name="text" id="text" placeholder="Text" autocomplete="on" tabindex="1" />
-            </fieldset>
-            <fieldset>
-                <label for="text">Text</label>
-                <input type="text" name="text" id="text" placeholder="Text - Invalid entry" autocomplete="on" tabindex="1" />
-                <small>Invalid entry</small>
-            </fieldset>
-            <fieldset>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="Password" autocomplete="on" tabindex="21" />
-            </fieldset>
-            <fieldset>
-                <label for="url">URL</label>
-                <input type="url" name="url" id="url" placeholder="Url" autocomplete="on" tabindex="22" />
-            </fieldset>
-            <fieldset>
-                <label for="tel">Tel</label>
-                <input type="tel" name="tel" id="tel" placeholder="Tel" autocomplete="on" tabindex="23" pattern="[0-9\-.\(\)\+\s]+" />
-            </fieldset>
-            <fieldset>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Email" autocomplete="on" tabindex="24" />
-            </fieldset>
-            <fieldset>
-                <label for="options">Options</label>
-                <span class="select">
-                    <select id="dropdown" name="dropdown" tabindex="25" />
-                        <option value="">Option 1</option>
-                        <option>Option 2</option>
-                        <optgroup label="Option group 1">
-                            <option>Sub option 1</option>
-                            <option>Sub option 2</option>
-                            <option>Sub option 3</option>
-                        </optgroup>
-                        <option>Option 3</option>
-                    </select>
-                </span>
-            </fieldset>
-            <fieldset>
-                <label for="message">Message</label>
-                <textarea name="message" id="message" placeholder="Message..." tabindex="26"></textarea>
-            </fieldset>
-            <fieldset>
-                <label for="checkbox">Checkboxes</label>
-                <div class="checkbox">
-                    <span>
-                        <input type="checkbox" tabindex="27" name="c1" id="c1">
-                        <label for="c1" onclick="">Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum.</label>
-                    </span>
-                    <span>
-                        <input type="checkbox" tabindex="28" name="c2" id="c2">
-                        <label for="c2" onclick="">Curabitur blandit.</label>
-                    </span>
-                    <span>
-                        <input type="checkbox" tabindex="29" name="c3" id="c3">
-                        <label for="c3" onclick="">Risus Condimentum.</label>
-                    </span>
-                </div>
-            </fieldset>
-            <fieldset>
-                <label for="radio">Radio Buttons</label>
-                <div class="radio">
-                    <span>
-                        <input type="radio" tabindex="30" name="r1" id="r1">
-                        <label for="r1" onclick="">Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum.</label>
-                    </span>
-                    <span>
-                        <input type="radio" tabindex="31" name="r1" id="r2">
-                        <label for="r2" onclick="">Yes</label>
-                    </span>
-                    <span>
-                        <input type="radio" tabindex="32" name="r1" id="r3">
-                        <label for="r3" onclick="">No</label>
-                    </span>
-                </div>
-            </fieldset>
-            <fieldset>
-                <button type="submit" class="btn success">Submit</button>
-                <button type="submit" class="btn">Reset</button>
-            </fieldset>
-        </form>
-    </article>
-</section>
+    &lt;fieldset&gt;
+        &lt;label for="text"&gt;Input&lt;/label&gt;
+        &lt;input type="text" name="text" id="text" placeholder="" tabindex="1" /&gt;
+    &lt;/fieldset&gt;
 
-<section class="row">
-    <article class="grid_12">
-        <hr>
-        <h2>Loading states for buttons</h2>
-        <p>For times when you would like to show the user that your form is doing something weve made these classes to add to your buttons: Loading, Success &amp; Error.</p>
-        <form name="" id="" method="" action="" class="hide-lables">
-            <fieldset>
-                <button type="submit" class="btn success">Submit</button>
-                <button type="submit" class="btn success loading">Submit</button>
-                <button type="submit" class="btn success successful">Submit</button>
-                <button type="submit" class="btn success failure">Submit</button>
-            </fieldset>
-        </form>
-    </article>
-</section>
+    &lt;fieldset&gt;
+        &lt;label for="text"&gt;Select&lt;/label&gt;
+        &lt;span class="select"&gt;
+            &lt;select&gt;
+                &lt;option&gt;Option 1&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/span&gt;
+    &lt;/fieldset&gt;
 
-<section class="row">
-    <article class="grid_12">
-        <hr>
-        <h2>Now you see me, Now you don't lables</h2>
-        <p>Thanks to the awesome <a href="https://github.com/shahrukhomar" target="_blank">Shahrukh Omar</a> who has made it possible to show the label of an input when the user starts typing in a field so know what each field is. All you will need to do is add <strong>class="nysmnyd-labels"</strong> to your form and make sure you have the Amazium.js file included and you too will have fancy show/hide lables on your inputs.</p>
-    </article>
-</section>
-<section class="row">
-    <form name="" method="" action="" class="nysmnyd-labels">
-        <article class="grid_6">
-            <fieldset>
-                <label for="text">Text</label>
-                <input type="text" name="text" id="text" placeholder="Text" tabindex="40" />
-            </fieldset>
-            <fieldset>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="Password" tabindex="41" />
-            </fieldset>
-            <fieldset>
-                <label for="url">URL</label>
-                <input type="url" name="url" id="url" placeholder="Url" tabindex="42" />
-            </fieldset>
-            <fieldset>
-                <label for="tel">Tel</label>
-                <input type="tel" name="tel" id="tel" placeholder="Tel" tabindex="43" />
-            </fieldset>
-        </article>
-        <article class="grid_6">
-            <fieldset>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Email" tabindex="44" />
-            </fieldset>
-            <fieldset>
-                <label for="options">Options</label>
-                <span class="select">
-                    <select id="dropdown" name="dropdown" tabindex="45" />
-                        <option selected>Option 1</option>
-                        <option>Option 2</option>
-                        <option>Option 3</option>
-                    </select>
-                </span>
-            </fieldset>
-            <fieldset>
-                <label for="message">Message</label>
-                <textarea name="message" id="message" placeholder="Message..." tabindex="46"></textarea>
-            </fieldset>
-        </article>
-    </form>
-</section>
+    &lt;fieldset&gt;
+        &lt;label for="text"&gt;Message&lt;/label&gt;
+        &lt;textarea cols="50" rows="4" name="comment"&gt;&lt;/textarea&gt;
+    &lt;/fieldset&gt;
+
+    &lt;fieldset&gt;
+        &lt;button class="btn btn--color-positive"&gt;Save&lt;/button&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
