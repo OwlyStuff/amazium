@@ -201,6 +201,37 @@ input:focus:invalid::-moz-placeholder                       { color:#E74C3C; opa
 input:focus:invalid:-ms-input-placeholder                   { color:#E74C3C; opacity:1; }
 
 /***********************************************
+Disabled
+***********************************************/
+:disabled                                                   { cursor:not-allowed; }
+:disabled::-webkit-input-placeholder                        { color:#BBB; opacity:1; }
+:disabled:-moz-placeholder                                  { color:#BBB; opacity:1; }
+:disabled::-moz-placeholder                                 { color:#BBB; opacity:1; }
+:disabled:-ms-input-placeholder                             { color:#BBB; opacity:1; }
+
+fieldset:disabled                                           { opacity:.5; }
+fieldset:disabled input[type="radio"]                       { background-color:transparent; }
+
+
+/***********************************************
+Placeholder
+***********************************************/
+::-webkit-input-placeholder                                 { color:#BBB; }
+:-moz-placeholder                                           { color:#BBB; }
+::-moz-placeholder                                          { color:#BBB; }
+:-ms-input-placeholder                                      { color:#BBB; }
+
+input:focus, select:focus, textarea:focus                   { color:#222; border-color:#3498DB; outline:none; box-shadow:none; outline-color:transparent; outline-style:none; }
+:focus::-webkit-input-placeholder                           { color:#555; outline:none; }
+:focus:-moz-placeholder                                     { color:#555; outline:none; }
+:focus::-moz-placeholder                                    { color:#555; outline:none; }
+:focus:-ms-input-placeholder                                { color:#555; outline:none; }
+
+
+
+
+
+/***********************************************
 Buttons
 ***********************************************/
 button,
@@ -270,24 +301,6 @@ Buttons
 .hide-lables input:first-of-type[type="submit"],
 .hide-lables input:first-of-type[type="reset"],
 .hide-lables button:first-of-type                           { margin:6px 6px 6px 0; width:auto; }
-
-
-/***********************************************
-Placeholder
-***********************************************/
-::-webkit-input-placeholder                                 { color:#333; opacity:.5; }
-:-moz-placeholder                                           { color:#333; opacity:.5; }
-::-moz-placeholder                                          { color:#333; opacity:.5; }
-:-ms-input-placeholder                                      { color:#333; opacity:.5; }
-
-:focus::-webkit-input-placeholder                           { color:#333; opacity:1; }
-:focus:-moz-placeholder                                     { color:#333; opacity:1; }
-:focus::-moz-placeholder                                    { color:#333; opacity:1; }
-:focus:-ms-input-placeholder                                { color:#333; opacity:1; }
-
-input:focus                                                 { color:#000; border-color:#999; outline:none; }
-textarea:focus                                              { color:#000; border-color:#999; outline:none; }
-select:focus                                                { color:#000; border-color:#999; outline:none; }
 
 
 /***********************************************
