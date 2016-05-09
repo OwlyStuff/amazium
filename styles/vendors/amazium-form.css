@@ -227,7 +227,30 @@ input:focus, select:focus, textarea:focus                   { color:#222; border
 :focus::-moz-placeholder                                    { color:#555; outline:none; }
 :focus:-ms-input-placeholder                                { color:#555; outline:none; }
 
+/***********************************************
+Forms with inline labels
+***********************************************/
+.lables-inline label                                        { padding:11px 16px 0 0; float:left; width:30%; text-align:right; }
+.lables-inline input,
+.lables-inline .select,
+.lables-inline textarea,
+.lables-inline .message,
+.lables-inline .toggled                                     { width:70%; float:right; }
 
+.lables-inline button:first-of-type                         { margin-left:30%; }
+
+.lables-inline .checkbox,
+.lables-inline .radio                                       { margin-left:30%; width:70%; }
+
+.lables-inline .radio input,
+.lables-inline .checkbox input                              { width:auto; }
+
+.lables-inline .toggled label                               { width:50px; }
+
+/***********************************************
+Forms without labels
+***********************************************/
+.lables-hidden label                                        { display:none; }
 
 
 
@@ -265,33 +288,6 @@ button:first-of-type                                        { margin-left:30%; }
     0%                                                      { transform:rotate(0deg); -webkit-transform:rotate(0deg); }
     100%                                                    { transform:rotate(-360deg); -webkit-transform:rotate(-360deg); }
 }
-
-
-/***********************************************
-Forms without labels
-***********************************************/
-.hide-lables label                                          { display:none; }
-.hide-lables .checkbox label,
-.hide-lables .radio label                                   { display:block; }
-
-.hide-lables input,
-.hide-lables textarea,
-.hide-lables select,
-.hide-lables .select,
-.hide-lables fieldset.error input + small                   { width:100%; }
-.hide-lables small                                          { margin:0; width:100%; }
-.hide-lables .radio, .hide-lables .checkbox                 { width:100%; float:right; }
-
-input[type="checkbox"],
-input[type="checkbox"]:not(:focus):invalid,
-input[type="radio"],
-input[type="radio"]:not(:focus):invalid                     { width:20px; height:20px; }
-
-
-/***********************************************
-Validation
-***********************************************/
-.hide-lables input:not(:focus):invalid + small              { width:100%; }
 
 
 /***********************************************
