@@ -116,6 +116,39 @@ Toggle Labeled Checkboxes
 .toggle--has-labels input + label span:last-child           { color:#555; }
 .toggle--has-labels input:checked + label span:first-child  { color:#555; }
 
+/***********************************************
+Inline items
+***********************************************/
+.inline-parent                                              { display:flex; }
+.inline-parent input,
+.inline-parent textarea,
+.inline-parent select,
+.inline-parent .select                                      { width:100%; }
+.inline-parent .inline-child                                { margin:0 20px 20px 0; display:flex; flex:1; flex-direction:column; }
+.inline-parent .inline-child .message                       { width:100%; }
+
+.inline-parent .inline-child:last-child                     { margin-right:0; }
+
+.inline-parent .inline-child--grid-1                        { flex:0 0 calc(10% - 10px); }
+.inline-parent .inline-child--grid-2                        { flex:0 0 calc(20% - 10px); }
+.inline-parent .inline-child--grid-3                        { flex:0 0 calc(30% - 10px); }
+.inline-parent .inline-child--grid-4                        { flex:0 0 calc(40% - 10px); }
+.inline-parent .inline-child--grid-5                        { flex:0 0 calc(50% - 10px); }
+.inline-parent .inline-child--grid-6                        { flex:0 0 calc(60% - 10px); }
+.inline-parent .inline-child--grid-7                        { flex:0 0 calc(70% - 10px); }
+.inline-parent .inline-child--grid-8                        { flex:0 0 calc(80% - 10px); }
+.inline-parent .inline-child--grid-9                        { flex:0 0 calc(90% - 10px); }
+
+.flex-grow                                                  { flex-grow:1; }
+
+.inline-btn-group                                           { padding:0 0 0 10px; width:1%; white-space:nowrap; vertical-align:middle; display:table-cell; }
+
+
+
+
+
+
+
 
 /***********************************************
 Validation
