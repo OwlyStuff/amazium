@@ -1,8 +1,18 @@
 /*
 * Amazium (http://www.amazium.co.uk)
-* Copyright 2010 - 2015, Mike Ballan
+* Copyright 2010 - 2016, Mike Ballan
 * Licensed under MIT (https://github.com/OwlyStuff/Amazium/blob/master/LICENSE)
 */
+
+/***********************************************
+Form typography setup
+***********************************************/
+form, label, input, textarea, select,
+.select select, .select optgroup option,
+.select optgroup option, .checkbox > span label,
+.radio > span label, form .message, .btn                    { font-family:'mavenpro', sans-serif; }
+
+input, textarea, select                                     { border-color:#BBB; }
 
 
 /***********************************************
