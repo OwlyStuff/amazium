@@ -143,7 +143,18 @@ Inline items
 
 .inline-btn-group                                           { padding:0 0 0 10px; width:1%; white-space:nowrap; vertical-align:middle; display:table-cell; }
 
-
+/***********************************************
+Input Widths
+***********************************************/
+.input--grid-1                                              { width:calc(10% - 10px); }
+.input--grid-2                                              { width:calc(20% - 10px); }
+.input--grid-3                                              { width:calc(30% - 10px); }
+.input--grid-4                                              { width:calc(40% - 10px); }
+.input--grid-5                                              { width:calc(50% - 10px); }
+.input--grid-6                                              { width:calc(60% - 10px); }
+.input--grid-7                                              { width:calc(70% - 10px); }
+.input--grid-8                                              { width:calc(80% - 10px); }
+.input--grid-9                                              { width:calc(90% - 10px); }
 
 
 
