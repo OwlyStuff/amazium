@@ -156,29 +156,49 @@ Input Widths
 .input--grid-8                                              { width:calc(80% - 10px); }
 .input--grid-9                                              { width:calc(90% - 10px); }
 
+/***********************************************
+Validation - Invalid
+***********************************************/
+form .message                                               { margin:0; border-radius:0 0 3px 3px; display:none; top:-2px; }
+form .radio + .message,
+form .checkbox + .message                                   { margin:10px 0 0; }
 
+form .invalid > label,
+form .invalid input:checked + label,
+form .invalid input:checked + label                         { color:#E74C3C; }
 
+form .invalid input:checked + label:before                  { border-color:#E74C3C; }
+form .invalid input:checked + label:before                  { background-color:#E74C3C; border-color:#E74C3C; }
 
+form .invalid input,
+form .invalid textarea,
+form .invalid select,
+form .invalid textarea                                      { border-color:#E74C3C; }
+form .invalid .message                                      { display:inline-block; border-color:#E74C3C; background-color:#E74C3C; }
 
 
 /***********************************************
-Validation
+Validation - Vaild
 ***********************************************/
-input:not(:focus):invalid                                   { -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; }
+form .valid > label,
+form .valid input:checked + label,
+form .valid input:checked + label                           { color:#29B765; }
 
-input:focus:invalid,
-.error input,
-select:focus:invalid,
-input[type="checkbox"]:focus:invalid,
-input[type="checkbox"]:focus:invalid + label:before         { color:#E74C3C; -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; }
+form .valid input:checked + label:before                    { border-color:#29B765; }
+form .valid input:checked + label:before                    { background-color:#29B765; border-color:#29B765; }
+
+form .valid input,
+form .valid textarea,
+form .valid select,
+form .valid textarea                                        { border-color:#29B765; }
+form .valid .message                                        { display:inline-block; border-color:#29B765; background-color:#29B765; }
+
+input:not(:focus):invalid                                   { -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; }
 
 input:focus:invalid::-webkit-input-placeholder              { color:#E74C3C; opacity:1; }
 input:focus:invalid:-moz-placeholder                        { color:#E74C3C; opacity:1; }
 input:focus:invalid::-moz-placeholder                       { color:#E74C3C; opacity:1; }
 input:focus:invalid:-ms-input-placeholder                   { color:#E74C3C; opacity:1; }
-
-.error input + small                                        { margin:0; padding:3px 8px; font-family:sans-serif; font-size:11px; line-height:20px; color:#FFF; border-color:#E74C3C; background-color:#E74C3C; width:70%; float:right; display:inline-block; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
-
 
 /***********************************************
 Buttons
