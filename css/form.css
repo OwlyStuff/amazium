@@ -57,6 +57,16 @@ input[type="radio"] + label:before                          { margin:0; content:
 input[type="radio"]:checked + label:before                  { border:7px solid #000; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
 input[type="radio"] + label + small                         { margin:0; padding:0 0 0 32px; background:none; border:none; color:#E74C3C; width:auto; float:none; }
 
+/***********************************************
+Mobile-like Flip Switches
+***********************************************/
+.flip-switch                                                { width: 70px; height: 40px; overflow: hidden; vertical-align: middle; display: inline-block; color: #999; background-color: #ccc; border: 1px solid #555; padding: 0; }
+.flip-switch input[type="checkbox"]                         { clip: rect(0,0,0,0); pointer-events: none; }
+.flip-switch input[type="checkbox"] + label:before          { display: none; }
+.flip-switch label                                          { display: inline-block; position: relative; width: 27px; height: 40px; padding: 0; -moz-transform: translateX(0) translateY(0); -ms-transform: translateX(0) translateY(0); -o-transform: translateX(0) translateY(0); -webkit-transform: translateX(0) translateY(0); transform: translateX(0) translateY(0); -moz-transition: transform .2s; -o-transition: transform .2s; -webkit-transition: transform .2s; transition: transform .2s; vertical-align: middle; }
+.flip-switch input[type="checkbox"]:checked + label         { -moz-transform: translateX(41px) translateY(0); -ms-transform: translateX(41px) translateY(0); -o-transform: translateX(41px) translateY(0); -webkit-transform: translateX(41px) translateY(0); transform: translateX(41px) translateY(0); }
+.flip-switch label span                                     { position: absolute; width: 170%; display: block; left: -171%; background-color: #2ecc71; text-align: center; color: #fff; }
+.flip-switch label span + span                              { left: 101%; background-color: #000; }
 
 /***********************************************
 Validation
