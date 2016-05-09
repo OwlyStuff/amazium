@@ -144,6 +144,16 @@ Inline items
 .inline-btn-group                                           { padding:0 0 0 10px; width:1%; white-space:nowrap; vertical-align:middle; display:table-cell; }
 
 /***********************************************
+Inline elements
+***********************************************/
+.has-inline-elements                                        { position:relative; display:table; border-collapse:separate; width:100%; }
+.has-inline-elements input,
+.has-inline-elements textarea,
+.has-inline-elements select,
+.has-inline-elements .select                                { width:100%; }
+.has-inline-elements .btn                                   { margin:0 5px; }
+
+/***********************************************
 Input Widths
 ***********************************************/
 .input--grid-1                                              { width:calc(10% - 10px); }
