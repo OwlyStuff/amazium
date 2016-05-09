@@ -1,13 +1,4 @@
 /***********************************************
-Example use only - Delete when done..!
-***********************************************/
-body                                            { margin:20px 0; }
-.grid-highlight                                 { margin-bottom:5px; }
-.grid-highlight [class^="grid_"]                { line-height:30px; text-align:center; background-color:#F1F1F1; }
-
-
-
-/***********************************************
 Screen 1200px+
 ***********************************************/
 .example                                        {  }
