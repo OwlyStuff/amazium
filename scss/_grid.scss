@@ -1,0 +1,195 @@
+/*
+* Amazium (http://www.amazium.co.uk)
+* Copyright 2010 - 2016, Mike Ballan
+* Licensed under MIT (https://github.com/OwlyStuff/Amazium/blob/master/LICENSE)
+*/
+
+
+/***********************************************
+Screen 1200px+
+***********************************************/
+.row                                            { margin:0 auto; width:1200px; display:table; }
+.row .row                                       { margin:0 -20px; width:auto; display:inline-block; }
+
+.grid-1, .grid-2, .grid-3, .grid-4,
+.grid-5, .grid-6, .grid-7, .grid-8,
+.grid-9, .grid-10, .grid-11, .grid-12           { margin:0 20px; float:left; display:inline-block; }
+
+.grid-1                                         { width:60px; }
+.grid-2                                         { width:160px; }
+.grid-3                                         { width:260px; }
+.grid-4                                         { width:360px; }
+.grid-5                                         { width:460px; }
+.grid-6                                         { width:560px; }
+.grid-7                                         { width:660px; }
+.grid-8                                         { width:760px; }
+.grid-9                                         { width:860px; }
+.grid-10                                        { width:960px; }
+.grid-11                                        { width:1060px; }
+.grid-12                                        { width:1160px; }
+
+.grid--offset-1                                 { margin-left:120px; }
+.grid--offset-2                                 { margin-left:220px; }
+.grid--offset-3                                 { margin-left:320px; }
+.grid--offset-4                                 { margin-left:420px; }
+.grid--offset-5                                 { margin-left:520px; }
+.grid--offset-6                                 { margin-left:620px; }
+.grid--offset-7                                 { margin-left:720px; }
+.grid--offset-8                                 { margin-left:820px; }
+.grid--offset-9                                 { margin-left:920px; }
+.grid--offset-10                                { margin-left:1020px; }
+.grid--offset-11                                { margin-left:1120px; }
+
+.show-mobile                                    { display:none !important; }
+.show-tablet                                    { display:none !important; }
+.show-screen                                    { display:inherit; }
+
+.hide-mobile                                    { display:inherit !important; }
+.hide-tablet                                    { display:inherit !important; }
+.hide-screen                                    { display:none !important; }
+
+
+
+/***********************************************
+Screen Smaller than 1200px
+***********************************************/
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+.row                                            { width:960px; }
+.row .row                                       { margin:0 -16px; }
+
+.grid-1                                         { width:48px; margin:0 16px; }
+.grid-2                                         { width:128px; margin:0 16px; }
+.grid-3                                         { width:208px; margin:0 16px; }
+.grid-4                                         { width:288px; margin:0 16px; }
+.grid-5                                         { width:368px; margin:0 16px; }
+.grid-6                                         { width:448px; margin:0 16px; }
+.grid-7                                         { width:528px; margin:0 16px; }
+.grid-8                                         { width:608px; margin:0 16px; }
+.grid-9                                         { width:688px; margin:0 16px; }
+.grid-10                                        { width:768px; margin:0 16px; }
+.grid-11                                        { width:848px; margin:0 16px; }
+.grid-12                                        { width:928px; margin:0 16px; }
+
+.grid--offset-1                                 { margin-left:96px; }
+.grid--offset-2                                 { margin-left:176px; }
+.grid--offset-3                                 { margin-left:256px; }
+.grid--offset-4                                 { margin-left:336px; }
+.grid--offset-5                                 { margin-left:416px; }
+.grid--offset-6                                 { margin-left:496px; }
+.grid--offset-7                                 { margin-left:576px; }
+.grid--offset-8                                 { margin-left:656px; }
+.grid--offset-9                                 { margin-left:736px; }
+.grid--offset-10                                { margin-left:816px; }
+.grid--offset-11                                { margin-left:896px; }
+
+.show-mobile                                    { display:none !important; }
+.show-tablet                                    { display:none !important; }
+.show-screen                                    { display:inherit !important; }
+
+.hide-mobile                                    { display:inherit !important; }
+.hide-tablet                                    { display:inherit !important; }
+.hide-screen                                    { display:none !important; }
+
+}
+
+
+
+/***********************************************
+Tablet (Smaller than 959px)
+***********************************************/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+.row                                            { width:768px; }
+.row .row                                       { margin:0 -14px; }
+
+.grid-1                                         { width:36px; margin:0 14px; }
+.grid-2                                         { width:100px; margin:0 14px; }
+.grid-3                                         { width:164px; margin:0 14px; }
+.grid-4                                         { width:228px; margin:0 14px; }
+.grid-5                                         { width:292px; margin:0 14px; }
+.grid-6                                         { width:356px; margin:0 14px; }
+.grid-7                                         { width:420px; margin:0 14px; }
+.grid-8                                         { width:484px; margin:0 14px; }
+.grid-9                                         { width:548px; margin:0 14px; }
+.grid-10                                        { width:612px; margin:0 14px; }
+.grid-11                                        { width:676px; margin:0 14px; }
+.grid-12                                        { width:740px; margin:0 14px; }
+
+.grid-1-tablet                                  { width:36px; }
+.grid-2-tablet                                  { width:100px; }
+.grid-3-tablet                                  { width:164px; }
+.grid-4-tablet                                  { width:228px; }
+.grid-5-tablet                                  { width:292px; }
+.grid-6-tablet                                  { width:356px; }
+.grid-7-tablet                                  { width:420px; }
+.grid-8-tablet                                  { width:484px; }
+.grid-9-tablet                                  { width:548px; }
+.grid-10-tablet                                 { width:612px; }
+.grid-11-tablet                                 { width:676px; }
+.grid-12-tablet                                 { width:740px; }
+
+.grid--offset-1                                 { margin-left:78px; }
+.grid--offset-2                                 { margin-left:142px; }
+.grid--offset-3                                 { margin-left:206px; }
+.grid--offset-4                                 { margin-left:270px; }
+.grid--offset-5                                 { margin-left:334px; }
+.grid--offset-6                                 { margin-left:398px; }
+.grid--offset-7                                 { margin-left:462px; }
+.grid--offset-8                                 { margin-left:526px; }
+.grid--offset-9                                 { margin-left:590px; }
+.grid--offset-10                                { margin-left:654px; }
+.grid--offset-11                                { margin-left:718px; }
+
+.show-mobile                                    { display:none !important; }
+.show-tablet                                    { display:inherit !important; }
+.show-screen                                    { display:none !important; }
+
+.hide-mobile                                    { display:inherit !important; }
+.hide-tablet                                    { display:none !important; }
+.hide-screen                                    { display:inherit !important; }
+
+}
+
+
+
+/***********************************************
+Mobile
+***********************************************/
+@media only screen and (max-width: 767px) {
+
+.row                                            { padding:0 16px; width:100%; display:block; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+.row .row                                       { margin:0; padding:0; width:100%; display:block; }
+
+.grid-1, .grid-2, .grid-3, .grid-4,
+.grid-5, .grid-6, .grid-7, .grid-8,
+.grid-9, .grid-10, .grid-11, .grid-12           { width:100%; margin:0; float:none; display:block; }
+
+.grid-6-mobile                                  { width:48%; }
+.grid-6-mobile:nth-child(odd)                   { width:48%; float:left; }
+.grid-6-mobile:nth-child(even)                  { float:right; }
+
+.show-mobile                                    { display:inherit !important; }
+.show-tablet                                    { display:none !important; }
+.show-screen                                    { display:none !important; }
+
+.hide-mobile                                    { display:none !important; }
+.hide-tablet                                    { display:inherit !important; }
+.hide-screen                                    { display:inherit !important; }
+
+}
+
+
+
+/***********************************************
+Clean up
+***********************************************/
+.container:after                                { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after                                      { content:'\0020'; display:block; overflow:hidden; visibility:hidden; width:0; height:0; }
+.row:after, .clearfix:after                     { clear:both; }
+.row,
+.clearfix                                       { zoom:1; }
+.clear                                          { clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0; }
