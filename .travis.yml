@@ -1,11 +1,17 @@
 language: node_js
 node_js:
-    - "4"
-
+    - '4'
 sudo: false
-
 install:
     - npm install
-
 script:
     - node_modules/.bin/gulp compile
+deploy:
+  provider: releases
+  api_key:
+    secure: Sjyjro+NHqap79D9Ry2s6iXZPVi2XnaFOlIqHxynfnVwvGIxMjVC2ywvV6GmX63Lb9E+OhAaFVkCTSiHIw7tbvG7n0EJ+TMf2LuMoDSjJTjzSTgEw/ADnn6M/jtY9hod3dUzAfXiGD4qbN1WrgQnRJhlw4qPX5IRxqYeC/SqZ3A=
+  file: dist/amazium.css
+  skip_cleanup: true
+  on:
+    repo: OwlyStuff/amazium
+    tags: true
