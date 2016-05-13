@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+    - "4"
+
+sudo: false
+
+install:
+    - npm install
+
+script:
+    - node_modules/.bin/gulp compile
