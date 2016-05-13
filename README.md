@@ -1,4 +1,4 @@
-#Amazium [![Build Status](https://travis-ci.org/OwlyStuff/Amazium.svg?branch=master)](https://travis-ci.org/OwlyStuff/Amazium)
+#Amazium [![Build Status](https://travis-ci.org/OwlyStuff/amazium.svg?branch=master)](https://travis-ci.org/OwlyStuff/amazium)
 
 Responsive CSS Framework
 
