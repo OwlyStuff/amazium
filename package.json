@@ -11,5 +11,9 @@
   "bugs": {
     "url": "https://github.com/OwlyStuff/Amazium/issues"
   },
-  "homepage": "https://github.com/OwlyStuff/Amazium#readme"
+  "homepage": "https://github.com/OwlyStuff/Amazium#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1"
+  }
 }
