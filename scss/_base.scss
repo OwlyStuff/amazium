@@ -141,19 +141,34 @@ td                                                          { padding:8px; min-w
 /***********************************************
 Icons Setup
 ***********************************************/
-.icon                                                       { height:16px; width:16px; display:inline-block; vertical-align:middle; transition:color 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s, fill 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s; position:relative; top:-2px; }
-.btn .icon                                                  { fill:#FFF; }
+.icon                                                       { height:16px; width:16px; display:inline-block; vertical-align:middle; position:relative; top:-2px;
+    transition:
+        color 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        fill 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s
+    ;
+    -moz-transition:
+        color 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        fill 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s
+    ;
+    -webkit-transition:
+        color 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        fill 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s
+    ;
+    -o-transition:
+        color 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        fill 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s
+    ;
+}
 
-/***********************************************
-Icons Sizes
-***********************************************/
+/***** Icons Sizes *****/
 .icon--size-xl                                              { height:36px; width:36px; }
 .icon--size-l                                               { height:26px; width:26px; }
 .icon--size-m                                               { height:16px; width:16px; }
 .icon--size-s                                               { height:10px; width:10px; }
 
-.icon--marginR                                              { margin-right:6px; }
-.icon--marginL                                              { margin-left:6px; }
+/***** Icons location *****/
+.icon--onLeft                                               { margin-right:6px; }
+.icon--onRight                                              { margin-left:6px; }
 
 /***********************************************
 Message Blocks
