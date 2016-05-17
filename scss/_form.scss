@@ -442,8 +442,12 @@ input[type="reset"]                                         { line-height:inheri
 .btn--color-none:hover                                      { background-color:transparent; border-color:transparent; }
 
 /***** Ghost *****/
-.btn--style-ghost                                           { background-color:transparent; color:#2F3840; border:1px solid #BBB; transition:all .1s linear 0s; -moz-transition:all .1s linear 0s; -webkit-transition:all .1s linear 0s; -o-transition:all .1s linear 0s; }
-.btn--style-ghost:hover                                     { background-color:#2F3840; color:#FFF; }
+.btn--style-ghost                                           { background-color:transparent; color:#26343E; border:1px solid #BBB; }
+.btn--style-ghost:hover                                     { background-color:#26343E; color:#FFF; }
+
+/***** Link *****/
+.btn--style-link                                            { background-color:transparent; color:#26343E; border:none; }
+.btn--style-link:hover                                      { background-color:transparent; color:#26343E; text-decoration:underline; }
 
 /***** Color - Hover *****/
 .btn--hoverColor-positive:hover                             { border-color:#29B765; background-color:#29B765; }
