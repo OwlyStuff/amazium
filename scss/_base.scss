@@ -183,35 +183,59 @@ Message Blocks
 /***********************************************
 Utility Classes
 ***********************************************/
-.float-clear                                                { clear:both; }
+/***** Font size *****/
+.txt--fontSize-xxl                                          { font-size:46px; }
+.txt--fontSize-xl                                           { font-size:38px; }
+.txt--fontSize-l                                            { font-size:28px; }
+.txt--fontSize-m                                            { font-size:20px; }
+.txt--fontSize-s                                            { font-size:18px; }
+.txt--fontSize-xs                                           { font-size:16px; }
+.txt--fontSize-xxs                                          { font-size:14px; }
+
+/***** Line height *****/
+.txt--lineHeight-xxl                                        { line-height:50px; }
+.txt--lineHeight-xl                                         { line-height:40px; }
+.txt--lineHeight-l                                          { line-height:30px; }
+.txt--lineHeight-m                                          { line-height:22px; }
+.txt--lineHeight-s                                          { line-height:20px; }
+.txt--lineHeight-xs                                         { line-height:18px; }
+.txt--lineHeight-xxs                                        { line-height:14px; }
+
+/***** Text truncate *****/
+.txt--truncate                                              { white-space:nowrap; text-overflow:ellipsis; overflow:hidden; }
+
+/***** Font weight *****/
+.txt--fontWeight-300                                        { font-weight:300; }
+.txt--fontWeight-500                                        { font-weight:500; }
+
+/***** Floats *****/
 .float-left                                                 { float:left; }
 .float-right                                                { float:right; }
+.float-clear                                                { clear:both; }
 
+/***** Text alignment *****/
 .txt-left                                                   { text-align:left; }
 .txt-right                                                  { text-align:right; }
 .txt-center                                                 { text-align:center; }
 .txt-justify                                                { text-align:justify; }
 
-.txt-normal                                                 { font-weight:normal; }
-.txt-bold                                                   { font-weight:bold; }
-.txt-italic                                                 { font-style:italic; }
-.txt-underline                                              { border-bottom:1px solid; }
-.txt-highlight                                              { padding:4px 7px 4px; color:#000; line-height:19px; display:inline-block; background:#00DEFF; font-weight:bold; }
-.txt-intro                                                  { margin:0 0 40px; font-size:130%; line-height:130%; }
-.txt-big                                                    { color:#A2BD30; font-weight:bold; line-height:26px; }
-
+/***** Border radius *****/
 .rounded                                                    { border-radius:50%; }
 .radius                                                     { border-radius:3px; }
 
+/***** Resets *****/
 .no-padding                                                 { padding:0; }
+.no-margin                                                  { margin:0; }
 .no-indent                                                  { margin-left:0; padding-left:0; }
 .no-bullet                                                  { list-style:none; list-style-image:none; }
 .no-styling                                                 { margin:0; padding:0; list-style:none; }
 
+/***** Display *****/
 .inline                                                     { display:inline; }
 .block, .show                                               { display:block; }
 .hidden, .hide                                              { display:none; }
 
+/***** Visibility *****/
 .invisable                                                  { display:none; visibility:hidden; }
 .visable                                                    { display:block; visibility:visible; }
 
