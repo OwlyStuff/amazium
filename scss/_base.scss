@@ -42,11 +42,8 @@ h5, .h5                                                     { font-size:16px; li
 h6, .h6                                                     { font-size:14px; line-height:13px; }
 
 p                                                           { margin:0 0 20px 0; padding:0; }
-
-b, strong                                                   { font-weight:bold; }
+b, strong, .txt-bold                                        { font-weight:700; }
 em                                                          { font-style:italic; }
-small                                                       { font-size:11px; }
-
 sup, sub                                                    { height:0; line-height:0; vertical-align:baseline; position:relative; font-size:80%; }
 sup                                                         { top:-5px; }
 sub                                                         { bottom:-5px; }
@@ -57,10 +54,10 @@ code                                                        { margin:0; padding:
 
 abbr[title],
 abbr[data-original-title]                                   { border-bottom:1px dotted #999999; cursor:help; }
+
 address                                                     { margin:26px 0; padding:0; display:block; font-style:normal; line-height:20px; }
 
 hr                                                          { margin:20px 0; padding:0; border:0; border-top:1px solid #D6D6D6; height:1px; width:100%; text-align:left; display:block; }
-
 
 /***********************************************
 Lists
@@ -70,14 +67,10 @@ ul ul, ul ol, ol ol, ol ul                                  { margin:10px 0 20px
 ol                                                          { padding-left:10px; }
 li                                                          { margin:0 0 10px 0; padding:0; }
 
-ul.square, ul.square ul,
-ul.circle ul.square                                         { list-style:square; }
-ul.circle, ul.circle ul,
-ul.square ul.circle                                         { list-style:circle; }
+ul.square, ul.square ul, ul.circle ul.square                { list-style:square; }
+ul.circle, ul.circle ul, ul.square ul.circle                { list-style:circle; }
 ul.disc, ul.disc ul                                         { list-style:disc; }
-ul.square li,
-ul.circle li,
-ul.disc li                                                  { margin:0 0 5px 0; padding:0; line-height:18px; background:none; }
+ul.square li, ul.circle li, ul.disc li                      { margin:0 0 5px 0; padding:0; line-height:18px; background:none; }
 
 dl                                                          { margin-left:0; padding:0; }
 dt                                                          { margin:0; font-weight:bold; }
@@ -85,7 +78,6 @@ dd                                                          { margin:0 0 20px; }
 
 .dl-inline dt                                               { margin:0 0 20px; float:left; width:30%; clear:left; }
 .dl-inline dd                                               { margin-left:30%; }
-
 
 /***********************************************
 Blockquotes
