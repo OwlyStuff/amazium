@@ -95,10 +95,26 @@ figcaption span                                             { padding:0 5px; dis
 /***********************************************
 Links
 ***********************************************/
-a                                                           { color:#333; text-decoration:underline; outline:0; transition:color .1s linear 0s, background .1s linear 0s; -moz-transition:color .1s linear 0s, background .1s linear 0s; -webkit-transition:color .1s linear 0s, background .1s linear 0s; -o-transition:color .1s linear 0s, background .1s linear 0s; }
+a                                                           { color:#333; text-decoration:underline; outline:0;
+    transition:
+        color 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s
+    ;
+    -moz-transition:
+        color 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s
+    ;
+    -webkit-transition:
+        color 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s
+    ;
+    -o-transition:
+        color 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s
+    ;
+}
 a:focus                                                     { outline:none; -moz-outline-style:none; }
 .overall                                                    { width:100%; height:100%; position:absolute; top:0; left:0; z-index:10; cursor:pointer; }
-
 
 /***********************************************
 Images, iFrames & Videos
@@ -109,9 +125,7 @@ img                                                         { border:0; vertical
 .img-max, .img-max img                                      { width:100%; height:auto; }
 
 .media                                                      { position:relative; margin:0 0 15px 0; padding-bottom:51%; padding-top:30px; height:0; overflow:hidden; border:1px solid #ccc; }
-.media iframe,
-.media object,
-.media embed                                                { position:absolute; top:0; left:0; width:100%; height:100%; }
+.media iframe, .media object, .media embed                  { position:absolute; top:0; left:0; width:100%; height:100%; }
 
 /***********************************************
 Tables
