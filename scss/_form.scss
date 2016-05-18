@@ -48,7 +48,7 @@ input[type="search"]                                        { -webkit-padding-st
 Select
 ***********************************************/
 .select                                                     { margin:0; padding:0; position:relative; display:block; width:100%; right:0; top:0; height:40px; background:#FFF; overflow:hidden; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
-.select:after                                               { margin:0; padding:0; content:''; background-color:#FFF; background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'><path d='M56.9 16.8c-0.6 0.1-1.2 0.4-1.7 0.8 -3 3-17.7 17.7-21.3 21.3 -0.6 0.6-1.4 1-2.3 0.9 -0.9-0.1-1.2-0.6-2-1.4L8.9 17.7c-0.5-0.5-1-0.8-1.7-0.9 -2.7-0.3-4.2 2.9-2.3 4.8L29.1 46c1.6 1.6 4.1 1.6 5.7 0l24.4-24.4C61 19.8 59.6 16.6 56.9 16.8z' fill='#666'/></svg>"); background-repeat:no-repeat; background-size:10px; background-position:center; l color:#999; line-height:38px; text-align:center; right:0; top:0; width:38px; height:38px; border-radius:3px; position:absolute; top:1px; right:1px; pointer-events:none; }
+.select:after                                               { margin:0; padding:0; content:''; background-color:#FFF; background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'><path d='M56.9 16.8c-0.6 0.1-1.2 0.4-1.7 0.8 -3 3-17.7 17.7-21.3 21.3 -0.6 0.6-1.4 1-2.3 0.9 -0.9-0.1-1.2-0.6-2-1.4L8.9 17.7c-0.5-0.5-1-0.8-1.7-0.9 -2.7-0.3-4.2 2.9-2.3 4.8L29.1 46c1.6 1.6 4.1 1.6 5.7 0l24.4-24.4C61 19.8 59.6 16.6 56.9 16.8z' fill='#666'/></svg>"); background-repeat:no-repeat; background-size:10px; background-position:center; color:#999; line-height:38px; text-align:center; right:0; top:0; width:38px; height:38px; border-radius:3px; position:absolute; top:1px; right:1px; pointer-events:none; }
 .select select                                              { padding:10px; padding-top:11px; background-color:#FFF; -webkit-padding-before:0; -webkit-padding-start:10px; width:100%; height:40px; font-size:14px; line-height:40px; float:left; color:#555; border:solid 1px #BBB; display:block; -webkit-appearance:none; -moz-appearance:none; appearance:none; cursor:pointer; }
 .select option                                              { padding:10px; border-bottom:1px solid #F3F3F3; font-size:14px; line-height:40px; }
 .select optgroup                                            { padding:0; color:#000; background-color:#FFF; }
@@ -154,7 +154,7 @@ Toggle Checkboxes & Radios
     -o-transition:all .2s linear 0s;
 }
 .toggle input:checked + label:before                        { background-color:#6A8092; content:'';
-    transition:all .2s linear 0s
+    transition:all .2s linear 0s;
     -moz-transition:all .2s linear 0s;
     -webkit-transition:all .2s linear 0s;
     -o-transition:all .2s linear 0s;
