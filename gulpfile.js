@@ -5,6 +5,7 @@ var sass = require('gulp-sass');
 
 gulp.task('compile', function () {
   return gulp.src('./scss/*.scss')
+    .pipe(sass())
     .pipe(gulp.dest('./dist/'));
 });
 
