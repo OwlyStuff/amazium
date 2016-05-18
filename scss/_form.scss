@@ -154,7 +154,7 @@ Toggle Checkboxes & Radios
     -o-transition:all .2s linear 0s;
 }
 .toggle input:checked + label:before                        { background-color:#6A8092; content:'';
-    transition:all .2s linear 0s
+    transition:all .2s linear 0s;
     -moz-transition:all .2s linear 0s;
     -webkit-transition:all .2s linear 0s;
     -o-transition:all .2s linear 0s;
