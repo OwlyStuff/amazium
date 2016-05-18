@@ -1,61 +1,108 @@
 /*
 * Amazium (http://www.amazium.co.uk)
-* Copyright 2010 - 2013, Mike Ballan
+* Copyright 2010 - 2016, Mike Ballan
 * Licensed under MIT (https://github.com/OwlyStuff/Amazium/blob/master/LICENSE)
 */
-
 
 /***********************************************
 Screen 100%
 ***********************************************/
-.row-max                                        { margin:0 auto; padding:0; width:100%; display:table; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
-.row-max .row-max                               { padding:0; }
-.row-max .grid_1, .row-max .grid_2,
-.row-max .grid_3, .row-max .grid_4,
-.row-max .grid_5, .row-max .grid_6,
-.row-max .grid_7, .row-max .grid_8,
-.row-max .grid_9, .row-max .grid_10,
-.row-max .grid_11, .row-max .grid_12            { margin:0; padding:0 20px; float:left; display:inline; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+.row--fluid                                     { margin:0 auto; width:100%; display:table; text-align:left; }
+.row--fluid .row--fluid                         { margin:0 -20px; width:calc(100% + 40px); }
 
-.row-max .grid_1                                { width:8.333%; }
-.row-max .grid_2                                { width:16.667%; }
-.row-max .grid_3                                { width:25%; }
-.row-max .grid_4                                { width:33.333%; }
-.row-max .grid_5                                { width:41.667%; }
-.row-max .grid_6                                { width:50%; }
-.row-max .grid_7                                { width:58.333%; }
-.row-max .grid_8                                { width:66.667%; }
-.row-max .grid_9                                { width:75%; }
-.row-max .grid_10                               { width:83.333%; }
-.row-max .grid_11                               { width:91.667%; }
-.row-max .grid_12                               { width:100%; }
+.row--fluid .grid-1, .row--fluid .grid-2, 
+.row--fluid .grid-3, .row--fluid .grid-4,
+.row--fluid .grid-5, .row--fluid .grid-6, 
+.row--fluid .grid-7, .row--fluid .grid-8,
+.row--fluid .grid-9, .row--fluid .grid-10, 
+.row--fluid .grid-11, .row--fluid .grid-12      { margin:0 20px; display:inline-block; }
 
-.row-max .offset_1                              { margin-left:8.333%; }
-.row-max .offset_2                              { margin-left:16.667%; }
-.row-max .offset_3                              { margin-left:25%; }
-.row-max .offset_4                              { margin-left:33.333%; }
-.row-max .offset_5                              { margin-left:41.667%; }
-.row-max .offset_6                              { margin-left:50%; }
-.row-max .offset_7                              { margin-left:58.333%; }
-.row-max .offset_8                              { margin-left:66.667%; }
-.row-max .offset_9                              { margin-left:75%; }
-.row-max .offset_10                             { margin-left:83.333%; }
-.row-max .offset_11                             { margin-left:91.667%; }
+.row--fluid .grid-1                             { width:calc(8.333% - 40px); }
+.row--fluid .grid-2                             { width:calc(16.667% - 40px); }
+.row--fluid .grid-3                             { width:calc(25% - 40px); }
+.row--fluid .grid-4                             { width:calc(33.333% - 40px); }
+.row--fluid .grid-5                             { width:calc(41.667% - 40px); }
+.row--fluid .grid-6                             { width:calc(50% - 40px); }
+.row--fluid .grid-7                             { width:calc(58.333% - 40px); }
+.row--fluid .grid-8                             { width:calc(66.667% - 40px); }
+.row--fluid .grid-9                             { width:calc(75% - 40px); }
+.row--fluid .grid-10                            { width:calc(83.333% - 40px); }
+.row--fluid .grid-11                            { width:calc(91.667% - 40px); }
+.row--fluid .grid-12                            { width:calc(100% - 40px); }
 
+.row--fluid .grid--offset-1                     { margin-left:calc(8.333% + 20px); }
+.row--fluid .grid--offset-2                     { margin-left:calc(16.667% + 20px); }
+.row--fluid .grid--offset-3                     { margin-left:calc(25% + 20px); }
+.row--fluid .grid--offset-4                     { margin-left:calc(33.333% + 20px); }
+.row--fluid .grid--offset-5                     { margin-left:calc(41.667% + 20px); }
+.row--fluid .grid--offset-6                     { margin-left:calc(50% + 20px); }
+.row--fluid .grid--offset-7                     { margin-left:calc(58.333% + 20px); }
+.row--fluid .grid--offset-8                     { margin-left:calc(66.667% + 20px); }
+.row--fluid .grid--offset-9                     { margin-left:calc(75% + 20px); }
+.row--fluid .grid--offset-10                    { margin-left:calc(83.333% + 20px); }
+.row--fluid .grid--offset-11                    { margin-left:calc(91.667% + 20px); }
+
+.show-mobile                                    { display:none !important; }
+.show-tablet                                    { display:none !important; }
+.show-screen                                    { display:inline-block; }
+
+.hide-mobile                                    { display:inline-block !important; }
+.hide-tablet                                    { display:inline-block !important; }
+.hide-screen                                    { display:none !important; }
+
+/***********************************************
+Tablet (Smaller than 959px)
+***********************************************/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+.show-mobile                                    { display:none !important; }
+.show-tablet                                    { display:inline-block !important; }
+.show-screen                                    { display:none !important; }
+
+.hide-mobile                                    { display:inline-block !important; }
+.hide-tablet                                    { display:none !important; }
+.hide-screen                                    { display:inline-block !important; }
+
+}
 
 /***********************************************
 Mobile
 ***********************************************/
 @media only screen and (max-width: 767px) {
 
-.row-max                                        { padding:0 16px; display:block; }
-.row-max .row-max                               { margin:0; padding:0; width:100%; display:block; }
+.row--fluid                                     { padding:0 16px; display:block; }
+.row--fluid .row--fluid                         { margin:0; padding:0; width:100%; display:block; }
 
-.row-max .grid_1, .row-max .grid_2,
-.row-max .grid_3, .row-max .grid_4,
-.row-max .grid_5, .row-max .grid_6,
-.row-max .grid_7, .row-max .grid_8,
-.row-max .grid_9, .row-max .grid_10,
-.row-max .grid_11, .row-max .grid_12            { width:100%; margin:10px 0 0 0; float:none; display:block; }
+.row--fluid .grid-1, .row--fluid .grid-2,
+.row--fluid .grid-3, .row--fluid .grid-4,
+.row--fluid .grid-5, .row--fluid .grid-6,
+.row--fluid .grid-7, .row--fluid .grid-8,
+.row--fluid .grid-9, .row--fluid .grid-10,
+.row--fluid .grid-11, .row--fluid .grid-12      { width:100%; margin:10px 0 0 0; float:none; display:block; }
+
+.row--fluid .grid-6-mobile                      { width:48%; float:left; }
+.row--fluid .grid-6-mobile:nth-child(even)      { float:right; }
+
+.show-mobile                                    { display:inline-block !important; }
+.show-tablet                                    { display:none !important; }
+.show-screen                                    { display:none !important; }
+
+.hide-mobile                                    { display:none !important; }
+.hide-tablet                                    { display:inline-block !important; }
+.hide-screen                                    { display:inline-block !important; }
 
 }
+
+
+/***********************************************
+Clean up
+***********************************************/
+.container:after                                { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix:before,
+.clearfix:after,
+.row--fluid:before,
+.row--fluid:after                               { content:'\0020'; display:block; overflow:hidden; visibility:hidden; width:0; height:0; }
+.row--fluid:after, .clearfix:after              { clear:both; }
+.row--fluid,
+.clearfix                                       { zoom:1; }
+.clear                                          { clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0; }
