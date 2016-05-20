@@ -246,6 +246,11 @@ input:focus, select:focus,
 textarea:focus, button:focus                                { outline:none; }
 
 /***********************************************
+Disable Internet Explorer input overlays
+***********************************************/
+::-ms-clear, ::ms-reveal                                    { display:none; }
+
+/***********************************************
 Mobile (portrait 300px)
 ***********************************************/
 @media only screen and (max-width:767px) {
