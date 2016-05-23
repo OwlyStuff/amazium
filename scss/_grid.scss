@@ -72,7 +72,7 @@ Tablet (Smaller than 959px)
 .grid-9, .grid-10, .grid-11, .grid-12           { margin:0 14px; }
 
 @for $i from 1 through 12                       {
-    .grid-#{$i}                                 { width: #{36 + 64 * ($i - 1)}px; }
+    .grid-#{$i},
     .grid-#{$i}-tablet                          { width: #{36 + 64 * ($i - 1)}px; }
     .grid--offset-#{$i}                         { margin-left: #{78 + 64 * ($i - 1)}px; }
 }
