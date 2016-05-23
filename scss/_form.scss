@@ -270,7 +270,7 @@ form .invalid .message                                      { display:inline-blo
 
 
 /***********************************************
-Validation - Vaild
+Validation - Valid
 ***********************************************/
 form .valid > label,
 form .valid input:checked + label,
@@ -322,27 +322,27 @@ input:focus, select:focus, textarea:focus                   { color:#222; border
 /***********************************************
 Forms with inline labels
 ***********************************************/
-.lables-inline label                                        { padding:11px 16px 0 0; float:left; width:30%; text-align:right; }
-.lables-inline input,
-.lables-inline .select,
-.lables-inline textarea,
-.lables-inline .message,
-.lables-inline .toggled                                     { width:70%; float:right; }
+.labels-inline label                                        { padding:11px 16px 0 0; float:left; width:30%; text-align:right; }
+.labels-inline input,
+.labels-inline .select,
+.labels-inline textarea,
+.labels-inline .message,
+.labels-inline .toggled                                     { width:70%; float:right; }
 
-.lables-inline button:first-of-type                         { margin-left:30%; }
+.labels-inline button:first-of-type                         { margin-left:30%; }
 
-.lables-inline .checkbox,
-.lables-inline .radio                                       { margin-left:30%; width:70%; }
+.labels-inline .checkbox,
+.labels-inline .radio                                       { margin-left:30%; width:70%; }
 
-.lables-inline .radio input,
-.lables-inline .checkbox input                              { width:auto; }
+.labels-inline .radio input,
+.labels-inline .checkbox input                              { width:auto; }
 
-.lables-inline .toggled label                               { width:50px; }
+.labels-inline .toggled label                               { width:50px; }
 
 /***********************************************
 Forms without labels
 ***********************************************/
-.lables-hidden label                                        { display:none; }
+.labels-hidden label                                        { display:none; }
 
 /***********************************************
 Buttons
@@ -511,18 +511,18 @@ input::-moz-focus-inner, button::-moz-focus-inner           { border:0; padding:
 Mobile (portrait 300px)
 ***********************************************/
 @media only screen and (max-width:767px) {
-    .lables-inline label                                    { padding:0 0 6px; float:none; width:100%; text-align:left; }
+    .labels-inline label                                    { padding:0 0 6px; float:none; width:100%; text-align:left; }
 
-    .lables-inline input,
-    .lables-inline .select,
-    .lables-inline textarea,
-    .lables-inline .message,
-    .lables-inline .toggled                                 { width:100%; float:none; }
+    .labels-inline input,
+    .labels-inline .select,
+    .labels-inline textarea,
+    .labels-inline .message,
+    .labels-inline .toggled                                 { width:100%; float:none; }
 
-    .lables-inline button:first-of-type                     { margin-left:0; }
+    .labels-inline button:first-of-type                     { margin-left:0; }
 
-    .lables-inline .checkbox,
-    .lables-inline .radio                                   { margin-left:0; width:100%; }
+    .labels-inline .checkbox,
+    .labels-inline .radio                                   { margin-left:0; width:100%; }
 
     .inline-parent                                          { display:block; }
     .inline-parent .inline-child,
