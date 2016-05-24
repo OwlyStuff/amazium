@@ -354,7 +354,8 @@ input[type="button"], button                                { padding:0; backgro
 input::-moz-focus-inner, button::-moz-focus-inner           { border:0; padding:0; }
 
 /***** btn class setup *****/
-.btn                                                        { margin:0 5px 10px 0; padding:0 15px; background:#26343E; border:none; font-size:14px; line-height:40px; color:#FFF; fill:#FFF; border-radius:3px; height:40px; min-width:40px; vertical-align:top; text-align:center; text-decoration:none; width:auto; letter-spacing:0; display:inline-block; position:relative; top:0; left:0; cursor:pointer;
+.btn, input[type="submit"].btn, input[type="reset"].btn,
+input[type="button"].btn                                    { margin:0 5px 10px 0; padding:0 15px; background:#26343E; border:none; font-size:14px; line-height:40px; color:#FFF; fill:#FFF; border-radius:3px; height:40px; min-width:40px; vertical-align:top; text-align:center; text-decoration:none; width:auto; letter-spacing:0; display:inline-block; position:relative; top:0; left:0; cursor:pointer;
     transition:
         background .2s cubic-bezier(0.33, 0, .2, 1) 0s,
         color .2s cubic-bezier(0.33, 0, .2, 1) 0s,
@@ -382,7 +383,9 @@ input::-moz-focus-inner, button::-moz-focus-inner           { border:0; padding:
 }
 .btn:last-child                                             { margin-right:0; }
 .btn[disabled]                                              { cursor:not-allowed; opacity:.4; }
-.btn:hover                                                  { background-color:#6A8092;
+.btn:hover, input[type="submit"].btn:hover,
+input[type="reset"].btn:hover,
+input[type="button"].btn:hover                              { background-color:#6A8092;
     transition:
         background .2s cubic-bezier(0.33, 0, .2, 1) 0s,
         color .2s cubic-bezier(0.33, 0, .2, 1) 0s,
@@ -418,6 +421,11 @@ input::-moz-focus-inner, button::-moz-focus-inner           { border:0; padding:
 
 .btn--width-100                                             { margin:0 0 10px; width:100%; }
 .btn--width-50                                              { margin:0 0 10px; width:50%; }
+
+/***** Color - default *****/
+.btn--color-default,
+.btn--color-default:hover[disabled]                         { background-color:#26343E; border-color:#26343E; }
+.btn--color-default:hover                                   { background-color:#6A8092; border-color:#6A8092; }
 
 /***** Color - positive *****/
 .btn--color-positive,
