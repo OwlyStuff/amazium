@@ -4,22 +4,57 @@
 * Licensed under MIT (https://github.com/OwlyStuff/Amazium/blob/master/LICENSE)
 */
 
-
 /***********************************************
 Screen 1200px+
 ***********************************************/
+
+/***** Sets row width *****/
 .row                                            { margin:0 auto; width:1200px; display:table; }
 .row .row                                       { margin:0 -20px; width:auto; display:inline-block; }
 
+/***** Grid setup 1 - 12 *****/
 .grid-1, .grid-2, .grid-3, .grid-4,
 .grid-5, .grid-6, .grid-7, .grid-8,
 .grid-9, .grid-10, .grid-11, .grid-12           { margin:0 20px; float:left; display:inline-block; }
 
+/***** Sets grid widths and offsets *****/
 @for $i from 1 through 12                       {
     .grid-#{$i}                                 { width: #{60 + 100 * ($i - 1)}px; }
     .grid--offset-#{$i}                         { margin-left: #{20 + 100 * ($i)}px; }
 }
 
+/***** Overrides row width to 100% *****/
+.row--width-fluid                               { width:100%; text-align:left; }
+.row--width-fluid .row--width-fluid             { width:calc(100% + 40px); }
+
+/***** Sets grid widths to be % *****/
+.row--width-fluid .grid-1                       { width:calc(8.333% - 40px); }
+.row--width-fluid .grid-2                       { width:calc(16.667% - 40px); }
+.row--width-fluid .grid-3                       { width:calc(25% - 40px); }
+.row--width-fluid .grid-4                       { width:calc(33.333% - 40px); }
+.row--width-fluid .grid-5                       { width:calc(41.667% - 40px); }
+.row--width-fluid .grid-6                       { width:calc(50% - 40px); }
+.row--width-fluid .grid-7                       { width:calc(58.333% - 40px); }
+.row--width-fluid .grid-8                       { width:calc(66.667% - 40px); }
+.row--width-fluid .grid-9                       { width:calc(75% - 40px); }
+.row--width-fluid .grid-10                      { width:calc(83.333% - 40px); }
+.row--width-fluid .grid-11                      { width:calc(91.667% - 40px); }
+.row--width-fluid .grid-12                      { width:calc(100% - 40px); }
+
+/***** Sets grid offsets to be %*****/
+.row--width-fluid .grid--offset-1               { margin-left:calc(8.333% + 20px); }
+.row--width-fluid .grid--offset-2               { margin-left:calc(16.667% + 20px); }
+.row--width-fluid .grid--offset-3               { margin-left:calc(25% + 20px); }
+.row--width-fluid .grid--offset-4               { margin-left:calc(33.333% + 20px); }
+.row--width-fluid .grid--offset-5               { margin-left:calc(41.667% + 20px); }
+.row--width-fluid .grid--offset-6               { margin-left:calc(50% + 20px); }
+.row--width-fluid .grid--offset-7               { margin-left:calc(58.333% + 20px); }
+.row--width-fluid .grid--offset-8               { margin-left:calc(66.667% + 20px); }
+.row--width-fluid .grid--offset-9               { margin-left:calc(75% + 20px); }
+.row--width-fluid .grid--offset-10              { margin-left:calc(83.333% + 20px); }
+.row--width-fluid .grid--offset-11              { margin-left:calc(91.667% + 20px); }
+
+/***** Show & Hide classes *****/
 .show-mobile                                    { display:none !important; }
 .show-tablet                                    { display:none !important; }
 .show-screen                                    { display:inherit; }
@@ -28,25 +63,58 @@ Screen 1200px+
 .hide-tablet                                    { display:inherit !important; }
 .hide-screen                                    { display:none !important; }
 
-
-
 /***********************************************
 Screen Smaller than 1200px
 ***********************************************/
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
 
+/***** Sets row width *****/
 .row                                            { width:960px; }
 .row .row                                       { margin:0 -16px; }
 
+/***** Grid setup 1 - 12 *****/
 .grid-1, .grid-2, .grid-3, .grid-4,
 .grid-5, .grid-6, .grid-7, .grid-8,
 .grid-9, .grid-10, .grid-11, .grid-12           { margin:0 16px; }
 
+/***** Sets grid widths and offsets *****/
 @for $i from 1 through 12                       {
     .grid-#{$i}                                 { width: #{48 + 80 * ($i - 1)}px; }
     .grid--offset-#{$i}                         { margin-left: #{96 + 80 * ($i - 1)}px; }
 }
 
+/***** Overrides row width to 100% *****/
+.row--width-fluid                               { width:100%; text-align:left; }
+.row--width-fluid .row--width-fluid             { width:calc(100% + 32px); }
+
+/***** Sets grid widths to be % *****/
+.row--width-fluid .grid-1                       { width:calc(8.333% - 32px); }
+.row--width-fluid .grid-2                       { width:calc(16.667% - 32px); }
+.row--width-fluid .grid-3                       { width:calc(25% - 32px); }
+.row--width-fluid .grid-4                       { width:calc(33.333% - 32px); }
+.row--width-fluid .grid-5                       { width:calc(41.667% - 32px); }
+.row--width-fluid .grid-6                       { width:calc(50% - 32px); }
+.row--width-fluid .grid-7                       { width:calc(58.333% - 32px); }
+.row--width-fluid .grid-8                       { width:calc(66.667% - 32px); }
+.row--width-fluid .grid-9                       { width:calc(75% - 32px); }
+.row--width-fluid .grid-10                      { width:calc(83.333% - 32px); }
+.row--width-fluid .grid-11                      { width:calc(91.667% - 32px); }
+.row--width-fluid .grid-12                      { width:calc(100% - 32px); }
+
+/***** Sets grid offsets to be %*****/
+.row--width-fluid .grid--offset-1               { margin-left:calc(8.333% + 16px); }
+.row--width-fluid .grid--offset-2               { margin-left:calc(16.667% + 16px); }
+.row--width-fluid .grid--offset-3               { margin-left:calc(25% + 16px); }
+.row--width-fluid .grid--offset-4               { margin-left:calc(33.333% + 16px); }
+.row--width-fluid .grid--offset-5               { margin-left:calc(41.667% + 16px); }
+.row--width-fluid .grid--offset-6               { margin-left:calc(50% + 16px); }
+.row--width-fluid .grid--offset-7               { margin-left:calc(58.333% + 16px); }
+.row--width-fluid .grid--offset-8               { margin-left:calc(66.667% + 16px); }
+.row--width-fluid .grid--offset-9               { margin-left:calc(75% + 16px); }
+.row--width-fluid .grid--offset-10              { margin-left:calc(83.333% + 16px); }
+.row--width-fluid .grid--offset-11              { margin-left:calc(91.667% + 16px); }
+
+/***** Show & Hide classes *****/
 .show-mobile                                    { display:none !important; }
 .show-tablet                                    { display:none !important; }
 .show-screen                                    { display:inherit !important; }
@@ -54,29 +122,61 @@ Screen Smaller than 1200px
 .hide-mobile                                    { display:inherit !important; }
 .hide-tablet                                    { display:inherit !important; }
 .hide-screen                                    { display:none !important; }
-
 }
-
-
 
 /***********************************************
 Tablet (Smaller than 959px)
 ***********************************************/
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
+/***** Sets row width *****/
 .row                                            { width:768px; }
 .row .row                                       { margin:0 -14px; }
 
+/***** Grid setup 1 - 12 *****/
 .grid-1, .grid-2, .grid-3, .grid-4,
 .grid-5, .grid-6, .grid-7, .grid-8,
 .grid-9, .grid-10, .grid-11, .grid-12           { margin:0 14px; }
 
+/***** Sets grid widths *****/
 @for $i from 1 through 12                       {
     .grid-#{$i},
     .grid-#{$i}-tablet                          { width: #{36 + 64 * ($i - 1)}px; }
     .grid--offset-#{$i}                         { margin-left: #{78 + 64 * ($i - 1)}px; }
 }
 
+/***** Overrides row width to 100% *****/
+.row--width-fluid                               { width:100%; text-align:left; }
+.row--width-fluid .row--width-fluid             { width:calc(100% + 28px); }
+
+/***** Sets grid widths to be % *****/
+.row--width-fluid .grid-1                       { width:calc(8.333% - 28px); }
+.row--width-fluid .grid-2                       { width:calc(16.667% - 28px); }
+.row--width-fluid .grid-3                       { width:calc(25% - 28px); }
+.row--width-fluid .grid-4                       { width:calc(33.333% - 28px); }
+.row--width-fluid .grid-5                       { width:calc(41.667% - 28px); }
+.row--width-fluid .grid-6                       { width:calc(50% - 28px); }
+.row--width-fluid .grid-7                       { width:calc(58.333% - 28px); }
+.row--width-fluid .grid-8                       { width:calc(66.667% - 28px); }
+.row--width-fluid .grid-9                       { width:calc(75% - 28px); }
+.row--width-fluid .grid-10                      { width:calc(83.333% - 28px); }
+.row--width-fluid .grid-11                      { width:calc(91.667% - 28px); }
+.row--width-fluid .grid-12                      { width:calc(100% - 28px); }
+
+/***** Sets grid offsets to be %*****/
+.row--width-fluid .grid--offset-1               { margin-left:calc(8.333% + 14px); }
+.row--width-fluid .grid--offset-2               { margin-left:calc(16.667% + 14px); }
+.row--width-fluid .grid--offset-3               { margin-left:calc(25% + 14px); }
+.row--width-fluid .grid--offset-4               { margin-left:calc(33.333% + 14px); }
+.row--width-fluid .grid--offset-5               { margin-left:calc(41.667% + 14px); }
+.row--width-fluid .grid--offset-6               { margin-left:calc(50% + 14px); }
+.row--width-fluid .grid--offset-7               { margin-left:calc(58.333% + 14px); }
+.row--width-fluid .grid--offset-8               { margin-left:calc(66.667% + 14px); }
+.row--width-fluid .grid--offset-9               { margin-left:calc(75% + 14px); }
+.row--width-fluid .grid--offset-10              { margin-left:calc(83.333% + 14px); }
+.row--width-fluid .grid--offset-11              { margin-left:calc(91.667% + 14px); }
+
+/***** Show & Hide classes *****/
 .show-mobile                                    { display:none !important; }
 .show-tablet                                    { display:inherit !important; }
 .show-screen                                    { display:none !important; }
@@ -84,38 +184,48 @@ Tablet (Smaller than 959px)
 .hide-mobile                                    { display:inherit !important; }
 .hide-tablet                                    { display:none !important; }
 .hide-screen                                    { display:inherit !important; }
-
 }
-
-
 
 /***********************************************
 Mobile
 ***********************************************/
 @media only screen and (max-width: 767px) {
 
-.row                                            { padding:0 16px; width:100%; display:block; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
-.row .row                                       { margin:0; padding:0; width:100%; display:block; }
+/***** Sets row width *****/
+.row, .row--width-fluid                         { padding:0 16px; width:100%; display:block; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+.row .row, .row--width-fluid .row--width-fluid  { margin:0; padding:0; width:100%; display:block; }
 
+/***** Sets grid widths *****/
 .grid-1, .grid-2, .grid-3, .grid-4,
 .grid-5, .grid-6, .grid-7, .grid-8,
-.grid-9, .grid-10, .grid-11, .grid-12           { width:100%; margin:0; float:none; display:block; }
+.grid-9, .grid-10, .grid-11, .grid-12,
+.row--width-fluid .grid-1,
+.row--width-fluid .grid-2,
+.row--width-fluid .grid-3,
+.row--width-fluid .grid-4,
+.row--width-fluid .grid-5,
+.row--width-fluid .grid-6,
+.row--width-fluid .grid-7,
+.row--width-fluid .grid-8,
+.row--width-fluid .grid-9,
+.row--width-fluid .grid-10,
+.row--width-fluid .grid-11,
+.row--width-fluid .grid-12                      { width:100%; margin:0; float:none; display:block; }
 
+/***** Sets mobile override grid widths *****/
 .grid-6-mobile                                  { width:48%; }
 .grid-6-mobile:nth-child(odd)                   { width:48%; float:left; }
 .grid-6-mobile:nth-child(even)                  { float:right; }
 
-.show-mobile                                    { display:inherit !important; }
+/***** Show & Hide classes *****/
+.show-mobile                                    { display:inline-block !important; }
 .show-tablet                                    { display:none !important; }
 .show-screen                                    { display:none !important; }
 
 .hide-mobile                                    { display:none !important; }
-.hide-tablet                                    { display:inherit !important; }
-.hide-screen                                    { display:inherit !important; }
-
+.hide-tablet                                    { display:inline-block !important; }
+.hide-screen                                    { display:inline-block !important; }
 }
-
-
 
 /***********************************************
 Clean up
