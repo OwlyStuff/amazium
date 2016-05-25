@@ -180,7 +180,7 @@ Switch Checkboxes
 .checkbox.apple-switch label span                           { display:block; }
 
 .checkbox.apple-switch input + label                        { background-color:#C0C2C3; border-radius:5px; transition:background .1s linear 0s; -moz-transition:background .1s linear 0s; -webkit-transition:background .1s linear 0s; -o-transition:background .1s linear 0s; }
-.checkbox.apple-switch input + label:before                 { background-color:#FFF; content:'&#9776;'; display:block; width:24px; height:24px; color:#C0C2C3; font-size:13px; line-height:24px; border:none; border-radius:3px; top:2px; left:2px; }
+.checkbox.apple-switch input + label:before                 { background-color:#FFF; content:'&#9776;'; display:block; width:24px; height:24px; color:#C0C2C3; font-size:13px; line-height:24px; border:none; border-radius:3px; top:2px; left:2px; transform:rotate(90deg); }
 
 .checkbox.apple-switch input:checked + label                { background-color:#29B765; }
 .checkbox.apple-switch input:checked + label:before         { left:50%; }
