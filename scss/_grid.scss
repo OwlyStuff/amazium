@@ -5,11 +5,32 @@
 */
 
 /***********************************************
-Screen 1200px+
+GRID SETTINGS
+***********************************************/
+
+/***** DEFINE GRID WIDTH *****/
+$grid-width: 1200px;
+$grid-width-smscreen: 960px;
+$grid-width-tablet: 768px;
+
+/***** DEFINE GRID COUNT *****/
+$grid-columns: 12;
+
+/***** DEFINE GUTTER SPACING *****/
+$grid-gutter: 20px;
+
+$grid-gutter-smscreen: $grid-gutter / 1.25;
+$grid-gutter-tablet: $grid-gutter-smscreen / 1.1;
+
+/***** Shorthand Padding Mixin *****/
+@mixin padding($padding) { padding: $padding; }
+
+/***********************************************
+Desktop
 ***********************************************/
 
 /***** Sets row widths *****/
-.row                                            { margin:0 auto; width:1200px; display:flex; box-sizing:border-box; flex:0 1 auto; flex-direction:row; flex-wrap:wrap; }
+.row                                            { margin:0 auto; width:$grid-width; display:flex; box-sizing:border-box; flex:0 1 auto; flex-direction:row; flex-wrap:wrap; }
 .row .row,
 .row--width-fluid                               { width:100%; }
 
@@ -19,42 +40,22 @@ Screen 1200px+
 .row--align-right                               { justify-content:flex-end; }
 .row--order-reverse                             { flex-direction:row-reverse; }
 
-/***** Grid setup 1 - 12 *****/
-.grid, .grid-1, .grid-2, .grid-3, .grid-4,
-.grid-5, .grid-6, .grid-7, .grid-8, .grid-9,
-.grid-10, .grid-11, .grid-12                    { padding:0 20px; box-sizing:border-box; }
+/***** Grid setup *****/
+%grid-styles 									{ @include padding(0 $grid-gutter); box-sizing:border-box; }
+.grid											{ @extend %grid-styles;flex:1 1 0%; }
+
+@for $i from 1 through $grid-columns {
+  .grid-#{$i}  									{ max-width: 100% / $grid-columns *$i; @extend %grid-styles; }
+}
 
 /***** grid ordering *****/
 .grid--order-first                              { order:-1; }
 .grid--order-last                               { order:1; }
 
-/***** Sets grid widths *****/
-.grid                                           { flex:1 1 0%; }
-.grid-1                                         { flex-grow:1; max-width:8.333%; }
-.grid-2                                         { flex-grow:2; max-width:16.667%; }
-.grid-3                                         { flex-grow:3; max-width:25%; }
-.grid-4                                         { flex-grow:4; max-width:33.333%; }
-.grid-5                                         { flex-grow:5; max-width:41.667%; }
-.grid-6                                         { flex-grow:6; max-width:50%; }
-.grid-7                                         { flex-grow:7; max-width:58.333%; }
-.grid-8                                         { flex-grow:8; max-width:66.667%; }
-.grid-9                                         { flex-grow:9; max-width:75%; }
-.grid-10                                        { flex-grow:10; max-width:83.333%; }
-.grid-11                                        { flex-grow:11; max-width:91.667%; }
-.grid-12                                        { flex-grow:12; max-width:100%; }
-
 /***** Sets grid offsets *****/
-.grid--offset-1                                 { margin-left:8.333%; }
-.grid--offset-2                                 { margin-left:16.667%; }
-.grid--offset-3                                 { margin-left:25%; }
-.grid--offset-4                                 { margin-left:33.333%; }
-.grid--offset-5                                 { margin-left:41.667%; }
-.grid--offset-6                                 { margin-left:50%; }
-.grid--offset-7                                 { margin-left:58.333%; }
-.grid--offset-8                                 { margin-left:66.666%; }
-.grid--offset-9                                 { margin-left:75%; }
-.grid--offset-10                                { margin-left:83.333%; }
-.grid--offset-11                                { margin-left:91.667%; }
+@for $i from 1 through $grid-columns - 1 {
+	.grid--offset-#{$i} 						{ margin-left: 100% / $grid-columns *$i; }
+}
 
 /***** Show & Hide classes *****/
 .show-mobile                                    { display:none !important; }
@@ -66,18 +67,21 @@ Screen 1200px+
 .hide-screen                                    { display:none !important; }
 
 /***********************************************
-Screen Smaller than 1200px
+Small Screen (Smaller than Desktop)
 ***********************************************/
-@media only screen and (min-width: 960px) and (max-width: 1199px) {
+@media only screen and (min-width: $grid-width-smscreen) and (max-width: $grid-width - 1px) {
 
 /***** Sets row widths *****/
-.row                                            { width:960px; }
+.row                                            { width:$grid-width-smscreen; }
 .row--width-fluid                               { width:100%; }
 
-/***** Grid setup 1 - 12 *****/
-.grid, .grid-1, .grid-2, .grid-3, .grid-4,
-.grid-5, .grid-6, .grid-7, .grid-8, .grid-9,
-.grid-10, .grid-11, .grid-12                    { padding:0 16px; }
+/***** Grid setup *****/
+
+/*** calculate gutter ***/
+%grid-styles-smscreen 							{ @include padding(0 $grid-gutter-smscreen); }
+.grid											{ @extend %grid-styles-smscreen; }
+
+@for $i from 1 through $grid-columns { .grid-#{$i} { @extend %grid-styles-smscreen; } }
 
 /***** Show & Hide classes *****/
 .show-mobile                                    { display:none !important; }
@@ -91,36 +95,23 @@ Screen Smaller than 1200px
 }
 
 /***********************************************
-Tablet (Smaller than 959px)
+Tablet (Smaller than Small Screen)
 ***********************************************/
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+@media only screen and (min-width: $grid-width-tablet) and (max-width: $grid-width-smscreen - 1px) {
 
 /***** Sets row widths *****/
-.row                                            { width:768px; }
+.row                                            { width:$grid-width-tablet; }
 .row--width-fluid                               { width:100%; }
 
-/***** Grid setup 1 - 12 *****/
-.grid, .grid-1, .grid-2, .grid-3, .grid-4,
-.grid-5, .grid-6, .grid-7, .grid-8, .grid-9,
-.grid-10, .grid-11, .grid-12                    { padding:0 14px; }
+/***** Grid setup tablet *****/
+%grid-styles-tablet 							{ @include padding(0 $grid-gutter-tablet); }
+.grid											{ @extend %grid-styles-tablet; }
+
+@for $i from 1 through $grid-columns { .grid-#{$i}-tablet { padding:0 $grid-gutter-tablet; flex-grow: $i; max-width: $i / $grid-columns * 100%; } }
 
 /***** grid ordering *****/
 .grid--order-first-tablet                       { order:inherit; }
 .grid--order-last-tablet                        { order:inherit; }
-
-/***** Sets table override grid width *****/
-.grid-1-tablet                                  { flex-grow:1; max-width:8.333%; }
-.grid-2-tablet                                  { flex-grow:2; max-width:16.667%; }
-.grid-3-tablet                                  { flex-grow:3; max-width:25%; }
-.grid-4-tablet                                  { flex-grow:4; max-width:33.333%; }
-.grid-5-tablet                                  { flex-grow:5; max-width:41.667%; }
-.grid-6-tablet                                  { flex-grow:6; max-width:50%; }
-.grid-7-tablet                                  { flex-grow:7; max-width:58.333%; }
-.grid-8-tablet                                  { flex-grow:8; max-width:66.667%; }
-.grid-9-tablet                                  { flex-grow:9; max-width:75%; }
-.grid-10-tablet                                 { flex-grow:10; max-width:83.333%; }
-.grid-11-tablet                                 { flex-grow:11; max-width:91.667%; }
-.grid-12-tablet                                 { flex-grow:12; max-width:100%; }
 
 /***** Show & Hide classes *****/
 .show-mobile                                    { display:none !important; }
@@ -134,44 +125,31 @@ Tablet (Smaller than 959px)
 }
 
 /***********************************************
-Mobile
+Mobile (Smaller than Tablet)
 ***********************************************/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: $grid-width-tablet - 1px) {
 
 /***** Sets row widths *****/
-.row, .row--width-fluid                         { padding:0 20px; width:100%; }
+.row, .row--width-fluid                         { padding:0 $grid-gutter; width:100%; }
 .row--order-reverse                             { flex-direction:column-reverse; }
 
-/***** Grid setup 1 - 12 *****/
-.grid, .grid-1, .grid-2, .grid-3, .grid-4,
-.grid-5, .grid-6, .grid-7, .grid-8, .grid-9,
-.grid-10, .grid-11, .grid-12                    { padding:0; flex-basis:100%; max-width:100%; }
+/***** Grid setup *****/
+%grid-styles-mobile 							{ padding:0; flex-basis:100%; max-width:100%; }
+.grid											{ @extend %grid-styles-mobile; }
+
+@for $i from 1 through $grid-columns { .grid-#{$i}-mobile { flex-grow: $i; max-width: 100% / $i; @extend %grid-styles-mobile; } }
 
 /***** grid ordering *****/
 .grid--order-first-mobile                       { order:inherit; }
 .grid--order-last-mobile                        { order:inherit; }
 
 /***** Sets grid offsets *****/
-.grid--offset-1, .grid--offset-2,
-.grid--offset-3, .grid--offset-4,
-.grid--offset-5, .grid--offset-6,
-.grid--offset-7, .grid--offset-8,
-.grid--offset-9, .grid--offset-10,
-.grid--offset-11                                { margin:0; }
+%grid-offset-mobile 							{ margin:0; }
+
+@for $i from 1 to $grid-columns - 1 { .grid--offset-#{$i} { @extend %grid-offset-mobile; } }
 
 /***** Sets mobile override grid width *****/
-.grid-1-mobile                                  { flex-grow:1; max-width:8.333%; }
-.grid-2-mobile                                  { flex-grow:2; max-width:16.667%; }
-.grid-3-mobile                                  { flex-grow:3; max-width:25%; }
-.grid-4-mobile                                  { flex-grow:4; max-width:33.333%; }
-.grid-5-mobile                                  { flex-grow:5; max-width:41.667%; }
-.grid-6-mobile                                  { flex-grow:6; max-width:50%; }
-.grid-7-mobile                                  { flex-grow:7; max-width:58.333%; }
-.grid-8-mobile                                  { flex-grow:8; max-width:66.667%; }
-.grid-9-mobile                                  { flex-grow:9; max-width:75%; }
-.grid-10-mobile                                 { flex-grow:10; max-width:83.333%; }
-.grid-11-mobile                                 { flex-grow:11; max-width:91.667%; }
-.grid-12-mobile                                 { flex-grow:12; max-width:100%; }
+@for $i from 1 through $grid-columns { .grid-#{$i}-mobile { flex-grow:$i; max-width:  $i / $grid-columns * 100%; } }
 
 /***** Show & Hide classes *****/
 .show-mobile                                    { display:inline-block !important; }
@@ -181,5 +159,4 @@ Mobile
 .hide-mobile                                    { display:none !important; }
 .hide-tablet                                    { display:inline-block !important; }
 .hide-screen                                    { display:inline-block !important; }
-
 }
