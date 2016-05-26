@@ -142,9 +142,8 @@ Checkboxes
 /***********************************************
 Toggle Checkboxes & Radios
 ***********************************************/
-.toggle > span                                              { padding:2px; min-width:100px; border-width:1px 0; border-style:solid; border-color:#BBB; }
-.toggle > span:first-child                                  { border-radius:3px 0 0 3px; }
-.toggle > span:last-child                                   { border-radius:0 3px 3px 0; }
+.toggle                                                     { margin:0 0 6px; padding:2px; border:1px solid #BBB; width:auto; display:inline-block; border-radius:3px; }
+.toggle > span                                              { margin:0; padding:0; min-width:100px; }
 .toggle > span label                                        { padding:2px 20px; text-align:center; }
 
 .toggle input + label:before                                { background-color:transparent; border:none; width:100%; height:24px; border-radius:3px; position:absolute; z-index:2;
@@ -160,9 +159,6 @@ Toggle Checkboxes & Radios
     -o-transition:all .2s linear 0s;
 }
 .toggle span span                                           { position:relative; z-index:9; }
-
-.radio.toggle > span:first-child                            { border-width:1px 0 1px 1px; }
-.radio.toggle > span:last-child                             { border-width:1px 1px 1px 0; }
 .radio.toggle input:checked + label:before                  { border:none; }
 .radio.toggle input:checked + label                         { color:#FFF; }
 
