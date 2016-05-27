@@ -8,17 +8,18 @@
 GRID SETTINGS
 ***********************************************/
 
-/***** DEFINE GRID WIDTH *****/
+/***** Define grid width *****/
 $grid-width: 1200px;
 $grid-width-smscreen: 960px;
 $grid-width-tablet: 768px;
 
-/***** DEFINE GRID COUNT *****/
+/***** Define column number *****/
 $grid-columns: 12;
 
-/***** DEFINE GUTTER SPACING *****/
+/***** Define gutter spacing *****/
 $grid-gutter: 20px;
 
+/***** Calculate gutter spacing for breakpoints / can also be set manually *****/
 $grid-gutter-smscreen: $grid-gutter / 1.25;
 $grid-gutter-tablet: $grid-gutter-smscreen / 1.1;
 
@@ -45,7 +46,7 @@ Desktop
 .grid                                           { @extend %grid-styles;flex:1 1 0%; }
 
 @for $i from 1 through $grid-columns {
-  .grid-#{$i}                                   { max-width: 100% / $grid-columns *$i; @extend %grid-styles; }
+    .grid-#{$i}                                 { max-width: 100% / $grid-columns *$i; @extend %grid-styles; }
 }
 
 /***** grid ordering *****/
@@ -53,7 +54,9 @@ Desktop
 .grid--order-last                               { order:1; }
 
 /***** Sets grid offsets *****/
-@for $i from 1 through $grid-columns - 1 { .grid--offset-#{$i} { margin-left: 100% / $grid-columns *$i; } }
+@for $i from 1 through $grid-columns - 1 {
+    .grid--offset-#{$i}                         { margin-left: 100% / $grid-columns *$i; }
+}
 
 /***** Show & Hide classes *****/
 .show-mobile                                    { display:none !important; }
@@ -77,7 +80,9 @@ Small Screen (Smaller than Desktop)
 %grid-styles-smscreen                           { @include padding(0 $grid-gutter-smscreen); }
 .grid                                           { @extend %grid-styles-smscreen; }
 
-@for $i from 1 through $grid-columns { .grid-#{$i} { @extend %grid-styles-smscreen; } }
+@for $i from 1 through $grid-columns {
+    .grid-#{$i}                                 { @extend %grid-styles-smscreen; }
+}
 
 /***** Show & Hide classes *****/
 .show-mobile                                    { display:none !important; }
@@ -103,7 +108,9 @@ Tablet (Smaller than Small Screen)
 %grid-styles-tablet                             { @include padding(0 $grid-gutter-tablet); }
 .grid                                           { @extend %grid-styles-tablet; }
 
-@for $i from 1 through $grid-columns { .grid-#{$i}-tablet { padding:0 $grid-gutter-tablet; flex-grow: $i; max-width: $i / $grid-columns * 100%; } }
+@for $i from 1 through $grid-columns {
+    .grid-#{$i}-tablet                          { padding:0 $grid-gutter-tablet; flex-grow: $i; max-width: $i / $grid-columns * 100%; }
+}
 
 /***** grid ordering *****/
 .grid--order-first-tablet                       { order:inherit; }
@@ -133,7 +140,9 @@ Mobile (Smaller than Tablet)
 %grid-styles-mobile                             { padding:0; flex-basis:100%; max-width:100%; }
 .grid                                           { @extend %grid-styles-mobile; }
 
-@for $i from 1 through $grid-columns { .grid-#{$i}-mobile { flex-grow: $i; max-width: 100% / $i; @extend %grid-styles-mobile; } }
+@for $i from 1 through $grid-columns {
+    .grid-#{$i}                                 { flex-grow: $i; max-width: 100% / $i; @extend %grid-styles-mobile; }
+}
 
 /***** grid ordering *****/
 .grid--order-first-mobile                       { order:inherit; }
@@ -142,10 +151,14 @@ Mobile (Smaller than Tablet)
 /***** Sets grid offsets *****/
 %grid-offset-mobile                             { margin:0; }
 
-@for $i from 1 to $grid-columns - 1 { .grid--offset-#{$i} { @extend %grid-offset-mobile; } }
+@for $i from 1 to $grid-columns - 1 {
+    .grid--offset-#{$i}                         { @extend %grid-offset-mobile; }
+}
 
 /***** Sets mobile override grid width *****/
-@for $i from 1 through $grid-columns { .grid-#{$i}-mobile { flex-grow:$i; max-width:  $i / $grid-columns * 100%; } }
+@for $i from 1 through $grid-columns {
+	.grid-#{$i}-mobile                          { flex-grow:$i; max-width:  $i / $grid-columns * 100%; }
+}
 
 /***** Show & Hide classes *****/
 .show-mobile                                    { display:inline-block !important; }
@@ -155,4 +168,5 @@ Mobile (Smaller than Tablet)
 .hide-mobile                                    { display:none !important; }
 .hide-tablet                                    { display:inline-block !important; }
 .hide-screen                                    { display:inline-block !important; }
+
 }
