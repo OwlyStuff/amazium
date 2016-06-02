@@ -10,7 +10,7 @@ Form typography setup
 form, label, input, textarea, select,
 .select select, .select optgroup option,
 .select optgroup option, .checkbox > span label,
-.radio > span label, form .message, .btn                    { font-family:sans-serif; font-weight:400; }
+.radio > span label, form .message, .btn                    { font-family:sans-serif; font-weight:normal; }
 
 input, textarea, select                                     { border-color:#BBB; }
 
@@ -142,9 +142,8 @@ Checkboxes
 /***********************************************
 Toggle Checkboxes & Radios
 ***********************************************/
-.toggle > span                                              { padding:2px; min-width:100px; border-width:1px 0; border-style:solid; border-color:#BBB; }
-.toggle > span:first-child                                  { border-radius:3px 0 0 3px; }
-.toggle > span:last-child                                   { border-radius:0 3px 3px 0; }
+.toggle                                                     { margin:0 0 6px; padding:2px; border:1px solid #BBB; width:auto; display:inline-block; border-radius:3px; }
+.toggle > span                                              { margin:0; padding:0; min-width:100px; }
 .toggle > span label                                        { padding:2px 20px; text-align:center; }
 
 .toggle input + label:before                                { background-color:transparent; border:none; width:100%; height:24px; border-radius:3px; position:absolute; z-index:2;
@@ -160,9 +159,6 @@ Toggle Checkboxes & Radios
     -o-transition:all .2s linear 0s;
 }
 .toggle span span                                           { position:relative; z-index:9; }
-
-.radio.toggle > span:first-child                            { border-width:1px 0 1px 1px; }
-.radio.toggle > span:last-child                             { border-width:1px 1px 1px 0; }
 .radio.toggle input:checked + label:before                  { border:none; }
 .radio.toggle input:checked + label                         { color:#FFF; }
 
@@ -174,16 +170,16 @@ Toggle Checkboxes & Radios
 /***********************************************
 Switch Checkboxes
 ***********************************************/
-.checkbox.apple-switch > span                               { padding:0; height:34px; min-width:52px; }
-.checkbox.apple-switch > span label                         { padding:0; width:100%; min-height:28px; cursor:pointer; float:none; display:block; overflow:hidden; position:relative; left:0; top:0; }
+.checkbox.switch > span                                     { padding:0; height:34px; min-width:52px; }
+.checkbox.switch > span label                               { padding:0; width:100%; min-height:28px; cursor:pointer; float:none; display:block; overflow:hidden; position:relative; left:0; top:0; }
 
-.checkbox.apple-switch label span                           { display:block; }
+.checkbox.switch label span                                 { display:block; }
 
-.checkbox.apple-switch input + label                        { background-color:#C0C2C3; border-radius:5px; transition:background .1s linear 0s; -moz-transition:background .1s linear 0s; -webkit-transition:background .1s linear 0s; -o-transition:background .1s linear 0s; }
-.checkbox.apple-switch input + label:before                 { background-color:#FFF; content:'&#9776;'; display:block; width:24px; height:24px; color:#C0C2C3; font-size:13px; line-height:24px; border:none; border-radius:3px; top:2px; left:2px; transform:rotate(90deg); }
+.checkbox.switch input + label                              { background-color:#C0C2C3; border-radius:5px; transition:background .1s linear 0s; -moz-transition:background .1s linear 0s; -webkit-transition:background .1s linear 0s; -o-transition:background .1s linear 0s; }
+.checkbox.switch input + label:before                       { background-color:#FFF; content:'&#9776;'; display:block; width:24px; height:24px; color:#C0C2C3; font-size:13px; line-height:24px; border:none; border-radius:3px; top:2px; left:2px; transform:rotate(90deg); }
 
-.checkbox.apple-switch input:checked + label                { background-color:#29B765; }
-.checkbox.apple-switch input:checked + label:before         { left:50%; }
+.checkbox.switch input:checked + label                      { background-color:#29B765; }
+.checkbox.switch input:checked + label:before               { left:50%; }
 
 /***********************************************
 Toggle Labeled Checkboxes
