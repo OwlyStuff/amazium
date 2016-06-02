@@ -24,6 +24,11 @@ Screen 1200px+
 .grid-5, .grid-6, .grid-7, .grid-8, .grid-9,
 .grid-10, .grid-11, .grid-12                    { padding:0 20px; box-sizing:border-box; }
 
+/***** Nested grids resets *****/
+.row .row [class^="grid"]:first-child           { padding-left:0; }
+.row .row [class^="grid"]:only-child            { padding:0; }
+.row .row [class^="grid"]:last-child            { padding-right:0; }
+
 /***** grid ordering *****/
 .grid--order-first                              { order:-1; }
 .grid--order-last                               { order:1; }
