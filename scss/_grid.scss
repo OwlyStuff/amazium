@@ -119,7 +119,7 @@ Mobile (Smaller than Tablet)
 .grid                                           { @extend %grid-styles-mobile; }
 
 @for $i from 1 through $grid-columns {
-    .grid-#{$i}                                 { flex-grow: $i; max-width: 100% / $i; @extend %grid-styles-mobile; }
+    .grid-#{$i}                                 { @extend %grid-styles-mobile; }
 }
 
 /***** Sets mobile override grid width *****/
