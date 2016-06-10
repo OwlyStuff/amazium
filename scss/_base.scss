@@ -136,7 +136,7 @@ Tables
 ***********************************************/
 table                                                       { margin:20px 0 40px 0; border:none; width:100%; overflow:visible; border-bottom:1px solid #D6D6D6; border-collapse:collapse; border-spacing:0; }
 caption                                                     { margin:0 0 10px; width:100%; text-align:left; font-weight:bold; }
-tr                                                          { background-color:#FFF; border-bottom:1px solid #EEE; min-height:35px; }
+tr                                                          { background-color:#FFF; border-bottom:1px solid #EEE; min-height:35px; transition:background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
 tr:hover                                                    { background-color:#F9F9F9; }
 th                                                          { padding:8px; background-color:#FFF; border:none; border-right:1px solid #EEE; font-weight:bold; text-align:left; }
 th:last-child                                               { border:none; }
