@@ -415,6 +415,7 @@ input[type="button"].btn:hover                              { background-color:#
 .btn + .btn                                                 { margin-left:5px; }
 
 /***** Sizes *****/
+.btn.btn--size-xs                                           { padding:0 10px; line-height:16px; height:16px; min-width:16px; font-size:13px; }
 .btn.btn--size-s                                            { padding:0 10px; line-height:30px; height:30px; min-width:30px; font-size:13px; }
 .btn.btn--size-m                                            { padding:0 15px; line-height:40px; min-height:40px; min-width:40px; font-size:14px; }
 .btn.btn--size-l                                            { padding:0 20px; line-height:50px; min-height:50px; min-width:50px; font-size:20px; }
@@ -451,7 +452,7 @@ input[type="button"].btn:hover                              { background-color:#
 /***** Color - None *****/
 .btn--color-none,
 .btn--color-none:hover[disabled],
-.btn--color-none:hover                                      { background-color:transparent; border-color:transparent; }
+.btn--color-none:hover                                      { background-color:transparent; border-color:transparent; color:#26343E; fill:#26343E; }
 
 /***** Ghost *****/
 .btn--style-ghost                                           { background-color:transparent; color:#26343E; border:1px solid #BBB; }
