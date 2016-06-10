@@ -98,18 +98,22 @@ Links
 a                                                           { color:#333; text-decoration:underline; outline:0;
     transition:
         color 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        fill 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
         background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s
     ;
     -moz-transition:
         color 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        fill 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
         background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s
     ;
     -webkit-transition:
         color 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        fill 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
         background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s
     ;
     -o-transition:
         color 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        fill 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
         background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s
     ;
 }
