@@ -454,17 +454,17 @@ input[type="button"].btn:hover                              { background-color:#
 
 /***** Ghost *****/
 .btn--style-ghost                                           { background-color:transparent; color:#26343E; border:1px solid #BBB; }
-.btn--style-ghost:hover                                     { background-color:#26343E; color:#FFF; }
+.btn--style-ghost:hover                                     { background-color:#26343E; color:#FFF; fill:#FFF; }
 
 /***** Link *****/
-.btn--style-link                                            { background-color:transparent; color:#26343E; border:none; }
-.btn--style-link:hover                                      { background-color:transparent; color:#26343E; text-decoration:underline; }
+.btn--style-link                                            { background-color:transparent; color:#26343E; fill:#26343E; border:none; }
+.btn--style-link:hover                                      { background-color:transparent; text-decoration:underline; }
 
 /***** Color - Hover *****/
-.btn--hoverColor-positive:hover                             { border-color:#29B765; background-color:#29B765; }
-.btn--hoverColor-info:hover                                 { border-color:#3498DB; background-color:#3498DB; }
-.btn--hoverColor-warning:hover                              { border-color:#FFC82C; background-color:#FFC82C; }
-.btn--hoverColor-negative:hover                             { border-color:#E74C3C; background-color:#E74C3C; }
+.btn--hoverColor-positive:hover                             { border-color:#29B765; background-color:#29B765; color:#FFF; fill:#FFF; }
+.btn--hoverColor-info:hover                                 { border-color:#3498DB; background-color:#3498DB; color:#FFF; fill:#FFF; }
+.btn--hoverColor-warning:hover                              { border-color:#FFC82C; background-color:#FFC82C; color:#FFF; fill:#FFF; }
+.btn--hoverColor-negative:hover                             { border-color:#E74C3C; background-color:#E74C3C; color:#FFF; fill:#FFF; }
 
 /***** Buttons groups *****/
 .btn-group                                                  { margin:0 0 10px 0; border:1px solid #BBB; border-radius:3px; display:inline-block; overflow:hidden; }
