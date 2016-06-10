@@ -233,7 +233,6 @@ Inline elements
 .has-inline-elements textarea,
 .has-inline-elements select,
 .has-inline-elements .select                                { width:100%; }
-.has-inline-elements .btn                                   { margin:0 5px; }
 
 /***********************************************
 Input Widths
@@ -355,7 +354,7 @@ input::-moz-focus-inner, button::-moz-focus-inner           { border:0; padding:
 
 /***** btn class setup *****/
 .btn, input[type="submit"].btn, input[type="reset"].btn,
-input[type="button"].btn                                    { margin:0 5px 10px 0; padding:0 15px; background:#26343E; border:none; font-size:14px; line-height:40px; color:#FFF; fill:#FFF; border-radius:3px; height:40px; min-width:40px; vertical-align:top; text-align:center; text-decoration:none; width:auto; letter-spacing:0; display:inline-block; position:relative; top:0; left:0; cursor:pointer;
+input[type="button"].btn                                    { margin:0; padding:0 15px; background-color:#26343E; border:none; font-size:14px; line-height:40px; color:#FFF; fill:#FFF; border-radius:3px; height:40px; min-width:40px; vertical-align:top; text-align:center; text-decoration:none; width:auto; letter-spacing:0; display:inline-block; position:relative; top:0; left:0; cursor:pointer;
     transition:
         background .2s cubic-bezier(0.33, 0, .2, 1) 0s,
         color .2s cubic-bezier(0.33, 0, .2, 1) 0s,
@@ -413,7 +412,10 @@ input[type="button"].btn:hover                              { background-color:#
 }
 .btn:hover[disabled]                                        { background-color:#1A2730; }
 
+.btn + .btn                                                 { margin-left:5px; }
+
 /***** Sizes *****/
+.btn.btn--size-xs                                           { padding:0 10px; line-height:20px; height:20px; min-width:20px; font-size:13px; }
 .btn.btn--size-s                                            { padding:0 10px; line-height:30px; height:30px; min-width:30px; font-size:13px; }
 .btn.btn--size-m                                            { padding:0 15px; line-height:40px; min-height:40px; min-width:40px; font-size:14px; }
 .btn.btn--size-l                                            { padding:0 20px; line-height:50px; min-height:50px; min-width:50px; font-size:20px; }
@@ -450,21 +452,21 @@ input[type="button"].btn:hover                              { background-color:#
 /***** Color - None *****/
 .btn--color-none,
 .btn--color-none:hover[disabled],
-.btn--color-none:hover                                      { background-color:transparent; border-color:transparent; }
+.btn--color-none:hover                                      { background-color:transparent; border-color:transparent; color:#26343E; fill:#26343E; }
 
 /***** Ghost *****/
 .btn--style-ghost                                           { background-color:transparent; color:#26343E; border:1px solid #BBB; }
-.btn--style-ghost:hover                                     { background-color:#26343E; color:#FFF; }
+.btn--style-ghost:hover                                     { background-color:#26343E; color:#FFF; fill:#FFF; }
 
 /***** Link *****/
-.btn--style-link                                            { background-color:transparent; color:#26343E; border:none; }
-.btn--style-link:hover                                      { background-color:transparent; color:#26343E; text-decoration:underline; }
+.btn--style-link                                            { background-color:transparent; color:#26343E; fill:#26343E; border:none; }
+.btn--style-link:hover                                      { background-color:transparent; text-decoration:underline; }
 
 /***** Color - Hover *****/
-.btn--hoverColor-positive:hover                             { border-color:#29B765; background-color:#29B765; }
-.btn--hoverColor-info:hover                                 { border-color:#3498DB; background-color:#3498DB; }
-.btn--hoverColor-warning:hover                              { border-color:#FFC82C; background-color:#FFC82C; }
-.btn--hoverColor-negative:hover                             { border-color:#E74C3C; background-color:#E74C3C; }
+.btn--hoverColor-positive:hover                             { border-color:#29B765; background-color:#29B765; color:#FFF; fill:#FFF; }
+.btn--hoverColor-info:hover                                 { border-color:#3498DB; background-color:#3498DB; color:#FFF; fill:#FFF; }
+.btn--hoverColor-warning:hover                              { border-color:#FFC82C; background-color:#FFC82C; color:#FFF; fill:#FFF; }
+.btn--hoverColor-negative:hover                             { border-color:#E74C3C; background-color:#E74C3C; color:#FFF; fill:#FFF; }
 
 /***** Buttons groups *****/
 .btn-group                                                  { margin:0 0 10px 0; border:1px solid #BBB; border-radius:3px; display:inline-block; overflow:hidden; }
