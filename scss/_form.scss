@@ -348,66 +348,62 @@ Buttons
 ***********************************************/
 
 /***** Button Reset *****/
-input[type="submit"], input[type="reset"],
-input[type="button"], button                                { padding:0; background:none; border:0; color:inherit; font:inherit; line-height:inherit; overflow:visible; -webkit-appearance:button; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; }
+input.btn, button                                           { padding:0; background:none; border:0; color:inherit; font:inherit; line-height:inherit; overflow:visible; -webkit-appearance:button; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; }
 input::-moz-focus-inner, button::-moz-focus-inner           { border:0; padding:0; }
 
 /***** btn class setup *****/
-.btn, input[type="submit"].btn, input[type="reset"].btn,
-input[type="button"].btn                                    { margin:0; padding:0 15px; background-color:#26343E; border:none; font-size:14px; line-height:40px; color:#FFF; fill:#FFF; border-radius:3px; height:40px; min-width:40px; vertical-align:top; text-align:center; text-decoration:none; width:auto; letter-spacing:0; display:inline-block; position:relative; top:0; left:0; cursor:pointer;
+.btn, input.btn                                             { margin:0 5px 10px 0; padding:0 15px; background:#26343E; border:none; font-size:14px; line-height:40px; color:#FFF; fill:#FFF; border-radius:3px; height:40px; min-width:40px; vertical-align:top; text-align:center; text-decoration:none; width:auto; letter-spacing:0; display:inline-block; position:relative; top:0; left:0; cursor:pointer;
     transition:
-        background .2s cubic-bezier(0.33, 0, .2, 1) 0s,
-        color .2s cubic-bezier(0.33, 0, .2, 1) 0s,
-        border .2s cubic-bezier(0.33, 0, .2, 1) 0s,
-        fill .2s cubic-bezier(0.33, 0, .2, 1) 0s
+        background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        color 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        border 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        fill 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s
     ;
     -moz-transition:
-        background .2s cubic-bezier(0.33, 0, .2, 1) 0s,
-        color .2s cubic-bezier(0.33, 0, .2, 1) 0s,
-        border .2s cubic-bezier(0.33, 0, .2, 1) 0s,
-        fill .2s cubic-bezier(0.33, 0, .2, 1) 0s
+        background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        color 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        border 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        fill 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s
     ;
     -webkit-transition:
-        background .2s cubic-bezier(0.33, 0, .2, 1) 0s,
-        color .2s cubic-bezier(0.33, 0, .2, 1) 0s,
-        border .2s cubic-bezier(0.33, 0, .2, 1) 0s,
-        fill .2s cubic-bezier(0.33, 0, .2, 1) 0s
+        background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        color 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        border 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        fill 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s
     ;
     -o-transition:
-        background .2s cubic-bezier(0.33, 0, .2, 1) 0s,
-        color .2s cubic-bezier(0.33, 0, .2, 1) 0s,
-        border .2s cubic-bezier(0.33, 0, .2, 1) 0s,
-        fill .2s cubic-bezier(0.33, 0, .2, 1) 0s
+        background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        color 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        border 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        fill 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s
     ;
 }
 .btn:last-child                                             { margin-right:0; }
 .btn[disabled]                                              { cursor:not-allowed; opacity:.4; }
-.btn:hover, input[type="submit"].btn:hover,
-input[type="reset"].btn:hover,
-input[type="button"].btn:hover                              { background-color:#6A8092;
+.btn:hover, input.btn:hover                                 { background-color:#6A8092;
     transition:
-        background .2s cubic-bezier(0.33, 0, .2, 1) 0s,
-        color .2s cubic-bezier(0.33, 0, .2, 1) 0s,
-        border .2s cubic-bezier(0.33, 0, .2, 1) 0s,
-        fill .2s cubic-bezier(0.33, 0, .2, 1) 0s
+        background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        color 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        border 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        fill 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s
     ;
     -moz-transition:
-        background .2s cubic-bezier(0.33, 0, .2, 1) 0s,
-        color .2s cubic-bezier(0.33, 0, .2, 1) 0s,
-        border .2s cubic-bezier(0.33, 0, .2, 1) 0s,
-        fill .2s cubic-bezier(0.33, 0, .2, 1) 0s
+        background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        color 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        border 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        fill 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s
     ;
     -webkit-transition:
-        background .2s cubic-bezier(0.33, 0, .2, 1) 0s,
-        color .2s cubic-bezier(0.33, 0, .2, 1) 0s,
-        border .2s cubic-bezier(0.33, 0, .2, 1) 0s,
-        fill .2s cubic-bezier(0.33, 0, .2, 1) 0s
+        background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        color 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        border 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        fill 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s
     ;
     -o-transition:
-        background .2s cubic-bezier(0.33, 0, .2, 1) 0s,
-        color .2s cubic-bezier(0.33, 0, .2, 1) 0s,
-        border .2s cubic-bezier(0.33, 0, .2, 1) 0s,
-        fill .2s cubic-bezier(0.33, 0, .2, 1) 0s
+        background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        color 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        border 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
+        fill 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s
     ;
 }
 .btn:hover[disabled]                                        { background-color:#1A2730; }
