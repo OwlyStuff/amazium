@@ -175,8 +175,8 @@ Switch Checkboxes
 
 .checkbox.switch label span                                 { display:block; }
 
-.checkbox.switch input + label                              { background-color:#C0C2C3; border-radius:5px; transition:background .0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s; -moz-transition:background .0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s; -webkit-transition:background .0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s; -o-transition:background .0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
-.checkbox.switch input + label:before                       { background-color:#FFF; content:'&#9776;'; display:block; width:24px; height:24px; color:#C0C2C3; font-size:13px; line-height:24px; border:none; border-radius:3px; top:2px; left:2px; transform:rotate(90deg); }
+.checkbox.switch input + label                              { background-color:#C0C2C3; border-radius:5px; transition:all .0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s; -moz-transition:all .0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s; -webkit-transition:all .0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s; -o-transition:all .0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
+.checkbox.switch input + label:before                       { background-color:#FFF; content:'\2630'; display:block; width:24px; height:24px; color:#C0C2C3; font-size:13px; line-height:24px; border:none; border-radius:3px; top:2px; left:2px; transform:rotate(90deg); }
 
 .checkbox.switch input:checked + label                      { background-color:#29B765; }
 .checkbox.switch input:checked + label:before               { left:50%; }
