@@ -44,6 +44,8 @@ var app = new EmberApp(defaults, {
 });
 ```
 
+###Creating an Amazium build with a custom grid
+
 ####Adjust the grid parameters
 
 The default parameters for the amazium grid are adjustable. You can set your own values in the _variables.scss file. When the SASS is compiled the grid values are calculated according to the set values. With these variable it is now possible to build a 1440px grid with 16 columns or whatever you wish.
