@@ -1,0 +1,27 @@
+/*
+* Amazium (http://www.amazium.co.uk)
+* Copyright 2010 - 2016, Mike Ballan
+* Licensed under MIT (https://github.com/OwlyStuff/Amazium/blob/master/LICENSE)
+*/
+
+/***********************************************
+GRID SETTINGS
+***********************************************/
+
+/***** Define grid width *****/
+$grid-width: 1200px;
+$grid-width-smscreen: 960px;
+$grid-width-tablet: 768px;
+
+/***** Define column number *****/
+$grid-columns: 12;
+
+/***** Define gutter spacing *****/
+$grid-gutter: 20px;
+
+/***** Calculate gutter spacing for breakpoints / can also be set manually *****/
+$grid-gutter-smscreen: $grid-gutter / 1.25;
+$grid-gutter-tablet: $grid-gutter-smscreen / 1.1;
+
+/***** Shorthand Padding Mixin *****/
+@mixin padding($padding) { padding: $padding; }
