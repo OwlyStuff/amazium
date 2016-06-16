@@ -145,24 +145,7 @@ td                                                          { padding:8px; min-w
 /***********************************************
 Icons Setup
 ***********************************************/
-.icon                                                       { height:16px; width:16px; display:inline-block; vertical-align:middle; position:relative; top:-2px;
-    transition:
-        color 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
-        fill 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s
-    ;
-    -moz-transition:
-        color 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
-        fill 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s
-    ;
-    -webkit-transition:
-        color 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
-        fill 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s
-    ;
-    -o-transition:
-        color 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
-        fill 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s
-    ;
-}
+.icon                                                       { height:16px; width:16px; display:inline-block; vertical-align:middle; position:relative; top:-2px; }
 
 /***** Icons Sizes *****/
 .icon--size-xl                                              { height:36px; width:36px; }
@@ -182,7 +165,6 @@ Message Blocks
 .message--color-info                                        { background-color:#3498DB; }
 .message--color-warning                                     { background-color:#FFC82C; color:#444; }
 .message--color-negative                                    { background-color:#E74C3C; }
-
 
 /***********************************************
 Utility Classes
