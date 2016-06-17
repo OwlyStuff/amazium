@@ -2,7 +2,7 @@
 This applies from 0px to 767px
 ***********************************************/
 .columns                                        { margin:0; padding:0; list-style:none; display:flex; align-items:stretch; flex-direction:row; flex-wrap:wrap; flex-flow:row wrap; align-content:flex-end; }
-.column                                         { margin:0; padding:20px 0; border-top:1px solid #E5E5E5; }
+.column                                         { margin:0; padding:20px 0; border-top-color:transparent;olid #E5E5E5; }
 .column:first-child                             { border-top-color:transparent; }
 .column p:last-child                            { margin:0; }
 
@@ -25,8 +25,6 @@ This applies from 768px onwards
 This applies from 768px onwards
 ***********************************************/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .columns-1-tablet .column                     { padding:20px 0; border-right-color:transparent; }
-
   .columns-2-tablet .column                     { max-width:50%; }
   .columns-2-tablet .column:nth-child(-n+2)     { border-top-color:transparent; }
   .columns-2-tablet .column:nth-child(2n+1)     { padding-left:0; }
@@ -65,8 +63,6 @@ This applies from 768px onwards
 This applies from 992px onwards
 ***********************************************/
 @media (min-width: 992px) {
-  .columns-1-desktop .column                    { padding:20px 0; border-right-color:transparent; }
-
   .columns-2-desktop .column                    { max-width:50%; }
   .columns-2-desktop .column:nth-child(-n+2)    { border-top-color:transparent; }
   .columns-2-desktop .column:nth-child(2n+1)    { padding-left:0; }
