@@ -2,17 +2,12 @@
 This applies from 0px to 767px
 ***********************************************/
 .columns                                        { margin:0; padding:0; list-style:none; display:flex; align-items:stretch; flex-direction:row; flex-wrap:wrap; flex-flow:row wrap; align-content:flex-end; }
-.column                                         { margin:0; padding:20px 0; border-top:1px solid #E5E5E5; }
+.column                                         { margin:0; padding:20px 0; border-top:1px solid #E5E5E5; width:100%; }
 .column:first-child                             { border-top-color:transparent; }
 .column p:last-child                            { margin:0; }
 
 .bottom-border                                  { border-bottom:1px solid #E5E5E5; }
 .borderless li                                  { border-color:transparent; }
-
-.columns-2-mobile .column                       { padding:20px; max-width:50%; border-right:1px solid #E5E5E5; }
-.columns-2-mobile .column:nth-child(-n+2)       { border-top-color:transparent; }
-.columns-2-mobile .column:nth-child(2n+1)       { padding-left:0; }
-.columns-2-mobile .column:nth-child(2n+2)       { padding-right:0; border-right-color:transparent; }
 
 /***********************************************
 This applies from 768px onwards
@@ -24,7 +19,19 @@ This applies from 768px onwards
 /***********************************************
 This applies from 768px onwards
 ***********************************************/
+@media only screen and (max-width:767px) {
+  .columns-2-mobile .column                     { padding:20px; max-width:50%; border-right:1px solid #E5E5E5; }
+  .columns-2-mobile .column:nth-child(-n+2)     { border-top-color:transparent; }
+  .columns-2-mobile .column:nth-child(2n+1)     { padding-left:0; }
+  .columns-2-mobile .column:nth-child(2n+2)     { padding-right:0; border-right-color:transparent; }
+}
+
+/***********************************************
+This applies from 768px onwards
+***********************************************/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .columns-1-tablet .column                     { padding:20px 0; border-right-color:transparent; }
+
   .columns-2-tablet .column                     { max-width:50%; }
   .columns-2-tablet .column:nth-child(-n+2)     { border-top-color:transparent; }
   .columns-2-tablet .column:nth-child(2n+1)     { padding-left:0; }
