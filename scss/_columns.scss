@@ -6,6 +6,12 @@
   .columns-#{$num}-#{$device} .column:nth-child(#{$num}n+1),
   .columns-#{$num}-#{$device} .column:nth-child(#{$num}n+#{$num}) { width:percentage($nwidth/100); }
 }
+@mixin columns-max($device, $num, $mwidth) {
+  .columns-#{$num}-#{$device} .column                             { max-width:percentage($mwidth/100); }
+  .columns-#{$num}-#{$device} .column:nth-child(-n+#{$num})       { border-top-color:transparent; }
+  .columns-#{$num}-#{$device} .column:nth-child(#{$num}n+1)       { padding-left:0; }
+  .columns-#{$num}-#{$device} .column:nth-child(#{$num}n+#{$num}) { padding-right:0; border-right-color:transparent; }
+}
 /***********************************************
 This applies from 0px to 767px
 ***********************************************/
@@ -40,11 +46,7 @@ This applies from 768px onwards
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .columns-1-tablet .column                     { padding:20px 0; border-right-color:transparent; }
 
-  .columns-2-tablet .column                     { max-width:50%; }
-  .columns-2-tablet .column:nth-child(-n+2)     { border-top-color:transparent; }
-  .columns-2-tablet .column:nth-child(2n+1)     { padding-left:0; }
-  .columns-2-tablet .column:nth-child(2n+2)     { padding-right:0; border-right-color:transparent; }
-
+  @include columns-max(tablet, 2, 50);
   @include columns(tablet, 3, 34.666, 32.666);
   @include columns(tablet, 4, 26, 24);
   @include columns(tablet, 5, 20.777, 18.777);
@@ -55,11 +57,7 @@ This applies from 768px onwards
 This applies from 992px onwards
 ***********************************************/
 @media (min-width: 992px) {
-  .columns-2-desktop .column                    { max-width:50%; }
-  .columns-2-desktop .column:nth-child(-n+2)    { border-top-color:transparent; }
-  .columns-2-desktop .column:nth-child(2n+1)    { padding-left:0; }
-  .columns-2-desktop .column:nth-child(2n+2)    { padding-right:0; border-right-color:transparent; }
-
+  @include columns-max(desktop, 2, 50);
   @include columns(desktop, 3, 34.666, 32.666);
   @include columns(desktop, 4, 26, 24);
   @include columns(desktop, 5, 20.777, 18.777);
