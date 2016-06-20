@@ -1,3 +1,11 @@
+@mixin columns($device, $num, $width, $nwidth) {
+  .columns-#{$num}-#{$device} .column                             { width:percentage($width/100); }
+  .columns-#{$num}-#{$device} .column:nth-child(#{$num}n+1)       { padding-left:0; }
+  .columns-#{$num}-#{$device} .column:nth-child(#{$num}n+#{$num}) { padding-right:0; border-right-color:transparent; }
+  .columns-#{$num}-#{$device} .column:nth-child(-n+#{$num})       { border-top-color:transparent; }
+  .columns-#{$num}-#{$device} .column:nth-child(#{$num}n+1),
+  .columns-#{$num}-#{$device} .column:nth-child(#{$num}n+#{$num}) { width:percentage($nwidth/100); }
+}
 /***********************************************
 This applies from 0px to 767px
 ***********************************************/
@@ -37,33 +45,10 @@ This applies from 768px onwards
   .columns-2-tablet .column:nth-child(2n+1)     { padding-left:0; }
   .columns-2-tablet .column:nth-child(2n+2)     { padding-right:0; border-right-color:transparent; }
 
-  .columns-3-tablet .column                     { width:34.666%; }
-  .columns-3-tablet .column:nth-child(3n+1)     { padding-left:0; }
-  .columns-3-tablet .column:nth-child(3n+3)     { padding-right:0; border-right-color:transparent; }
-  .columns-3-tablet .column:nth-child(-n+3)     { border-top-color:transparent; }
-  .columns-3-tablet .column:nth-child(3n+1),
-  .columns-3-tablet .column:nth-child(3n+3)     { width:32.666%; }
-
-  .columns-4-tablet .column                     { width:26%; }
-  .columns-4-tablet .column:nth-child(4n+1)     { padding-left:0; }
-  .columns-4-tablet .column:nth-child(4n+4)     { padding-right:0; border-right-color:transparent; }
-  .columns-4-tablet .column:nth-child(-n+4)     { border-top-color:transparent; }
-  .columns-4-tablet .column:nth-child(4n+1),
-  .columns-4-tablet .column:nth-child(4n+4)     { width:24%; }
-
-  .columns-5-tablet .column                     { width:20.777%; }
-  .columns-5-tablet .column:nth-child(5n+1)     { padding-left:0; }
-  .columns-5-tablet .column:nth-child(5n+5)     { padding-right:0; border-right-color:transparent; }
-  .columns-5-tablet .column:nth-child(-n+5)     { border-top-color:transparent; }
-  .columns-5-tablet .column:nth-child(5n+1),
-  .columns-5-tablet .column:nth-child(5n+5)     { width:18.777%; }
-
-  .columns-6-tablet .column                     { width:17.333%; }
-  .columns-6-tablet .column:nth-child(6n+1)     { padding-left:0; }
-  .columns-6-tablet .column:nth-child(6n+6)     { padding-right:0; border-right-color:transparent; }
-  .columns-6-tablet .column:nth-child(-n+6)     { border-top-color:transparent; }
-  .columns-6-tablet .column:nth-child(6n+1),
-  .columns-6-tablet .column:nth-child(6n+6)     { width:15.333%; }
+  @include columns(tablet, 3, 34.666, 32.666);
+  @include columns(tablet, 4, 26, 24);
+  @include columns(tablet, 5, 20.777, 18.777);
+  @include columns(tablet, 6, 17.333, 15.333);
 }
 
 /***********************************************
@@ -75,31 +60,8 @@ This applies from 992px onwards
   .columns-2-desktop .column:nth-child(2n+1)    { padding-left:0; }
   .columns-2-desktop .column:nth-child(2n+2)    { padding-right:0; border-right-color:transparent; }
 
-  .columns-3-desktop .column                    { width:34.666%; }
-  .columns-3-desktop .column:nth-child(3n+1)    { padding-left:0; }
-  .columns-3-desktop .column:nth-child(3n+3)    { padding-right:0; border-right-color:transparent; }
-  .columns-3-desktop .column:nth-child(-n+3)    { border-top-color:transparent; }
-  .columns-3-desktop .column:nth-child(3n+1),
-  .columns-3-desktop .column:nth-child(3n+3)    { width:32.666%; }
-
-  .columns-4-desktop .column                    { width:26%; }
-  .columns-4-desktop .column:nth-child(4n+1)    { padding-left:0; }
-  .columns-4-desktop .column:nth-child(4n+4)    { padding-right:0; border-right-color:transparent; }
-  .columns-4-desktop .column:nth-child(-n+4)    { border-top-color:transparent; }
-  .columns-4-desktop .column:nth-child(4n+1),
-  .columns-4-desktop .column:nth-child(4n+4)    { width:24%; }
-
-  .columns-5-desktop .column                    { width:20.777%; }
-  .columns-5-desktop .column:nth-child(5n+1)    { padding-left:0; }
-  .columns-5-desktop .column:nth-child(5n+5)    { padding-right:0; border-right-color:transparent; }
-  .columns-5-desktop .column:nth-child(-n+5)    { border-top-color:transparent; }
-  .columns-5-desktop .column:nth-child(5n+1),
-  .columns-5-desktop .column:nth-child(5n+5)    { width:18.777%; }
-
-  .columns-6-desktop .column                    { width:17.333%; }
-  .columns-6-desktop .column:nth-child(6n+1)    { padding-left:0; }
-  .columns-6-desktop .column:nth-child(6n+6)    { padding-right:0; border-right-color:transparent; }
-  .columns-6-desktop .column:nth-child(-n+6)    { border-top-color:transparent; }
-  .columns-6-desktop .column:nth-child(6n+1),
-  .columns-6-desktop .column:nth-child(6n+6)    { width:15.333%; }
+  @include columns(desktop, 3, 34.666, 32.666);
+  @include columns(desktop, 4, 26, 24);
+  @include columns(desktop, 5, 20.777, 18.777);
+  @include columns(desktop, 6, 17.333, 15.333);
 }
