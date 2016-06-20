@@ -48,10 +48,10 @@ Tablet - This applies from 768px onwards
   %grid-styles-tablet                           { @include padding(0 $grid-gutter-tablet); }
 
   /***** Sets grid widths *****/
-  .grid                                         { @extend %grid-styles-tablet; }
+  .grid                                         { flex:1 1 0%; @extend %grid-styles-tablet; }
 
   @for $i from 1 through $grid-columns          {
-    .grid-#{$i}                                 { flex-grow:$i; max-width:100% / $grid-columns *$i; @extend %grid-styles; }
+    .grid-#{$i}                                 { flex-grow:$i; max-width:100% / $grid-columns *$i; @extend %grid-styles-tablet; }
   }
 
   /***** Sets grid offsets *****/
@@ -94,7 +94,14 @@ Screen - This applies from 1200px onwards
   .row                                          { width:$grid-width; }
 
   /***** Grid gutters *****/
-  %grid-styles                                  { @include padding(0 $grid-gutter); box-sizing:border-box; }
+  %grid-styles                                  { @include padding(0 $grid-gutter); }
+
+  /***** Sets grid widths *****/
+  .grid                                         { @extend %grid-styles; }
+
+  @for $i from 1 through $grid-columns          {
+    .grid-#{$i}                                 { @extend %grid-styles; }
+  }
 }
 
 /***********************************************
