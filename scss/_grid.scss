@@ -50,12 +50,12 @@ Tablet - This applies from 768px onwards
   /***** Sets grid widths *****/
   .grid                                         { @extend %grid-styles-tablet; }
 
-  @for $i from 1 through $grid-columns {
+  @for $i from 1 through $grid-columns          {
     .grid-#{$i}                                 { flex-grow:$i; max-width:100% / $grid-columns *$i; @extend %grid-styles; }
   }
 
   /***** Sets grid offsets *****/
-  @for $i from 1 through $grid-columns - 1 {
+  @for $i from 1 through $grid-columns - 1      {
     .grid--offset-#{$i}                         { margin-left:100% / $grid-columns *$i; }
   }
 
@@ -80,8 +80,8 @@ Smaller screen - This applies from 992px onwards
   /***** Sets grid widths *****/
   .grid                                         { @extend %grid-styles-smscreen; }
 
-  @for $i from 1 through $grid-columns {
-      .grid-#{$i}                               { @extend %grid-styles-smscreen; }
+  @for $i from 1 through $grid-columns          {
+    .grid-#{$i}                                 { @extend %grid-styles-smscreen; }
   }
 }
 
@@ -103,8 +103,8 @@ Tablet - This applies from 768px to 992px
 @media only screen and (min-width:$grid-width-tablet) and (max-width:$grid-width-smscreen - 1px) {
 
   /***** Sets table override grid width *****/
-  @for $i from 1 through $grid-columns {
-    .grid-#{$i}-tablet                          { flex-grow:$i; max-width:$i / $grid-columns * 100%; @extend %grid-styles-tablet; }
+  @for $i from 1 through $grid-columns          {
+    .grid-#{$i}-tablet                          { flex-grow:$i; max-width:$i / $grid-columns * 100%; }
   }
 
   /***** Grid ordering *****/
