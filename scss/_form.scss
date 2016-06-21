@@ -246,6 +246,7 @@ form .valid input,
 form .valid textarea,
 form .valid select,
 form .valid textarea                                        { border-color:#29B765; }
+form.valid .message,
 form .valid .message                                        { display:inline-block; border-color:#29B765; background-color:#29B765; }
 
 input:not(:focus):invalid                                   { -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; }
