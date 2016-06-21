@@ -5,151 +5,127 @@
 */
 
 /***********************************************
-Desktop
+Mobile First - This applies from 0px to 767px
 ***********************************************/
 
-/***** Sets row widths *****/
-.row                                            { margin:0 auto; width:$grid-width; display:flex; box-sizing:border-box; flex:0 1 auto; flex-direction:row; flex-wrap:wrap; }
-.row .row,
-.row--width-fluid                               { width:100%; }
+/***** Row setup *****/
+.row                                            { margin:0 auto; padding:0 20px; display:flex; flex-direction:row; box-sizing:border-box; flex:0 1 auto; flex-wrap:wrap; }
+.row.row--width-fluid                           { width:100%; }
 
 /***** Row alignments *****/
 .row--align-left                                { justify-content:flex-start; }
 .row--align-center                              { justify-content:center; }
 .row--align-right                               { justify-content:flex-end; }
-.row--order-reverse                             { flex-direction:row-reverse; }
-
-/***** Grid setup *****/
-%grid-styles                                    { @include padding(0 $grid-gutter); box-sizing:border-box; }
-.grid                                           { flex:1 1 0%; @extend %grid-styles; }
-
-@for $i from 1 through $grid-columns {
-    .grid-#{$i}                                 { flex-grow: $i; max-width: 100% / $grid-columns *$i; @extend %grid-styles; }
-}
 
 /***** Nested grids resets *****/
+.row .row                                       { padding:0; width:100%; }
 .row .row [class^="grid"]:first-child           { padding-left:0; }
 .row .row [class^="grid"]:only-child            { padding:0; }
 .row .row [class^="grid"]:last-child            { padding-right:0; }
 
+/***** Grid gutters *****/
+.grid, .grid-1, .grid-2, .grid-3, .grid-4,
+.grid-5, .grid-6, .grid-7, .grid-8, .grid-9,
+.grid-10, .grid-11, .grid-12                    { box-sizing:border-box; width:100%; }
+
 /***** grid ordering *****/
+.row--order-reverse                             { flex-direction:column-reverse; }
 .grid--order-first                              { order:-1; }
 .grid--order-last                               { order:1; }
 
-/***** Sets grid offsets *****/
-@for $i from 1 through $grid-columns - 1 {
-    .grid--offset-#{$i}                         { margin-left: 100% / $grid-columns *$i; }
-}
-
-/***** Show & Hide classes *****/
-.show-mobile                                    { display:none !important; }
-.show-tablet                                    { display:none !important; }
-.show-screen                                    { display:inherit; }
-
-.hide-mobile                                    { display:inherit !important; }
-.hide-tablet                                    { display:inherit !important; }
-.hide-screen                                    { display:none !important; }
-
-/***********************************************
-Small Screen (Smaller than Desktop)
-***********************************************/
-@media only screen and (min-width: $grid-width-smscreen) and (max-width: $grid-width - 1px) {
-
-/***** Sets row widths *****/
-.row                                            { width:$grid-width-smscreen; }
-.row--width-fluid                               { width:100%; }
-
-/***** Grid setup *****/
-%grid-styles-smscreen                           { @include padding(0 $grid-gutter-smscreen); }
-.grid                                           { @extend %grid-styles-smscreen; }
-
-@for $i from 1 through $grid-columns {
-    .grid-#{$i}                                 { @extend %grid-styles-smscreen; }
-}
-
-/***** Show & Hide classes *****/
-.show-mobile                                    { display:none !important; }
-.show-tablet                                    { display:none !important; }
-.show-screen                                    { display:inherit !important; }
-
-.hide-mobile                                    { display:inherit !important; }
-.hide-tablet                                    { display:inherit !important; }
-.hide-screen                                    { display:none !important; }
-
-}
-
-/***********************************************
-Tablet (Smaller than Small Screen)
-***********************************************/
-@media only screen and (min-width: $grid-width-tablet) and (max-width: $grid-width-smscreen - 1px) {
-
-/***** Sets row widths *****/
-.row                                            { width:$grid-width-tablet; }
-.row--width-fluid                               { width:100%; }
-
-/***** Grid setup tablet *****/
-%grid-styles-tablet                             { @include padding(0 $grid-gutter-tablet); }
-.grid                                           { @extend %grid-styles-tablet; }
-
-@for $i from 1 through $grid-columns {
-    .grid-#{$i}-tablet                          { flex-grow: $i; max-width: $i / $grid-columns * 100%; @extend %grid-styles-tablet; }
-}
-
-/***** grid ordering *****/
-.grid--order-first-tablet                       { order:inherit; }
-.grid--order-last-tablet                        { order:inherit; }
-
-/***** Show & Hide classes *****/
-.show-mobile                                    { display:none !important; }
-.show-tablet                                    { display:inherit !important; }
-.show-screen                                    { display:none !important; }
-
-.hide-mobile                                    { display:inherit !important; }
-.hide-tablet                                    { display:none !important; }
-.hide-screen                                    { display:inherit !important; }
-
-}
-
-/***********************************************
-Mobile (Smaller than Tablet)
-***********************************************/
-@media only screen and (max-width: $grid-width-tablet - 1px) {
-
-/***** Sets row widths *****/
-.row, .row--width-fluid                         { padding:0 $grid-gutter; width:100%; }
-.row--order-reverse                             { flex-direction:column-reverse; }
-
-/***** Grid setup mobile*****/
-%grid-styles-mobile                             { padding:0; flex-basis:100%; max-width:100%; }
-.grid                                           { @extend %grid-styles-mobile; }
-
-@for $i from 1 through $grid-columns {
-    .grid-#{$i}                                 { @extend %grid-styles-mobile; }
-}
-
 /***** Sets mobile override grid width *****/
-@for $i from 1 through $grid-columns {
-	.grid-#{$i}-mobile                          { flex-grow:$i; max-width:  $i / $grid-columns * 100%; }
+.grid-6-mobile                                  { width:50%; }
+
+/***********************************************
+Tablet - This applies from 768px onwards
+***********************************************/
+@media (min-width:$grid-width-tablet) {
+
+  /***** Row setup *****/
+  .row                                          { width:$grid-width-tablet; }
+
+  /***** Grid gutters *****/
+  %grid-styles-tablet                           { @include padding(0 $grid-gutter-tablet); }
+
+  /***** Sets grid widths *****/
+  .grid                                         { flex:1 1 0%; @extend %grid-styles-tablet; }
+
+  @for $i from 1 through $grid-columns          {
+    .grid-#{$i}                                 { flex-grow:$i; max-width:100% / $grid-columns *$i; @extend %grid-styles-tablet; }
+  }
+
+  /***** Sets grid offsets *****/
+  @for $i from 1 through $grid-columns - 1      {
+    .grid--offset-#{$i}                         { margin-left:100% / $grid-columns *$i; }
+  }
+
+  /***** Grid ordering *****/
+  .row--order-reverse                           { flex-direction:row-reverse; }
+  .grid--order-first                            { order:-1; }
+  .grid--order-last                             { order:1; }
 }
 
-/***** grid ordering *****/
-.grid--order-first-mobile                       { order:inherit; }
-.grid--order-last-mobile                        { order:inherit; }
 
-/***** Sets grid offsets *****/
-%grid-offset-mobile                             { margin:0; }
+/***********************************************
+Smaller screen - This applies from 992px onwards
+***********************************************/
+@media (min-width:$grid-width-smscreen) {
 
-@for $i from 1 to $grid-columns - 1 {
-    .grid--offset-#{$i}                         { @extend %grid-offset-mobile; }
+  /***** Row setup *****/
+  .row                                          { width:$grid-width-smscreen; }
+
+  /***** Grid gutters *****/
+  %grid-styles-smscreen                         { @include padding(0 $grid-gutter-smscreen); }
+
+  /***** Sets grid widths *****/
+  .grid                                         { @extend %grid-styles-smscreen; }
+
+  @for $i from 1 through $grid-columns          {
+    .grid-#{$i}                                 { @extend %grid-styles-smscreen; }
+  }
 }
 
-/***** Show & Hide classes *****/
-.show-mobile                                    { display:inline-block !important; }
-.show-tablet                                    { display:none !important; }
-.show-screen                                    { display:none !important; }
+/***********************************************
+Screen - This applies from 1200px onwards
+***********************************************/
+@media (min-width:$grid-width - 1px) {
 
-.hide-mobile                                    { display:none !important; }
-.hide-tablet                                    { display:inline-block !important; }
-.hide-screen                                    { display:inline-block !important; }
+  /***** Row setup *****/
+  .row                                          { width:$grid-width; }
 
+  /***** Grid gutters *****/
+  %grid-styles                                  { @include padding(0 $grid-gutter); }
+
+  /***** Sets grid widths *****/
+  .grid                                         { @extend %grid-styles; }
+
+  @for $i from 1 through $grid-columns          {
+    .grid-#{$i}                                 { @extend %grid-styles; }
+  }
+}
+
+/***********************************************
+Tablet - This applies from 768px to 992px
+***********************************************/
+@media only screen and (min-width:$grid-width-tablet) and (max-width:$grid-width-smscreen - 1px) {
+
+  /***** Sets table override grid width *****/
+  @for $i from 1 through $grid-columns          {
+    .grid-#{$i}-tablet                          { flex-grow:$i; max-width:$i / $grid-columns * 100%; }
+  }
+
+  /***** Grid ordering *****/
+  .grid--order-first-tablet                     { order:inherit; }
+  .grid--order-last-tablet                      { order:inherit; }
+}
+
+/***********************************************
+Mobile - This applies from 0px to 767px
+***********************************************/
+@media only screen and (max-width:$grid-width-tablet - 1px) {
+
+  /***** Grid ordering *****/
+  .row--order-reverse-mobile                    { flex-direction:inherit; }
+  .grid--order-first-mobile                     { order:inherit; }
+  .grid--order-last-mobile                      { order:inherit; }
 }
