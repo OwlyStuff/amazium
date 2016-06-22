@@ -27,6 +27,7 @@ deploy:
       - font/mavenpro-regular.ttf
       - font/mavenpro-regular.woff
       - README.md
+      - LICENSE
     skip_cleanup: true
     on:
       repo: OwlyStuff/amazium
