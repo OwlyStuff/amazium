@@ -30,18 +30,15 @@ Mobile First - This applies from 0px to 767px
   .grid-#{$i}                                   { box-sizing:border-box; width:100%; }
 }
 
-/***** Sets mobile override grid width *****/
-@for $i from 1 through $grid-columns {
-  .grid-#{$i}-mobile                            { flex-grow:$i; max-width:  $i / $grid-columns * 100%; }
-}
-
 /***** grid ordering *****/
 .row--order-reverse                             { flex-direction:column-reverse; }
 .grid--order-first                              { order:-1; }
 .grid--order-last                               { order:1; }
 
 /***** Sets mobile override grid width *****/
-.grid-6-mobile                                  { width:50%; }
+@for $i from 1 through $grid-columns {
+  .grid-#{$i}-mobile                            { flex-grow:$i; max-width:  $i / $grid-columns * 100%; }
+}
 
 /***********************************************
 Tablet - This applies from 768px onwards
