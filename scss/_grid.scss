@@ -10,7 +10,7 @@ Mobile First - This applies from 0px to 767px
 
 /***** Row setup *****/
 .row                                            { margin:0 auto; padding:0 20px; display:flex; flex-direction:row; box-sizing:border-box; flex:0 1 auto; flex-wrap:wrap; }
-.row.row--width-fluid                           { width:100%; }
+.row--width-fluid                               { @extend .row; width:100%; }
 
 /***** Row alignments *****/
 .row--align-left                                { justify-content:flex-start; }
@@ -23,10 +23,12 @@ Mobile First - This applies from 0px to 767px
 .row .row [class^="grid"]:only-child            { padding:0; }
 .row .row [class^="grid"]:last-child            { padding-right:0; }
 
-/***** Grid gutters *****/
-.grid, .grid-1, .grid-2, .grid-3, .grid-4,
-.grid-5, .grid-6, .grid-7, .grid-8, .grid-9,
-.grid-10, .grid-11, .grid-12                    { box-sizing:border-box; width:100%; }
+/***** Sets grid widths *****/
+.grid                                           { box-sizing:border-box; width:100%; }
+
+@for $i from 1 through $grid-columns            {
+  .grid-#{$i}                                   { box-sizing:border-box; width:100%; }
+}
 
 /***** grid ordering *****/
 .row--order-reverse                             { flex-direction:column-reverse; }
@@ -34,7 +36,9 @@ Mobile First - This applies from 0px to 767px
 .grid--order-last                               { order:1; }
 
 /***** Sets mobile override grid width *****/
-.grid-6-mobile                                  { width:50%; }
+@for $i from 1 through $grid-columns {
+  .grid-#{$i}-mobile                            { flex-grow:$i; max-width:  $i / $grid-columns * 100%; }
+}
 
 /***********************************************
 Tablet - This applies from 768px onwards
@@ -64,7 +68,6 @@ Tablet - This applies from 768px onwards
   .grid--order-first                            { order:-1; }
   .grid--order-last                             { order:1; }
 }
-
 
 /***********************************************
 Smaller screen - This applies from 992px onwards
@@ -117,6 +120,11 @@ Tablet - This applies from 768px to 992px
   /***** Grid ordering *****/
   .grid--order-first-tablet                     { order:inherit; }
   .grid--order-last-tablet                      { order:inherit; }
+
+  /***** Sets tablet override grid width *****/
+  @for $i from 1 through $grid-columns {
+    .grid-#{$i}-tablet                            { flex-grow:$i; max-width:  $i / $grid-columns * 100%; }
+  }
 }
 
 /***********************************************
