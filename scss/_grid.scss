@@ -120,6 +120,11 @@ Tablet - This applies from 768px to 992px
   /***** Grid ordering *****/
   .grid--order-first-tablet                     { order:inherit; }
   .grid--order-last-tablet                      { order:inherit; }
+
+  /***** Sets tablet override grid width *****/
+  @for $i from 1 through $grid-columns {
+    .grid-#{$i}-tablet                            { flex-grow:$i; max-width:  $i / $grid-columns * 100%; }
+  }
 }
 
 /***********************************************
