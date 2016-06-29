@@ -376,7 +376,7 @@ input::-moz-focus-inner, button::-moz-focus-inner           { border:0; padding:
 .btn--color-none:hover                                      { background-color:transparent; border-color:transparent; color:#26343E; fill:#26343E; }
 
 /***** Ghost *****/
-.btn--style-ghost                                           { background-color:transparent; color:#26343E; border:1px solid #BBB; }
+.btn--style-ghost                                           { background-color:transparent; color:#26343E; fill:#26343E; border:1px solid #BBB; }
 .btn--style-ghost:hover                                     { background-color:#26343E; color:#FFF; fill:#FFF; }
 
 /***** Link *****/
