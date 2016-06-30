@@ -10,7 +10,7 @@ Mobile First - This applies from 0px to 767px
 
 /***** Row setup *****/
 .row                                            { margin:0 auto; padding:0 20px; display:flex; flex-direction:row; box-sizing:border-box; flex:0 1 auto; flex-wrap:wrap; }
-.row--width-fluid                               { @extend .row; width:100%; }
+.row--width-fluid                               { margin:0 auto; padding:0 20px; display:flex; flex-direction:row; box-sizing:border-box; flex:0 1 auto; flex-wrap:wrap; width:100%; }
 
 /***** Row alignments *****/
 .row--align-left                                { justify-content:flex-start; }
