@@ -7,7 +7,7 @@
   .columns-#{$num}-#{$device} .column:nth-child(#{$num}n+#{$num}) { width:percentage($nwidth/100); }
 }
 @mixin columns-max($device, $num, $mwidth) {
-  .columns-#{$num}-#{$device} .column                             { max-width:percentage($mwidth/100); }
+  .columns-#{$num}-#{$device} .column                             { width:percentage($mwidth/100); }
   .columns-#{$num}-#{$device} .column:nth-child(-n+#{$num})       { border-top-color:transparent; }
   .columns-#{$num}-#{$device} .column:nth-child(#{$num}n+1)       { padding-left:0; }
   .columns-#{$num}-#{$device} .column:nth-child(#{$num}n+#{$num}) { padding-right:0; border-right-color:transparent; }
@@ -34,7 +34,7 @@ This applies from 768px onwards
 This applies from 768px onwards
 ***********************************************/
 @media only screen and (max-width:767px) {
-  .columns-2-mobile .column                     { padding:20px; max-width:50%; border-right:1px solid #E5E5E5; }
+  .columns-2-mobile .column                     { padding:20px; width:50%; border-right:1px solid #E5E5E5; }
   .columns-2-mobile .column:nth-child(-n+2)     { border-top-color:transparent; }
   .columns-2-mobile .column:nth-child(2n+1)     { padding-left:0; }
   .columns-2-mobile .column:nth-child(2n+2)     { padding-right:0; border-right-color:transparent; }

@@ -9,8 +9,8 @@ Mobile First - This applies from 0px to 767px
 ***********************************************/
 
 /***** Row setup *****/
-.row                                            { margin:0 auto; padding:0 20px; display:flex; flex-direction:row; box-sizing:border-box; flex:0 1 auto; flex-wrap:wrap; }
-.row--width-fluid                               { margin:0 auto; padding:0 20px; display:flex; flex-direction:row; box-sizing:border-box; flex:0 1 auto; flex-wrap:wrap; width:100%; }
+.row                                            { margin:0 auto; padding:0 20px; display:flex; flex-direction:row; box-sizing:border-box; flex:0 1 auto; flex-wrap:wrap; -moz-box-sizing:border-box; box-sizing:border-box; }
+.row--width-fluid                               { margin:0 auto; padding:0 20px; display:flex; flex-direction:row; box-sizing:border-box; flex:0 1 auto; flex-wrap:wrap; width:100%; -moz-box-sizing:border-box; box-sizing:border-box; }
 
 /***** Row alignments *****/
 .row--align-left                                { justify-content:flex-start; }
@@ -24,10 +24,10 @@ Mobile First - This applies from 0px to 767px
 .row .row [class^="grid"]:last-child            { padding-right:0; }
 
 /***** Sets grid widths *****/
-.grid                                           { box-sizing:border-box; width:100%; }
+.grid                                           { width:100%; -moz-box-sizing:border-box; box-sizing:border-box; }
 
 @for $i from 1 through $grid-columns            {
-  .grid-#{$i}                                   { box-sizing:border-box; width:100%; }
+  .grid-#{$i}                                   { width:100%; -moz-box-sizing:border-box; box-sizing:border-box; }
 }
 
 /***** grid ordering *****/
@@ -37,7 +37,7 @@ Mobile First - This applies from 0px to 767px
 
 /***** Sets mobile override grid width *****/
 @for $i from 1 through $grid-columns {
-  .grid-#{$i}-mobile                            { flex-grow:$i; max-width:  $i / $grid-columns * 100%; }
+  .grid-#{$i}-mobile                            { flex-grow:$i; max-width:$i / $grid-columns * 100%; }
 }
 
 /***********************************************
@@ -49,7 +49,7 @@ Tablet - This applies from 768px onwards
   .row                                          { width:$grid-width-tablet; }
 
   /***** Grid gutters *****/
-  %grid-styles-tablet                           { @include padding(0 $grid-gutter-tablet); }
+  %grid-styles-tablet                           { flex:0; @include padding(0 $grid-gutter-tablet); }
 
   /***** Sets grid widths *****/
   .grid                                         { flex:1 1 0%; @extend %grid-styles-tablet; }
@@ -123,7 +123,7 @@ Tablet - This applies from 768px to 992px
 
   /***** Sets tablet override grid width *****/
   @for $i from 1 through $grid-columns {
-    .grid-#{$i}-tablet                            { flex-grow:$i; max-width:  $i / $grid-columns * 100%; }
+    .grid-#{$i}-tablet                          { flex-grow:$i; max-width:$i / $grid-columns * 100%; }
   }
 }
 
