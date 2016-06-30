@@ -47,6 +47,7 @@ Tablet - This applies from 768px onwards
 
   /***** Row setup *****/
   .row                                          { width:$grid-width-tablet; }
+  .row--width-fluid                             { width:100%; }
 
   /***** Grid gutters *****/
   %grid-styles-tablet                           { @include padding(0 $grid-gutter-tablet); }
@@ -76,6 +77,7 @@ Smaller screen - This applies from 992px onwards
 
   /***** Row setup *****/
   .row                                          { width:$grid-width-smscreen; }
+  .row--width-fluid                             { width:100%; }
 
   /***** Grid gutters *****/
   %grid-styles-smscreen                         { @include padding(0 $grid-gutter-smscreen); }
@@ -95,6 +97,7 @@ Screen - This applies from 1200px onwards
 
   /***** Row setup *****/
   .row                                          { width:$grid-width; }
+  .row--width-fluid                             { width:100%; }
 
   /***** Grid gutters *****/
   %grid-styles                                  { @include padding(0 $grid-gutter); }
