@@ -16,17 +16,17 @@
 This applies from 0px to 767px
 ***********************************************/
 .columns                                        { margin:0 0 30px; padding:0; list-style:none;
-  display:-webkit-box;
+  display:-webkit-flex;
   display:flex;
   -webkit-align-items:stretch;
   align-items:stretch;
   -webkit-flex-direction:row;
   flex-direction:row;
-  -webkit-flex-wrap: wrap;
+  -webkit-flex-wrap:wrap;
   flex-wrap:wrap;
   -webkit-flex-flow:row wrap;
   flex-flow:row wrap;
-  -webkit-align-content: flex-end;
+  -webkit-align-content:flex-end;
   align-content:flex-end;
 }
 
@@ -40,7 +40,7 @@ This applies from 0px to 767px
 /***********************************************
 This applies from 768px onwards
 ***********************************************/
-@media (min-width: 768px) {
+@media (min-width:768px) {
   .column                                       { padding:20px 2%; border-right:1px solid #E5E5E5; }
 }
 
@@ -57,7 +57,7 @@ This applies from 768px onwards
 /***********************************************
 This applies from 768px onwards
 ***********************************************/
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width:768px) and (max-width:991px) {
   .columns-1-tablet .column                     { padding:20px 0; border-right-color:transparent; }
 
   @include columns-max(tablet, 2, 50);
@@ -70,7 +70,7 @@ This applies from 768px onwards
 /***********************************************
 This applies from 992px onwards
 ***********************************************/
-@media (min-width: 992px) {
+@media (min-width:992px) {
   .columns-1-desktop .column                     { padding:20px 0; border-right-color:transparent; }
   @include columns-max(desktop, 2, 50);
   @include columns(desktop, 3, 34.666, 32.666);

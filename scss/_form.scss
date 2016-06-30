@@ -165,12 +165,12 @@ Toggle Labeled Checkboxes
 /***********************************************
 Inline items
 ***********************************************/
-.inline-parent                                              { display: -webkit-flex; display:flex; }
+.inline-parent                                              { display:-webkit-flex; display:flex; }
 .inline-parent input,
 .inline-parent textarea,
 .inline-parent select,
 .inline-parent .select                                      { width:100%; }
-.inline-parent .inline-child                                { margin:0 20px 20px 0; display: -webkit-flex; display:flex; -webkit-flex:1; flex:1; -webkit-flex-direction:column; flex-direction:column; }
+.inline-parent .inline-child                                { margin:0 20px 20px 0; display:-webkit-flex; display:flex; -webkit-flex:1; flex:1; -webkit-flex-direction:column; flex-direction:column; }
 .inline-parent .inline-child .message                       { width:100%; }
 
 .inline-parent .inline-child:last-child                     { margin-right:0; }
