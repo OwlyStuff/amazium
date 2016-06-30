@@ -9,13 +9,13 @@ Mobile First - This applies from 0px to 767px
 ***********************************************/
 
 /***** Row setup *****/
-.row                                            { margin:0 auto; padding:0 20px; display:flex; flex-direction:row; box-sizing:border-box; flex:0 1 auto; flex-wrap:wrap; }
-.row--width-fluid                               { margin:0 auto; padding:0 20px; display:flex; flex-direction:row; box-sizing:border-box; flex:0 1 auto; flex-wrap:wrap; width:100%; }
+.row                                            { margin:0 auto; padding:0 20px; display:flex; flex-direction:row; box-sizing:border-box; flex:0 1 auto; flex-wrap:wrap; -moz-box-sizing:border-box; box-sizing:border-box; }
+.row--width-fluid                               { margin:0 auto; padding:0 20px; display:flex; flex-direction:row; box-sizing:border-box; flex:0 1 auto; flex-wrap:wrap; width:100%; -moz-box-sizing:border-box; box-sizing:border-box; }
 
 /***** Row alignments *****/
-.row--align-left                                { justify-content:flex-start; -webkit-justify-content:flex-start; }
-.row--align-center                              { justify-content:center; -webkit-justify-content:center; }
-.row--align-right                               { justify-content:flex-end; -webkit-justify-content:flex-end; }
+.row--align-left                                { justify-content:flex-start; }
+.row--align-center                              { justify-content:center; }
+.row--align-right                               { justify-content:flex-end; }
 
 /***** Nested grids resets *****/
 .row .row                                       { padding:0; width:100%; }
@@ -24,14 +24,14 @@ Mobile First - This applies from 0px to 767px
 .row .row [class^="grid"]:last-child            { padding-right:0; }
 
 /***** Sets grid widths *****/
-.grid                                           { width:100%; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+.grid                                           { width:100%; -moz-box-sizing:border-box; box-sizing:border-box; }
 
 @for $i from 1 through $grid-columns            {
-  .grid-#{$i}                                   { width:100%; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+  .grid-#{$i}                                   { width:100%; -moz-box-sizing:border-box; box-sizing:border-box; }
 }
 
 /***** grid ordering *****/
-.row--order-reverse                             { flex-direction:column-reverse; -webkit-flex-direction:column-reverse; }
+.row--order-reverse                             { flex-direction:column-reverse; }
 .grid--order-first                              { order:-1; }
 .grid--order-last                               { order:1; }
 
@@ -49,7 +49,7 @@ Tablet - This applies from 768px onwards
   .row                                          { width:$grid-width-tablet; }
 
   /***** Grid gutters *****/
-  %grid-styles-tablet                           { @include padding(0 $grid-gutter-tablet); }
+  %grid-styles-tablet                           { flex:0; @include padding(0 $grid-gutter-tablet); }
 
   /***** Sets grid widths *****/
   .grid                                         { flex:1 1 0%; @extend %grid-styles-tablet; }
@@ -64,7 +64,7 @@ Tablet - This applies from 768px onwards
   }
 
   /***** Grid ordering *****/
-  .row--order-reverse                           { flex-direction:row-reverse; -webkit-flex-direction:row-reverse; }
+  .row--order-reverse                           { flex-direction:row-reverse; }
   .grid--order-first                            { order:-1; }
   .grid--order-last                             { order:1; }
 }
@@ -123,7 +123,7 @@ Tablet - This applies from 768px to 992px
 
   /***** Sets tablet override grid width *****/
   @for $i from 1 through $grid-columns {
-    .grid-#{$i}-tablet                            { flex-grow:$i; max-width:$i / $grid-columns * 100%; }
+    .grid-#{$i}-tablet                          { flex-grow:$i; max-width:$i / $grid-columns * 100%; }
   }
 }
 
@@ -133,7 +133,7 @@ Mobile - This applies from 0px to 767px
 @media only screen and (max-width:$grid-width-tablet - 1px) {
 
   /***** Grid ordering *****/
-  .row--order-reverse-mobile                    { flex-direction:inherit; -webkit-flex-direction:inherit; }
+  .row--order-reverse-mobile                    { flex-direction:inherit; }
   .grid--order-first-mobile                     { order:inherit; }
   .grid--order-last-mobile                      { order:inherit; }
 }

@@ -7,7 +7,7 @@
   .columns-#{$num}-#{$device} .column:nth-child(#{$num}n+#{$num}) { width:percentage($nwidth/100); }
 }
 @mixin columns-max($device, $num, $mwidth) {
-  .columns-#{$num}-#{$device} .column                             { max-width:percentage($mwidth/100); }
+  .columns-#{$num}-#{$device} .column                             { width:percentage($mwidth/100); }
   .columns-#{$num}-#{$device} .column:nth-child(-n+#{$num})       { border-top-color:transparent; }
   .columns-#{$num}-#{$device} .column:nth-child(#{$num}n+1)       { padding-left:0; }
   .columns-#{$num}-#{$device} .column:nth-child(#{$num}n+#{$num}) { padding-right:0; border-right-color:transparent; }
@@ -15,21 +15,7 @@
 /***********************************************
 This applies from 0px to 767px
 ***********************************************/
-.columns                                        { margin:0 0 30px; padding:0; list-style:none;
-  display:-webkit-flex;
-  display:flex;
-  -webkit-align-items:stretch;
-  align-items:stretch;
-  -webkit-flex-direction:row;
-  flex-direction:row;
-  -webkit-flex-wrap:wrap;
-  flex-wrap:wrap;
-  -webkit-flex-flow:row wrap;
-  flex-flow:row wrap;
-  -webkit-align-content:flex-end;
-  align-content:flex-end;
-}
-
+.columns                                        { margin:0 0 30px; padding:0; list-style:none; display:flex; align-items:stretch; flex-direction:row; flex-wrap:wrap; flex-flow:row wrap; align-content:flex-end; }
 .column                                         { margin:0; padding:20px 0; border-top:1px solid #E5E5E5; width:100%; }
 .column:first-child                             { border-top-color:transparent; }
 .column p:last-child                            { margin:0; }
@@ -40,7 +26,7 @@ This applies from 0px to 767px
 /***********************************************
 This applies from 768px onwards
 ***********************************************/
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .column                                       { padding:20px 2%; border-right:1px solid #E5E5E5; }
 }
 
@@ -48,7 +34,7 @@ This applies from 768px onwards
 This applies from 768px onwards
 ***********************************************/
 @media only screen and (max-width:767px) {
-  .columns-2-mobile .column                     { padding:20px; max-width:50%; border-right:1px solid #E5E5E5; }
+  .columns-2-mobile .column                     { padding:20px; width:50%; border-right:1px solid #E5E5E5; }
   .columns-2-mobile .column:nth-child(-n+2)     { border-top-color:transparent; }
   .columns-2-mobile .column:nth-child(2n+1)     { padding-left:0; }
   .columns-2-mobile .column:nth-child(2n+2)     { padding-right:0; border-right-color:transparent; }
@@ -57,7 +43,7 @@ This applies from 768px onwards
 /***********************************************
 This applies from 768px onwards
 ***********************************************/
-@media only screen and (min-width:768px) and (max-width:991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .columns-1-tablet .column                     { padding:20px 0; border-right-color:transparent; }
 
   @include columns-max(tablet, 2, 50);
@@ -70,7 +56,7 @@ This applies from 768px onwards
 /***********************************************
 This applies from 992px onwards
 ***********************************************/
-@media (min-width:992px) {
+@media (min-width: 992px) {
   .columns-1-desktop .column                     { padding:20px 0; border-right-color:transparent; }
   @include columns-max(desktop, 2, 50);
   @include columns(desktop, 3, 34.666, 32.666);
