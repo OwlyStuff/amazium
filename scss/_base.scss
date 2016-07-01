@@ -5,6 +5,10 @@
 */
 
 /***********************************************
+Mobile First - This applies from 0px to 767px
+***********************************************/
+
+/***********************************************
 Reset
 ***********************************************/
 html, body, div, span, applet, object, iframe,
@@ -135,13 +139,13 @@ img                                             { border:0; vertical-align:middl
 /***********************************************
 Tables
 ***********************************************/
-table                                           { margin:20px 0 40px 0; border:none; width:100%; overflow:visible; border-bottom:1px solid #D6D6D6; border-collapse:collapse; border-spacing:0; }
-caption                                         { margin:0 0 10px; width:100%; text-align:left; font-weight:bold; }
-tr                                              { background-color:#FFF; border-bottom:1px solid #EEE; min-height:35px; transition:background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
-tr:hover                                        { background-color:#F9F9F9; }
-th                                              { padding:10px; background-color:#FFF; border:none; font-weight:bold; text-align:left; }
-td                                              { padding:10px; min-width:60px; background-color:transparent; border:none; word-wrap:break-word; position:relative; top:0; left:0; }
-td.align-vertical                               { vertical-align:middle; }
+// table                                           { margin:20px 0 40px 0; border:none; width:100%; overflow:visible; text-align:left; border-bottom:1px solid #D6D6D6; border-collapse:collapse; border-spacing:0; }
+// caption                                         { margin:0 0 10px; width:100%; text-align:left; font-weight:bold; }
+// tr                                              { background-color:#FFF; border-bottom:1px solid #EEE; min-height:35px; transition:background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
+// tr:hover                                        { background-color:#F9F9F9; }
+// th                                              { padding:10px; background-color:#FFF; border:none; font-weight:bold; text-align:left; }
+// td                                              { padding:10px; min-width:60px; background-color:transparent; border:none; word-wrap:break-word; position:relative; top:0; left:0; }
+// td.align-vertical                               { vertical-align:middle; }
 
 /***********************************************
 Icons Setup
@@ -222,80 +226,71 @@ Utility Classes
 .block, .show                                   { display:block; }
 .hidden, .hide                                  { display:none; }
 
+/***** Disable Chrome blue border *****/
+input:focus, select:focus,
+textarea:focus, button:focus                    { outline:none; }
+
+/***** Disable Internet Explorer input overlays *****/
+::-ms-clear, ::ms-reveal                        { display:none; }
+
 /***** Visibility *****/
 .invisible                                      { display:none; visibility:hidden; }
 .visible                                        { display:block; visibility:visible; }
 
-/***** Show & Hide classes *****/
-.show-mobile                                    { display:none !important; }
-.show-tablet                                    { display:none !important; }
-.show-screen                                    { display:inherit; }
+/***** Hide *****/
+.hide-mobile                                    { display:none; }
 
-.hide-mobile                                    { display:inherit !important; }
-.hide-tablet                                    { display:inherit !important; }
-.hide-screen                                    { display:none !important; }
+/***** Show *****/
+.show-tablet                                    { display:none; }
+.show-screen                                    { display:none; }
 
-/***********************************************
-Disable Chrome blue border
-***********************************************/
-input:focus, select:focus,
-textarea:focus, button:focus                    { outline:none; }
+/***** Tables *****/
+table, tbody, tr, th, td                        { display:block; text-align:left; }
+table                                           { margin:0 0 40px 0; width:100%; overflow:visible; text-align:left; border:none; border-collapse:collapse; border-spacing:0; table-layout:fixed; }
+caption                                         { margin:0 0 10px; width:100%; text-align:left; font-weight:bold; display:block; }
+tr                                              { padding:3px; background-color:#FFF; border-bottom:4px solid #EEE; min-height:35px; transition:background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
+thead                                           { padding:10px; background-color:#FFF; border:none; font-weight:bold; text-align:left; display:none; }
+td                                              { padding:6px 10px 6px 0; min-width:60px; background-color:transparent; border:none; word-wrap:break-word; position:relative; top:0; left:0; }
+td:empty                                        { display:none; visibility:hidden; }
+td.align-vertical                               { vertical-align:middle; }
+td[data-title]:before                           { padding:0 10px 0 0; content:attr(data-title) ":\00A0"; color:#26343E; display:block; font-weight:bold; }
 
-/***********************************************
-Disable Internet Explorer input overlays
-***********************************************/
-::-ms-clear, ::ms-reveal                        { display:none; }
-
-/***********************************************
-Screen Smaller than 1200px
-***********************************************/
-@media only screen and (min-width: 960px) and (max-width: 1199px) {
-/***** Show & Hide classes *****/
-  .show-mobile                                  { display:none !important; }
-  .show-tablet                                  { display:none !important; }
-  .show-screen                                  { display:inherit !important; }
-
-  .hide-mobile                                  { display:inherit !important; }
-  .hide-tablet                                  { display:inherit !important; }
-  .hide-screen                                  { display:none !important; }
-}
 
 /***********************************************
-Tablet (Smaller than 959px)
+Tablet - This applies from 768px onwards
 ***********************************************/
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+@media (min-width:$grid-width-tablet){
+  /***** Hide *****/
+  .hide-mobile                                  { display:inherit; }
+  .hide-tablet                                  { display:none; }
 
-  /***** Show & Hide classes *****/
-  .show-mobile                                  { display:none !important; }
-  .show-tablet                                  { display:inherit !important; }
-  .show-screen                                  { display:none !important; }
-
-  .hide-mobile                                  { display:inherit !important; }
-  .hide-tablet                                  { display:none !important; }
-  .hide-screen                                  { display:inherit !important; }
-}
-
-/***********************************************
-Mobile (portrait 300px)
-***********************************************/
-@media only screen and (max-width:767px) {
+  /***** Show *****/
+  .show-mobile                                  { display:none; }
+  .show-tablet                                  { display:inherit; }
 
   /***** Tables *****/
-  table, tbody, tr, th, td                      { display:block; text-align:left; white-space:normal; }
-  table                                         { border:none; table-layout:fixed; color:#6A8092; }
-  caption                                       { display:block; }
-  tr                                            { padding:3px; border-width:4px; }
-  thead, th                                     { padding:9px; }
-  thead, th, td:empty                           { display:none; visibility:hidden; }
-  td                                            { padding:6px 9px 9px 0; }
-  td[data-title]:before                         { padding:0 10px 0 0; content:attr(data-title) ":\00A0"; color:#26343E; display:block; font-weight:bold; }
+  table                                         { display:table; table-layout:auto; }
+  caption                                       { display:table-caption; }
+  tbody, thead                                  { display:table-row-group; }
+  tr                                            { padding:0; border-width:1px; display:table-row; }
+  td, th                                        { padding:10px; display:table-cell; }
+  td[data-title]:before                         { display:none; }
+}
 
-  /***** Show & Hide classes *****/
-  .show-mobile                                  { display:inline-block !important; }
-  .show-tablet                                  { display:none !important; }
-  .show-screen                                  { display:none !important; }
+/***********************************************
+Smaller screen - This applies from 992px onwards
+***********************************************/
+@media (min-width:$grid-width-smscreen) {
+  /***** Tables *****/
+  tr:hover                                      { background-color:#F9F9F9; }
 
-  .hide-mobile                                  { display:none !important; }
-  .hide-tablet                                  { display:inline-block !important; }
-  .hide-screen                                  { display:inline-block !important; }
+  /***** Hide *****/
+  .hide-mobile                                  { display:inherit; }
+  .hide-tablet                                  { display:inherit; }
+  .hide-screen                                  { display:none; }
+
+  /***** Show *****/
+  .show-mobile                                  { display:none; }
+  .show-tablet                                  { display:none; }
+  .show-screen                                  { display:inherit; }
 }
