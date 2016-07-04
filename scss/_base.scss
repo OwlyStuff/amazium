@@ -139,13 +139,15 @@ img                                             { border:0; vertical-align:middl
 /***********************************************
 Tables
 ***********************************************/
-// table                                           { margin:20px 0 40px 0; border:none; width:100%; overflow:visible; text-align:left; border-bottom:1px solid #D6D6D6; border-collapse:collapse; border-spacing:0; }
-// caption                                         { margin:0 0 10px; width:100%; text-align:left; font-weight:bold; }
-// tr                                              { background-color:#FFF; border-bottom:1px solid #EEE; min-height:35px; transition:background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
-// tr:hover                                        { background-color:#F9F9F9; }
-// th                                              { padding:10px; background-color:#FFF; border:none; font-weight:bold; text-align:left; }
-// td                                              { padding:10px; min-width:60px; background-color:transparent; border:none; word-wrap:break-word; position:relative; top:0; left:0; }
-// td.align-vertical                               { vertical-align:middle; }
+table, tbody, tr, th, td                        { display:block; text-align:left; }
+table                                           { margin:0 0 40px 0; width:100%; overflow:visible; text-align:left; border:none; border-collapse:collapse; border-spacing:0; table-layout:fixed; }
+caption                                         { margin:0 0 10px; width:100%; text-align:left; font-weight:bold; display:block; }
+tr                                              { padding:3px; background-color:#FFF; border-bottom:4px solid #EEE; min-height:35px; transition:background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
+thead                                           { padding:10px; background-color:#FFF; border:none; font-weight:bold; text-align:left; display:none; }
+td                                              { padding:6px 10px 6px 0; min-width:60px; background-color:transparent; border:none; word-wrap:break-word; position:relative; top:0; left:0; }
+td:empty                                        { display:none; visibility:hidden; }
+td.align-vertical                               { vertical-align:middle; }
+td[data-title]:before                           { padding:0 10px 0 0; content:attr(data-title) ":\00A0"; color:#26343E; display:block; font-weight:bold; }
 
 /***********************************************
 Icons Setup
@@ -243,17 +245,6 @@ textarea:focus, button:focus                    { outline:none; }
 /***** Show *****/
 .show-tablet                                    { display:none; }
 .show-screen                                    { display:none; }
-
-/***** Tables *****/
-table, tbody, tr, th, td                        { display:block; text-align:left; }
-table                                           { margin:0 0 40px 0; width:100%; overflow:visible; text-align:left; border:none; border-collapse:collapse; border-spacing:0; table-layout:fixed; }
-caption                                         { margin:0 0 10px; width:100%; text-align:left; font-weight:bold; display:block; }
-tr                                              { padding:3px; background-color:#FFF; border-bottom:4px solid #EEE; min-height:35px; transition:background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
-thead                                           { padding:10px; background-color:#FFF; border:none; font-weight:bold; text-align:left; display:none; }
-td                                              { padding:6px 10px 6px 0; min-width:60px; background-color:transparent; border:none; word-wrap:break-word; position:relative; top:0; left:0; }
-td:empty                                        { display:none; visibility:hidden; }
-td.align-vertical                               { vertical-align:middle; }
-td[data-title]:before                           { padding:0 10px 0 0; content:attr(data-title) ":\00A0"; color:#26343E; display:block; font-weight:bold; }
 
 
 /***********************************************
