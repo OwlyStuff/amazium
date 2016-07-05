@@ -177,13 +177,13 @@ Message Blocks
 Utility Classes
 ***********************************************/
 /***** Font size *****/
-.txt--fontSize-xxl                              { font-size:46px; }
-.txt--fontSize-xl                               { font-size:38px; }
-.txt--fontSize-l                                { font-size:28px; }
-.txt--fontSize-m                                { font-size:20px; }
-.txt--fontSize-s                                { font-size:18px; }
-.txt--fontSize-xs                               { font-size:16px; }
-.txt--fontSize-xxs                              { font-size:14px; }
+.txt--fontSize-xxl                              { font-size:46px; line-height:50px; }
+.txt--fontSize-xl                               { font-size:38px; line-height:40px; }
+.txt--fontSize-l                                { font-size:28px; line-height:30px; }
+.txt--fontSize-m                                { font-size:20px; line-height:22px; }
+.txt--fontSize-s                                { font-size:18px; line-height:20px; }
+.txt--fontSize-xs                               { font-size:16px; line-height:18px; }
+.txt--fontSize-xxs                              { font-size:14px; line-height:14px; }
 
 /***** Line height *****/
 .txt--lineHeight-xxl                            { line-height:50px; }
