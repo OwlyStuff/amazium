@@ -37,11 +37,11 @@ body                                            { margin:0; padding:0; backgroun
 Typography
 ***********************************************/
 h1, .h1, h2, .h2, h3, .h3,
-h4, .h4, h5, .h5, h6, .h6                       { margin:0 0 16px; padding:0; color:#333; font-weight:normal; position:relative; }
+h4, .h4, h5, .h5, h6, .h6                       { margin:0 0 16px; padding:0; color:#333; font-weight:normal; display:block; position:relative; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a              { font-weight:inherit; color:inherit; }
-h1, .h1                                         { font-size:38px; line-height:40px; }
+h1, .h1                                         { font-size:33px; line-height:35px; }
 h2, .h2                                         { font-size:28px; line-height:30px; }
-h3, .h3                                         { font-size:20px; line-height:22px; }
+h3, .h3                                         { font-size:23px; line-height:25px; }
 h4, .h4                                         { font-size:18px; line-height:20px; }
 h5, .h5                                         { font-size:16px; line-height:18px; }
 h6, .h6                                         { font-size:12px; line-height:14px; }
@@ -178,18 +178,18 @@ Utility Classes
 ***********************************************/
 /***** Font size *****/
 .txt--fontSize-xxl                              { font-size:46px; line-height:50px; }
-.txt--fontSize-xl                               { font-size:38px; line-height:40px; }
+.txt--fontSize-xl                               { font-size:33px; line-height:35px; }
 .txt--fontSize-l                                { font-size:28px; line-height:30px; }
-.txt--fontSize-m                                { font-size:20px; line-height:22px; }
+.txt--fontSize-m                                { font-size:23px; line-height:25px; }
 .txt--fontSize-s                                { font-size:18px; line-height:20px; }
 .txt--fontSize-xs                               { font-size:16px; line-height:18px; }
-.txt--fontSize-xxs                              { font-size:14px; line-height:14px; }
+.txt--fontSize-xxs                              { font-size:12px; line-height:14px; }
 
 /***** Line height *****/
 .txt--lineHeight-xxl                            { line-height:50px; }
-.txt--lineHeight-xl                             { line-height:40px; }
+.txt--lineHeight-xl                             { line-height:35px; }
 .txt--lineHeight-l                              { line-height:30px; }
-.txt--lineHeight-m                              { line-height:22px; }
+.txt--lineHeight-m                              { line-height:25px; }
 .txt--lineHeight-s                              { line-height:20px; }
 .txt--lineHeight-xs                             { line-height:18px; }
 .txt--lineHeight-xxs                            { line-height:14px; }
