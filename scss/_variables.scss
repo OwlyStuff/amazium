@@ -25,3 +25,16 @@ $grid-gutter-tablet:$grid-gutter-smscreen / 1.1;
 
 /***** Shorthand Padding Mixin *****/
 @mixin padding($padding) { padding:$padding; }
+
+/***********************************************
+Aspect Ratio
+***********************************************/
+@mixin aspect-ratio($width, $height)            { position:relative;
+  &:before                                      { padding-top:($height / $width) * 100%; display:block; content:''; width:100%; }
+  > .content                                    { position:absolute; top:0; left:0; right:0; bottom:0; overflow:hidden; }
+}
+
+.four-three                                     { @include aspect-ratio(4,3); }
+.five-four                                      { @include aspect-ratio(5,4); }
+.sixteen-nine                                   { @include aspect-ratio(16,9); }
+.sixteen-ten                                    { @include aspect-ratio(16,10); }
