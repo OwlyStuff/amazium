@@ -34,7 +34,7 @@ fieldset .label + p,
 label + p, .label + p                                       { margin:0 0 10px; font-size:14px; line-height:18px; color:#AAA; }
 
 /***** Inputs *****/
-input, textarea, select                                     { margin:0; padding:0 10px; display:block; border-radius:0; width:100%; height:40px; font-size:14px; line-height:40px; color:#555; border-width:1px; border-radius:3px; border-style:solid; overflow:hidden; position:relative; top:0; left:0; outline:0 none; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -webkit-appearance:none;
+input, textarea, select                                     { margin:0; padding:0 10px; display:block; border-radius:0; width:100%; height:40px; font-size:14px; line-height:40px; border-width:1px; border-radius:3px; border-style:solid; overflow:hidden; position:relative; top:0; left:0; outline:0 none; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -webkit-appearance:none;
     transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s;
     -moz-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s;
     -webkit-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s;
@@ -279,11 +279,11 @@ Placeholder
 ::-moz-placeholder                                          { color:#BBB; }
 :-ms-input-placeholder                                      { color:#BBB; }
 
-input:focus, select:focus, textarea:focus                   { color:#222; border-color:#3498DB; outline:none; box-shadow:none; outline-color:transparent; outline-style:none; }
-:focus::-webkit-input-placeholder                           { color:#555; outline:none; }
-:focus:-moz-placeholder                                     { color:#555; outline:none; }
-:focus::-moz-placeholder                                    { color:#555; outline:none; }
-:focus:-ms-input-placeholder                                { color:#555; outline:none; }
+input:focus, select:focus, textarea:focus                   { border-color:#3498DB; outline:none; box-shadow:none; outline-color:transparent; outline-style:none; }
+:focus::-webkit-input-placeholder                           { outline:none; }
+:focus:-moz-placeholder                                     { outline:none; }
+:focus::-moz-placeholder                                    { outline:none; }
+:focus:-ms-input-placeholder                                { outline:none; }
 
 /***********************************************
 Forms with inline labels
