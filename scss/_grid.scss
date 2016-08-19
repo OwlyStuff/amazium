@@ -55,7 +55,7 @@ Tablet - This applies from 768px onwards
   .grid                                         { flex:1 1 0%; @extend %grid-styles-tablet; }
 
   @for $i from 1 through $grid-columns          {
-    .grid-#{$i}                                 { flex-basis:100% / $grid-columns *$i; @extend %grid-styles-tablet; }
+    .grid-#{$i}                                 { flex-basis:100% / $grid-columns *$i; max-width:100% / $grid-columns *$i; @extend %grid-styles-tablet; }
   }
 
   /***** Sets grid offsets *****/
