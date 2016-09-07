@@ -113,8 +113,8 @@ Tablet - This applies from 768px to 992px
 @media only screen and (min-width:$grid-width-tablet) and (max-width:$grid-width-smscreen - 1px) {
 
   /***** Sets table override grid width *****/
-  @for $i from 1 through $grid-columns          {
-    .grid-#{$i}-tablet                          { flex-basis:$i / $grid-columns * 100%; }
+  @for $i from 1 through $grid-columns {
+    .grid-#{$i}-tablet                          { flex-basis:$i / $grid-columns * 100%; max-width:100% / $grid-columns *$i; }
   }
 
   /***** Grid ordering *****/
