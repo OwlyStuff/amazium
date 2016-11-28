@@ -358,9 +358,7 @@ input:focus[type=submit]                        { margin:0; padding:0 10px; back
     &.btn--size-s                               { height:20px; }
   }
 
-  /**
-   * Hover override styling
-   */
+  /***** Hover override styling *****/
   &.btn--colorHover-positive:hover              { background-color:$color-positive; border-color:$color-positive; }
   &.btn--colorHover-info:hover                  { background-color:$color-info; border-color:$color-info; }
   &.btn--colorHover-infoDark:hover              { background-color:$color-infoDark; border-color:$color-infoDark; }
