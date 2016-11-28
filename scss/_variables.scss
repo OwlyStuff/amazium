@@ -39,3 +39,44 @@ Aspect Ratio
 .five-four                                      { @include aspect-ratio(5,4); }
 .sixteen-nine                                   { @include aspect-ratio(16,9); }
 .sixteen-ten                                    { @include aspect-ratio(16,10); }
+
+
+/***********************************************
+Colors
+***********************************************/
+
+/***** Smoke set *****/
+$color-smoke:                   #F0F2F4;
+$color-smokeDark:               #D8D9DB;
+$color-smokeExtraDark:          #C0C2C3;
+
+/***** Snow set *****/
+$color-snow:                    #FFFFFF;
+$color-snowDark:                #F7F7F7;
+$color-snowExtraDark:           #E5E5E5;
+
+/***** Black set *****/
+$color-black:                   #1A2730;
+$color-slate:                   #26343E;
+$color-steel:                   #33424D;
+$color-silver:                  #6A8092;
+
+/***** Grey set *****/
+$color-grey:                    #AAAAAA;
+$color-greyDark:                #555555;
+
+/***** Positive set *****/
+$color-positive:                #29B765;
+$color-positiveDark:            #219358;
+
+/***** Warning set *****/
+$color-warning:                 #FFC82C;
+$color-warningDark:             #F8B700;
+
+/***** Negative set *****/
+$color-negative:                #E74C3C;
+$color-negativeDark:            #B93D30;
+
+/***** Information set *****/
+$color-info:                    #3498DB;
+$color-infoDark:                #206FA4;
