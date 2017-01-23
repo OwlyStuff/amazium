@@ -4,7 +4,7 @@ Responsive CSS Framework
 
 __*Literally*__ Too orangey for crows!
 
-See [Amazium.co.uk](http://www.amazium.co.uk)
+See [Amazium.co.uk](https://www.amazium.co.uk)
 
 
 ###Ember-CLI application setup
