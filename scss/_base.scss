@@ -62,8 +62,11 @@ dl                                              { margin-left:0; padding:0; }
 dt                                              { font-weight:bold; }
 dd                                              { margin-top:6px; }
 
-.dl-inline dt                                   { padding-right:10px; float:left; width:30%; clear:left;
-  dd                                            { margin-top:inherit; margin-left:30%; }
+.dl-inline                                      {
+  dt                                            { margin-top:inherit; padding:0 10px 16px 0; float:left; width:30%; clear:left; }
+  dd                                            { margin-top:inherit; margin-left:30%; padding-bottom:16px;
+    &:last-child                                { padding:0; }
+  }
 }
 
 /***********************************************
