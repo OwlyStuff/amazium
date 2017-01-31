@@ -27,31 +27,30 @@ h4, .h4                                         { font-size:18px; line-height:20
 h5, .h5                                         { font-size:16px; line-height:18px; }
 h6, .h6                                         { font-size:12px; line-height:14px; }
 
-p                                               { margin:0 0 20px 0; padding:0; }
 b, strong, .txt-bold                            { font-weight:700; }
 em                                              { font-style:italic; }
 sup, sub                                        { height:0; line-height:0; vertical-align:baseline; position:relative; font-size:80%; }
 sup                                             { top:-5px; }
 sub                                             { bottom:-5px; }
 
-pre                                             { margin:0 0 50px; padding:0; display:table; table-layout:fixed; width:100%; }
+pre                                             { padding:0; display:table; table-layout:fixed; width:100%; }
 pre code                                        { padding:20px; overflow:auto; width:100%; }
 code                                            { margin:0; padding:0 3px; font-family:'Consolas', Courier, monospace; font-size:12px; line-height:16px; text-align:left; color:#F1F1F1; display:inline-block; vertical-align:middle; background-color:#111; border:1px solid #111; overflow:hidden; white-space:pre; }
 
 abbr[title],
 abbr[data-original-title]                       { border-bottom:1px dotted #999999; cursor:help; }
 
-address                                         { margin:26px 0; padding:0; display:block; font-style:normal; line-height:20px; }
+address                                         { padding:0; display:block; font-style:normal; line-height:20px; }
 
-hr                                              { margin:20px 0; padding:0; border:0; border-top:1px solid #D6D6D6; height:1px; width:100%; text-align:left; display:block; }
+hr                                              { padding:0; border:0; border-top:1px solid #D6D6D6; height:1px; width:100%; text-align:left; display:block; }
 
 /***********************************************
 Lists
 ***********************************************/
-ul, ol, dl                                      { margin:20px 0 30px 20px; display:block; }
-ul ul, ul ol, ol ol, ol ul                      { margin:10px 0 20px 20px; }
+ul, ol, dl                                      { margin-left:20px; display:block; }
+ul ul, ul ol, ol ol, ol ul                      { margin-top:1em; }
 ol                                              { padding-left:10px; }
-li                                              { margin:0 0 10px 0; padding:0; }
+li                                              { padding:0; }
 
 ul.square, ul.square ul, ul.circle ul.square    { list-style:square; }
 ul.circle, ul.circle ul, ul.square ul.circle    { list-style:circle; }
@@ -59,24 +58,25 @@ ul.disc, ul.disc ul                             { list-style:disc; }
 ul.square li, ul.circle li, ul.disc li          { margin:0 0 5px 0; padding:0; line-height:18px; background:none; }
 
 dl                                              { margin-left:0; padding:0; }
-dt                                              { margin:0; font-weight:bold; }
-dd                                              { margin:0 0 20px; }
+dt                                              { font-weight:bold; }
+dd                                              { margin-top:6px; }
 
-.dl-inline dt                                   { margin:0 0 20px; float:left; width:30%; clear:left; }
-.dl-inline dd                                   { margin-left:30%; }
+.dl-inline dt                                   { padding-right:10px; float:left; width:30%; clear:left;
+  dd                                            { margin-top:inherit; margin-left:30%; }
+}
 
 /***********************************************
 Blockquotes
 ***********************************************/
-figure                                          { margin:56px 0; padding:10px 0 10px 20px; border-left:2px solid #26343E; position:relative; top:0; left:0; }
+figure                                          { padding:10px 0 10px 20px; border-left:2px solid #26343E; position:relative; top:0; left:0; }
 
 blockquote                                      { margin:0; padding:0; }
-blockquote p                                    { margin:0 0 10px; padding:0; font-style:italic; }
+blockquote p                                    { font-style:italic; }
 blockquote a                                    { display:inline-block; }
 
 figcaption:before                               { content:'\2014'; display:block; }
-figcaption                                      { margin:0; padding:0; font-size:14px; }
-figcaption span                                 { padding:0 5px; display:inline-block; background-color:#26343E; color:#FFF; border-radius:3px; }
+figcaption                                      { padding:0; font-size:14px; }
+figcaption span                                 { margin:0; padding:0 5px; display:inline-block; background-color:#26343E; color:#FFF; border-radius:3px; }
 
 /***********************************************
 Links
@@ -110,19 +110,19 @@ a:focus                                         { outline:none; -moz-outline-sty
 Images, iFrames & Videos
 ***********************************************/
 img                                             { border:0; vertical-align:middle; -ms-interpolation-mode:bicubic; }
-.img-left                                       { float:left; margin:0 30px 30px 0; border:none; }
-.img-right                                      { float:right; margin:0 0 30px 30px; border:none; }
+.img-left                                       { margin-bottom:16px; float:left; border:none; }
+.img-right                                      { margin-bottom:16px; float:right; border:none; }
 .img-max                                        { width:100%; height:auto; }
 
-.media                                          { position:relative; margin:0 0 15px 0; padding-bottom:51%; padding-top:30px; height:0; overflow:hidden; border:1px solid #ccc; }
+.media                                          { position:relative; padding-bottom:51%; padding-top:30px; height:0; overflow:hidden; border:1px solid #ccc; }
 .media iframe, .media object, .media embed      { position:absolute; top:0; left:0; width:100%; height:100%; }
 
 /***********************************************
 Tables
 ***********************************************/
 table, tbody, tr, th, td                        { display:block; text-align:left; }
-table                                           { margin:0 0 40px 0; width:100%; overflow:visible; text-align:left; border:none; border-collapse:collapse; border-spacing:0; table-layout:fixed; }
-caption                                         { margin:0 0 10px; width:100%; text-align:left; font-weight:bold; display:block; }
+table                                           { width:100%; overflow:visible; text-align:left; border:none; border-collapse:collapse; border-spacing:0; table-layout:fixed; }
+caption                                         { width:100%; text-align:left; font-weight:bold; display:block; }
 tr                                              { padding:3px; background-color:#FFF; border-bottom:4px solid #EEE; min-height:35px; transition:background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
 thead                                           { padding:10px; background-color:#FFF; border:none; font-weight:bold; text-align:left; display:none; }
 td                                              { padding:6px 10px 6px 0; min-width:60px; background-color:transparent; border:none; word-wrap:break-word; position:relative; top:0; left:0; }
@@ -148,7 +148,7 @@ Icons Setup
 /***********************************************
 Message Blocks
 ***********************************************/
-.message                                        { margin:0 0 20px; padding:8px 10px; font-size:12px; line-height:16px; color:#FFF; letter-spacing:.5px; background-color:#26343E; border-radius:3px; width:100%; position:relative; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+.message                                        { padding:8px 10px; font-size:12px; line-height:16px; color:#FFF; letter-spacing:.5px; background-color:#26343E; border-radius:3px; width:100%; position:relative; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 .message--color-positive                        { background-color:#29B765; }
 .message--color-info                            { background-color:#3498DB; }
 .message--color-warning                         { background-color:#FFC82C; color:#444; }
