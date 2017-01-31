@@ -123,15 +123,28 @@ img                                             { border:0; vertical-align:middl
 /***********************************************
 Tables
 ***********************************************/
-table, tbody, tr, th, td                        { display:block; text-align:left; }
-table                                           { width:100%; overflow:visible; text-align:left; border:none; border-collapse:collapse; border-spacing:0; table-layout:fixed; }
-caption                                         { width:100%; text-align:left; font-weight:bold; display:block; }
-tr                                              { padding:3px; background-color:#FFF; border-bottom:4px solid #EEE; min-height:35px; transition:background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
-thead                                           { padding:10px; background-color:#FFF; border:none; font-weight:bold; text-align:left; display:none; }
-td                                              { padding:6px 10px 6px 0; min-width:60px; background-color:transparent; border:none; word-wrap:break-word; position:relative; top:0; left:0; }
+.tableCloth                                     { overflow:scroll; overflow-y:hidden; width:100%; -webkit-overflow-scrolling:touch; }
+
+table                                           { width:100%; overflow:visible; text-align:left; font-size:.75em; display:table; border:none; border-collapse:collapse; border-spacing:0; }
+caption, thead                                  { font-weight:bold; text-align:left; }
+tr                                              { padding:3px; padding:0; border-bottom:1px solid #EEE; transition:background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
+th, td                                          { padding:5px 10px; min-width:40px; border:none; word-wrap:break-word; vertical-align:top; position:relative; top:0; left:0; }
 td:empty                                        { display:none; visibility:hidden; }
-td.align-vertical                               { vertical-align:middle; }
-td[data-title]:before                           { padding:0 10px 0 0; content:attr(data-title) ":\00A0"; color:#26343E; display:block; font-weight:bold; }
+
+.table--rowHover thead tr:hover,
+.table--stripes thead tr:nth-child(odd)         { background-color:transparent; }
+.table--rowHover tr:hover,
+.table--stripes tr:nth-child(odd)               { background-color:#F0F2F4; }
+
+.table--responsive td[data-title]:before        { padding:0 10px 0 0; content:attr(data-title) ":\00A0"; color:#26343E; display:block; font-weight:bold; }
+
+.table--mobile table,
+.table--mobile tr,
+.table--mobile td                               { display:block; border:none; }
+.table--mobile td                               { margin:0; padding:0; display:block; }
+.table--mobile thead                            { padding:10px; background-color:#FFF; border:none; font-weight:bold; text-align:left; display:none; }
+.table--mobile td[data-title]:before            { padding:0 10px 0 0; content:attr(data-title) ":\00A0"; color:#26343E; display:inline-block; width:30%; font-weight:bold; }
+.table--mobile .cell-content                    { display:inline-block; width:calc(70% - 20px); vertical-align:top; }
 
 /***********************************************
 Icons Setup
@@ -213,11 +226,19 @@ textarea:focus, button:focus                    { outline:none; }
 .show-tablet                                    { display:none; }
 .show-screen                                    { display:none; }
 
-
 /***********************************************
 Tablet - This applies from 768px onwards
 ***********************************************/
 @media (min-width:$grid-width-tablet){
+  table                                         { font-size:inherit; }
+
+  .table--mobile table                          { display:table; table-layout:auto; }
+  .table--mobile caption                        { display:table-caption; }
+  .table--mobile tbody, thead                   { display:table-row-group; }
+  .table--mobile tr                             { padding:0; border-width:1px; display:table-row; }
+  .table--mobile td, th                         { padding:10px; display:table-cell; }
+  .table--mobile td[data-title]:before          { display:none; }
+
   /***** Hide *****/
   .hide-mobile                                  { display:inherit; }
   .hide-tablet                                  { display:none; }
@@ -225,14 +246,6 @@ Tablet - This applies from 768px onwards
   /***** Show *****/
   .show-mobile                                  { display:none; }
   .show-tablet                                  { display:inherit; }
-
-  /***** Tables *****/
-  table                                         { display:table; table-layout:auto; }
-  caption                                       { display:table-caption; }
-  tbody, thead                                  { display:table-row-group; }
-  tr                                            { padding:0; border-width:1px; display:table-row; }
-  td, th                                        { padding:10px; display:table-cell; }
-  td[data-title]:before                         { display:none; }
 }
 
 /***********************************************
@@ -240,7 +253,7 @@ Smaller screen - This applies from 992px onwards
 ***********************************************/
 @media (min-width:$grid-width-smscreen) {
   /***** Tables *****/
-  tr:hover                                      { background-color:#F9F9F9; }
+  table                                         { table-layout:fixed; }
 
   /***** Hide *****/
   .hide-mobile                                  { display:inherit; }
