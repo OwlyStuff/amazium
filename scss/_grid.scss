@@ -24,10 +24,10 @@ Mobile First - This applies from 0px to 767px
 .row .row [class^="grid"]:last-child            { padding-right:0; }
 
 /***** Sets grid widths *****/
-.grid                                           { width:100%; -moz-box-sizing:border-box; box-sizing:border-box; }
+.grid                                           { margin:0; width:100%; -moz-box-sizing:border-box; box-sizing:border-box; }
 
 @for $i from 1 through $grid-columns            {
-  .grid-#{$i}                                   { width:100%; -moz-box-sizing:border-box; box-sizing:border-box; }
+  .grid-#{$i}                                   { margin:0; width:100%; -moz-box-sizing:border-box; box-sizing:border-box; }
 }
 
 /***** grid ordering *****/
