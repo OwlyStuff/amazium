@@ -128,7 +128,6 @@ Toggle Checkboxes & Radios
   -moz-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s;
   -webkit-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s;
   -o-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s;
->>>>>>> Removes margins as now handled by the owl
 }
 
 /***** Checkboxe *****/
@@ -211,11 +210,7 @@ Toggle Checkboxes & Radios
   .negative input:checked + label:before        { background-color:$color-negative; }
 }
 
-<<<<<<< 0ca9396bb867edc68b0793ec83b569d86b62187e
-.inline-btn-group                               { margin:10px 0 0 0; display:block; }
-=======
 .inline-btn-group                                           { display:block; }
->>>>>>> Removes margins as now handled by the owl
 
 /***********************************************
 Input Widths
@@ -310,6 +305,7 @@ Forms without labels
 .labels-hidden label                            { display:none; }
 
 /***********************************************
+<<<<<<< 8ab6b93839a7c0454a44391be74a3f7c6df9d3c6
 Buttons
 ***********************************************/
 input::-moz-focus-inner,
@@ -494,6 +490,8 @@ input:focus[type=submit]                        { margin:0; padding:0 10px; back
 }
 
 /***********************************************
+=======
+>>>>>>> Removes buttons styling
 for-tablet-landscape-up
 ***********************************************/
 @media (min-width:900px)                        {
