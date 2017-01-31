@@ -112,13 +112,13 @@ a:focus                                         { outline:none; -moz-outline-sty
 /***********************************************
 Images, iFrames & Videos
 ***********************************************/
-img                                             { border:0; vertical-align:middle; -ms-interpolation-mode:bicubic; }
-.img-left                                       { margin-bottom:16px; float:left; border:none; }
-.img-right                                      { margin-bottom:16px; float:right; border:none; }
-.img-max                                        { width:100%; height:auto; }
+img                                             { border:0; vertical-align:middle; border:none; -ms-interpolation-mode:bicubic; }
+.img--left,
+.img--right                                     { margin-bottom:16px; max-width:100%; display:block; }
+.img--max                                       { width:100%; height:auto; }
 
-.media                                          { position:relative; padding-bottom:51%; padding-top:30px; height:0; overflow:hidden; border:1px solid #ccc; }
-.media iframe, .media object, .media embed      { position:absolute; top:0; left:0; width:100%; height:100%; }
+.media                                          { padding-bottom:53%; padding-top:25px; height:0; position:relative; overflow:hidden; }
+.media iframe, .media object, .media embed      { width:100%; height:100%; position:absolute; top:0; left:0; }
 
 /***********************************************
 Tables
@@ -165,10 +165,10 @@ Icons Setup
 Message Blocks
 ***********************************************/
 .message                                        { padding:8px 10px; font-size:12px; line-height:16px; color:#FFF; letter-spacing:.5px; background-color:#26343E; border-radius:3px; width:100%; position:relative; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
-.message--color-positive                        { background-color:#29B765; }
-.message--color-info                            { background-color:#3498DB; }
-.message--color-warning                         { background-color:#FFC82C; color:#444; }
-.message--color-negative                        { background-color:#E74C3C; }
+.message--positive                              { background-color:$color-positive; }
+.message--info                                  { background-color:$color-info; }
+.message--warning                               { background-color:$color-warning; color:#444; }
+.message--negative                              { background-color:$color-negative; }
 
 /***********************************************
 Utility Classes
@@ -182,27 +182,26 @@ Utility Classes
 .txt--fontWeight-500                            { font-weight:500; }
 
 /***** Floats *****/
-.float-left                                     { float:left; }
-.float-right                                    { float:right; }
-.float-clear                                    { clear:both; }
+.float--left                                    { float:left; }
+.float--right                                   { float:right; }
+.float--clear                                   { clear:both; }
 
 /***** Text alignment *****/
-.txt-left                                       { text-align:left; }
-.txt-right                                      { text-align:right; }
-.txt-center                                     { text-align:center; }
-.txt-justify                                    { text-align:justify; }
+.txt--left                                      { text-align:left; }
+.txt--right                                     { text-align:right; }
+.txt--center                                    { text-align:center; }
+.txt--justify                                   { text-align:justify; }
 
 /***** Border radius *****/
 .rounded                                        { border-radius:50%; }
 .radius                                         { border-radius:3px; }
 
 /***** Resets *****/
-.no-padding                                     { padding:0; }
-.no-margin                                      { margin:0; }
-.no-indent                                      { margin-left:0; padding-left:0; }
-.no-bullet                                      { list-style:none; list-style-image:none; }
-.no-styling                                     { margin:0; padding:0; list-style:none; }
-
+.reset--padding                                 { padding:0; }
+.reset--margin                                  { margin:0; }
+.reset--indent                                  { margin-left:0; padding-left:0; }
+.reset--bullet                                  { list-style:none; list-style-image:none; }
+.reset--styling                                 { margin:0; padding:0; list-style:none; }
 /***** Display *****/
 .inline                                         { display:inline; }
 .block, .show                                   { display:block; }
@@ -220,11 +219,11 @@ textarea:focus, button:focus                    { outline:none; }
 .visible                                        { display:block; visibility:visible; }
 
 /***** Hide *****/
-.hide-mobile                                    { display:none; }
+.hide--mobile                                   { display:none; }
 
 /***** Show *****/
-.show-tablet                                    { display:none; }
-.show-screen                                    { display:none; }
+.show--tablet                                   { display:none; }
+.show--screen                                   { display:none; }
 
 /***********************************************
 Tablet - This applies from 768px onwards
@@ -240,12 +239,12 @@ Tablet - This applies from 768px onwards
   .table--mobile td[data-title]:before          { display:none; }
 
   /***** Hide *****/
-  .hide-mobile                                  { display:inherit; }
-  .hide-tablet                                  { display:none; }
+  .hide--mobile                                 { display:inherit; }
+  .hide--tablet                                 { display:none; }
 
   /***** Show *****/
-  .show-mobile                                  { display:none; }
-  .show-tablet                                  { display:inherit; }
+  .show--mobile                                 { display:none; }
+  .show--tablet                                 { display:inherit; }
 }
 
 /***********************************************
@@ -255,13 +254,16 @@ Smaller screen - This applies from 992px onwards
   /***** Tables *****/
   table                                         { table-layout:fixed; }
 
+  .img--left                                    { margin-bottom:0; margin-right:30px; float:left; }
+  .img--right                                   { margin-bottom:0; margin-left:30px; float:right; }
+
   /***** Hide *****/
-  .hide-mobile                                  { display:inherit; }
-  .hide-tablet                                  { display:inherit; }
-  .hide-screen                                  { display:none; }
+  .hide--mobile                                 { display:inherit; }
+  .hide--tablet                                 { display:inherit; }
+  .hide--screen                                 { display:none; }
 
   /***** Show *****/
-  .show-mobile                                  { display:none; }
-  .show-tablet                                  { display:none; }
-  .show-screen                                  { display:inherit; }
+  .show--mobile                                 { display:none; }
+  .show--tablet                                 { display:none; }
+  .show--screen                                 { display:inherit; }
 }
