@@ -23,8 +23,6 @@ button::-moz-focus-inner                        { border:0; padding:0; }
 }
 .btn:hover[disabled]                            { background-color:#1A2730; }
 
-.btn+.btn                                       { margin-left:5px; }
-
 /***** Sizes *****/
 .btn.btn--xs                                    { padding:0 6px; height:20px; min-width:20px; line-height:20px; font-size:.65em; letter-spacing:.5px; }
 .btn.btn--s                                     { padding:0 10px; height:30px; min-width:30px; line-height:30px; font-size:.9em; }
@@ -87,9 +85,10 @@ button::-moz-focus-inner                        { border:0; padding:0; }
   }
 }
 
-
 .btn--container                                 { margin:0;
-  .btn                                          { margin-top:16px; }
+  .btn                                          { margin-top:16px; margin-right:6px;
+    &:last-child                                { margin-right:0; }
+  }
 }
 
 /***** Loading States *****/
