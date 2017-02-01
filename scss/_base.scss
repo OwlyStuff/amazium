@@ -10,7 +10,7 @@ Mobile First - This applies from 0px to 767px
 
 /***** Resets *****/
 html                                            { font-size:16px; overflow:-moz-scrollbars-vertical; overflow-y:scroll; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
-body                                            { font-family:'sans-serif'; line-height:1.45; }
+body                                            { margin:0; font-family:'sans-serif'; line-height:1.45; }
 *, *:before, *:after                            { margin:0; padding:0; border:none; box-sizing:inherit; }
 *+*                                             { margin-top:1rem; }
 
