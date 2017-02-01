@@ -202,14 +202,15 @@ Inline items
 }
 
 .flex-grow                                      { flex-grow:1; }
-.inline-btn-group                               { padding:0 0 0 10px; width:1%; white-space:nowrap; vertical-align:middle; display:table-cell; }
 
 /***********************************************
 Inline elements
 ***********************************************/
 .has-inline-elements                            { margin-top:6px; position:relative; display:table; border-collapse:separate; width:100%;
   input, textarea, select, .select              { margin-top:0; width:100%; }
-  .btn                                          { margin-top:0; }
+  .btn--container                               { margin:0; padding:0 0 0 10px; width:1%; white-space:nowrap; vertical-align:middle; display:table-cell;
+    .btn                                        { margin-top:0; }
+  }
 }
 
 /***********************************************
