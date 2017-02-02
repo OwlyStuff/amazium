@@ -215,9 +215,9 @@ Inline items
 /***********************************************
 Inline elements
 ***********************************************/
-.has-inline-elements                            { margin-top:6px; position:relative; display:table; border-collapse:separate; width:100%;
-  input, textarea, select, .select              { margin-top:0; width:100%; }
-  .btn--container                               { margin:0; padding:0 0 0 10px; width:1%; white-space:nowrap; vertical-align:middle; display:table-cell;
+.has-inline-elements                            { margin-top:6px; position:relative; display:flex; border-collapse:separate; width:100%;
+  input, textarea, select, .select              { margin-top:0; flex: 1; }
+  .btn--container                               { margin:0; padding:0 0 0 10px; white-space:nowrap; vertical-align:middle;
     .btn                                        { margin-top:0; }
   }
 }
