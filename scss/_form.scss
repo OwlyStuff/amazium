@@ -206,9 +206,9 @@ Inline items
 /***********************************************
 Inline elements
 ***********************************************/
-.has-inline-elements                            { margin-top:6px; position:relative; display:flex; border-collapse:separate; width:100%;
-  input, textarea, select, .select              { margin-top:0; flex: 1; }
-  .btn--container                               { margin:0; padding:0 0 0 10px; white-space:nowrap; vertical-align:middle;
+.has-inline-elements                            { margin-top:6px; position:relative; display:block; border-collapse:separate; width:100%;
+  input, textarea, select, .select              { margin-top:0; }
+  .btn--container                               { margin:6px 0 0; padding:0; display:block; white-space:nowrap; vertical-align:middle;
     .btn                                        { margin-top:0; }
   }
 }
@@ -257,6 +257,16 @@ Forms with inline labels
 Forms without labels
 ***********************************************/
 .labels--hidden label                           { display:none; }
+
+/***********************************************
+Tablet - This applies from 768px onwards
+***********************************************/
+@media (min-width:$grid-width-tablet){
+  .has-inline-elements                          { display:flex;
+    input, textarea, select, .select            { flex: 1; }
+    .btn--container                             { margin:0; padding:0 0 0 10px; }
+  }
+}
 
 /***********************************************
 Smaller screen - This applies from 992px onwards
