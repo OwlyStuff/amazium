@@ -93,7 +93,7 @@ Radios & Checkboxes
     }
 
     &:checked + label:before,
-    &[type="radio"]:checked                     { border:4px solid $color-info;
+    &[type="radio"]:checked                     { border:6px solid $color-info;
       transition:all .2s linear 0s;
       -moz-transition:all .2s linear 0s;
       -webkit-transition:all .2s linear 0s;
