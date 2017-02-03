@@ -3,12 +3,12 @@ Buttons
 ***********************************************/
 
 /***** Button Reset *****/
-input.btn, button                               { padding:0; background:none; border:0; color:inherit; font:inherit; line-height:inherit; overflow:visible; -webkit-appearance:button; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; }
+input.btn, button                               { padding:0; background:none; border:0; color:inherit; font:inherit; overflow:visible; -webkit-appearance:button; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; }
 input::-moz-focus-inner,
 button::-moz-focus-inner                        { border:0; padding:0; }
 
 /***** btn class setup *****/
-.btn, input.btn                                 { padding:0 15px; background:#26343E; border:none; line-height:30px; font-size:.9em; color:#FFF; fill:#FFF; border-radius:3px; height:30px; min-width:30px; vertical-align:top; text-align:center; text-decoration:none; width:auto; letter-spacing:0; display:inline-block; position:relative; top:0; left:0; cursor:pointer;
+.btn, input.btn                                 { padding:0 15px; background:#26343E; border:none; font-size:.9em; line-height:1em; color:#FFF; fill:#FFF; border-radius:3px; height:30px; min-width:30px; display:inline-flex; vertical-align:top; align-items: center; align-content: center; justify-content: center; text-decoration:none; width:auto; letter-spacing:0; position:relative; top:0; left:0; cursor:pointer;
   transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s;
   -moz-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s;
   -webkit-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s;
@@ -24,11 +24,11 @@ button::-moz-focus-inner                        { border:0; padding:0; }
 .btn:hover[disabled]                            { background-color:#1A2730; }
 
 /***** Sizes *****/
-.btn.btn--xs                                    { padding:0 6px; height:20px; min-width:20px; line-height:20px; font-size:.65em; letter-spacing:.5px; }
-.btn.btn--s                                     { padding:0 10px; height:30px; min-width:30px; line-height:30px; font-size:.9em; }
-.btn.btn--m                                     { padding:0 15px; height:40px; min-width:40px; line-height:40px; font-size:1em; }
-.btn.btn--l                                     { padding:0 20px; height:50px; min-width:50px; line-height:50px; font-size:1.25em; }
-.btn.btn--xl                                    { padding:0 25px; height:60px; min-width:60px; line-height:60px; font-size:1.5em; }
+.btn.btn--xs                                    { padding:0 6px; height:20px; min-width:20px; font-size:.6em; letter-spacing:.5px; }
+.btn.btn--s                                     { padding:0 10px; height:30px; min-width:30px; font-size:.9em; }
+.btn.btn--m                                     { padding:0 15px; height:40px; min-width:40px; font-size:1em; }
+.btn.btn--l                                     { padding:0 20px; height:50px; min-width:50px; font-size:1.25em; }
+.btn.btn--xl                                    { padding:0 25px; height:60px; min-width:60px; font-size:1.5em; }
 
 .btn--width-100                                 { width:100%; }
 .btn--width-50                                  { width:50%; }
@@ -94,7 +94,10 @@ button::-moz-focus-inner                        { border:0; padding:0; }
 /***** Loading States *****/
 .btn--loading,
 .btn--successful,
-.btn--failure                                   { padding-left:40px; cursor:default; }
+.btn--failure                                   { padding-left:40px; cursor:default;
+  &.btn--xs, &.btn--s, &.btn--m,
+  &.btn--l, &.btn--xl                           { padding-left:40px; }
+}
 
 .btn--loading:before                            { background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzlFNEUwMDIxNTgwMTFFNjlCOTU5QjY1QkU5MkYyMDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUI1RjY4RkExN0E3MTFFNjlCOTU5QjY1QkU5MkYyMDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDOUU0RTAwMDE1ODAxMUU2OUI5NTlCNjVCRTkyRjIwOCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDOUU0RTAwMTE1ODAxMUU2OUI5NTlCNjVCRTkyRjIwOCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PnkuZ4IAAAEESURBVHjapNOxasJQFMbxGBRxEBWhqA8gOEhxULDg0EF8gw4dunRuH8TFwU0n6SgFh3bUNxCKHa3oJG7SDhZBjP8TjyLB4RoP/AK5OefL5YbYjuNYHgW0McYaW8zQQcXbH5CLVgwtPGCNPn4QQA4VhPGOZ/y6U5qUwLezr4bee3d2g6b2SG/cfbk+7OmDxzODXk/a+3kIqOpC3WD4oKEzNbl5wwqxCwISesBdm2O4x+B4KGa11Jk7CUhjYl1eU2QkYIOIjwD5pBsJGKPkI6CIkQR84FYXTKuMvDvLSWbwjyGCBl8ghC/8ISU7mOMVWSQN3h7VvhcsTv8FX2VbV9bVATsBBgCjV1NeIGkV2gAAAABJRU5ErkJggg=="); animation:spinner .8s linear .2s infinite; }
 .btn--successful:before                         { background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QTFCRTE4Q0IxNTc5MTFFNjlCOTU5QjY1QkU5MkYyMDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QTFCRTE4Q0MxNTc5MTFFNjlCOTU5QjY1QkU5MkYyMDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0MkMxNjBDNjBFMTYxMUU2OUI5NTlCNjVCRTkyRjIwOCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBMUJFMThDQTE1NzkxMUU2OUI5NTlCNjVCRTkyRjIwOCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuFgne4AAADHSURBVHjaYvj//z8DGdgFiL8BcSM5mlWA+N1/CPhDqmY+IL72HwE6SNHMBMSbkDRvBImRYkArkuYLQMwDEidWcziS5hdALAeTAxFsQGyAR7MhNMRB4DsQWyDLg4j1UMkSLJrFgfghku2R6GoYkEwHgTAkSZDLDiHJNWNzIYiIQFL0E4htoZIzkcRXAjEjLgNAOB9J8Wcg3ofEPwPEXLjCCFc0wcATIJbEF0PIHJAT5yJpBoWNEaEoRhdgBuIV0OgKICaNAAQYAPD/2FJuxgMsAAAAAElFTkSuQmCC"); }
@@ -102,7 +105,7 @@ button::-moz-focus-inner                        { border:0; padding:0; }
 
 .btn--loading:before,
 .btn--successful:before,
-.btn--failure:before                            { content:''; display:block; width:16px; height:16px; color:#FFF; line-height:16px; text-align:center; background-repeat:no-repeat; background-size:100%; position:absolute; top:calc(50% - 8px); left:15px; }
+.btn--failure:before                            { content:''; display:block; width:16px; height:16px; color:#FFF; text-align:center; background-repeat:no-repeat; background-size:100%; position:absolute; top:calc(50% - 8px); left:15px; }
 
 .btn--loading,
 .btn--loading:hover                             { background-color:#26343E; border-color:#26343E; }
