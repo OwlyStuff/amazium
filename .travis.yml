@@ -5,6 +5,8 @@ sudo: false
 branches:
   only:
     - master
+    - /^(?i:v)-.*$/
+    - /^(?i:feature)-.*$/
 install:
 - npm install
 script:
