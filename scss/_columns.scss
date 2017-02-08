@@ -15,7 +15,9 @@
 /***********************************************
 This applies from 0px to 767px
 ***********************************************/
-.columns                                        { margin-left:0; padding:0; list-style:none; display:flex; align-items:stretch; flex-direction:row; flex-wrap:wrap; flex-flow:row wrap; align-content:flex-end; }
+.columns                                        { margin-left:0; padding:0; list-style:none; display:flex; align-items:stretch; flex-direction:row; flex-wrap:wrap; flex-flow:row wrap; align-content:flex-end;
+  &+*                                           { margin-top:1rem; }
+}
 .column                                         { margin:0; padding:20px 0; border-top:1px solid #E5E5E5; width:100%; }
 .column:first-child                             { border-top-color:transparent; }
 
