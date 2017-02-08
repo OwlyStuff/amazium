@@ -75,7 +75,7 @@ Radios & Checkboxes
   input                                         { display:none; }
   > span                                        { padding:0; position:relative; top:0; left:0; width:auto; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;
     &:first-child label                         { margin:0; }
-    label                                       { padding:0 0 0 30px; width:100%; font-size:14px; line-height:20px; text-align:left; cursor:pointer; float:none; display:block; position:relative; left:0; top:0; }
+    label                                       { margin:6px 0 0; padding:0 0 0 30px; width:100%; font-size:14px; line-height:22px; text-align:left; cursor:pointer; float:none; display:block; position:relative; left:0; top:0; }
   }
 
   /***** Inline Radio & Checkboxes *****/
@@ -125,7 +125,9 @@ Radios & Checkboxes
 
 /***** Checkboxe Switch *****/
 .switch                                         {
-  > span label                                  { padding:0 0 0 46px; }
+  > span                                        { display:inline-block; width:auto;
+    label                                       { padding:0 0 0 46px; }
+  }
 
   input                                         {
     &+label                                     {
@@ -146,13 +148,13 @@ Radios & Checkboxes
 }
 
 .switch--right                                  { width:auto;
-  > span                                        { width:auto; display:inline-block;
+  > span                                        {
     label                                       { width:auto; padding:0 46px 0 0;
       &:before                                  { left:auto; right:0; }
-      &:after                                   { left:auto; right:2px; }
+      &:after                                   { left:auto; right:18px; }
     }
   }
-  input:checked + label:after                   { left:auto; right:18px; }
+  input:checked + label:after                   { left:auto; right:2px; }
 }
 
 /***** Checkboxes & Radios Toggle *****/
