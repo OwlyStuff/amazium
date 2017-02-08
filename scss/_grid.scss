@@ -7,6 +7,9 @@
 /***********************************************
 Mobile First - This applies from 0px to 767px
 ***********************************************/
+.row, .row--fluid                               {
+  &+*                                           { margin-top:1rem; }
+}
 
 /***** Row setup *****/
 .row, .row--fluid                               { margin-left:auto; margin-right:auto; padding:0 20px; display:flex; flex-direction:row; box-sizing:border-box; flex:0 1 auto; flex-wrap:wrap; -moz-box-sizing:border-box; box-sizing:border-box; }
@@ -24,10 +27,10 @@ Mobile First - This applies from 0px to 767px
 .row .row [class^="grid"]:last-child            { padding-right:0; }
 
 /***** Sets grid widths *****/
-.grid                                           { margin:0; width:100%; -moz-box-sizing:border-box; box-sizing:border-box; }
+.grid                                           { width:100%; -moz-box-sizing:border-box; box-sizing:border-box; }
 
 @for $i from 1 through $grid-columns            {
-  .grid-#{$i}                                   { margin:0; width:100%; -moz-box-sizing:border-box; box-sizing:border-box; }
+  .grid-#{$i}                                   { width:100%; -moz-box-sizing:border-box; box-sizing:border-box; }
 }
 
 /***** grid ordering *****/

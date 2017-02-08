@@ -12,7 +12,12 @@ form, label, input, textarea, select,
 .select optgroup option, .checkbox > span label,
 .radio > span label, form .message, .btn        { font-family:sans-serif; font-weight:normal; }
 
-input, textarea, select                         { border-color:#BBB; }
+form,fieldset,fieldset small,label,.label,
+input,textarea,.select                          {
+  &+*                                           { margin-top:1rem; }
+}
+
+input,textarea,select                           { border-color:#BBB; }
 
 /***********************************************
 Forms with labels
