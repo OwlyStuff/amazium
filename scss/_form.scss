@@ -112,7 +112,9 @@ Radios & Checkboxes
 
 /***** Checkboxe Switch *****/
 .switch                                         {
-  > span label                                  { padding:0 0 0 46px; }
+  > span                                        { display:inline-block; width:auto;
+    label                                       { padding:0 0 0 46px; }
+  }
 
   input                                         {
     &+label                                     {
@@ -133,13 +135,13 @@ Radios & Checkboxes
 }
 
 .switch--right                                  { width:auto;
-  > span                                        { width:auto; display:inline-block;
+  > span                                        {
     label                                       { width:auto; padding:0 46px 0 0;
       &:before                                  { left:auto; right:0; }
-      &:after                                   { left:auto; right:2px; }
+      &:after                                   { left:auto; right:18px; }
     }
   }
-  input:checked + label:after                   { left:auto; right:18px; }
+  input:checked + label:after                   { left:auto; right:2px; }
 }
 
 /***** Checkboxes & Radios Toggle *****/
@@ -275,7 +277,7 @@ button::-moz-focus-inner                        { border:0; padding:0; }
 button,.btn,input[type=button],
 input[type=submit],
 input:focus[type=button],
-input:focus[type=submit]                        { margin:0; padding:0 10px; background:$color-slate; border:1px solid $color-slate; font-size:13px; line-height:29px; color:#FFF; fill:#FFF; border-radius:3px; height:30px; min-width:30px; vertical-align:top; text-align:center; text-decoration:none; width:auto; letter-spacing:0; display:inline-block; position:relative; top:0; left:0; cursor:pointer; -webkit-appearance:button; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -moz-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -webkit-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -o-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s;
+input:focus[type=submit]                        { margin:0; padding:0 10px; background:$color-slate; border:1px solid $color-slate; font-size:13px; line-height:29px; color:#FFF; fill:#FFF; border-radius:3px; height:30px; min-width:30px; vertical-align:top; text-align:center; text-decoration:none; width:auto; letter-spacing:0; display:inline-block; position:relative; top:0; left:0; cursor:pointer; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -moz-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -webkit-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -o-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s;
   &:hover                                       { background-color:$color-silver; color:$color-snow; border-color:$color-silver; transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -moz-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -webkit-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; -o-transition:all 0.2s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
 
   &[disabled]                                   { cursor:not-allowed; opacity:.4;
