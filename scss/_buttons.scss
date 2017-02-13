@@ -85,8 +85,8 @@ button::-moz-focus-inner                        { border:0; padding:0; }
   }
 }
 
-.btn--container                                 { margin:0;
-  .btn                                          { margin-top:16px; margin-right:6px;
+.btn--container                                 {
+  .btn                                          { margin-top:0; margin-right:6px;
     &:last-child                                { margin-right:0; }
   }
 }
