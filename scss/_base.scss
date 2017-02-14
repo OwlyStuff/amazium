@@ -134,10 +134,11 @@ Tables
 ***********************************************/
 .tableCloth                                     { overflow:scroll; overflow-y:hidden; width:100%; -webkit-overflow-scrolling:touch; }
 
-table                                           { width:100%; overflow:visible; text-align:left; font-size:.75em; display:table; border:none; border-collapse:collapse; border-spacing:0; }
+table                                           { width:100%; overflow:visible; text-align:left; display:table; border:none; border-collapse:collapse; border-spacing:0; }
+table, caption, tbody, thead, tr, th, td        { text-align:left; }
 caption, thead                                  { font-weight:bold; text-align:left; }
 tr                                              { padding:3px; padding:0; border-bottom:1px solid #EEE; transition:background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
-th, td                                          { padding:5px 10px; min-width:40px; border:none; word-wrap:break-word; vertical-align:top; position:relative; top:0; left:0; }
+th, td                                          { padding:5px 10px; min-width:40px; border:none; vertical-align:top; position:relative; top:0; left:0; }
 td:empty                                        { display:none; visibility:hidden; }
 
 .table--rowHover thead tr:hover,
@@ -145,15 +146,22 @@ td:empty                                        { display:none; visibility:hidde
 .table--rowHover tr:hover,
 .table--stripes tr:nth-child(odd)               { background-color:#F0F2F4; }
 
-.table--responsive td[data-title]:before        { padding:0 10px 0 0; content:attr(data-title) ":\00A0"; color:#26343E; display:block; font-weight:bold; }
+.table--mobile                                  {
+  table, tr, td                                 { display:block; border:none; }
+  thead                                         { padding:10px; background-color:#FFF; border:none; font-weight:bold; display:none; }
+  tr                                            { border-radius:3px;
+    &:nth-child(odd)                            { background-color:#F0F2F4;
+      td                                        { border-color:#FFF; }
+    }
+    &+tr                                        { margin-top:20px; }
+  }
 
-.table--mobile table,
-.table--mobile tr,
-.table--mobile td                               { display:block; border:none; }
-.table--mobile td                               { margin:0; padding:0; display:block; }
-.table--mobile thead                            { padding:10px; background-color:#FFF; border:none; font-weight:bold; text-align:left; display:none; }
-.table--mobile td[data-title]:before            { padding:0 10px 0 0; content:attr(data-title) ":\00A0"; color:#26343E; display:inline-block; width:30%; font-weight:bold; }
-.table--mobile .cell-content                    { display:inline-block; width:calc(70% - 20px); vertical-align:top; }
+  td                                            { margin:0; display:block;
+    +td                                         { border-top:1px solid #EEE; }
+    &[data-title]:before                        { padding:0 10px 0 0; content:attr(data-title) ":\00A0"; color:#26343E; display:inline-block; width:30%; font-weight:bold; }
+    .cell-content                               { display:inline-block; width:70%; vertical-align:top; }
+  }
+}
 
 /***********************************************
 Icons Setup
@@ -173,7 +181,7 @@ Icons Setup
 /***********************************************
 Message Blocks
 ***********************************************/
-.message                                        { padding:8px 10px; font-size:12px; line-height:16px; color:#FFF; letter-spacing:.5px; background-color:#26343E; border-radius:3px; width:100%; position:relative; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+.message                                        { padding:8px 10px; color:#FFF; background-color:#26343E; border-radius:3px; width:100%; position:relative; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 .message--positive                              { background-color:$color-positive; }
 .message--info                                  { background-color:$color-info; }
 .message--warning                               { background-color:$color-warning; color:#444; }
@@ -240,12 +248,22 @@ Tablet - This applies from 768px onwards
 @media (min-width:$grid-width-tablet){
   table                                         { font-size:inherit; }
 
-  .table--mobile table                          { display:table; table-layout:auto; }
-  .table--mobile caption                        { display:table-caption; }
-  .table--mobile tbody, thead                   { display:table-row-group; }
-  .table--mobile tr                             { padding:0; border-width:1px; display:table-row; }
-  .table--mobile td, th                         { padding:10px; display:table-cell; }
-  .table--mobile td[data-title]:before          { display:none; }
+  .table--mobile                                {
+    table                                       { display:table; table-layout:auto; }
+    caption                                     { display:table-caption; }
+    tbody, thead                                { display:table-row-group; }
+    tr                                          { padding:0; border-bottom:1px solid #EEE; display:table-row;
+      &:nth-child(odd)                          { background-color:transparent;
+        td                                      { border:none; }
+      }
+      &+tr                                      { margin-top:0; }
+    }
+    td, th                                      { padding:10px; border:none; display:table-cell; }
+    td                                          { border:none;
+      &[data-title]:before                      { display:none; }
+      .cell-content                             { width:auto; }
+    }
+  }
 
   /***** Hide *****/
   .hide--mobile                                 { display:inherit; }
@@ -260,9 +278,6 @@ Tablet - This applies from 768px onwards
 Smaller screen - This applies from 992px onwards
 ***********************************************/
 @media (min-width:$grid-width-smscreen) {
-  /***** Tables *****/
-  table                                         { table-layout:fixed; }
-
   .img--left                                    { margin-bottom:0; margin-right:30px; float:left; }
   .img--right                                   { margin-bottom:0; margin-left:30px; float:right; }
 
