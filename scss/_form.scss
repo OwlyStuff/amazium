@@ -160,7 +160,7 @@ Radios & Checkboxes
 /***** Checkboxes & Radios Toggle *****/
 .toggle                                         { padding:2px; border:1px solid #BBB; width:100%; display:block; border-radius:3px;
   > span                                        { margin:0; padding:0; min-width:100px;
-    label                                       { margin:0; padding:2px 20px; text-align:center; }
+    label                                       { margin:0; padding:2px 20px 0; text-align:center; }
     span                                        { position:relative; z-index:9; }
   }
   input                                         {
@@ -183,7 +183,9 @@ Radios & Checkboxes
   }
 
   .positive input:checked + label:before        { background-color:$color-positive; }
-  .warning input:checked + label:before         { background-color:$color-warning; }
+  .warning input:checked + label                { color:#333;
+    &:before                                    { background-color:$color-warning; }
+  }
   .negative input:checked + label:before        { background-color:$color-negative; }
 }
 

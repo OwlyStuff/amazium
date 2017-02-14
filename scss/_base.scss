@@ -16,7 +16,7 @@ body                                            { margin:0; font-family:'sans-se
 h1,h2,h3,h4,h5,h6,p,pre,address,hr,
 .h1,.h2,.h3,.h4,.h5,.h6,dt,dd,figure,
 figcaption,ul,ol,dl,li,.media,table,caption,
-.img-left, .img-right,.message                  {
+.img-left, .img-right,.message,.btn--container  {
   &+*                                           { margin-top:1rem; }
 }
 
