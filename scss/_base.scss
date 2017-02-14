@@ -93,7 +93,7 @@ figcaption                                      { padding:0; font-size:14px;
 /***********************************************
 Links
 ***********************************************/
-a                                               { color:#333; text-decoration:underline; outline:0;
+a                                               { color:inherit; text-decoration:underline; outline:0;
   transition:
     color 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
     fill 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s,
