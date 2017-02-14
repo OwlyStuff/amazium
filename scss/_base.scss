@@ -158,8 +158,8 @@ td:empty                                        { display:none; visibility:hidde
 
   td                                            { margin:0; display:block;
     +td                                         { border-top:1px solid #EEE; }
-    &[data-title]:before                        { padding:0 10px 0 0; content:attr(data-title) ":\00A0"; color:#26343E; display:inline-block; width:30%; font-weight:bold; }
-    .cell-content                               { display:inline-block; width:70%; vertical-align:top; }
+    &[data-title]:before                        { padding:0 10px 0 0; content:attr(data-title) ":\00A0"; color:#26343E; display:inline-block; width:30%; font-weight:bold; overflow:hidden; }
+    .cell-content                               { display:inline-block; width:70%; vertical-align:top; overflow:hidden; }
   }
 }
 
