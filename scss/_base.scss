@@ -13,10 +13,10 @@ html                                            { font-size:16px; overflow:-moz-
 body                                            { margin:0; font-family:'sans-serif'; line-height:1.45; }
 *, *:before, *:after                            { margin:0; padding:0; border:none; box-sizing:inherit; }
 
-h1,h2,h3,h4,h5,h6,p,pre,address,hr,
-.h1,.h2,.h3,.h4,.h5,.h6,dt,dd,figure,
-figcaption,ul,ol,dl,li,.media,table,caption,
-.img-left, .img-right,.message,.btn--container  {
+h1,h2,h3,h4,h5,h6,p,pre,address,hr,.h1,.h2,.h3,
+.h4,.h5,.h6,dt,dd,figure,figcaption,ul,ol,dl,
+li,.media,table,caption,.img-left, .img-right,
+.message,.btn--container,.btn--group            {
   &+*                                           { margin-top:1rem; }
 }
 
