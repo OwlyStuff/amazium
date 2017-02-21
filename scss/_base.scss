@@ -150,7 +150,7 @@ td:empty                                        { display:none; visibility:hidde
 
 .table--mobile                                  {
   table, tr, td                                 { display:block; border:none; }
-  thead                                         { padding:10px; background-color:#FFF; border:none; font-weight:bold; display:none; }
+  thead                                         { padding:5px 10px; background-color:#FFF; border:none; font-weight:bold; display:none; }
   tr                                            { border-radius:3px;
     &:nth-child(odd)                            { background-color:#F0F2F4;
       td                                        { border-color:#FFF; }
@@ -259,7 +259,7 @@ Tablet - This applies from 768px onwards
       &+tr                                      { margin-top:0; border-top:1px solid #EEE; }
     }
 
-    td, th                                      { padding:10px; border:none; display:table-cell;
+    td, th                                      { padding:5px 10px; border:none; display:table-cell;
       +td                                       { border-top:none; }
       &[data-title]:before                      { display:none; }
       .cell-content                             { width:auto; }
