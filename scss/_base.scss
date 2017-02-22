@@ -137,7 +137,9 @@ Tables
 table                                           { width:100%; overflow:visible; text-align:left; display:table; border:none; border-collapse:collapse; border-spacing:0; }
 table, caption, tbody, thead, tr, th, td        { text-align:left; }
 caption, thead                                  { font-weight:bold; text-align:left; }
-tr                                              { padding:3px; padding:0; border-bottom:1px solid #EEE; transition:background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s; }
+tr                                              { padding:3px; padding:0; transition:background 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s;
+  &+tr                                          { border-top:1px solid #EEE; }
+}
 th, td                                          { padding:5px 10px; min-width:40px; border:none; vertical-align:top; position:relative; top:0; left:0; }
 td:empty                                        { display:none; visibility:hidden; }
 
@@ -148,7 +150,7 @@ td:empty                                        { display:none; visibility:hidde
 
 .table--mobile                                  {
   table, tr, td                                 { display:block; border:none; }
-  thead                                         { padding:10px; background-color:#FFF; border:none; font-weight:bold; display:none; }
+  thead                                         { padding:5px 10px; background-color:#FFF; border:none; font-weight:bold; display:none; }
   tr                                            { border-radius:3px;
     &:nth-child(odd)                            { background-color:#F0F2F4;
       td                                        { border-color:#FFF; }
@@ -248,18 +250,17 @@ Tablet - This applies from 768px onwards
 @media (min-width:$grid-width-tablet){
   table                                         { font-size:inherit; }
 
-  .table--mobile                                {
-    table                                       { display:table; table-layout:auto; }
-    caption                                     { display:table-caption; }
+  .table--mobile                                { display:table;
     tbody, thead                                { display:table-row-group; }
-    tr                                          { padding:0; border-bottom:1px solid #EEE; display:table-row;
+    tr                                          { display:table-row;
       &:nth-child(odd)                          { background-color:transparent;
         td                                      { border:none; }
       }
-      &+tr                                      { margin-top:0; }
+      &+tr                                      { margin-top:0; border-top:1px solid #EEE; }
     }
-    td, th                                      { padding:10px; border:none; display:table-cell; }
-    td                                          { border:none;
+
+    td, th                                      { padding:5px 10px; border:none; display:table-cell;
+      +td                                       { border-top:none; }
       &[data-title]:before                      { display:none; }
       .cell-content                             { width:auto; }
     }
