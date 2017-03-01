@@ -5,7 +5,7 @@
 */
 
 /***********************************************
-Mobile First - This applies from 0px to 767px
+Mobile First
 ***********************************************/
 
 /***** Resets *****/
@@ -245,7 +245,7 @@ textarea:focus, button:focus                    { outline:none; }
 .show--screen                                   { display:none; }
 
 /***********************************************
-Tablet - This applies from 768px onwards
+Tablet
 ***********************************************/
 @media (min-width:$grid-width-tablet){
   table                                         { font-size:inherit; }
@@ -276,7 +276,7 @@ Tablet - This applies from 768px onwards
 }
 
 /***********************************************
-Smaller screen - This applies from 992px onwards
+Small screen
 ***********************************************/
 @media (min-width:$grid-width-smscreen) {
   .img--left                                    { margin-bottom:0; margin-right:30px; float:left; }
