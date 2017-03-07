@@ -9,7 +9,7 @@ Mobile First
 ***********************************************/
 
 /***** Resets *****/
-html                                            { font-size:16px; overflow:-moz-scrollbars-vertical; overflow-y:scroll; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+html                                            { font-size:14px; overflow:-moz-scrollbars-vertical; overflow-y:scroll; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
 body                                            { margin:0; font-family:'sans-serif'; line-height:1.45; }
 *, *:before, *:after                            { margin:0; padding:0; border:none; box-sizing:inherit; }
 
@@ -42,7 +42,7 @@ sub                                             { bottom:-5px; }
 pre                                             { padding:0; display:table; table-layout:fixed; width:100%;
   code                                          { padding:20px; overflow:auto; width:100%; }
 }
-code                                            { margin:0; padding:0 3px; font-family:'Consolas', Courier, monospace; font-size:12px; line-height:16px; text-align:left; color:#F1F1F1; display:inline-block; vertical-align:middle; background-color:#111; border:1px solid #111; border-radius:3px; overflow:hidden; white-space:pre; }
+code                                            { margin:0; padding:0 3px; font-family:'Consolas', Courier, monospace; font-size:12px; text-align:left; color:#F1F1F1; display:inline-block; vertical-align:middle; background-color:#111; border:1px solid #111; border-radius:3px; overflow:hidden; white-space:pre; }
 
 abbr[title],
 abbr[data-original-title]                       { border-bottom:1px dotted #999999; cursor:help; }
@@ -168,7 +168,7 @@ td:empty                                        { display:none; visibility:hidde
 /***********************************************
 Icons Setup
 ***********************************************/
-.icon                                           { height:16px; width:16px; display:inline-block; vertical-align:middle; position:relative; top:-2px; }
+.icon                                           { height:16px; width:16px; display:inline-block; vertical-align:middle; position:relative; }
 
 /***** Icons Sizes *****/
 .icon--size-xl                                  { height:36px; width:36px; }
@@ -183,7 +183,7 @@ Icons Setup
 /***********************************************
 Message Blocks
 ***********************************************/
-.message                                        { padding:8px 10px; color:#FFF; background-color:#26343E; border-radius:3px; width:100%; position:relative; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+.message                                        { padding:.56em .8em; color:#FFF; background-color:#26343E; border-radius:3px; width:100%; position:relative; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
 .message--positive                              { background-color:$color-positive; }
 .message--info                                  { background-color:$color-info; }
 .message--warning                               { background-color:$color-warning; color:#444; }
