@@ -1,14 +1,6 @@
 {
   "name": "amazium",
-<<<<<<< 6afb485a4ef7a3aac74ead2e0c1228eb09ee1bf3
-<<<<<<< 522623c23efb8b2f2795d1ac56ed223a284707f5
-  "version": "4.3.0",
-=======
-  "version": "5.0.0-0",
->>>>>>> 5.0.0-0
-=======
-  "version": "5.0.0-3",
->>>>>>> Release for 5.0.0-3
+  "version": "5.0.0-7",
   "description": "The Responsive Web Framework",
   "repository": {
     "type": "git",
