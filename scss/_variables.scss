@@ -23,6 +23,9 @@ $grid-gutter:20px;
 $grid-gutter-smscreen:$grid-gutter / 1.25;
 $grid-gutter-tablet:$grid-gutter-smscreen / 1.1;
 
+/***** Activate or deactivate offsets *****/
+$offsets: true;
+
 /***** Shorthand Padding Mixin *****/
 @mixin padding($padding) { padding:$padding; }
 

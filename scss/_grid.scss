@@ -59,8 +59,10 @@ Tablet - This applies from 768px onwards
   }
 
   /***** Sets grid offsets *****/
-  @for $i from 1 through $grid-columns - 1      {
-    .grid--offset-#{$i}                         { margin-left:100% / $grid-columns *$i; }
+  @if ($offsets) {
+    @for $i from 1 through $grid-columns - 1      {
+      .grid--offset-#{$i}                         { margin-left:100% / $grid-columns *$i; }
+    }
   }
 
   /***** Grid ordering *****/
