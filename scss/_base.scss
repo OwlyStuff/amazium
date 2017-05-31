@@ -155,7 +155,6 @@ td:empty                                        { display:none; visibility:hidde
     &:nth-child(odd)                            { background-color:#F0F2F4;
       td                                        { border-color:#FFF; }
     }
-    &+tr                                        { margin-top:20px; }
   }
 
   td                                            { margin:0; display:block;
@@ -265,6 +264,11 @@ Tablet
       .cell-content                             { width:auto; }
     }
   }
+
+  .table--rowHover thead tr:hover,
+  .table--stripes thead tr:nth-child(odd)       { background-color:transparent; }
+  .table--rowHover tr:hover,
+  .table--stripes tr:nth-child(odd)             { background-color:#F0F2F4; }
 
   /***** Hide *****/
   .hide--mobile                                 { display:inherit; }
