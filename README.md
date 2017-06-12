@@ -1,4 +1,4 @@
-#Amazium [![Build Status](https://travis-ci.org/OwlyStuff/amazium.svg?branch=master)](https://travis-ci.org/OwlyStuff/amazium)
+# Amazium [![Build Status](https://travis-ci.org/OwlyStuff/amazium.svg?branch=master)](https://travis-ci.org/OwlyStuff/amazium)
 
 Responsive CSS Framework
 
@@ -7,11 +7,11 @@ __*Literally*__ Too orangey for crows!
 See [Amazium.co.uk](https://www.amazium.co.uk)
 
 
-###Ember-CLI application setup
+### Ember-CLI application setup
 
 It is not possible to directly import CSS assets into an ember-cli application at the moment and therefore the following configuration steps are required to get amazium working with an ember cli application.
 
-####Install amazium
+#### Install amazium
 
 Run the following in your application root to install amazium:
 
@@ -19,7 +19,7 @@ Run the following in your application root to install amazium:
 npm install amazium --save-dev
 ```
 
-####Install ember-cli addon to import css assets from node modules
+#### Install ember-cli addon to import css assets from node modules
 
 Run the following in your application root:
 
@@ -27,7 +27,7 @@ Run the following in your application root:
 ember install ember-cli-node-assets
 ```
 
-####Import amazium compiled CSS in your application
+#### Import amazium compiled CSS in your application
 
 Update the Ember CLI build file to include the amazium compiled CSS from the node package:
 
@@ -44,9 +44,9 @@ var app = new EmberApp(defaults, {
 });
 ```
 
-###Creating an Amazium build with a custom grid
+### Creating an Amazium build with a custom grid
 
-####Adjust the grid parameters
+#### Adjust the grid parameters
 
 The default parameters for the amazium grid are adjustable. You can set your own values in the _variables.scss file. When the SASS is compiled the grid values are calculated according to the set values. With these variable it is now possible to build a 1440px grid with 16 columns or whatever you wish.
 
