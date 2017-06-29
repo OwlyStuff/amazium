@@ -1,0 +1,31 @@
+
+{
+  "name": "amazium",
+  "description": "The Responsive Web Framework",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/OwlyStuff/Amazium.git"
+  },
+  "main": [
+    "`/*.scss"
+  ],
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.7",
+    "gulp-sass": "^2.3.1"
+  },
+  "keywords": [
+    "css", "html", "framework"
+  ],
+  "authors": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "homepage": "https://github.com/OwlyStuff/Amazium#readme",
+  "private": false
+}
