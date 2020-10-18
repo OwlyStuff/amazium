@@ -76,3 +76,7 @@ $grid-gutter-tablet: $grid-gutter-smscreen / 1.1;
 * `$grid-gutter` controls how much space there is between columns.
 * `$grid-gutter-smscreen` calculates how much space there is between columns on small screens. Can also be set manually.
 * `$grid-gutter-tablet` calculates how much space there is between columns on tablets. Can also be set manually.
+
+#easy to use 
+#dont forget to give reviews
+#always welcome for suggestion
